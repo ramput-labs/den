@@ -6,6 +6,8 @@ uv run python examples/quickstart.py
 
 from __future__ import annotations
 
+import os
+
 from typesafe_sdk import Choice, Noul, Score, TypeSafeClient
 
 
@@ -31,5 +33,7 @@ def main(client: TypeSafeClient) -> None:
 
 
 if __name__ == "__main__":
-    with TypeSafeClient(api_key="local", base_url="http://127.0.0.1:8009", model="den-latest") as c:
+    # never leave base_url unset: the SDK would fall back to TypeSafe's hosted API
+    url = os.environ.get("TYPESAFE_BASE_URL") or "http://127.0.0.1:8009"
+    with TypeSafeClient(api_key=os.environ.get("DEN_API_KEY") or "local", base_url=url, model="den-latest") as c:
         main(c)

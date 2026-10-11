@@ -1,7 +1,7 @@
 """CUDA checks, run on a GPU box: `make test-cuda` (`pytest -m cuda`). Skipped where torch sees no CUDA device.
 
 The toy tests check devices, dtypes, autocast and padding on CUDA in seconds; the `model`-marked one loads the real
-backbone ($DEN_MODEL, default Qwen3.5-4B; `make local-gates` uses qwen3.5-0.8b on an 8 GB card) through Unsloth,
+backbone ($DEN_MODEL, default Qwen3.5-4B; `make rehearse` uses qwen3.5-0.8b on an 8 GB card) through Unsloth,
 exactly as training does, and runs one forward/backward step of LoRA + pointer head."""
 
 from __future__ import annotations

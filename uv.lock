@@ -262,7 +262,7 @@ dependencies = [
     { name = "numpy" },
     { name = "pyarrow" },
     { name = "tokenizers" },
-    { name = "torch", marker = "sys_platform == 'linux'" },
+    { name = "torch" },
     { name = "transformers" },
 ]
 
@@ -292,7 +292,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=2" },
     { name = "pyarrow", specifier = ">=20" },
     { name = "tokenizers", specifier = ">=0.22" },
-    { name = "torch", marker = "sys_platform == 'linux'", specifier = ">=2.8" },
+    { name = "torch", specifier = ">=2.8" },
     { name = "transformers", specifier = ">=5.17,<5.18" },
 ]
 

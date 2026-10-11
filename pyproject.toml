@@ -3,6 +3,8 @@ name = "den"
 version = "0.1.0"
 description = "A System One decision model: Qwen3.5-4B-Base + LoRA + pointer head, returning calibrated probabilities over typed options"
 readme = "README.md"
+license = "MIT"  # the code; datasets keep their own licences (licences/, data/LICENSES.md), weights their base's
+license-files = ["LICENSE"]
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "flash-linear-attention>=0.4 ; sys_platform == 'linux'",
@@ -12,7 +14,7 @@ dependencies = [
     "numpy>=2",
     "pyarrow>=20",
     "tokenizers>=0.22",
-    "torch>=2.8 ; sys_platform == 'linux'",
+    "torch>=2.8",  # the head always runs in PyTorch, on every backend (MLX serving included)
     "transformers>=5.17,<5.18",  # unsloth 2026.10 supports <=5.17; newer resolves a pre-Qwen3.5 unsloth
 ]
 

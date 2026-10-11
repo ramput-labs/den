@@ -2,7 +2,7 @@
 
 den doctor                      # report; MLX on a Mac, CUDA on Linux
 den doctor --require cuda       # exit 1 unless CUDA training will work: GPU, BF16, driver, Unsloth, kernels
-den doctor --require cuda --model qwen3.5-0.8b --min-disk 30    # the local 8 GB card (make local-doctor)
+den doctor --require cuda --model qwen3.5-0.8b --min-disk 30    # an 8 GB card (make rehearse)
 den doctor --verify             # also re-hash the model's weight shards against locks/models.json
 """
 
