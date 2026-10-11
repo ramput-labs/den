@@ -81,7 +81,7 @@ Data, everything before training:
 Model:
 - `head.py`: `PointerHead` (Kev's q·k pointer plus span pooling, cross-option attention and a per-option prior),
   `LetterHead`, `question_loss`, `save_head`/`load_head`.
-- `lora.py`: `load_backbone` (Unsloth or PEFT LoRA), `text_tower`, `save_merged`, `warm_start`.
+- `lora.py`: `load_backbone` (Unsloth or PEFT LoRA), `text_tower`, `fold`/`merge` (the canonical merge), `warm_start`.
 - `model.py`: `SystemOne` (backbone + head, `forward` returns the loss) and `collate`.
 - `device.py`, `mlx_model.py`, `torch_model.py`: MLX (Apple Silicon) and PyTorch (CUDA/CPU) inference backbones,
   which must return the same hidden states.
@@ -103,20 +103,24 @@ Evaluation:
   numbers to that evidence; `scripts/verify_claims.py` (in `make check`) fails on any that drifts.
 
 Serving:
-- `runtime.py`: `Model` (a run's `merged/` + `head.safetensors`/`head.json` through `device.load`), `request`,
-  `answer`, `respond`. `den.load(run)` returns a `Model`. Keep the response shape identical to Kev's: `answer()` is
-  tested against Kev's README example.
+- `runtime.py`: `Model` (a run's `merged/` + `head.safetensors`/`head.json` through `device.load`), `request`, `answer`,
+  `respond`. A run without `merged/` (published from v2 on) gets it from `rebuild`: `lora.merge` of its adapter into the
+  pinned base, once, into `models/merged/<adapter sha256>`, refused unless every file has the sha256 `integrity.json`
+  recorded for the evaluated `merged/`. `den.load(run)` returns a `Model`. Keep the response shape identical to Kev's:
+  `answer()` is tested against Kev's README example.
 - `serve.py`: `den serve`, Kev's `POST /v1/systemone` over the standard library's HTTP server (`DEN_API_KEY` for a
   bearer key), and `den predict`.
 
 Release:
 - `integrity.py`: `den check-run`, run after `--merge` and before every upload: head/adapter finite, `merged/` has
-  the base's layout and files with exactly the adapted weights changed, sha256 of every model file -> `integrity.json`.
+  the base's layout and files with exactly the adapted weights changed, each one equal to `lora.fold` of its adapter
+  (the canonical merge), sha256 of every model file -> `integrity.json`.
 - `publish.py`: `den publish` bundles `stages/`, `data/` (exact training data + every scored file, sha256 manifest) and
-  `logs/` into the run, writes the card, uploads it as a private Hub model (resumable), checks the listing. Hard rule 4
-  holds here too: `bundle` copies only what `licences.allowed` permits (Kev's `core` suites hold Yelp and Amazon rows,
-  so they never go up) and lists the rest in `MANIFEST.json` by hash and lines; a repo already public gets the public
-  rules.
+  `logs/` into the run, writes the card, uploads it as a private Hub model (resumable), checks the listing. It uploads
+  the adapter, never `merged/` (9 GB of the base; servers rebuild it), and deletes an earlier version's `merged/` from
+  the repo's main (its tag keeps it). Hard rule 4 holds here too: `bundle` copies only what `licences.allowed` permits
+  (Kev's `core` suites hold Yelp and Amazon rows, so they never go up) and lists the rest in `MANIFEST.json` by hash and
+  lines; a repo already public gets the public rules.
 - `release.py`: `den release create|list|show` (`make release`, `make release-list`). A release publishes a finished
   run, tags the Hub commit with the version and writes `releases/<version>.json` (lineage, data hashes, dev/test
   results, file hashes, data repo commit). `release:<version>` resolves to `hf:<repo>@<version>` for `--init-from`,
@@ -290,10 +294,13 @@ group). They never import `den`. pytest and mypy find them through `examples` on
   length-grouped sampling. Only override what is specific to this model: `_get_train_sampler` (precomputed lengths)
   and `create_optimizer` (the head's own learning rate). Don't reintroduce manual autocast or step loops.
 - `system.SystemOne.forward` returns `{"loss": ...}`. `save_strategy="no"`: the run saves the adapter, the head,
-  `run.json` (setup, timings, versions, commit) and then, with `--merge`, merged weights. `lora.save_merged` is
-  ours on both engines: W + scale × B·A for each adapted module, written into a copy of the base checkpoint's own
-  files, so `merged/` has the base's layout by construction. It refuses unless all 248 weights are replaced. Verified
-  on real weights: merged (MLX) vs adapter (torch) hidden states, min cosine 0.9999.
+  `run.json` (setup, timings, versions, commit) and then, with `--merge`, merged weights. `lora.merge` reads the saved
+  adapter and the base checkpoint's files (no model), folds each adapted weight with `lora.fold` (W + scale × B·A in
+  float64 on the CPU, rounded once to bf16) and writes a copy of the base's files, so `merged/` has the base's layout
+  by construction and the same bytes on any machine. It refuses unless all 248 weights are replaced. Keep the merge
+  canonical: a GPU merge (v1's, on an H100 with TF32) differs in ~0.45% of adapted values by one bf16 step, flips ~0.4%
+  of near-tie answers, and can't be rebuilt, which is why `integrity` checks every merged weight against `fold`. v1's
+  `merged/` predates this and stays on its Hub tag as evaluated.
 - Unsloth (2026.9) loads Qwen3.5 through `FastModel` as the vision-language class and returns a processor, not a
   tokenizer. We never use it: prompts are tokenized by `prompt.encode`, and padding is masked (pad id 0). Keep
   `get_peft_model`'s `finetune_*` flags at their defaults: setting any to False routes our explicit target list through

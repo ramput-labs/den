@@ -148,11 +148,12 @@ The prompt layout (`den/prompt.py`) is this repo's own, not Kev's serving templa
 (`den/head.py`) starts as Kev's, q(question's final token) · k(option's closing token), and adds span pooling, one
 cross-option attention block and a per-option prior, all starting at zero (`--head-layers 0` drops the block;
 `--head-kind pointer` is Kev's head exactly). Backbone and head are independent: `MODEL=` picks any Qwen backbone,
-`--head-*` the head. A run exports Hugging Face-style files only: `merged/` (a standard checkpoint), the PEFT
-adapter, and the head as `head.safetensors` + `head.json` (its `hidden_size` must match the backbone's). For score
-questions, `--ordinal-weight` adds Kev's ranked probability score, so near-miss levels cost less than far ones.
-`den evaluate` reports accuracy, NLL, Brier, ECE, coverage at 5% error, accuracy per question type, and the
-expected level's error on score questions.
+`--head-*` the head. A run exports Hugging Face-style files only: the PEFT adapter, `merged/` (a standard checkpoint,
+kept on the training box from v2 on: a server rebuilds it from the adapter and the pinned base, checked against its
+sha256 in `integrity.json`), and the head as `head.safetensors` + `head.json` (its `hidden_size` must match the
+backbone's). For score questions, `--ordinal-weight` adds Kev's ranked probability score, so near-miss levels cost less
+than far ones. `den evaluate` reports accuracy, NLL, Brier, ECE, coverage at 5% error, accuracy per question type, and
+the expected level's error on score questions.
 
 Optional:
 

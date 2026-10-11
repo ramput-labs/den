@@ -16,7 +16,12 @@ from .licences import RANK, Kind, allowed, classify
 from .paths import CLEAN, read_json
 from .pins import MODELS
 
-NEEDED = ("head.safetensors", "head.json", "run.json", "merged/config.json", "merged/tokenizer.json")
+NEEDED = ("head.safetensors", "head.json", "run.json", "merged/config.json", "merged/tokenizer.json")  # here, to hash
+# what goes up: the adapter, not merged/ (9 GB of the base). `runtime.rebuild` folds it back in, byte for byte the
+# evaluated merge, against the sha256 integrity.json keeps for it.
+UPLOADED = ("head.safetensors", "head.json", "run.json", "adapter_model.safetensors", "adapter_config.json",
+            "integrity.json")  # fmt: skip
+NOT_UPLOADED = ("merged/*",)
 SKIP = ("checkpoint-*", "*.tmp", ".cache/*", "runs/*")  # Trainer leftovers and caches
 
 
@@ -55,7 +60,7 @@ def card(run: Path, repo: str) -> str:
     metadata = ModelCardData(
         license=base_licence(run),
         base_model=base,
-        base_model_relation="finetune",  # merged/ is the base with the LoRA folded in
+        base_model_relation="adapter",  # the LoRA and the head; merged/ is rebuilt from the base on first load
         library_name="peft",
         tags=["den", "pointer-head", "lora", "unsloth", "calibrated", "multiple-choice"],
     )
@@ -80,7 +85,9 @@ echo '{{"state": "I was charged twice for my order.", "questions": {{"team": {{"
   | uv run den predict --run hf:{repo}
 ```
 
-It runs on Apple Silicon (MLX), NVIDIA (CUDA) and CPU. The first call downloads the run into the Hub cache.
+It runs on Apple Silicon (MLX), NVIDIA (CUDA) and CPU. The first call downloads the adapter and head (about 140 MB)
+and the pinned base `{base}`, then folds the adapter into the base once (`models/merged/`), checking every file
+against the sha256 in `integrity.json`, so it serves exactly the weights that were evaluated.
 
 ## Results
 
@@ -97,14 +104,15 @@ on confidence, not accuracy.
 
 ## Files
 
-- `merged/`: the LoRA folded into bf16 weights; loads like the base checkpoint.
 - `head.safetensors`, `head.json`: the pointer head's weights, and its config (kind, size, the backbone's hidden size)
   and T. No pickle: the whole repo is safetensors and JSON.
-- `adapter_model.safetensors`, `adapter_config.json`: the LoRA alone, for use on top of the base.
+- `adapter_model.safetensors`, `adapter_config.json`: the LoRA. den folds it into the base (W + scale * B @ A in
+  float64, rounded once to bf16: `lora.fold`), which gives the same bytes on every machine.
 - `run.json`, `training_config.json`, `eval.json`: how it was trained (loss log, dev curve, calibration) and measured.
 - `best/` (when present): the checkpoint with the lowest dev NLL, adapter and head with its own T; the final
   weights above are the ones that ship.
-- `integrity.json`: the merged run's checks and every model file's sha256; `baselines.json`: the mode comparison.
+- `integrity.json`: the run's checks and every model file's sha256, including the merged weights that were
+  evaluated (the rebuild must match them); `baselines.json`: the mode comparison.
 - `stages/`: every earlier training stage (adapter, head, its run.json), to continue or compare from.
 - `data/`: the exact training data of every stage (sampled files hold only the lines used), the dev, calibration and
   test files it was scored on, and `data/MANIFEST.json` with their sha256. Files whose licences forbid
@@ -330,11 +338,13 @@ def publish(run: Path, repo: str, private: bool = True, logs: Sequence[Path] = (
     create_repo(repo, private=not public, repo_type="model", exist_ok=True)
     if stale := sorted(set(list_repo_files(repo)) & set(excluded)):  # an earlier upload carried them
         api.delete_files(repo, delete_patterns=stale, commit_message="den: remove data the licences exclude")
-    upload_folder(repo, run, "model", private=not public, ignore=[*SKIP, *excluded])
+    if any(f.startswith("merged/") for f in list_repo_files(repo)):  # an earlier version's weights, beside this head
+        api.delete_files(repo, delete_patterns=list(NOT_UPLOADED), commit_message="den: adapter-only from here on")
+    upload_folder(repo, run, "model", private=not public, ignore=[*SKIP, *NOT_UPLOADED, *excluded])
     files = list_repo_files(repo)
     if leaked := sorted(set(files) & set(excluded)):
         raise SystemExit(f"{repo} holds data the licences exclude: {leaked}")
-    if absent := [f for f in (*NEEDED, "README.md", "data/MANIFEST.json") if f not in files]:
+    if absent := [f for f in (*UPLOADED, "README.md", "data/MANIFEST.json") if f not in files]:
         raise SystemExit(f"uploaded, but {repo} lacks {absent}: run the same command again")
     return files
 

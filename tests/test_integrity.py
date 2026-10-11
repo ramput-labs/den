@@ -10,6 +10,7 @@ from safetensors.torch import load_file, save_file
 
 from den.head import HeadConfig, make_head, save_head
 from den.integrity import check, check_main
+from den.lora import merge
 
 HIDDEN = 16
 Q = "model.language_model.layers.{}.self_attn.q_proj.weight"
@@ -26,12 +27,12 @@ def run_dir(tmp_path: Path) -> tuple[Path, Path]:
     (base / "config.json").write_text(json.dumps({"model_type": "qwen3_5", "text_config": {"hidden_size": HIDDEN}}))
     (base / "tokenizer.json").write_text("{}")
     (base / ".gitattributes").write_text("*.safetensors filter=lfs\n")  # Hub metadata: neither side's files
-    shutil.copytree(base, run / "merged")
-    merged = {k: v + 0.01 if "q_proj" in k else v for k, v in weights.items()}
-    save_file(merged, run / "merged" / "model.safetensors")
-    adapter = {f"base_model.model.model.layers.{i}.self_attn.q_proj.lora_{ab}.weight": torch.randn(4, HIDDEN)
-               for i in range(2) for ab in "AB"}  # fmt: skip
+    run.mkdir()
+    adapter = {f"base_model.model.model.layers.{i}.self_attn.q_proj.lora_{ab}.weight": torch.randn(*shape)
+               for i in range(2) for ab, shape in (("A", (4, HIDDEN)), ("B", (HIDDEN, 4)))}  # fmt: skip
     save_file(adapter, run / "adapter_model.safetensors")
+    (run / "adapter_config.json").write_text(json.dumps({"r": 4, "lora_alpha": 8}))
+    assert merge(base, run, run / "merged") == 2
     save_head(run, make_head(HIDDEN, HeadConfig(kind="set", dim=8, heads=2)), base="tiny", lora=4, temperature=1.2)
     (run / "run.json").write_text(json.dumps({"base": "tiny", "lora": {"rank": 4, "modules": 2}}))
     return run, base
@@ -45,8 +46,9 @@ def test_an_intact_merged_run_passes_and_lists_its_files(tmp_path: Path) -> None
     run, base = run_dir(tmp_path)
     report = check(run, base)
     assert report["ok"], failed(report)
-    assert {"head.safetensors", "head.json", "adapter_model.safetensors", "run.json", "merged/model.safetensors",
-            "merged/config.json", "merged/tokenizer.json"} == set(report["files"])  # fmt: skip
+    model = {"head.safetensors", "head.json", "adapter_model.safetensors", "adapter_config.json", "run.json"}
+    merged = {"merged/model.safetensors", "merged/config.json", "merged/tokenizer.json"}
+    assert model | merged == set(report["files"])
 
 
 def test_check_run_writes_the_report_and_exits_nonzero_on_failure(tmp_path: Path) -> None:
@@ -67,6 +69,7 @@ def test_check_run_writes_the_report_and_exits_nonzero_on_failure(tmp_path: Path
         ("missing", "merged has the base's files"),
         ("head", "head weights are finite"),
         ("hidden", "head fits the merged hidden size"),
+        ("rounded", "merged weights are the canonical merge of the adapter (lora.fold)"),
     ],
 )
 def test_each_kind_of_damage_is_caught(tmp_path: Path, damage: str, names: str) -> None:
@@ -87,6 +90,8 @@ def test_each_kind_of_damage_is_caught(tmp_path: Path, damage: str, names: str) 
         head = load_file(run / "head.safetensors")
         next(iter(head.values())).fill_(float("inf"))
         save_file(head, run / "head.safetensors")
+    elif damage == "rounded":  # one value one step off: what a GPU's TF32 merge does to some of them
+        tensors[Q.format(0)][0, 0] = torch.nextafter(tensors[Q.format(0)][0, 0], torch.tensor(float("inf")))
     elif damage == "hidden":
         (run / "merged" / "config.json").write_text(json.dumps({"text_config": {"hidden_size": 32}}))
     save_file(tensors, shard)

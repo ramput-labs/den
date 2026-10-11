@@ -1,11 +1,15 @@
 """A trained run, ready to answer /v1/systemone requests in Kev's response shape.
 
-A run directory holds `merged/` (the LoRA folded into bf16 weights) and `head.safetensors` + `head.json`. The
-backbone runs on this machine's backend (MLX, CUDA or CPU, `device.load`); the head runs in PyTorch on the CPU.
+A run directory holds `head.safetensors` + `head.json` and either `merged/` (the LoRA folded into bf16 weights) or, as
+published from v2 on, only the adapter: `rebuild` then folds it into the pinned base once, byte for byte the merge that
+was evaluated. The backbone runs on this machine's backend (MLX, CUDA or CPU, `device.load`); the head runs in PyTorch
+on the CPU.
 """
 
 from __future__ import annotations
 
+import json
+import shutil
 import time
 from collections.abc import Sequence
 from pathlib import Path
@@ -16,13 +20,18 @@ from tokenizers import Tokenizer
 
 from .api import Json, Question, Record, RecordError, parse
 from .device import load
+from .fetch import digest
 from .head import load_head
+from .lora import merge
 from .metrics import argmax
-from .paths import base_weights, read_json
+from .paths import MODELS, base_weights, read_json
 from .prompt import Style, encode, split
 
 DEFAULT_NAME = "den-latest"
-SERVE_FILES = ["merged/*", "head.json", "head.safetensors"]  # what a Hub run needs to answer; not its data/ or logs/
+# what a Hub run needs to answer (merged/, or the adapter and the hashes to rebuild it against); not its data/ or logs/
+SERVE_FILES = ["merged/*", "head.json", "head.safetensors", "adapter_model.safetensors", "adapter_config.json",
+               "integrity.json"]  # fmt: skip
+VERIFIED = ".verified"  # in a rebuilt merged/: the sha256 it was checked against
 UNCAPPED = 1 << 30
 
 
@@ -35,9 +44,7 @@ class Model:
             raise SystemExit(f"{run} has no head.json: not a den run")
         weights = run / "merged"
         if not (weights / "config.json").is_file():
-            if meta["lora"]:
-                raise SystemExit(f"{weights} is missing: train with --merge, or download the run's merged/ folder")
-            weights = base_weights(str(meta["base"]))
+            weights = rebuild(run, str(meta["base"])) if meta["lora"] else base_weights(str(meta["base"]))
         self.backbone = load(weights, backend)  # type: ignore[arg-type]
         self.head, self.meta = load_head(run, self.backbone.hidden_size)
         self.head.eval()
@@ -74,6 +81,35 @@ class Model:
         """Calibrated logits for each question's options, and the tokens read."""
         raw, tokens = self.logits(record)
         return self.calibrate(record, raw), tokens
+
+
+def rebuild(run: Path, base: str) -> Path:
+    """merged/ for a run published without it: its adapter folded into the pinned base (`lora.merge`, the canonical
+    merge), built once into models/merged/<adapter sha256> and kept only if every file's sha256 is the one
+    integrity.json recorded for the merged/ that was evaluated. Later loads trust the marker it leaves."""
+    recorded = {
+        name.removeprefix("merged/"): sha
+        for name, sha in read_json(run / "integrity.json").get("files", {}).items()
+        if name.startswith("merged/")
+    }
+    if not recorded:
+        raise SystemExit(f"{run} has no merged/, and no integrity.json with merged/'s sha256 to rebuild it against")
+    out = MODELS / "merged" / digest(run / "adapter_model.safetensors")[:16]
+    if (out / VERIFIED).is_file() and json.loads((out / VERIFIED).read_text(encoding="utf-8")) == recorded:
+        return out
+    part = out.with_name(out.name + ".part")
+    shutil.rmtree(part, ignore_errors=True)
+    print(f"rebuilding merged/ for {run} from the adapter and {base} into {out} (once)", flush=True)
+    merge(base_weights(base), run, part)
+    built = {f.name: digest(f) for f in sorted(part.iterdir()) if f.is_file() and not f.name.startswith(".")}
+    if wrong := sorted(n for n in recorded.keys() | built.keys() if recorded.get(n) != built.get(n)):
+        shutil.rmtree(part)
+        raise SystemExit(f"{run}: the rebuilt merged/ is not the evaluated one ({', '.join(wrong[:3])} differ from "
+                         "integrity.json): a different base, or a run merged before the canonical merge")  # fmt: skip
+    (part / VERIFIED).write_text(json.dumps(recorded, sort_keys=True), encoding="utf-8")
+    shutil.rmtree(out, ignore_errors=True)
+    part.rename(out)
+    return out
 
 
 def request(raw: dict[str, Json]) -> Record:

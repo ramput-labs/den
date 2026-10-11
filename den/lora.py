@@ -107,19 +107,32 @@ def text_tower(model: object) -> nn.Module:
     return tower
 
 
-def merged_weights(backbone: nn.Module) -> dict[str, torch.Tensor]:
-    """Every adapted weight with its LoRA folded in (W + scaling * B @ A), keyed from `layers.` on, so the key doesn't
-    depend on the model class or engine."""
-    out: dict[str, torch.Tensor] = {}
-    for name, module in backbone.named_modules():
-        lora_a, lora_b = getattr(module, "lora_A", None), getattr(module, "lora_B", None)
-        if lora_a is None or lora_b is None or "default" not in lora_a:
-            continue
-        base = module.base_layer.weight
-        delta = lora_b["default"].weight.float() @ lora_a["default"].weight.float()
-        weight = base.float() + module.scaling["default"] * delta
-        out[name[name.index("layers.") :] + ".weight"] = weight.to(base.dtype).cpu()
-    return out
+def fold(weight: torch.Tensor, a: torch.Tensor, b: torch.Tensor, scale: float) -> torch.Tensor:
+    """The canonical merge of one adapted weight, W + scale * B @ A: computed in float64 on the CPU and rounded once
+    to W's dtype, so every machine gets the same bytes. A GPU's TF32 matmul doesn't: v1's merged/ (folded on an H100)
+    can't be rebuilt bit for bit, which is what a server rebuilding merged/ from the adapter needs."""
+    w = weight.detach().cpu()
+    delta = b.detach().cpu().double() @ a.detach().cpu().double()
+    return (w.double() + scale * delta).to(w.dtype)
+
+
+def adapter(run: Path) -> tuple[dict[str, tuple[torch.Tensor, torch.Tensor]], float]:
+    """A saved adapter as {weight name from `layers.` on: (A, B)} and its scale (alpha / rank, or / sqrt(rank) under
+    rsLoRA), read from `adapter_model.safetensors` + `adapter_config.json` alone, whatever engine wrote them."""
+    from safetensors.torch import load_file
+
+    config = read_json(run / "adapter_config.json")
+    if not config or config.get("rank_pattern") or config.get("alpha_pattern"):
+        raise SystemExit(f"{run}: adapter_config.json is missing or uses per-module ranks, which merge doesn't fold")
+    rank, alpha = int(config["r"]), float(config["lora_alpha"])
+    pairs: dict[str, dict[str, torch.Tensor]] = {}
+    for key, tensor in load_file(run / "adapter_model.safetensors").items():
+        name, part = key.rsplit(".lora_", 1)
+        pairs.setdefault(name[name.index("layers.") :] + ".weight", {})[part.split(".")[0]] = tensor
+    if broken := [k for k, ab in pairs.items() if set(ab) != {"A", "B"}]:
+        raise SystemExit(f"{run}: adapter weights without both lora_A and lora_B: {broken[:3]}")
+    scale = alpha / (math.sqrt(rank) if config.get("use_rslora") else rank)
+    return {k: (ab["A"], ab["B"]) for k, ab in pairs.items()}, scale
 
 
 def _keys(shard: Path) -> list[str]:
@@ -129,16 +142,21 @@ def _keys(shard: Path) -> list[str]:
         return list(handle.keys())
 
 
-def save_merged(backbone: nn.Module, base: Path, out: Path) -> int:
-    """A copy of the base checkpoint's files with every adapted text weight replaced, so `merged/` has the base's
-    layout by construction. Returns the number of weights replaced; refuses unless all were."""
+def text_prefix(names: list[str]) -> str:
+    """Where the text layers live in a checkpoint: the vision-language layout or the text-only one."""
+    return "model.language_model." if any(k.startswith("model.language_model.layers.") for k in names) else "model."
+
+
+def merge(base: Path, run: Path, out: Path) -> int:
+    """merged/ from files alone: a copy of the base checkpoint's files with every weight the run's adapter covers
+    folded in (`fold`), so `merged/` has the base's layout by construction and the same bytes wherever it is built
+    (training, `den check-run`, a server rebuilding it). Returns the number replaced; refuses unless all were."""
     from safetensors import safe_open
     from safetensors.torch import save_file
 
-    merged = merged_weights(backbone)
+    pairs, scale = adapter(run)
     shards = sorted(base.glob("*.safetensors"))
-    names = [k for shard in shards for k in _keys(shard)]
-    prefix = "model.language_model." if any(k.startswith("model.language_model.layers.") for k in names) else "model."
+    prefix = text_prefix([k for shard in shards for k in _keys(shard)])
     out.mkdir(parents=True, exist_ok=True)
     for f in base.iterdir():
         if f.is_file() and f.suffix != ".safetensors" and not f.name.startswith("."):  # not the Hub's .gitattributes
@@ -149,18 +167,15 @@ def save_merged(backbone: nn.Module, base: Path, out: Path) -> int:
         with safe_open(shard, "pt") as handle:
             for key in _keys(shard):
                 tensor = handle.get_tensor(key)
-                if key.startswith(prefix) and (new := merged.get(key.removeprefix(prefix))) is not None:
-                    if new.shape != tensor.shape:
-                        raise SystemExit(
-                            f"merge: {key} is {tuple(tensor.shape)} in the base, {tuple(new.shape)} merged"
-                        )
-                    tensor, replaced = new.to(tensor.dtype), replaced + 1
+                if key.startswith(prefix) and (ab := pairs.get(key.removeprefix(prefix))) is not None:
+                    if (ab[1].shape[0], ab[0].shape[1]) != tuple(tensor.shape):
+                        raise SystemExit(f"merge: {key} is {tuple(tensor.shape)} in the base, the adapter's B @ A "
+                                         f"{(ab[1].shape[0], ab[0].shape[1])}")  # fmt: skip
+                    tensor, replaced = fold(tensor, *ab, scale), replaced + 1
                 tensors[key] = tensor
         save_file(tensors, out / shard.name, metadata={"format": "pt"})
-    if replaced != len(merged):
-        raise SystemExit(
-            f"merge: replaced {replaced} of {len(merged)} adapted weights; the adapter in {out.parent} is fine"
-        )
+    if replaced != len(pairs):
+        raise SystemExit(f"merge: replaced {replaced} of {len(pairs)} adapted weights; the adapter in {run} is fine")
     return replaced
 
 
