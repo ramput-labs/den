@@ -137,6 +137,9 @@ model = den.load("hf:<org>/<name>")      # or a local run directory
 model.predict({"state": "...", "questions": {"billing": {"type": "noul", "instructions": "Is this about billing?"}}})
 ```
 
+From Python over HTTP, TypeSafe's own SDK (`typesafe-sdk`) works against `den serve` as it is: see
+[`examples/`](examples/README.md) for runnable scripts, typed `response_model`s included.
+
 The response holds, per question, `choice` (most likely option), `score` (expected level) or `noul` (probability of
 true), with `confidence` = (p_max − 1/K)/(1 − 1/K) and every option's probability, plus `usage` and `latency_ms`.
 Each question is read with the state alone.

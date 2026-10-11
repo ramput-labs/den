@@ -22,6 +22,7 @@ from .paths import base_weights, read_json
 from .prompt import Style, encode, split
 
 DEFAULT_NAME = "den-latest"
+SERVE_FILES = ["merged/*", "head.json", "head.safetensors"]  # what a Hub run needs to answer; not its data/ or logs/
 UNCAPPED = 1 << 30
 
 

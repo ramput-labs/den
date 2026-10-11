@@ -1,0 +1,764 @@
+{"line": 1, "record": "mmlu/test/13292", "ms": 618.0, "tokens": 100, "probs": {"answer": [0.295, 0.1364, 0.3246, 0.244]}}
+{"line": 2, "record": "mmlu/test/588", "ms": 701.9, "tokens": 69, "probs": {"answer": [0.0002, 0.0005, 0.9971, 0.0022]}}
+{"line": 3, "record": "mmlu/test/4589", "ms": 356.6, "tokens": 102, "probs": {"answer": [0.9251, 0.0229, 0.0199, 0.0321]}}
+{"line": 4, "record": "mmlu/test/6099", "ms": 330.6, "tokens": 81, "probs": {"answer": [0.881812, 0.082392, 0.005, 0.030797]}}
+{"line": 5, "record": "mmlu/test/6139", "ms": 404.2, "tokens": 72, "probs": {"answer": [0.0012, 0.0038, 0.992099, 0.0029]}}
+{"line": 6, "record": "mmlu/test/13810", "ms": 448.5, "tokens": 87, "probs": {"answer": [0.9745, 0.0175, 0.0022, 0.0058]}}
+{"line": 7, "record": "mmlu/test/12434", "ms": 741.3, "tokens": 243, "probs": {"answer": [0.0113, 0.0137, 0.0111, 0.9639]}}
+{"line": 8, "record": "mmlu/test/123", "ms": 237.4, "tokens": 86, "probs": {"answer": [0.0399, 0.0287, 0.9145, 0.0169]}}
+{"line": 9, "record": "mmlu/test/2785", "ms": 71.9, "tokens": 102, "probs": {"answer": [0.042004, 0.953295, 0.0018, 0.0029]}}
+{"line": 10, "record": "mmlu/test/5717", "ms": 338.9, "tokens": 327, "probs": {"answer": [0.0003, 0.0008, 0.997, 0.0019]}}
+{"line": 11, "record": "mmlu/test/8037", "ms": 94.3, "tokens": 70, "probs": {"answer": [0.1482, 0.44, 0.3005, 0.1113]}}
+{"line": 12, "record": "mmlu/test/1047", "ms": 159.0, "tokens": 111, "probs": {"answer": [0.0605, 0.0905, 0.4441, 0.4049]}}
+{"line": 13, "record": "mmlu/test/4518", "ms": 202.6, "tokens": 89, "probs": {"answer": [0.0345, 0.0032, 0.0141, 0.9482]}}
+{"line": 14, "record": "mmlu/test/1492", "ms": 169.3, "tokens": 169, "probs": {"answer": [0.1387, 0.0181, 0.5648, 0.2784]}}
+{"line": 15, "record": "mmlu/test/4063", "ms": 290.0, "tokens": 93, "probs": {"answer": [0.6486, 0.0442, 0.2613, 0.0459]}}
+{"line": 16, "record": "mmlu/test/11310", "ms": 465.5, "tokens": 183, "probs": {"answer": [0.4723, 0.0621, 0.422, 0.0436]}}
+{"line": 17, "record": "mmlu/test/6610", "ms": 65.8, "tokens": 88, "probs": {"answer": [0.0441, 0.0406, 0.0839, 0.8314]}}
+{"line": 18, "record": "mmlu/test/9462", "ms": 64.8, "tokens": 81, "probs": {"answer": [0.051695, 0.017498, 0.894411, 0.036396]}}
+{"line": 19, "record": "mmlu/test/5208", "ms": 185.8, "tokens": 73, "probs": {"answer": [0.0004, 0.0006, 0.9979, 0.0011]}}
+{"line": 20, "record": "mmlu/test/9213", "ms": 271.1, "tokens": 136, "probs": {"answer": [0.1308, 0.2485, 0.0596, 0.5611]}}
+{"line": 21, "record": "mmlu/test/12914", "ms": 65.9, "tokens": 88, "probs": {"answer": [0.011799, 0.0028, 0.980202, 0.005199]}}
+{"line": 22, "record": "mmlu/test/724", "ms": 117.6, "tokens": 71, "probs": {"answer": [0.255926, 0.170417, 0.233023, 0.340634]}}
+{"line": 23, "record": "mmlu/test/4454", "ms": 114.3, "tokens": 150, "probs": {"answer": [0.546, 0.3292, 0.1006, 0.0242]}}
+{"line": 24, "record": "mmlu/test/8228", "ms": 105.1, "tokens": 98, "probs": {"answer": [0.266627, 0.019602, 0.0036, 0.710171]}}
+{"line": 25, "record": "mmlu/test/13238", "ms": 213.4, "tokens": 113, "probs": {"answer": [0.6417, 0.1883, 0.0128, 0.1572]}}
+{"line": 26, "record": "mmlu/test/11404", "ms": 224.6, "tokens": 186, "probs": {"answer": [0.326033, 0.168317, 0.358636, 0.147015]}}
+{"line": 27, "record": "mmlu/test/6593", "ms": 70.5, "tokens": 98, "probs": {"answer": [0.281328, 0.20172, 0.319932, 0.19702]}}
+{"line": 28, "record": "mmlu/test/3841", "ms": 102.5, "tokens": 83, "probs": {"answer": [0.0159, 0.3584, 0.46, 0.1657]}}
+{"line": 29, "record": "mmlu/test/11705", "ms": 213.7, "tokens": 296, "probs": {"answer": [0.3268, 0.3922, 0.1803, 0.1007]}}
+{"line": 30, "record": "mmlu/test/2862", "ms": 64.0, "tokens": 70, "probs": {"answer": [0.0248, 0.0002, 0.0028, 0.9722]}}
+{"line": 31, "record": "mmlu/test/9772", "ms": 97.4, "tokens": 84, "probs": {"answer": [0.0037, 0.0033, 0.989399, 0.0036]}}
+{"line": 32, "record": "mmlu/test/5094", "ms": 63.9, "tokens": 73, "probs": {"answer": [0.9851, 0.013, 0.0007, 0.0012]}}
+{"line": 33, "record": "mmlu/test/10172", "ms": 278.8, "tokens": 141, "probs": {"answer": [0.0004, 0.0007, 0.0038, 0.9951]}}
+{"line": 34, "record": "mmlu/test/3349", "ms": 150.1, "tokens": 299, "probs": {"answer": [0.0003, 0.0003, 0.0144, 0.985]}}
+{"line": 35, "record": "mmlu/test/5191", "ms": 71.2, "tokens": 83, "probs": {"answer": [0.154015, 0.075108, 0.471547, 0.29933]}}
+{"line": 36, "record": "mmlu/test/1808", "ms": 303.7, "tokens": 114, "probs": {"answer": [0.941, 0.0089, 0.038, 0.0121]}}
+{"line": 37, "record": "mmlu/test/10509", "ms": 136.0, "tokens": 156, "probs": {"answer": [0.0335, 0.1571, 0.5822, 0.2272]}}
+{"line": 38, "record": "mmlu/test/13713", "ms": 64.5, "tokens": 73, "probs": {"answer": [0.129, 0.0928, 0.5345, 0.2437]}}
+{"line": 39, "record": "mmlu/test/1807", "ms": 81.2, "tokens": 136, "probs": {"answer": [0.0124, 0.0158, 0.9119, 0.0599]}}
+{"line": 40, "record": "mmlu/test/4720", "ms": 64.9, "tokens": 75, "probs": {"answer": [0.880188, 0.094709, 0.020702, 0.0044]}}
+{"line": 41, "record": "mmlu/test/12568", "ms": 315.1, "tokens": 214, "probs": {"answer": [0.0238, 0.0839, 0.0392, 0.8531]}}
+{"line": 42, "record": "mmlu/test/12163", "ms": 92.7, "tokens": 214, "probs": {"answer": [0.10011, 0.023002, 0.531653, 0.345235]}}
+{"line": 43, "record": "mmlu/test/6773", "ms": 115.4, "tokens": 65, "probs": {"answer": [0.5912, 0.0877, 0.1499, 0.1712]}}
+{"line": 44, "record": "mmlu/test/1982", "ms": 110.1, "tokens": 66, "probs": {"answer": [0.068707, 0.857786, 0.033203, 0.040304]}}
+{"line": 45, "record": "mmlu/test/3758", "ms": 65.9, "tokens": 88, "probs": {"answer": [0.0002, 0.0, 0.0003, 0.9995]}}
+{"line": 46, "record": "mmlu/test/1857", "ms": 122.3, "tokens": 96, "probs": {"answer": [0.0137, 0.0089, 0.9634, 0.014]}}
+{"line": 47, "record": "mmlu/test/2806", "ms": 64.4, "tokens": 74, "probs": {"answer": [0.9952, 0.0015, 0.0025, 0.0008]}}
+{"line": 48, "record": "mmlu/test/12630", "ms": 64.6, "tokens": 73, "probs": {"answer": [0.007099, 0.016798, 0.951205, 0.024898]}}
+{"line": 49, "record": "mmlu/test/8523", "ms": 241.9, "tokens": 125, "probs": {"answer": [0.171717, 0.481348, 0.177718, 0.169217]}}
+{"line": 50, "record": "mmlu/test/13067", "ms": 68.6, "tokens": 92, "probs": {"answer": [0.0254, 0.253, 0.0119, 0.7097]}}
+{"line": 51, "record": "mmlu/test/2282", "ms": 64.6, "tokens": 79, "probs": {"answer": [0.925393, 0.074307, 0.0001, 0.0002]}}
+{"line": 52, "record": "mmlu/test/10179", "ms": 99.5, "tokens": 142, "probs": {"answer": [0.0342, 0.0044, 0.809, 0.1524]}}
+{"line": 53, "record": "mmlu/test/2982", "ms": 123.8, "tokens": 138, "probs": {"answer": [0.979098, 0.008101, 0.0027, 0.010101]}}
+{"line": 54, "record": "mmlu/test/10687", "ms": 303.0, "tokens": 364, "probs": {"answer": [0.3084, 0.0848, 0.0685, 0.5383]}}
+{"line": 55, "record": "mmlu/test/931", "ms": 237.9, "tokens": 119, "probs": {"answer": [0.1194, 0.1521, 0.2299, 0.4986]}}
+{"line": 56, "record": "mmlu/test/10372", "ms": 276.5, "tokens": 195, "probs": {"answer": [0.3112, 0.244, 0.3708, 0.074]}}
+{"line": 57, "record": "mmlu/test/3523", "ms": 66.1, "tokens": 75, "probs": {"answer": [0.1191, 0.0995, 0.1228, 0.6586]}}
+{"line": 58, "record": "mmlu/test/6245", "ms": 64.5, "tokens": 69, "probs": {"answer": [0.187719, 0.225623, 0.142414, 0.444244]}}
+{"line": 59, "record": "mmlu/test/9182", "ms": 85.1, "tokens": 135, "probs": {"answer": [0.2108, 0.23, 0.2334, 0.3258]}}
+{"line": 60, "record": "mmlu/test/5150", "ms": 284.4, "tokens": 108, "probs": {"answer": [0.981698, 0.007301, 0.0032, 0.007801]}}
+{"line": 61, "record": "mmlu/test/282", "ms": 127.1, "tokens": 65, "probs": {"answer": [0.7437, 0.0166, 0.0283, 0.2114]}}
+{"line": 62, "record": "mmlu/test/8524", "ms": 80.2, "tokens": 133, "probs": {"answer": [0.1826, 0.1918, 0.1466, 0.479]}}
+{"line": 63, "record": "mmlu/test/2715", "ms": 69.5, "tokens": 90, "probs": {"answer": [0.074, 0.0564, 0.0202, 0.8494]}}
+{"line": 64, "record": "mmlu/test/7350", "ms": 63.5, "tokens": 73, "probs": {"answer": [0.1406, 0.2755, 0.268, 0.3159]}}
+{"line": 65, "record": "mmlu/test/4527", "ms": 123.1, "tokens": 146, "probs": {"answer": [0.0033, 0.0045, 0.985201, 0.006999]}}
+{"line": 66, "record": "mmlu/test/6364", "ms": 66.2, "tokens": 61, "probs": {"answer": [0.1889, 0.3171, 0.0331, 0.4609]}}
+{"line": 67, "record": "mmlu/test/4563", "ms": 63.7, "tokens": 96, "probs": {"answer": [0.6627, 0.0191, 0.0399, 0.2783]}}
+{"line": 68, "record": "mmlu/test/4441", "ms": 72.0, "tokens": 113, "probs": {"answer": [0.2365, 0.1799, 0.3254, 0.2582]}}
+{"line": 69, "record": "mmlu/test/6910", "ms": 67.3, "tokens": 93, "probs": {"answer": [0.0252, 0.4405, 0.3541, 0.1802]}}
+{"line": 70, "record": "mmlu/test/8800", "ms": 161.3, "tokens": 124, "probs": {"answer": [0.318, 0.2997, 0.2859, 0.0964]}}
+{"line": 71, "record": "mmlu/test/4472", "ms": 95.2, "tokens": 185, "probs": {"answer": [0.038004, 0.336134, 0.552655, 0.073207]}}
+{"line": 72, "record": "mmlu/test/5801", "ms": 205.3, "tokens": 305, "probs": {"answer": [0.0003, 0.0093, 0.0002, 0.9902]}}
+{"line": 73, "record": "mmlu/test/8718", "ms": 79.7, "tokens": 137, "probs": {"answer": [0.0116, 0.0017, 0.9848, 0.0019]}}
+{"line": 74, "record": "mmlu/test/3557", "ms": 66.7, "tokens": 82, "probs": {"answer": [0.0006, 0.0029, 0.9916, 0.0049]}}
+{"line": 75, "record": "mmlu/test/13887", "ms": 66.3, "tokens": 66, "probs": {"answer": [0.035696, 0.0004, 0.943006, 0.020898]}}
+{"line": 76, "record": "mmlu/test/8047", "ms": 66.1, "tokens": 55, "probs": {"answer": [0.0729, 0.0006, 0.9235, 0.003]}}
+{"line": 77, "record": "mmlu/test/9900", "ms": 68.0, "tokens": 82, "probs": {"answer": [0.1291, 0.8159, 0.0235, 0.0315]}}
+{"line": 78, "record": "mmlu/test/12517", "ms": 62.5, "tokens": 63, "probs": {"answer": [0.0251, 0.7508, 0.1986, 0.0255]}}
+{"line": 79, "record": "mmlu/test/6949", "ms": 63.4, "tokens": 68, "probs": {"answer": [0.0011, 0.0265, 0.9699, 0.0025]}}
+{"line": 80, "record": "mmlu/test/4674", "ms": 118.0, "tokens": 103, "probs": {"answer": [0.030997, 0.351565, 0.078492, 0.538946]}}
+{"line": 81, "record": "emotion/test/1012", "ms": 124.9, "tokens": 45, "probs": {"emotion": [0.093309, 0.073407, 0.694669, 0.047205, 0.036304, 0.055106]}}
+{"line": 82, "record": "emotion/test/876", "ms": 60.7, "tokens": 41, "probs": {"emotion": [0.3875, 0.0242, 0.0103, 0.4241, 0.0531, 0.1008]}}
+{"line": 83, "record": "emotion/test/230", "ms": 60.0, "tokens": 39, "probs": {"emotion": [0.916292, 0.0019, 0.0021, 0.019602, 0.053805, 0.006301]}}
+{"line": 84, "record": "emotion/test/20", "ms": 64.6, "tokens": 76, "probs": {"emotion": [0.058894, 0.039896, 0.894211, 0.0019, 0.0025, 0.0026]}}
+{"line": 85, "record": "emotion/test/1635", "ms": 60.7, "tokens": 42, "probs": {"emotion": [0.0005, 0.9846, 0.0111, 0.0005, 0.0003, 0.003]}}
+{"line": 86, "record": "emotion/test/1435", "ms": 63.9, "tokens": 55, "probs": {"emotion": [0.2875, 0.1836, 0.0267, 0.4527, 0.0246, 0.0249]}}
+{"line": 87, "record": "emotion/test/639", "ms": 60.3, "tokens": 40, "probs": {"emotion": [0.0031, 0.2892, 0.654, 0.0051, 0.0043, 0.0443]}}
+{"line": 88, "record": "emotion/test/281", "ms": 59.4, "tokens": 40, "probs": {"emotion": [0.929193, 0.0027, 0.0015, 0.041304, 0.017502, 0.007801]}}
+{"line": 89, "record": "emotion/test/790", "ms": 61.1, "tokens": 55, "probs": {"emotion": [0.027303, 0.787179, 0.157116, 0.0038, 0.0046, 0.020002]}}
+{"line": 90, "record": "emotion/test/1948", "ms": 61.4, "tokens": 64, "probs": {"emotion": [0.4603, 0.0062, 0.009, 0.0735, 0.3311, 0.1199]}}
+{"line": 91, "record": "emotion/test/616", "ms": 59.9, "tokens": 43, "probs": {"emotion": [0.7478, 0.0111, 0.0066, 0.1205, 0.0585, 0.0555]}}
+{"line": 92, "record": "emotion/test/1171", "ms": 61.7, "tokens": 51, "probs": {"emotion": [0.0391, 0.7107, 0.0666, 0.0146, 0.0229, 0.1461]}}
+{"line": 93, "record": "emotion/test/1126", "ms": 69.3, "tokens": 85, "probs": {"emotion": [0.0363, 0.0626, 0.8743, 0.0108, 0.0079, 0.0081]}}
+{"line": 94, "record": "emotion/test/180", "ms": 62.0, "tokens": 63, "probs": {"emotion": [0.0281, 0.1176, 0.0285, 0.003, 0.0187, 0.8041]}}
+{"line": 95, "record": "emotion/test/1333", "ms": 59.5, "tokens": 42, "probs": {"emotion": [0.143286, 0.017398, 0.80202, 0.011299, 0.017398, 0.008599]}}
+{"line": 96, "record": "emotion/test/254", "ms": 60.4, "tokens": 47, "probs": {"emotion": [0.0004, 0.349735, 0.644164, 0.0006, 0.0005, 0.0046]}}
+{"line": 97, "record": "emotion/test/1401", "ms": 61.4, "tokens": 53, "probs": {"emotion": [0.9606, 0.0019, 0.0097, 0.011, 0.0064, 0.0104]}}
+{"line": 98, "record": "emotion/test/1025", "ms": 62.1, "tokens": 59, "probs": {"emotion": [0.772254, 0.007001, 0.021004, 0.130026, 0.037207, 0.032507]}}
+{"line": 99, "record": "emotion/test/1576", "ms": 63.8, "tokens": 70, "probs": {"emotion": [0.906509, 0.0012, 0.0019, 0.019798, 0.059294, 0.011299]}}
+{"line": 100, "record": "emotion/test/1022", "ms": 64.4, "tokens": 77, "probs": {"emotion": [0.936906, 0.006099, 0.0043, 0.020698, 0.021698, 0.010299]}}
+{"line": 101, "record": "emotion/test/688", "ms": 59.3, "tokens": 41, "probs": {"emotion": [0.361536, 0.0016, 0.0015, 0.575358, 0.048505, 0.011501]}}
+{"line": 102, "record": "emotion/test/1156", "ms": 63.7, "tokens": 71, "probs": {"emotion": [0.0011, 0.8701, 0.0106, 0.0012, 0.0037, 0.1133]}}
+{"line": 103, "record": "emotion/test/1762", "ms": 61.8, "tokens": 56, "probs": {"emotion": [0.1576, 0.0552, 0.4309, 0.0062, 0.3374, 0.0127]}}
+{"line": 104, "record": "emotion/test/485", "ms": 61.5, "tokens": 52, "probs": {"emotion": [0.008699, 0.39856, 0.565343, 0.007399, 0.009299, 0.010699]}}
+{"line": 105, "record": "emotion/test/482", "ms": 63.0, "tokens": 45, "probs": {"emotion": [0.418742, 0.091709, 0.040104, 0.091709, 0.138314, 0.219422]}}
+{"line": 106, "record": "emotion/test/959", "ms": 60.1, "tokens": 40, "probs": {"emotion": [0.0029, 0.509151, 0.475448, 0.002, 0.0018, 0.008701]}}
+{"line": 107, "record": "emotion/test/573", "ms": 61.4, "tokens": 46, "probs": {"emotion": [0.9688, 0.0014, 0.0046, 0.0062, 0.007, 0.012]}}
+{"line": 108, "record": "emotion/test/588", "ms": 66.2, "tokens": 67, "probs": {"emotion": [0.2855, 0.2931, 0.1663, 0.0778, 0.0886, 0.0887]}}
+{"line": 109, "record": "emotion/test/1176", "ms": 61.3, "tokens": 50, "probs": {"emotion": [0.0172, 0.6017, 0.0242, 0.0282, 0.0293, 0.2994]}}
+{"line": 110, "record": "emotion/test/851", "ms": 61.6, "tokens": 63, "probs": {"emotion": [0.355264, 0.010399, 0.005799, 0.037196, 0.264174, 0.327167]}}
+{"line": 111, "record": "emotion/test/445", "ms": 63.8, "tokens": 54, "probs": {"emotion": [0.0005, 0.919708, 0.065993, 0.0006, 0.001, 0.012199]}}
+{"line": 112, "record": "emotion/test/856", "ms": 60.7, "tokens": 50, "probs": {"emotion": [0.0505, 0.0016, 0.0005, 0.9015, 0.0329, 0.013]}}
+{"line": 113, "record": "emotion/test/690", "ms": 61.7, "tokens": 56, "probs": {"emotion": [0.244924, 0.136414, 0.587559, 0.010001, 0.008801, 0.012301]}}
+{"line": 114, "record": "emotion/test/282", "ms": 60.2, "tokens": 40, "probs": {"emotion": [0.757648, 0.011998, 0.004399, 0.05069, 0.09868, 0.076585]}}
+{"line": 115, "record": "emotion/test/166", "ms": 59.7, "tokens": 42, "probs": {"emotion": [0.133113, 0.19732, 0.394539, 0.070307, 0.075408, 0.129313]}}
+{"line": 116, "record": "emotion/test/1873", "ms": 60.5, "tokens": 50, "probs": {"emotion": [0.005801, 0.976798, 0.009101, 0.0014, 0.0012, 0.005701]}}
+{"line": 117, "record": "emotion/test/1764", "ms": 64.3, "tokens": 61, "probs": {"emotion": [0.8609, 0.0022, 0.0706, 0.0037, 0.0432, 0.0194]}}
+{"line": 118, "record": "emotion/test/1891", "ms": 67.0, "tokens": 46, "probs": {"emotion": [0.0761, 0.6109, 0.275, 0.0047, 0.0046, 0.0287]}}
+{"line": 119, "record": "emotion/test/1237", "ms": 69.0, "tokens": 61, "probs": {"emotion": [0.6536, 0.0133, 0.0036, 0.0867, 0.1503, 0.0925]}}
+{"line": 120, "record": "emotion/test/1045", "ms": 65.1, "tokens": 61, "probs": {"emotion": [0.870013, 0.013699, 0.039396, 0.025497, 0.027197, 0.024198]}}
+{"line": 121, "record": "emotion/test/1471", "ms": 62.9, "tokens": 54, "probs": {"emotion": [0.612139, 0.0049, 0.045895, 0.015098, 0.306369, 0.015598]}}
+{"line": 122, "record": "emotion/test/19", "ms": 61.2, "tokens": 50, "probs": {"emotion": [0.006499, 0.313169, 0.644636, 0.006699, 0.0026, 0.026397]}}
+{"line": 123, "record": "emotion/test/1889", "ms": 62.3, "tokens": 58, "probs": {"emotion": [0.6507, 0.0021, 0.0021, 0.0196, 0.3081, 0.0174]}}
+{"line": 124, "record": "emotion/test/955", "ms": 63.4, "tokens": 71, "probs": {"emotion": [0.001, 0.7931, 0.1931, 0.0014, 0.0005, 0.0109]}}
+{"line": 125, "record": "emotion/test/1617", "ms": 61.1, "tokens": 56, "probs": {"emotion": [0.1404, 0.3106, 0.2737, 0.0587, 0.1188, 0.0978]}}
+{"line": 126, "record": "emotion/test/646", "ms": 65.4, "tokens": 84, "probs": {"emotion": [0.0041, 0.356936, 0.614861, 0.008701, 0.0049, 0.010501]}}
+{"line": 127, "record": "emotion/test/886", "ms": 62.1, "tokens": 49, "probs": {"emotion": [0.170983, 0.265373, 0.530547, 0.010499, 0.009799, 0.012799]}}
+{"line": 128, "record": "emotion/test/509", "ms": 65.0, "tokens": 72, "probs": {"emotion": [0.779278, 0.0006, 0.033303, 0.165017, 0.009201, 0.012601]}}
+{"line": 129, "record": "emotion/test/388", "ms": 63.8, "tokens": 65, "probs": {"emotion": [0.344766, 0.025297, 0.007899, 0.070193, 0.135186, 0.416658]}}
+{"line": 130, "record": "emotion/test/26", "ms": 59.4, "tokens": 41, "probs": {"emotion": [0.0052, 0.0005, 0.0003, 0.9708, 0.01, 0.0132]}}
+{"line": 131, "record": "emotion/test/1795", "ms": 60.1, "tokens": 41, "probs": {"emotion": [0.692169, 0.0019, 0.001, 0.233523, 0.058806, 0.012601]}}
+{"line": 132, "record": "emotion/test/190", "ms": 59.9, "tokens": 40, "probs": {"emotion": [0.0017, 0.973597, 0.006001, 0.0024, 0.0014, 0.014901]}}
+{"line": 133, "record": "emotion/test/283", "ms": 59.5, "tokens": 45, "probs": {"emotion": [0.0019, 0.90171, 0.017198, 0.0015, 0.0027, 0.074993]}}
+{"line": 134, "record": "emotion/test/1080", "ms": 61.3, "tokens": 44, "probs": {"emotion": [0.942, 0.0012, 0.0009, 0.0344, 0.0087, 0.0128]}}
+{"line": 135, "record": "emotion/test/1724", "ms": 62.6, "tokens": 53, "probs": {"emotion": [0.0092, 0.7642, 0.2058, 0.0058, 0.0025, 0.0125]}}
+{"line": 136, "record": "emotion/test/147", "ms": 64.2, "tokens": 70, "probs": {"emotion": [0.3379, 0.0133, 0.01, 0.1331, 0.2701, 0.2356]}}
+{"line": 137, "record": "emotion/test/805", "ms": 61.0, "tokens": 49, "probs": {"emotion": [0.058, 0.439, 0.2511, 0.0455, 0.0489, 0.1575]}}
+{"line": 138, "record": "emotion/test/1273", "ms": 59.7, "tokens": 41, "probs": {"emotion": [0.015398, 0.715228, 0.019498, 0.007599, 0.014599, 0.227677]}}
+{"line": 139, "record": "emotion/test/1277", "ms": 63.8, "tokens": 66, "probs": {"emotion": [0.706, 0.0577, 0.019, 0.0835, 0.0744, 0.0594]}}
+{"line": 140, "record": "emotion/test/608", "ms": 62.6, "tokens": 57, "probs": {"emotion": [0.0612, 0.4546, 0.1009, 0.091, 0.0255, 0.2668]}}
+{"line": 141, "record": "emotion/test/456", "ms": 62.1, "tokens": 54, "probs": {"emotion": [0.004, 0.492951, 0.480252, 0.0026, 0.0017, 0.018498]}}
+{"line": 142, "record": "emotion/test/1442", "ms": 59.7, "tokens": 43, "probs": {"emotion": [0.065207, 0.550355, 0.031503, 0.016802, 0.218222, 0.117912]}}
+{"line": 143, "record": "emotion/test/978", "ms": 62.6, "tokens": 59, "probs": {"emotion": [0.0108, 0.6658, 0.2922, 0.0043, 0.0025, 0.0244]}}
+{"line": 144, "record": "emotion/test/1744", "ms": 60.2, "tokens": 44, "probs": {"emotion": [0.0049, 0.927007, 0.013299, 0.0032, 0.0037, 0.047895]}}
+{"line": 145, "record": "emotion/test/423", "ms": 62.4, "tokens": 62, "probs": {"emotion": [0.0248, 0.5016, 0.0498, 0.1117, 0.0167, 0.2954]}}
+{"line": 146, "record": "emotion/test/897", "ms": 62.5, "tokens": 46, "probs": {"emotion": [0.0009, 0.851715, 0.116088, 0.0014, 0.0017, 0.028197]}}
+{"line": 147, "record": "emotion/test/37", "ms": 59.9, "tokens": 44, "probs": {"emotion": [0.9628, 0.0018, 0.0009, 0.0234, 0.0082, 0.0029]}}
+{"line": 148, "record": "emotion/test/1216", "ms": 62.3, "tokens": 62, "probs": {"emotion": [0.1971, 0.3915, 0.1838, 0.0467, 0.0739, 0.107]}}
+{"line": 149, "record": "emotion/test/869", "ms": 64.6, "tokens": 47, "probs": {"emotion": [0.511549, 0.041996, 0.073693, 0.138286, 0.115788, 0.118688]}}
+{"line": 150, "record": "emotion/test/327", "ms": 63.6, "tokens": 60, "probs": {"emotion": [0.529, 0.0045, 0.0066, 0.394, 0.04, 0.0259]}}
+{"line": 151, "record": "emotion/test/1253", "ms": 60.3, "tokens": 64, "probs": {"emotion": [0.006601, 0.0011, 0.0002, 0.011901, 0.002, 0.978198]}}
+{"line": 152, "record": "emotion/test/692", "ms": 60.9, "tokens": 43, "probs": {"emotion": [0.3801, 0.0069, 0.0028, 0.0197, 0.5477, 0.0428]}}
+{"line": 153, "record": "emotion/test/98", "ms": 60.6, "tokens": 45, "probs": {"emotion": [0.9166, 0.0017, 0.0062, 0.0283, 0.0422, 0.005]}}
+{"line": 154, "record": "emotion/test/1536", "ms": 64.4, "tokens": 69, "probs": {"emotion": [0.0003, 0.7986, 0.1754, 0.0004, 0.0003, 0.025]}}
+{"line": 155, "record": "emotion/test/288", "ms": 60.7, "tokens": 46, "probs": {"emotion": [0.266, 0.0637, 0.0538, 0.0651, 0.0604, 0.491]}}
+{"line": 156, "record": "emotion/test/1319", "ms": 61.7, "tokens": 52, "probs": {"emotion": [0.9035, 0.0009, 0.0007, 0.0752, 0.0162, 0.0035]}}
+{"line": 157, "record": "emotion/test/1951", "ms": 59.5, "tokens": 38, "probs": {"emotion": [0.0028, 0.8947, 0.0538, 0.0034, 0.0022, 0.0431]}}
+{"line": 158, "record": "emotion/test/1806", "ms": 62.0, "tokens": 54, "probs": {"emotion": [0.451755, 0.0027, 0.344866, 0.011299, 0.178782, 0.010599]}}
+{"line": 159, "record": "emotion/test/1741", "ms": 60.5, "tokens": 50, "probs": {"emotion": [0.729, 0.0041, 0.0015, 0.1997, 0.0507, 0.015]}}
+{"line": 160, "record": "emotion/test/1485", "ms": 60.7, "tokens": 47, "probs": {"emotion": [0.047705, 0.0019, 0.0024, 0.282928, 0.049005, 0.616062]}}
+{"line": 161, "record": "tweet_offensive/test/468", "ms": 67.1, "tokens": 74, "probs": {"offensive": [0.1788, 0.8212]}}
+{"line": 162, "record": "tweet_offensive/test/80", "ms": 64.8, "tokens": 84, "probs": {"offensive": [0.2389, 0.7611]}}
+{"line": 163, "record": "tweet_offensive/test/469", "ms": 66.1, "tokens": 68, "probs": {"offensive": [0.9868, 0.0132]}}
+{"line": 164, "record": "tweet_offensive/test/266", "ms": 70.6, "tokens": 99, "probs": {"offensive": [0.8635, 0.1365]}}
+{"line": 165, "record": "tweet_offensive/test/190", "ms": 64.4, "tokens": 76, "probs": {"offensive": [0.8424, 0.1576]}}
+{"line": 166, "record": "tweet_offensive/test/294", "ms": 62.7, "tokens": 63, "probs": {"offensive": [0.9317, 0.0683]}}
+{"line": 167, "record": "tweet_offensive/test/429", "ms": 64.3, "tokens": 74, "probs": {"offensive": [0.3871, 0.6129]}}
+{"line": 168, "record": "tweet_offensive/test/104", "ms": 62.3, "tokens": 63, "probs": {"offensive": [0.6521, 0.3479]}}
+{"line": 169, "record": "tweet_offensive/test/374", "ms": 70.1, "tokens": 99, "probs": {"offensive": [0.3288, 0.6712]}}
+{"line": 170, "record": "tweet_offensive/test/274", "ms": 66.3, "tokens": 93, "probs": {"offensive": [0.4102, 0.5898]}}
+{"line": 171, "record": "tweet_offensive/test/705", "ms": 64.0, "tokens": 96, "probs": {"offensive": [0.433, 0.567]}}
+{"line": 172, "record": "tweet_offensive/test/565", "ms": 65.0, "tokens": 81, "probs": {"offensive": [0.9813, 0.0187]}}
+{"line": 173, "record": "tweet_offensive/test/319", "ms": 63.9, "tokens": 68, "probs": {"offensive": [0.3443, 0.6557]}}
+{"line": 174, "record": "tweet_offensive/test/6", "ms": 61.6, "tokens": 49, "probs": {"offensive": [0.6288, 0.3712]}}
+{"line": 175, "record": "tweet_offensive/test/81", "ms": 64.6, "tokens": 77, "probs": {"offensive": [0.2247, 0.7753]}}
+{"line": 176, "record": "tweet_offensive/test/717", "ms": 65.2, "tokens": 68, "probs": {"offensive": [0.6753, 0.3247]}}
+{"line": 177, "record": "tweet_offensive/test/342", "ms": 72.6, "tokens": 110, "probs": {"offensive": [0.0881, 0.9119]}}
+{"line": 178, "record": "tweet_offensive/test/795", "ms": 64.7, "tokens": 78, "probs": {"offensive": [0.3932, 0.6068]}}
+{"line": 179, "record": "tweet_offensive/test/123", "ms": 63.1, "tokens": 63, "probs": {"offensive": [0.401, 0.599]}}
+{"line": 180, "record": "tweet_offensive/test/456", "ms": 118.5, "tokens": 105, "probs": {"offensive": [0.9218, 0.0782]}}
+{"line": 181, "record": "tweet_offensive/test/313", "ms": 66.0, "tokens": 88, "probs": {"offensive": [0.9826, 0.0174]}}
+{"line": 182, "record": "tweet_offensive/test/485", "ms": 64.2, "tokens": 72, "probs": {"offensive": [0.7734, 0.2266]}}
+{"line": 183, "record": "tweet_offensive/test/48", "ms": 72.2, "tokens": 104, "probs": {"offensive": [0.5841, 0.4159]}}
+{"line": 184, "record": "tweet_offensive/test/253", "ms": 66.4, "tokens": 90, "probs": {"offensive": [0.2901, 0.7099]}}
+{"line": 185, "record": "tweet_offensive/test/376", "ms": 70.7, "tokens": 106, "probs": {"offensive": [0.2717, 0.7283]}}
+{"line": 186, "record": "tweet_offensive/test/27", "ms": 63.2, "tokens": 63, "probs": {"offensive": [0.2683, 0.7317]}}
+{"line": 187, "record": "tweet_offensive/test/283", "ms": 64.1, "tokens": 68, "probs": {"offensive": [0.6509, 0.3491]}}
+{"line": 188, "record": "tweet_offensive/test/606", "ms": 60.1, "tokens": 40, "probs": {"offensive": [0.7538, 0.2462]}}
+{"line": 189, "record": "tweet_offensive/test/846", "ms": 62.5, "tokens": 60, "probs": {"offensive": [0.287, 0.713]}}
+{"line": 190, "record": "tweet_offensive/test/653", "ms": 64.7, "tokens": 80, "probs": {"offensive": [0.525, 0.475]}}
+{"line": 191, "record": "tweet_offensive/test/107", "ms": 61.4, "tokens": 49, "probs": {"offensive": [0.135, 0.865]}}
+{"line": 192, "record": "tweet_offensive/test/703", "ms": 63.6, "tokens": 69, "probs": {"offensive": [0.987, 0.013]}}
+{"line": 193, "record": "tweet_offensive/test/811", "ms": 62.2, "tokens": 63, "probs": {"offensive": [0.938, 0.062]}}
+{"line": 194, "record": "tweet_offensive/test/100", "ms": 66.4, "tokens": 94, "probs": {"offensive": [0.7287, 0.2713]}}
+{"line": 195, "record": "tweet_offensive/test/423", "ms": 63.9, "tokens": 78, "probs": {"offensive": [0.149, 0.851]}}
+{"line": 196, "record": "tweet_offensive/test/138", "ms": 65.8, "tokens": 81, "probs": {"offensive": [0.9774, 0.0226]}}
+{"line": 197, "record": "tweet_offensive/test/622", "ms": 60.8, "tokens": 48, "probs": {"offensive": [0.9828, 0.0172]}}
+{"line": 198, "record": "tweet_offensive/test/473", "ms": 70.6, "tokens": 99, "probs": {"offensive": [0.7382, 0.2618]}}
+{"line": 199, "record": "tweet_offensive/test/33", "ms": 60.6, "tokens": 45, "probs": {"offensive": [0.7341, 0.2659]}}
+{"line": 200, "record": "tweet_offensive/test/405", "ms": 62.3, "tokens": 54, "probs": {"offensive": [0.9438, 0.0562]}}
+{"line": 201, "record": "tweet_offensive/test/488", "ms": 63.4, "tokens": 68, "probs": {"offensive": [0.8349, 0.1651]}}
+{"line": 202, "record": "tweet_offensive/test/355", "ms": 70.8, "tokens": 104, "probs": {"offensive": [0.9828, 0.0172]}}
+{"line": 203, "record": "tweet_offensive/test/556", "ms": 65.2, "tokens": 86, "probs": {"offensive": [0.9858, 0.0142]}}
+{"line": 204, "record": "tweet_offensive/test/269", "ms": 64.3, "tokens": 68, "probs": {"offensive": [0.9076, 0.0924]}}
+{"line": 205, "record": "tweet_offensive/test/7", "ms": 65.7, "tokens": 96, "probs": {"offensive": [0.9884, 0.0116]}}
+{"line": 206, "record": "tweet_offensive/test/591", "ms": 66.5, "tokens": 62, "probs": {"offensive": [0.1165, 0.8835]}}
+{"line": 207, "record": "tweet_offensive/test/624", "ms": 63.7, "tokens": 73, "probs": {"offensive": [0.8858, 0.1142]}}
+{"line": 208, "record": "tweet_offensive/test/29", "ms": 69.7, "tokens": 98, "probs": {"offensive": [0.9577, 0.0423]}}
+{"line": 209, "record": "tweet_offensive/test/238", "ms": 64.3, "tokens": 68, "probs": {"offensive": [0.6576, 0.3424]}}
+{"line": 210, "record": "tweet_offensive/test/647", "ms": 66.6, "tokens": 93, "probs": {"offensive": [0.4452, 0.5548]}}
+{"line": 211, "record": "tweet_offensive/test/809", "ms": 63.5, "tokens": 66, "probs": {"offensive": [0.8216, 0.1784]}}
+{"line": 212, "record": "tweet_offensive/test/331", "ms": 71.8, "tokens": 100, "probs": {"offensive": [0.8376, 0.1624]}}
+{"line": 213, "record": "tweet_offensive/test/732", "ms": 66.9, "tokens": 81, "probs": {"offensive": [0.7485, 0.2515]}}
+{"line": 214, "record": "tweet_offensive/test/559", "ms": 62.6, "tokens": 50, "probs": {"offensive": [0.0922, 0.9078]}}
+{"line": 215, "record": "tweet_offensive/test/324", "ms": 74.2, "tokens": 119, "probs": {"offensive": [0.9359, 0.0641]}}
+{"line": 216, "record": "tweet_offensive/test/544", "ms": 63.8, "tokens": 66, "probs": {"offensive": [0.2222, 0.7778]}}
+{"line": 217, "record": "tweet_offensive/test/343", "ms": 97.2, "tokens": 91, "probs": {"offensive": [0.6895, 0.3105]}}
+{"line": 218, "record": "tweet_offensive/test/494", "ms": 71.4, "tokens": 101, "probs": {"offensive": [0.9272, 0.0728]}}
+{"line": 219, "record": "tweet_offensive/test/12", "ms": 65.8, "tokens": 94, "probs": {"offensive": [0.9691, 0.0309]}}
+{"line": 220, "record": "tweet_offensive/test/356", "ms": 61.0, "tokens": 53, "probs": {"offensive": [0.9229, 0.0771]}}
+{"line": 221, "record": "tweet_offensive/test/699", "ms": 61.4, "tokens": 59, "probs": {"offensive": [0.673, 0.327]}}
+{"line": 222, "record": "tweet_offensive/test/555", "ms": 64.8, "tokens": 88, "probs": {"offensive": [0.6731, 0.3269]}}
+{"line": 223, "record": "tweet_offensive/test/295", "ms": 64.8, "tokens": 90, "probs": {"offensive": [0.392, 0.608]}}
+{"line": 224, "record": "tweet_offensive/test/160", "ms": 62.8, "tokens": 71, "probs": {"offensive": [0.7372, 0.2628]}}
+{"line": 225, "record": "tweet_offensive/test/60", "ms": 75.9, "tokens": 123, "probs": {"offensive": [0.8808, 0.1192]}}
+{"line": 226, "record": "tweet_offensive/test/2", "ms": 65.2, "tokens": 89, "probs": {"offensive": [0.6522, 0.3478]}}
+{"line": 227, "record": "tweet_offensive/test/205", "ms": 65.1, "tokens": 86, "probs": {"offensive": [0.1996, 0.8004]}}
+{"line": 228, "record": "tweet_offensive/test/370", "ms": 62.0, "tokens": 59, "probs": {"offensive": [0.8268, 0.1732]}}
+{"line": 229, "record": "tweet_offensive/test/588", "ms": 64.0, "tokens": 75, "probs": {"offensive": [0.2832, 0.7168]}}
+{"line": 230, "record": "tweet_offensive/test/56", "ms": 66.1, "tokens": 94, "probs": {"offensive": [0.8648, 0.1352]}}
+{"line": 231, "record": "tweet_offensive/test/545", "ms": 64.4, "tokens": 78, "probs": {"offensive": [0.1631, 0.8369]}}
+{"line": 232, "record": "tweet_offensive/test/8", "ms": 64.2, "tokens": 73, "probs": {"offensive": [0.284, 0.716]}}
+{"line": 233, "record": "tweet_offensive/test/782", "ms": 70.9, "tokens": 100, "probs": {"offensive": [0.9887, 0.0113]}}
+{"line": 234, "record": "tweet_offensive/test/141", "ms": 65.7, "tokens": 91, "probs": {"offensive": [0.764, 0.236]}}
+{"line": 235, "record": "tweet_offensive/test/91", "ms": 63.7, "tokens": 69, "probs": {"offensive": [0.8524, 0.1476]}}
+{"line": 236, "record": "tweet_offensive/test/678", "ms": 70.2, "tokens": 102, "probs": {"offensive": [0.5581, 0.4419]}}
+{"line": 237, "record": "tweet_offensive/test/830", "ms": 63.8, "tokens": 70, "probs": {"offensive": [0.4828, 0.5172]}}
+{"line": 238, "record": "tweet_offensive/test/98", "ms": 95.1, "tokens": 115, "probs": {"offensive": [0.7673, 0.2327]}}
+{"line": 239, "record": "tweet_offensive/test/509", "ms": 63.9, "tokens": 76, "probs": {"offensive": [0.9699, 0.0301]}}
+{"line": 240, "record": "tweet_offensive/test/263", "ms": 64.3, "tokens": 96, "probs": {"offensive": [0.7922, 0.2078]}}
+{"line": 241, "record": "qnli/validation/1714", "ms": 70.1, "tokens": 100, "probs": {"answers": [0.0051, 0.9949]}}
+{"line": 242, "record": "qnli/validation/1900", "ms": 73.1, "tokens": 101, "probs": {"answers": [0.9976, 0.0024]}}
+{"line": 243, "record": "qnli/validation/2575", "ms": 66.6, "tokens": 57, "probs": {"answers": [0.0394, 0.9606]}}
+{"line": 244, "record": "qnli/validation/1998", "ms": 63.2, "tokens": 70, "probs": {"answers": [0.9944, 0.0056]}}
+{"line": 245, "record": "qnli/validation/4117", "ms": 79.7, "tokens": 143, "probs": {"answers": [0.0242, 0.9758]}}
+{"line": 246, "record": "qnli/validation/3930", "ms": 65.8, "tokens": 89, "probs": {"answers": [0.0128, 0.9872]}}
+{"line": 247, "record": "qnli/validation/5417", "ms": 63.4, "tokens": 69, "probs": {"answers": [0.6405, 0.3595]}}
+{"line": 248, "record": "qnli/validation/182", "ms": 62.2, "tokens": 60, "probs": {"answers": [0.65, 0.35]}}
+{"line": 249, "record": "qnli/validation/416", "ms": 65.9, "tokens": 81, "probs": {"answers": [0.9993, 0.0007]}}
+{"line": 250, "record": "qnli/validation/2695", "ms": 62.7, "tokens": 60, "probs": {"answers": [0.9909, 0.0091]}}
+{"line": 251, "record": "qnli/validation/3379", "ms": 64.3, "tokens": 78, "probs": {"answers": [0.9972, 0.0028]}}
+{"line": 252, "record": "qnli/validation/4802", "ms": 62.2, "tokens": 56, "probs": {"answers": [0.0535, 0.9465]}}
+{"line": 253, "record": "qnli/validation/1028", "ms": 65.9, "tokens": 90, "probs": {"answers": [0.0928, 0.9072]}}
+{"line": 254, "record": "qnli/validation/1106", "ms": 69.2, "tokens": 58, "probs": {"answers": [0.1355, 0.8645]}}
+{"line": 255, "record": "qnli/validation/1945", "ms": 71.7, "tokens": 75, "probs": {"answers": [0.0099, 0.9901]}}
+{"line": 256, "record": "qnli/validation/1749", "ms": 75.0, "tokens": 103, "probs": {"answers": [0.012, 0.988]}}
+{"line": 257, "record": "qnli/validation/5119", "ms": 64.6, "tokens": 77, "probs": {"answers": [0.0819, 0.9181]}}
+{"line": 258, "record": "qnli/validation/4476", "ms": 65.4, "tokens": 86, "probs": {"answers": [0.0029, 0.9971]}}
+{"line": 259, "record": "qnli/validation/2679", "ms": 61.1, "tokens": 50, "probs": {"answers": [0.9849, 0.0151]}}
+{"line": 260, "record": "qnli/validation/4070", "ms": 66.4, "tokens": 91, "probs": {"answers": [0.1395, 0.8605]}}
+{"line": 261, "record": "qnli/validation/2378", "ms": 65.1, "tokens": 74, "probs": {"answers": [0.9977, 0.0023]}}
+{"line": 262, "record": "qnli/validation/3361", "ms": 63.6, "tokens": 65, "probs": {"answers": [0.9449, 0.0551]}}
+{"line": 263, "record": "qnli/validation/407", "ms": 59.5, "tokens": 64, "probs": {"answers": [0.0073, 0.9927]}}
+{"line": 264, "record": "qnli/validation/4731", "ms": 64.2, "tokens": 71, "probs": {"answers": [0.0326, 0.9674]}}
+{"line": 265, "record": "qnli/validation/946", "ms": 62.8, "tokens": 63, "probs": {"answers": [0.0179, 0.9821]}}
+{"line": 266, "record": "qnli/validation/886", "ms": 64.5, "tokens": 75, "probs": {"answers": [0.9928, 0.0072]}}
+{"line": 267, "record": "qnli/validation/4136", "ms": 61.9, "tokens": 54, "probs": {"answers": [0.6673, 0.3327]}}
+{"line": 268, "record": "qnli/validation/3906", "ms": 66.1, "tokens": 91, "probs": {"answers": [0.9938, 0.0062]}}
+{"line": 269, "record": "qnli/validation/798", "ms": 61.8, "tokens": 51, "probs": {"answers": [0.8144, 0.1856]}}
+{"line": 270, "record": "qnli/validation/4307", "ms": 62.3, "tokens": 59, "probs": {"answers": [0.9866, 0.0134]}}
+{"line": 271, "record": "qnli/validation/3885", "ms": 64.4, "tokens": 78, "probs": {"answers": [0.9533, 0.0467]}}
+{"line": 272, "record": "qnli/validation/3088", "ms": 65.7, "tokens": 87, "probs": {"answers": [0.0222, 0.9778]}}
+{"line": 273, "record": "qnli/validation/1583", "ms": 69.9, "tokens": 100, "probs": {"answers": [0.1584, 0.8416]}}
+{"line": 274, "record": "qnli/validation/4729", "ms": 73.4, "tokens": 127, "probs": {"answers": [0.1121, 0.8879]}}
+{"line": 275, "record": "qnli/validation/821", "ms": 64.2, "tokens": 70, "probs": {"answers": [0.6503, 0.3497]}}
+{"line": 276, "record": "qnli/validation/3064", "ms": 64.3, "tokens": 70, "probs": {"answers": [0.0035, 0.9965]}}
+{"line": 277, "record": "qnli/validation/661", "ms": 72.3, "tokens": 100, "probs": {"answers": [0.954, 0.046]}}
+{"line": 278, "record": "qnli/validation/2972", "ms": 67.1, "tokens": 83, "probs": {"answers": [0.0046, 0.9954]}}
+{"line": 279, "record": "qnli/validation/4577", "ms": 72.9, "tokens": 98, "probs": {"answers": [0.9985, 0.0015]}}
+{"line": 280, "record": "qnli/validation/2081", "ms": 68.1, "tokens": 84, "probs": {"answers": [0.7201, 0.2799]}}
+{"line": 281, "record": "qnli/validation/4985", "ms": 66.6, "tokens": 86, "probs": {"answers": [0.9922, 0.0078]}}
+{"line": 282, "record": "qnli/validation/1574", "ms": 64.9, "tokens": 61, "probs": {"answers": [0.9934, 0.0066]}}
+{"line": 283, "record": "qnli/validation/5299", "ms": 63.9, "tokens": 66, "probs": {"answers": [0.9993, 0.0007]}}
+{"line": 284, "record": "qnli/validation/3092", "ms": 66.6, "tokens": 91, "probs": {"answers": [0.2074, 0.7926]}}
+{"line": 285, "record": "qnli/validation/2384", "ms": 63.5, "tokens": 57, "probs": {"answers": [0.9987, 0.0013]}}
+{"line": 286, "record": "qnli/validation/4306", "ms": 66.0, "tokens": 63, "probs": {"answers": [0.9905, 0.0095]}}
+{"line": 287, "record": "qnli/validation/78", "ms": 66.0, "tokens": 73, "probs": {"answers": [0.0039, 0.9961]}}
+{"line": 288, "record": "qnli/validation/1220", "ms": 66.5, "tokens": 68, "probs": {"answers": [0.1186, 0.8814]}}
+{"line": 289, "record": "qnli/validation/1877", "ms": 87.1, "tokens": 156, "probs": {"answers": [0.9975, 0.0025]}}
+{"line": 290, "record": "qnli/validation/289", "ms": 65.8, "tokens": 52, "probs": {"answers": [0.2445, 0.7555]}}
+{"line": 291, "record": "qnli/validation/4298", "ms": 66.9, "tokens": 74, "probs": {"answers": [0.9983, 0.0017]}}
+{"line": 292, "record": "qnli/validation/2560", "ms": 73.8, "tokens": 99, "probs": {"answers": [0.8877, 0.1123]}}
+{"line": 293, "record": "qnli/validation/3402", "ms": 67.5, "tokens": 77, "probs": {"answers": [0.0156, 0.9844]}}
+{"line": 294, "record": "qnli/validation/3821", "ms": 65.1, "tokens": 58, "probs": {"answers": [0.0096, 0.9904]}}
+{"line": 295, "record": "qnli/validation/2750", "ms": 69.4, "tokens": 69, "probs": {"answers": [0.0206, 0.9794]}}
+{"line": 296, "record": "qnli/validation/5134", "ms": 61.9, "tokens": 49, "probs": {"answers": [0.1793, 0.8207]}}
+{"line": 297, "record": "qnli/validation/2206", "ms": 66.2, "tokens": 94, "probs": {"answers": [0.9982, 0.0018]}}
+{"line": 298, "record": "qnli/validation/401", "ms": 66.3, "tokens": 92, "probs": {"answers": [0.9758, 0.0242]}}
+{"line": 299, "record": "qnli/validation/2203", "ms": 63.5, "tokens": 66, "probs": {"answers": [0.0091, 0.9909]}}
+{"line": 300, "record": "qnli/validation/4777", "ms": 62.5, "tokens": 59, "probs": {"answers": [0.0108, 0.9892]}}
+{"line": 301, "record": "qnli/validation/2373", "ms": 65.1, "tokens": 46, "probs": {"answers": [0.8531, 0.1469]}}
+{"line": 302, "record": "qnli/validation/4839", "ms": 63.9, "tokens": 69, "probs": {"answers": [0.9973, 0.0027]}}
+{"line": 303, "record": "qnli/validation/4933", "ms": 63.8, "tokens": 68, "probs": {"answers": [0.9909, 0.0091]}}
+{"line": 304, "record": "qnli/validation/3270", "ms": 65.6, "tokens": 84, "probs": {"answers": [0.023, 0.977]}}
+{"line": 305, "record": "qnli/validation/560", "ms": 64.0, "tokens": 66, "probs": {"answers": [0.7734, 0.2266]}}
+{"line": 306, "record": "qnli/validation/2807", "ms": 64.8, "tokens": 77, "probs": {"answers": [0.0022, 0.9978]}}
+{"line": 307, "record": "qnli/validation/300", "ms": 65.0, "tokens": 67, "probs": {"answers": [0.9134, 0.0866]}}
+{"line": 308, "record": "qnli/validation/717", "ms": 74.7, "tokens": 98, "probs": {"answers": [0.0124, 0.9876]}}
+{"line": 309, "record": "qnli/validation/3407", "ms": 62.4, "tokens": 60, "probs": {"answers": [0.9816, 0.0184]}}
+{"line": 310, "record": "qnli/validation/590", "ms": 65.9, "tokens": 81, "probs": {"answers": [0.9867, 0.0133]}}
+{"line": 311, "record": "qnli/validation/423", "ms": 63.8, "tokens": 74, "probs": {"answers": [0.6658, 0.3342]}}
+{"line": 312, "record": "qnli/validation/324", "ms": 64.2, "tokens": 76, "probs": {"answers": [0.0846, 0.9154]}}
+{"line": 313, "record": "qnli/validation/164", "ms": 64.2, "tokens": 75, "probs": {"answers": [0.0055, 0.9945]}}
+{"line": 314, "record": "qnli/validation/4871", "ms": 61.8, "tokens": 48, "probs": {"answers": [0.5859, 0.4141]}}
+{"line": 315, "record": "qnli/validation/864", "ms": 65.8, "tokens": 80, "probs": {"answers": [0.0032, 0.9968]}}
+{"line": 316, "record": "qnli/validation/2945", "ms": 70.5, "tokens": 98, "probs": {"answers": [0.015, 0.985]}}
+{"line": 317, "record": "qnli/validation/3998", "ms": 79.1, "tokens": 134, "probs": {"answers": [0.6338, 0.3662]}}
+{"line": 318, "record": "qnli/validation/2896", "ms": 63.7, "tokens": 68, "probs": {"answers": [0.9932, 0.0068]}}
+{"line": 319, "record": "qnli/validation/2221", "ms": 65.2, "tokens": 76, "probs": {"answers": [0.9512, 0.0488]}}
+{"line": 320, "record": "qnli/validation/3538", "ms": 59.3, "tokens": 64, "probs": {"answers": [0.9645, 0.0355]}}
+{"line": 321, "record": "paws/test/856", "ms": 66.1, "tokens": 87, "probs": {"paraphrase": [0.2885, 0.7115]}}
+{"line": 322, "record": "paws/test/2686", "ms": 76.6, "tokens": 119, "probs": {"paraphrase": [0.1384, 0.8616]}}
+{"line": 323, "record": "paws/test/4712", "ms": 70.1, "tokens": 93, "probs": {"paraphrase": [0.9881, 0.0119]}}
+{"line": 324, "record": "paws/test/3056", "ms": 72.9, "tokens": 113, "probs": {"paraphrase": [0.0072, 0.9928]}}
+{"line": 325, "record": "paws/test/3990", "ms": 67.0, "tokens": 92, "probs": {"paraphrase": [0.0166, 0.9834]}}
+{"line": 326, "record": "paws/test/529", "ms": 72.0, "tokens": 102, "probs": {"paraphrase": [0.0609, 0.9391]}}
+{"line": 327, "record": "paws/test/116", "ms": 72.7, "tokens": 103, "probs": {"paraphrase": [0.0777, 0.9223]}}
+{"line": 328, "record": "paws/test/2414", "ms": 65.8, "tokens": 78, "probs": {"paraphrase": [0.0059, 0.9941]}}
+{"line": 329, "record": "paws/test/2795", "ms": 66.0, "tokens": 79, "probs": {"paraphrase": [0.0171, 0.9829]}}
+{"line": 330, "record": "paws/test/4273", "ms": 80.3, "tokens": 133, "probs": {"paraphrase": [0.3044, 0.6956]}}
+{"line": 331, "record": "paws/test/6236", "ms": 66.3, "tokens": 92, "probs": {"paraphrase": [0.9023, 0.0977]}}
+{"line": 332, "record": "paws/test/1125", "ms": 71.0, "tokens": 105, "probs": {"paraphrase": [0.019, 0.981]}}
+{"line": 333, "record": "paws/test/3102", "ms": 72.0, "tokens": 99, "probs": {"paraphrase": [0.2163, 0.7837]}}
+{"line": 334, "record": "paws/test/4325", "ms": 73.1, "tokens": 113, "probs": {"paraphrase": [0.034, 0.966]}}
+{"line": 335, "record": "paws/test/2474", "ms": 65.5, "tokens": 83, "probs": {"paraphrase": [0.2596, 0.7404]}}
+{"line": 336, "record": "paws/test/1182", "ms": 65.2, "tokens": 80, "probs": {"paraphrase": [0.1044, 0.8956]}}
+{"line": 337, "record": "paws/test/504", "ms": 65.0, "tokens": 74, "probs": {"paraphrase": [0.1058, 0.8942]}}
+{"line": 338, "record": "paws/test/5828", "ms": 65.8, "tokens": 84, "probs": {"paraphrase": [0.0639, 0.9361]}}
+{"line": 339, "record": "paws/test/6633", "ms": 66.2, "tokens": 89, "probs": {"paraphrase": [0.9982, 0.0018]}}
+{"line": 340, "record": "paws/test/6102", "ms": 66.9, "tokens": 81, "probs": {"paraphrase": [0.0456, 0.9544]}}
+{"line": 341, "record": "paws/test/6859", "ms": 71.4, "tokens": 100, "probs": {"paraphrase": [0.1625, 0.8375]}}
+{"line": 342, "record": "paws/test/1560", "ms": 65.0, "tokens": 67, "probs": {"paraphrase": [0.0698, 0.9302]}}
+{"line": 343, "record": "paws/test/7712", "ms": 73.0, "tokens": 119, "probs": {"paraphrase": [0.0238, 0.9762]}}
+{"line": 344, "record": "paws/test/3530", "ms": 71.2, "tokens": 100, "probs": {"paraphrase": [0.995, 0.005]}}
+{"line": 345, "record": "paws/test/5349", "ms": 65.8, "tokens": 82, "probs": {"paraphrase": [0.5227, 0.4773]}}
+{"line": 346, "record": "paws/test/5078", "ms": 110.7, "tokens": 122, "probs": {"paraphrase": [0.032, 0.968]}}
+{"line": 347, "record": "paws/test/3539", "ms": 70.8, "tokens": 97, "probs": {"paraphrase": [0.9888, 0.0112]}}
+{"line": 348, "record": "paws/test/4865", "ms": 66.0, "tokens": 88, "probs": {"paraphrase": [0.9711, 0.0289]}}
+{"line": 349, "record": "paws/test/1721", "ms": 71.3, "tokens": 102, "probs": {"paraphrase": [0.023, 0.977]}}
+{"line": 350, "record": "paws/test/2075", "ms": 72.1, "tokens": 108, "probs": {"paraphrase": [0.9745, 0.0255]}}
+{"line": 351, "record": "paws/test/3572", "ms": 71.2, "tokens": 98, "probs": {"paraphrase": [0.9703, 0.0297]}}
+{"line": 352, "record": "paws/test/4653", "ms": 72.0, "tokens": 104, "probs": {"paraphrase": [0.2291, 0.7709]}}
+{"line": 353, "record": "paws/test/3117", "ms": 64.1, "tokens": 74, "probs": {"paraphrase": [0.0598, 0.9402]}}
+{"line": 354, "record": "paws/test/5245", "ms": 74.8, "tokens": 111, "probs": {"paraphrase": [0.321, 0.679]}}
+{"line": 355, "record": "paws/test/4147", "ms": 71.2, "tokens": 100, "probs": {"paraphrase": [0.1985, 0.8015]}}
+{"line": 356, "record": "paws/test/848", "ms": 64.3, "tokens": 71, "probs": {"paraphrase": [0.6022, 0.3978]}}
+{"line": 357, "record": "paws/test/7456", "ms": 66.6, "tokens": 94, "probs": {"paraphrase": [0.9878, 0.0122]}}
+{"line": 358, "record": "paws/test/3320", "ms": 126.0, "tokens": 121, "probs": {"paraphrase": [0.0247, 0.9753]}}
+{"line": 359, "record": "paws/test/6578", "ms": 65.6, "tokens": 78, "probs": {"paraphrase": [0.0463, 0.9537]}}
+{"line": 360, "record": "paws/test/4291", "ms": 72.3, "tokens": 97, "probs": {"paraphrase": [0.0342, 0.9658]}}
+{"line": 361, "record": "paws/test/5566", "ms": 68.3, "tokens": 87, "probs": {"paraphrase": [0.1538, 0.8462]}}
+{"line": 362, "record": "paws/test/1507", "ms": 67.7, "tokens": 94, "probs": {"paraphrase": [0.04, 0.96]}}
+{"line": 363, "record": "paws/test/4799", "ms": 70.4, "tokens": 98, "probs": {"paraphrase": [0.0425, 0.9575]}}
+{"line": 364, "record": "paws/test/7027", "ms": 64.3, "tokens": 71, "probs": {"paraphrase": [0.3581, 0.6419]}}
+{"line": 365, "record": "paws/test/4634", "ms": 66.1, "tokens": 96, "probs": {"paraphrase": [0.9783, 0.0217]}}
+{"line": 366, "record": "paws/test/4925", "ms": 68.6, "tokens": 79, "probs": {"paraphrase": [0.9701, 0.0299]}}
+{"line": 367, "record": "paws/test/3171", "ms": 110.3, "tokens": 95, "probs": {"paraphrase": [0.9895, 0.0105]}}
+{"line": 368, "record": "paws/test/2022", "ms": 68.8, "tokens": 83, "probs": {"paraphrase": [0.0748, 0.9252]}}
+{"line": 369, "record": "paws/test/3545", "ms": 75.3, "tokens": 105, "probs": {"paraphrase": [0.9393, 0.0607]}}
+{"line": 370, "record": "paws/test/7941", "ms": 66.1, "tokens": 71, "probs": {"paraphrase": [0.677, 0.323]}}
+{"line": 371, "record": "paws/test/7910", "ms": 66.4, "tokens": 86, "probs": {"paraphrase": [0.9792, 0.0208]}}
+{"line": 372, "record": "paws/test/5301", "ms": 74.4, "tokens": 103, "probs": {"paraphrase": [0.2936, 0.7064]}}
+{"line": 373, "record": "paws/test/6991", "ms": 69.3, "tokens": 75, "probs": {"paraphrase": [0.9751, 0.0249]}}
+{"line": 374, "record": "paws/test/6910", "ms": 70.6, "tokens": 93, "probs": {"paraphrase": [0.9836, 0.0164]}}
+{"line": 375, "record": "paws/test/3920", "ms": 63.0, "tokens": 64, "probs": {"paraphrase": [0.0436, 0.9564]}}
+{"line": 376, "record": "paws/test/1760", "ms": 76.0, "tokens": 106, "probs": {"paraphrase": [0.9813, 0.0187]}}
+{"line": 377, "record": "paws/test/1127", "ms": 118.2, "tokens": 107, "probs": {"paraphrase": [0.6806, 0.3194]}}
+{"line": 378, "record": "paws/test/5558", "ms": 68.8, "tokens": 88, "probs": {"paraphrase": [0.9933, 0.0067]}}
+{"line": 379, "record": "paws/test/4037", "ms": 81.1, "tokens": 132, "probs": {"paraphrase": [0.0206, 0.9794]}}
+{"line": 380, "record": "paws/test/2810", "ms": 71.3, "tokens": 108, "probs": {"paraphrase": [0.9919, 0.0081]}}
+{"line": 381, "record": "paws/test/1152", "ms": 73.1, "tokens": 118, "probs": {"paraphrase": [0.4172, 0.5828]}}
+{"line": 382, "record": "paws/test/4011", "ms": 65.2, "tokens": 66, "probs": {"paraphrase": [0.3301, 0.6699]}}
+{"line": 383, "record": "paws/test/4702", "ms": 65.1, "tokens": 81, "probs": {"paraphrase": [0.1114, 0.8886]}}
+{"line": 384, "record": "paws/test/2345", "ms": 66.3, "tokens": 90, "probs": {"paraphrase": [0.026, 0.974]}}
+{"line": 385, "record": "paws/test/7244", "ms": 63.5, "tokens": 71, "probs": {"paraphrase": [0.0137, 0.9863]}}
+{"line": 386, "record": "paws/test/2543", "ms": 81.6, "tokens": 144, "probs": {"paraphrase": [0.9615, 0.0385]}}
+{"line": 387, "record": "paws/test/739", "ms": 73.5, "tokens": 121, "probs": {"paraphrase": [0.0734, 0.9266]}}
+{"line": 388, "record": "paws/test/595", "ms": 71.2, "tokens": 98, "probs": {"paraphrase": [0.9941, 0.0059]}}
+{"line": 389, "record": "paws/test/7832", "ms": 74.3, "tokens": 119, "probs": {"paraphrase": [0.0947, 0.9053]}}
+{"line": 390, "record": "paws/test/1573", "ms": 73.8, "tokens": 101, "probs": {"paraphrase": [0.0454, 0.9546]}}
+{"line": 391, "record": "paws/test/2789", "ms": 64.4, "tokens": 77, "probs": {"paraphrase": [0.987, 0.013]}}
+{"line": 392, "record": "paws/test/3522", "ms": 72.4, "tokens": 111, "probs": {"paraphrase": [0.7877, 0.2123]}}
+{"line": 393, "record": "paws/test/7620", "ms": 66.0, "tokens": 87, "probs": {"paraphrase": [0.0151, 0.9849]}}
+{"line": 394, "record": "paws/test/2134", "ms": 70.9, "tokens": 97, "probs": {"paraphrase": [0.938, 0.062]}}
+{"line": 395, "record": "paws/test/7174", "ms": 83.1, "tokens": 133, "probs": {"paraphrase": [0.4887, 0.5113]}}
+{"line": 396, "record": "paws/test/684", "ms": 71.3, "tokens": 83, "probs": {"paraphrase": [0.7843, 0.2157]}}
+{"line": 397, "record": "paws/test/7060", "ms": 71.7, "tokens": 108, "probs": {"paraphrase": [0.8788, 0.1212]}}
+{"line": 398, "record": "paws/test/5639", "ms": 72.2, "tokens": 106, "probs": {"paraphrase": [0.9919, 0.0081]}}
+{"line": 399, "record": "paws/test/3183", "ms": 65.9, "tokens": 87, "probs": {"paraphrase": [0.9874, 0.0126]}}
+{"line": 400, "record": "paws/test/1916", "ms": 73.1, "tokens": 121, "probs": {"paraphrase": [0.0657, 0.9343]}}
+{"line": 401, "record": "sciq/test/936", "ms": 84.3, "tokens": 155, "probs": {"answer": [0.0008, 0.9881, 0.0082, 0.0029]}}
+{"line": 402, "record": "sciq/test/925", "ms": 63.3, "tokens": 63, "probs": {"answer": [0.0682, 0.063, 0.0917, 0.7771]}}
+{"line": 403, "record": "sciq/test/269", "ms": 71.5, "tokens": 108, "probs": {"answer": [0.9997, 0.0003, 0.0, 0.0]}}
+{"line": 404, "record": "sciq/test/258", "ms": 71.1, "tokens": 103, "probs": {"answer": [0.0006, 0.001, 0.0065, 0.9919]}}
+{"line": 405, "record": "sciq/test/46", "ms": 73.9, "tokens": 123, "probs": {"answer": [0.0011, 0.9388, 0.0581, 0.002]}}
+{"line": 406, "record": "sciq/test/670", "ms": 66.6, "tokens": 76, "probs": {"answer": [0.9937, 0.0035, 0.001, 0.0018]}}
+{"line": 407, "record": "sciq/test/731", "ms": 91.5, "tokens": 190, "probs": {"answer": [0.0003, 0.9972, 0.002, 0.0005]}}
+{"line": 408, "record": "sciq/test/955", "ms": 67.6, "tokens": 88, "probs": {"answer": [0.0003, 0.9967, 0.0011, 0.0019]}}
+{"line": 409, "record": "sciq/test/490", "ms": 91.4, "tokens": 168, "probs": {"answer": [0.985899, 0.010101, 0.0017, 0.0023]}}
+{"line": 410, "record": "sciq/test/633", "ms": 84.3, "tokens": 150, "probs": {"answer": [0.0002, 0.0002, 0.0003, 0.9993]}}
+{"line": 411, "record": "sciq/test/889", "ms": 70.5, "tokens": 91, "probs": {"answer": [0.0056, 0.001, 0.0002, 0.9932]}}
+{"line": 412, "record": "sciq/test/291", "ms": 165.1, "tokens": 372, "probs": {"answer": [0.0011, 0.001, 0.9977, 0.0002]}}
+{"line": 413, "record": "sciq/test/558", "ms": 92.9, "tokens": 198, "probs": {"answer": [0.0006, 0.0008, 0.9957, 0.0029]}}
+{"line": 414, "record": "sciq/test/712", "ms": 83.0, "tokens": 153, "probs": {"answer": [0.9944, 0.003, 0.0011, 0.0015]}}
+{"line": 415, "record": "sciq/test/651", "ms": 78.8, "tokens": 133, "probs": {"answer": [0.0014, 0.0005, 0.0003, 0.9978]}}
+{"line": 416, "record": "sciq/test/524", "ms": 136.5, "tokens": 276, "probs": {"answer": [0.0005, 0.9953, 0.0028, 0.0014]}}
+{"line": 417, "record": "sciq/test/512", "ms": 149.3, "tokens": 341, "probs": {"answer": [0.2441, 0.0062, 0.0374, 0.7123]}}
+{"line": 418, "record": "sciq/test/246", "ms": 89.7, "tokens": 175, "probs": {"answer": [0.9942, 0.0024, 0.002, 0.0014]}}
+{"line": 419, "record": "sciq/test/844", "ms": 64.4, "tokens": 71, "probs": {"answer": [0.9891, 0.0054, 0.0027, 0.0028]}}
+{"line": 420, "record": "sciq/test/810", "ms": 67.7, "tokens": 80, "probs": {"answer": [0.9991, 0.0002, 0.0002, 0.0005]}}
+{"line": 421, "record": "sciq/test/788", "ms": 73.1, "tokens": 121, "probs": {"answer": [0.0002, 0.0003, 0.0157, 0.9838]}}
+{"line": 422, "record": "sciq/test/410", "ms": 64.0, "tokens": 96, "probs": {"answer": [0.0019, 0.9941, 0.0024, 0.0016]}}
+{"line": 423, "record": "sciq/test/686", "ms": 61.1, "tokens": 50, "probs": {"answer": [0.3938, 0.0069, 0.5954, 0.0039]}}
+{"line": 424, "record": "sciq/test/976", "ms": 81.4, "tokens": 130, "probs": {"answer": [0.990501, 0.0037, 0.0047, 0.0011]}}
+{"line": 425, "record": "sciq/test/137", "ms": 89.2, "tokens": 179, "probs": {"answer": [0.0005, 0.0002, 0.9986, 0.0007]}}
+{"line": 426, "record": "sciq/test/35", "ms": 63.0, "tokens": 57, "probs": {"answer": [0.2336, 0.725, 0.0317, 0.0097]}}
+{"line": 427, "record": "sciq/test/147", "ms": 65.4, "tokens": 86, "probs": {"answer": [0.0001, 0.0006, 0.037304, 0.961996]}}
+{"line": 428, "record": "sciq/test/587", "ms": 67.1, "tokens": 77, "probs": {"answer": [0.0003, 0.0004, 0.9981, 0.0012]}}
+{"line": 429, "record": "sciq/test/391", "ms": 72.8, "tokens": 118, "probs": {"answer": [0.0014, 0.9875, 0.0064, 0.0047]}}
+{"line": 430, "record": "sciq/test/152", "ms": 89.7, "tokens": 191, "probs": {"answer": [0.0007, 0.9917, 0.0021, 0.0055]}}
+{"line": 431, "record": "sciq/test/639", "ms": 128.5, "tokens": 276, "probs": {"answer": [0.9988, 0.0002, 0.0006, 0.0004]}}
+{"line": 432, "record": "sciq/test/834", "ms": 102.9, "tokens": 226, "probs": {"answer": [0.2724, 0.096, 0.1368, 0.4948]}}
+{"line": 433, "record": "sciq/test/390", "ms": 79.9, "tokens": 129, "probs": {"answer": [0.0002, 0.0001, 0.0, 0.9997]}}
+{"line": 434, "record": "sciq/test/54", "ms": 80.1, "tokens": 134, "probs": {"answer": [0.989001, 0.002, 0.0023, 0.006699]}}
+{"line": 435, "record": "sciq/test/830", "ms": 61.9, "tokens": 56, "probs": {"answer": [0.0028, 0.9814, 0.0137, 0.0021]}}
+{"line": 436, "record": "sciq/test/450", "ms": 169.9, "tokens": 368, "probs": {"answer": [0.9982, 0.0011, 0.0004, 0.0003]}}
+{"line": 437, "record": "sciq/test/884", "ms": 61.4, "tokens": 48, "probs": {"answer": [0.341766, 0.493151, 0.123488, 0.041596]}}
+{"line": 438, "record": "sciq/test/764", "ms": 84.9, "tokens": 130, "probs": {"answer": [0.9998, 0.0001, 0.0001, 0.0]}}
+{"line": 439, "record": "sciq/test/49", "ms": 62.9, "tokens": 60, "probs": {"answer": [0.045305, 0.008401, 0.020002, 0.926293]}}
+{"line": 440, "record": "sciq/test/693", "ms": 65.4, "tokens": 87, "probs": {"answer": [0.0003, 0.9949, 0.0017, 0.0031]}}
+{"line": 441, "record": "sciq/test/523", "ms": 87.4, "tokens": 161, "probs": {"answer": [0.0014, 0.9969, 0.0009, 0.0008]}}
+{"line": 442, "record": "sciq/test/151", "ms": 62.6, "tokens": 63, "probs": {"answer": [0.0009, 0.0004, 0.9925, 0.0062]}}
+{"line": 443, "record": "sciq/test/791", "ms": 83.0, "tokens": 151, "probs": {"answer": [0.0014, 0.9898, 0.0085, 0.0003]}}
+{"line": 444, "record": "sciq/test/949", "ms": 64.5, "tokens": 74, "probs": {"answer": [0.002, 0.0033, 0.987, 0.0077]}}
+{"line": 445, "record": "sciq/test/404", "ms": 88.8, "tokens": 163, "probs": {"answer": [0.0003, 0.9986, 0.0005, 0.0006]}}
+{"line": 446, "record": "sciq/test/199", "ms": 95.8, "tokens": 215, "probs": {"answer": [0.9971, 0.0004, 0.0012, 0.0013]}}
+{"line": 447, "record": "sciq/test/248", "ms": 62.6, "tokens": 52, "probs": {"answer": [0.0239, 0.0089, 0.0356, 0.9316]}}
+{"line": 448, "record": "sciq/test/245", "ms": 75.0, "tokens": 117, "probs": {"answer": [0.0004, 0.0004, 0.0013, 0.9979]}}
+{"line": 449, "record": "sciq/test/470", "ms": 83.3, "tokens": 148, "probs": {"answer": [0.0003, 0.0002, 0.9985, 0.001]}}
+{"line": 450, "record": "sciq/test/80", "ms": 65.1, "tokens": 82, "probs": {"answer": [0.9989, 0.0007, 0.0001, 0.0003]}}
+{"line": 451, "record": "sciq/test/477", "ms": 83.1, "tokens": 152, "probs": {"answer": [0.0284, 0.9615, 0.0052, 0.0049]}}
+{"line": 452, "record": "sciq/test/438", "ms": 65.0, "tokens": 75, "probs": {"answer": [0.0007, 0.0004, 0.0002, 0.9987]}}
+{"line": 453, "record": "sciq/test/229", "ms": 71.0, "tokens": 105, "probs": {"answer": [0.0002, 0.0006, 0.9967, 0.0025]}}
+{"line": 454, "record": "sciq/test/6", "ms": 199.1, "tokens": 375, "probs": {"answer": [0.0003, 0.0011, 0.9946, 0.004]}}
+{"line": 455, "record": "sciq/test/805", "ms": 84.6, "tokens": 141, "probs": {"answer": [0.0003, 0.0003, 0.0001, 0.9993]}}
+{"line": 456, "record": "sciq/test/714", "ms": 73.1, "tokens": 118, "probs": {"answer": [0.0023, 0.9922, 0.0048, 0.0007]}}
+{"line": 457, "record": "sciq/test/869", "ms": 65.2, "tokens": 79, "probs": {"answer": [0.0016, 0.994001, 0.001, 0.0034]}}
+{"line": 458, "record": "sciq/test/636", "ms": 83.5, "tokens": 149, "probs": {"answer": [0.0049, 0.0021, 0.987299, 0.005701]}}
+{"line": 459, "record": "sciq/test/780", "ms": 93.8, "tokens": 201, "probs": {"answer": [0.0005, 0.9962, 0.0019, 0.0014]}}
+{"line": 460, "record": "sciq/test/502", "ms": 72.8, "tokens": 114, "probs": {"answer": [0.9892, 0.0031, 0.0026, 0.0051]}}
+{"line": 461, "record": "sciq/test/475", "ms": 94.3, "tokens": 198, "probs": {"answer": [0.9969, 0.0008, 0.0004, 0.0019]}}
+{"line": 462, "record": "sciq/test/418", "ms": 67.2, "tokens": 94, "probs": {"answer": [0.0015, 0.001, 0.0022, 0.9953]}}
+{"line": 463, "record": "sciq/test/360", "ms": 127.3, "tokens": 258, "probs": {"answer": [0.0001, 0.0034, 0.0007, 0.9958]}}
+{"line": 464, "record": "sciq/test/537", "ms": 67.3, "tokens": 95, "probs": {"answer": [0.9985, 0.0007, 0.0004, 0.0004]}}
+{"line": 465, "record": "sciq/test/457", "ms": 82.9, "tokens": 151, "probs": {"answer": [0.9985, 0.0002, 0.0003, 0.001]}}
+{"line": 466, "record": "sciq/test/752", "ms": 86.6, "tokens": 149, "probs": {"answer": [0.9966, 0.0019, 0.0008, 0.0007]}}
+{"line": 467, "record": "sciq/test/981", "ms": 73.8, "tokens": 125, "probs": {"answer": [0.988699, 0.0038, 0.003, 0.0045]}}
+{"line": 468, "record": "sciq/test/588", "ms": 62.8, "tokens": 51, "probs": {"answer": [0.0046, 0.016, 0.6891, 0.2903]}}
+{"line": 469, "record": "sciq/test/183", "ms": 94.6, "tokens": 199, "probs": {"answer": [0.9985, 0.0004, 0.0002, 0.0009]}}
+{"line": 470, "record": "sciq/test/190", "ms": 227.1, "tokens": 362, "probs": {"answer": [0.9943, 0.0002, 0.0003, 0.0052]}}
+{"line": 471, "record": "sciq/test/654", "ms": 65.0, "tokens": 96, "probs": {"answer": [0.9106, 0.0145, 0.0134, 0.0615]}}
+{"line": 472, "record": "sciq/test/737", "ms": 65.6, "tokens": 78, "probs": {"answer": [0.0079, 0.7541, 0.2331, 0.0049]}}
+{"line": 473, "record": "sciq/test/877", "ms": 81.4, "tokens": 143, "probs": {"answer": [0.945005, 0.007199, 0.003, 0.044796]}}
+{"line": 474, "record": "sciq/test/510", "ms": 135.5, "tokens": 126, "probs": {"answer": [0.0005, 0.994, 0.0035, 0.002]}}
+{"line": 475, "record": "sciq/test/499", "ms": 90.6, "tokens": 167, "probs": {"answer": [0.0003, 0.0005, 0.9984, 0.0008]}}
+{"line": 476, "record": "sciq/test/846", "ms": 66.3, "tokens": 89, "probs": {"answer": [0.0016, 0.0006, 0.874513, 0.123288]}}
+{"line": 477, "record": "sciq/test/630", "ms": 87.3, "tokens": 161, "probs": {"answer": [0.9967, 0.0004, 0.0005, 0.0024]}}
+{"line": 478, "record": "sciq/test/255", "ms": 65.3, "tokens": 70, "probs": {"answer": [0.0008, 0.0003, 0.9956, 0.0033]}}
+{"line": 479, "record": "sciq/test/708", "ms": 73.1, "tokens": 119, "probs": {"answer": [0.0013, 0.9546, 0.0421, 0.002]}}
+{"line": 480, "record": "sciq/test/207", "ms": 70.9, "tokens": 90, "probs": {"answer": [0.9991, 0.0002, 0.0006, 0.0001]}}
+{"line": 481, "record": "mmlu/test/13292/none_present", "ms": 72.6, "tokens": 114, "probs": {"answer": [0.282372, 0.10179, 0.410759, 0.111589, 0.093491]}}
+{"line": 482, "record": "mmlu/test/13292/none_absent", "ms": 73.3, "tokens": 103, "probs": {"answer": [0.2629, 0.1401, 0.4376, 0.1594]}}
+{"line": 483, "record": "mmlu/test/13292/permuted", "ms": 72.0, "tokens": 100, "probs": {"answer": [0.272927, 0.340834, 0.212721, 0.173517]}}
+{"line": 484, "record": "mmlu/test/588/none_present", "ms": 66.4, "tokens": 83, "probs": {"answer": [0.0001, 0.9865, 0.0013, 0.0112, 0.0009]}}
+{"line": 485, "record": "mmlu/test/588/none_absent", "ms": 64.7, "tokens": 73, "probs": {"answer": [0.0093, 0.9775, 0.0021, 0.0111]}}
+{"line": 486, "record": "mmlu/test/588/permuted", "ms": 64.8, "tokens": 69, "probs": {"answer": [0.9967, 0.0017, 0.0005, 0.0011]}}
+{"line": 487, "record": "mmlu/test/4589/none_present", "ms": 71.8, "tokens": 116, "probs": {"answer": [0.5267, 0.4343, 0.0087, 0.0102, 0.0201]}}
+{"line": 488, "record": "mmlu/test/4589/none_absent", "ms": 70.1, "tokens": 102, "probs": {"answer": [0.1068, 0.0406, 0.0286, 0.824]}}
+{"line": 489, "record": "mmlu/test/4589/permuted", "ms": 70.4, "tokens": 102, "probs": {"answer": [0.9251, 0.0229, 0.0199, 0.0321]}}
+{"line": 490, "record": "mmlu/test/6099/none_present", "ms": 66.0, "tokens": 95, "probs": {"answer": [0.432057, 0.040196, 0.011599, 0.002, 0.514149]}}
+{"line": 491, "record": "mmlu/test/6099/none_absent", "ms": 65.2, "tokens": 83, "probs": {"answer": [0.0985, 0.0041, 0.8842, 0.0132]}}
+{"line": 492, "record": "mmlu/test/6099/permuted", "ms": 64.9, "tokens": 81, "probs": {"answer": [0.8901, 0.0822, 0.0236, 0.0041]}}
+{"line": 493, "record": "mmlu/test/6139/none_present", "ms": 65.1, "tokens": 86, "probs": {"answer": [0.9872, 0.0013, 0.0018, 0.0004, 0.0093]}}
+{"line": 494, "record": "mmlu/test/6139/none_absent", "ms": 64.1, "tokens": 73, "probs": {"answer": [0.0031, 0.007599, 0.013599, 0.975702]}}
+{"line": 495, "record": "mmlu/test/6139/permuted", "ms": 63.6, "tokens": 72, "probs": {"answer": [0.9961, 0.0015, 0.002, 0.0004]}}
+{"line": 496, "record": "mmlu/test/13810/none_present", "ms": 70.3, "tokens": 101, "probs": {"answer": [0.0009, 0.0017, 0.037, 0.0627, 0.8977]}}
+{"line": 497, "record": "mmlu/test/13810/none_absent", "ms": 66.3, "tokens": 92, "probs": {"answer": [0.0041, 0.0012, 0.09679, 0.89791]}}
+{"line": 498, "record": "mmlu/test/13810/permuted", "ms": 66.3, "tokens": 87, "probs": {"answer": [0.0013, 0.0772, 0.003, 0.9185]}}
+{"line": 499, "record": "mmlu/test/12434/none_present", "ms": 126.6, "tokens": 257, "probs": {"answer": [0.0048, 0.4666, 0.5172, 0.0076, 0.0038]}}
+{"line": 500, "record": "mmlu/test/12434/none_absent", "ms": 190.6, "tokens": 250, "probs": {"answer": [0.9868, 0.0061, 0.0041, 0.003]}}
+{"line": 501, "record": "mmlu/test/12434/permuted", "ms": 287.6, "tokens": 243, "probs": {"answer": [0.9667, 0.0162, 0.0099, 0.0072]}}
+{"line": 502, "record": "mmlu/test/123/none_present", "ms": 70.4, "tokens": 100, "probs": {"answer": [0.0071, 0.6866, 0.0022, 0.2993, 0.0048]}}
+{"line": 503, "record": "mmlu/test/123/none_absent", "ms": 68.3, "tokens": 85, "probs": {"answer": [0.0068, 0.7248, 0.0931, 0.1753]}}
+{"line": 504, "record": "mmlu/test/123/permuted", "ms": 65.2, "tokens": 86, "probs": {"answer": [0.8583, 0.0313, 0.0838, 0.0266]}}
+{"line": 505, "record": "mmlu/test/2785/none_present", "ms": 72.6, "tokens": 116, "probs": {"answer": [0.040396, 0.0025, 0.042696, 0.0004, 0.914009]}}
+{"line": 506, "record": "mmlu/test/2785/none_absent", "ms": 71.1, "tokens": 105, "probs": {"answer": [0.461854, 0.019398, 0.516148, 0.0026]}}
+{"line": 507, "record": "mmlu/test/2785/permuted", "ms": 71.1, "tokens": 102, "probs": {"answer": [0.0414, 0.0006, 0.0022, 0.9558]}}
+{"line": 508, "record": "mmlu/test/5717/none_present", "ms": 153.7, "tokens": 341, "probs": {"answer": [0.0003, 0.0689, 0.0009, 0.9292, 0.0007]}}
+{"line": 509, "record": "mmlu/test/5717/none_absent", "ms": 144.7, "tokens": 326, "probs": {"answer": [0.9889, 0.0028, 0.0056, 0.0027]}}
+{"line": 510, "record": "mmlu/test/5717/permuted", "ms": 143.0, "tokens": 327, "probs": {"answer": [0.0007, 0.9955, 0.0027, 0.0011]}}
+{"line": 511, "record": "mmlu/test/8037/none_present", "ms": 65.4, "tokens": 84, "probs": {"answer": [0.0087, 0.0495, 0.8755, 0.0555, 0.0108]}}
+{"line": 512, "record": "mmlu/test/8037/none_absent", "ms": 64.7, "tokens": 78, "probs": {"answer": [0.0607, 0.0303, 0.0134, 0.8956]}}
+{"line": 513, "record": "mmlu/test/8037/permuted", "ms": 64.0, "tokens": 70, "probs": {"answer": [0.545, 0.2518, 0.1018, 0.1014]}}
+{"line": 514, "record": "mmlu/test/1047/none_present", "ms": 74.0, "tokens": 125, "probs": {"answer": [0.0527, 0.2909, 0.226, 0.0925, 0.3379]}}
+{"line": 515, "record": "mmlu/test/1047/none_absent", "ms": 72.5, "tokens": 119, "probs": {"answer": [0.2793, 0.4638, 0.0599, 0.197]}}
+{"line": 516, "record": "mmlu/test/1047/permuted", "ms": 74.7, "tokens": 111, "probs": {"answer": [0.3367, 0.1102, 0.0819, 0.4712]}}
+{"line": 517, "record": "emotion/test/1012/none_present", "ms": 67.3, "tokens": 59, "probs": {"emotion": [0.5244, 0.0156, 0.0141, 0.0119, 0.0103, 0.38, 0.0437]}}
+{"line": 518, "record": "emotion/test/1012/none_absent", "ms": 62.4, "tokens": 56, "probs": {"emotion": [0.6119, 0.3047, 0.0169, 0.0115, 0.0157, 0.0393]}}
+{"line": 519, "record": "emotion/test/1012/permuted", "ms": 60.6, "tokens": 45, "probs": {"emotion": [0.046005, 0.049605, 0.032703, 0.039804, 0.690469, 0.141414]}}
+{"line": 520, "record": "emotion/test/876/none_present", "ms": 62.0, "tokens": 55, "probs": {"emotion": [0.061494, 0.014699, 0.0019, 0.0013, 0.066793, 0.007299, 0.846515]}}
+{"line": 521, "record": "emotion/test/876/none_absent", "ms": 61.6, "tokens": 52, "probs": {"emotion": [0.0037, 0.910691, 0.0015, 0.062906, 0.007601, 0.013601]}}
+{"line": 522, "record": "emotion/test/876/permuted", "ms": 60.5, "tokens": 41, "probs": {"emotion": [0.39864, 0.09781, 0.013001, 0.008901, 0.432243, 0.049405]}}
+{"line": 523, "record": "emotion/test/230/none_present", "ms": 61.7, "tokens": 53, "probs": {"emotion": [0.0006, 0.29707, 0.650735, 0.014799, 0.0009, 0.0021, 0.033797]}}
+{"line": 524, "record": "emotion/test/230/none_absent", "ms": 61.0, "tokens": 50, "probs": {"emotion": [0.0023, 0.8766, 0.0009, 0.088, 0.0254, 0.0068]}}
+{"line": 525, "record": "emotion/test/230/permuted", "ms": 59.9, "tokens": 39, "probs": {"emotion": [0.0008, 0.0038, 0.919408, 0.027097, 0.0013, 0.047595]}}
+{"line": 526, "record": "emotion/test/20/none_present", "ms": 65.6, "tokens": 90, "probs": {"emotion": [0.0009, 0.0017, 0.053, 0.0023, 0.0324, 0.6578, 0.2519]}}
+{"line": 527, "record": "emotion/test/20/none_absent", "ms": 65.6, "tokens": 87, "probs": {"emotion": [0.0028, 0.3098, 0.0201, 0.0022, 0.6633, 0.0018]}}
+{"line": 528, "record": "emotion/test/20/permuted", "ms": 64.4, "tokens": 76, "probs": {"emotion": [0.0014, 0.0025, 0.0733, 0.0034, 0.0453, 0.8741]}}
+{"line": 529, "record": "emotion/test/1635/none_present", "ms": 62.3, "tokens": 56, "probs": {"emotion": [0.516248, 0.471053, 0.008499, 0.0003, 0.0005, 0.0006, 0.0028]}}
+{"line": 530, "record": "emotion/test/1635/none_absent", "ms": 62.2, "tokens": 53, "probs": {"emotion": [0.010901, 0.0023, 0.0004, 0.0009, 0.0004, 0.985099]}}
+{"line": 531, "record": "emotion/test/1635/permuted", "ms": 59.7, "tokens": 42, "probs": {"emotion": [0.978002, 0.0008, 0.012999, 0.0013, 0.0014, 0.005499]}}
+{"line": 532, "record": "emotion/test/1435/none_present", "ms": 64.0, "tokens": 69, "probs": {"emotion": [0.417858, 0.008699, 0.007899, 0.319368, 0.068193, 0.005399, 0.172583]}}
+{"line": 533, "record": "emotion/test/1435/none_absent", "ms": 63.9, "tokens": 66, "probs": {"emotion": [0.0189, 0.468, 0.4008, 0.0964, 0.0096, 0.0063]}}
+{"line": 534, "record": "emotion/test/1435/permuted", "ms": 62.2, "tokens": 55, "probs": {"emotion": [0.308162, 0.023805, 0.028006, 0.182637, 0.018904, 0.438488]}}
+{"line": 535, "record": "emotion/test/639/none_present", "ms": 61.6, "tokens": 54, "probs": {"emotion": [0.307031, 0.0018, 0.450745, 0.217422, 0.018602, 0.0023, 0.0021]}}
+{"line": 536, "record": "emotion/test/639/none_absent", "ms": 62.1, "tokens": 51, "probs": {"emotion": [0.370463, 0.0023, 0.0023, 0.59504, 0.026797, 0.0031]}}
+{"line": 537, "record": "emotion/test/639/permuted", "ms": 60.1, "tokens": 40, "probs": {"emotion": [0.0247, 0.0038, 0.5696, 0.3922, 0.0056, 0.0041]}}
+{"line": 538, "record": "emotion/test/281/none_present", "ms": 62.5, "tokens": 54, "probs": {"emotion": [0.39936, 0.0021, 0.005699, 0.015698, 0.0004, 0.0005, 0.576242]}}
+{"line": 539, "record": "emotion/test/281/none_absent", "ms": 61.3, "tokens": 51, "probs": {"emotion": [0.957396, 0.008201, 0.0037, 0.029403, 0.0005, 0.0008]}}
+{"line": 540, "record": "emotion/test/281/permuted", "ms": 59.9, "tokens": 40, "probs": {"emotion": [0.0046, 0.024598, 0.010499, 0.0005, 0.0008, 0.959004]}}
+{"line": 541, "record": "emotion/test/790/none_present", "ms": 63.7, "tokens": 69, "probs": {"emotion": [0.069507, 0.0013, 0.278328, 0.611661, 0.008901, 0.0018, 0.028503]}}
+{"line": 542, "record": "emotion/test/790/none_absent", "ms": 63.0, "tokens": 66, "probs": {"emotion": [0.0016, 0.0028, 0.106789, 0.844416, 0.014099, 0.030297]}}
+{"line": 543, "record": "emotion/test/790/permuted", "ms": 61.4, "tokens": 55, "probs": {"emotion": [0.1771, 0.0036, 0.6971, 0.0342, 0.0062, 0.0818]}}
+{"line": 544, "record": "emotion/test/1948/none_present", "ms": 64.0, "tokens": 78, "probs": {"emotion": [0.083, 0.0407, 0.0578, 0.0031, 0.0013, 0.5045, 0.3096]}}
+{"line": 545, "record": "emotion/test/1948/none_absent", "ms": 64.4, "tokens": 75, "probs": {"emotion": [0.0721, 0.1651, 0.0525, 0.0035, 0.7046, 0.0022]}}
+{"line": 546, "record": "emotion/test/1948/permuted", "ms": 59.5, "tokens": 64, "probs": {"emotion": [0.166417, 0.082108, 0.006501, 0.003, 0.077108, 0.664866]}}
+{"line": 547, "record": "emotion/test/616/none_present", "ms": 62.7, "tokens": 57, "probs": {"emotion": [0.0258, 0.2281, 0.0142, 0.7166, 0.0013, 0.0123, 0.0017]}}
+{"line": 548, "record": "emotion/test/616/none_absent", "ms": 62.3, "tokens": 54, "probs": {"emotion": [0.002901, 0.918584, 0.023105, 0.0021, 0.012803, 0.040508]}}
+{"line": 549, "record": "emotion/test/616/permuted", "ms": 60.3, "tokens": 43, "probs": {"emotion": [0.7805, 0.0451, 0.1097, 0.0069, 0.0508, 0.007]}}
+{"line": 550, "record": "emotion/test/1171/none_present", "ms": 66.9, "tokens": 65, "probs": {"emotion": [0.0012, 0.0055, 0.0047, 0.8782, 0.0026, 0.016, 0.0918]}}
+{"line": 551, "record": "emotion/test/1171/none_absent", "ms": 63.6, "tokens": 62, "probs": {"emotion": [0.0018, 0.0015, 0.0053, 0.9629, 0.0223, 0.0062]}}
+{"line": 552, "record": "emotion/test/1171/permuted", "ms": 62.1, "tokens": 51, "probs": {"emotion": [0.0094, 0.039, 0.0337, 0.1075, 0.0173, 0.7931]}}
+{"line": 553, "record": "sciq/test/936/none_present", "ms": 87.7, "tokens": 169, "probs": {"answer": [0.0014, 0.068, 0.0008, 0.0003, 0.9295]}}
+{"line": 554, "record": "sciq/test/936/none_absent", "ms": 87.2, "tokens": 163, "probs": {"answer": [0.966303, 0.015298, 0.0018, 0.016598]}}
+{"line": 555, "record": "sciq/test/936/permuted", "ms": 83.7, "tokens": 155, "probs": {"answer": [0.0018, 0.0021, 0.0005, 0.9956]}}
+{"line": 556, "record": "sciq/test/925/none_present", "ms": 65.0, "tokens": 77, "probs": {"answer": [0.522748, 0.039096, 0.079392, 0.032297, 0.326467]}}
+{"line": 557, "record": "sciq/test/925/none_absent", "ms": 63.4, "tokens": 70, "probs": {"answer": [0.062, 0.0338, 0.0441, 0.8601]}}
+{"line": 558, "record": "sciq/test/925/permuted", "ms": 65.2, "tokens": 63, "probs": {"answer": [0.0961, 0.0549, 0.0705, 0.7785]}}
+{"line": 559, "record": "sciq/test/269/none_present", "ms": 73.7, "tokens": 122, "probs": {"answer": [0.0, 0.0001, 0.0, 0.0157, 0.9842]}}
+{"line": 560, "record": "sciq/test/269/none_absent", "ms": 72.3, "tokens": 116, "probs": {"answer": [0.0006, 0.0004, 0.989901, 0.009099]}}
+{"line": 561, "record": "sciq/test/269/permuted", "ms": 71.7, "tokens": 108, "probs": {"answer": [0.0002, 0.0, 0.0, 0.9998]}}
+{"line": 562, "record": "sciq/test/258/none_present", "ms": 72.4, "tokens": 117, "probs": {"answer": [0.0004, 0.0045, 0.0006, 0.0567, 0.9378]}}
+{"line": 563, "record": "sciq/test/258/none_absent", "ms": 71.7, "tokens": 111, "probs": {"answer": [0.0075, 0.0116, 0.0799, 0.901]}}
+{"line": 564, "record": "sciq/test/258/permuted", "ms": 70.8, "tokens": 103, "probs": {"answer": [0.0006, 0.001, 0.0065, 0.9919]}}
+{"line": 565, "record": "sciq/test/46/none_present", "ms": 79.5, "tokens": 137, "probs": {"answer": [0.0004, 0.0338, 0.9503, 0.015, 0.0005]}}
+{"line": 566, "record": "sciq/test/46/none_absent", "ms": 78.5, "tokens": 130, "probs": {"answer": [0.7339, 0.0047, 0.2562, 0.0052]}}
+{"line": 567, "record": "sciq/test/46/permuted", "ms": 73.4, "tokens": 123, "probs": {"answer": [0.0004, 0.0091, 0.9897, 0.0008]}}
+{"line": 568, "record": "sciq/test/670/none_present", "ms": 66.7, "tokens": 90, "probs": {"answer": [0.0009, 0.963496, 0.0022, 0.0007, 0.032703]}}
+{"line": 569, "record": "sciq/test/670/none_absent", "ms": 64.9, "tokens": 85, "probs": {"answer": [0.9581, 0.0189, 0.0064, 0.0166]}}
+{"line": 570, "record": "sciq/test/670/permuted", "ms": 64.9, "tokens": 76, "probs": {"answer": [0.001, 0.9958, 0.0024, 0.0008]}}
+{"line": 571, "record": "sciq/test/731/none_present", "ms": 135.5, "tokens": 204, "probs": {"answer": [0.05, 0.9488, 0.0003, 0.0005, 0.0004]}}
+{"line": 572, "record": "sciq/test/731/none_absent", "ms": 102.6, "tokens": 199, "probs": {"answer": [0.9956, 0.0022, 0.0008, 0.0014]}}
+{"line": 573, "record": "sciq/test/731/permuted", "ms": 91.4, "tokens": 190, "probs": {"answer": [0.0002, 0.9976, 0.0015, 0.0007]}}
+{"line": 574, "record": "sciq/test/955/none_present", "ms": 71.3, "tokens": 102, "probs": {"answer": [0.0002, 0.043504, 0.0003, 0.0001, 0.955896]}}
+{"line": 575, "record": "sciq/test/955/none_absent", "ms": 71.4, "tokens": 97, "probs": {"answer": [0.9965, 0.002, 0.0008, 0.0007]}}
+{"line": 576, "record": "sciq/test/955/permuted", "ms": 66.8, "tokens": 88, "probs": {"answer": [0.0003, 0.0001, 0.0002, 0.9994]}}
+{"line": 577, "record": "sciq/test/490/none_present", "ms": 90.1, "tokens": 182, "probs": {"answer": [0.0015, 0.0488, 0.9446, 0.0022, 0.0029]}}
+{"line": 578, "record": "sciq/test/490/none_absent", "ms": 89.5, "tokens": 176, "probs": {"answer": [0.0387, 0.0251, 0.0063, 0.9299]}}
+{"line": 579, "record": "sciq/test/490/permuted", "ms": 88.1, "tokens": 168, "probs": {"answer": [0.0009, 0.990399, 0.006301, 0.0024]}}
+{"line": 580, "record": "sciq/test/633/none_present", "ms": 245.1, "tokens": 164, "probs": {"answer": [0.0007, 0.0001, 0.990699, 0.0005, 0.008001]}}
+{"line": 581, "record": "sciq/test/633/none_absent", "ms": 85.5, "tokens": 159, "probs": {"answer": [0.0218, 0.0024, 0.9726, 0.0032]}}
+{"line": 582, "record": "sciq/test/633/permuted", "ms": 84.5, "tokens": 150, "probs": {"answer": [0.001, 0.0002, 0.998, 0.0008]}}
+{"line": 583, "record": "sciq/test/889/none_present", "ms": 71.3, "tokens": 105, "probs": {"answer": [0.0243, 0.0007, 0.9687, 0.0003, 0.006]}}
+{"line": 584, "record": "sciq/test/889/none_absent", "ms": 70.9, "tokens": 98, "probs": {"answer": [0.6205, 0.0125, 0.0021, 0.3649]}}
+{"line": 585, "record": "sciq/test/889/permuted", "ms": 66.2, "tokens": 91, "probs": {"answer": [0.9902, 0.0015, 0.0002, 0.0081]}}
+{"line": 586, "record": "sciq/test/291/none_present", "ms": 231.8, "tokens": 386, "probs": {"answer": [0.0004, 0.031903, 0.0, 0.0012, 0.966497]}}
+{"line": 587, "record": "sciq/test/291/none_absent", "ms": 156.5, "tokens": 379, "probs": {"answer": [0.0075, 0.9654, 0.0267, 0.0004]}}
+{"line": 588, "record": "sciq/test/291/permuted", "ms": 380.1, "tokens": 372, "probs": {"answer": [0.0006, 0.0, 0.0013, 0.9981]}}
+{"line": 589, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0000/a", "ms": 66.2, "tokens": 84, "probs": {"decision": [0.0026, 0.9974]}}
+{"line": 590, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0000/b", "ms": 65.0, "tokens": 84, "probs": {"decision": [0.9941, 0.0059]}}
+{"line": 591, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0001/a", "ms": 65.4, "tokens": 84, "probs": {"decision": [0.0036, 0.9964]}}
+{"line": 592, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0001/b", "ms": 65.7, "tokens": 83, "probs": {"decision": [0.9917, 0.0083]}}
+{"line": 593, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0002/a", "ms": 65.2, "tokens": 84, "probs": {"decision": [0.003, 0.997]}}
+{"line": 594, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0002/b", "ms": 65.6, "tokens": 83, "probs": {"decision": [0.994, 0.006]}}
+{"line": 595, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0003/a", "ms": 65.1, "tokens": 81, "probs": {"decision": [0.0029, 0.9971]}}
+{"line": 596, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0003/b", "ms": 65.6, "tokens": 82, "probs": {"decision": [0.9938, 0.0062]}}
+{"line": 597, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0004/a", "ms": 65.0, "tokens": 84, "probs": {"decision": [0.0037, 0.9963]}}
+{"line": 598, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0004/b", "ms": 65.0, "tokens": 84, "probs": {"decision": [0.9923, 0.0077]}}
+{"line": 599, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0005/a", "ms": 65.3, "tokens": 83, "probs": {"decision": [0.003, 0.997]}}
+{"line": 600, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0005/b", "ms": 64.9, "tokens": 83, "probs": {"decision": [0.9931, 0.0069]}}
+{"line": 601, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0006/a", "ms": 65.1, "tokens": 84, "probs": {"decision": [0.0031, 0.9969]}}
+{"line": 602, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0006/b", "ms": 64.9, "tokens": 84, "probs": {"decision": [0.993, 0.007]}}
+{"line": 603, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0007/a", "ms": 64.8, "tokens": 82, "probs": {"decision": [0.0026, 0.9974]}}
+{"line": 604, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0007/b", "ms": 65.2, "tokens": 83, "probs": {"decision": [0.9929, 0.0071]}}
+{"line": 605, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0008/a", "ms": 64.6, "tokens": 82, "probs": {"decision": [0.0028, 0.9972]}}
+{"line": 606, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0008/b", "ms": 65.2, "tokens": 83, "probs": {"decision": [0.9933, 0.0067]}}
+{"line": 607, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0009/a", "ms": 64.9, "tokens": 81, "probs": {"decision": [0.0023, 0.9977]}}
+{"line": 608, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0009/b", "ms": 64.9, "tokens": 82, "probs": {"decision": [0.9933, 0.0067]}}
+{"line": 609, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0010/a", "ms": 65.4, "tokens": 81, "probs": {"decision": [0.0023, 0.9977]}}
+{"line": 610, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0010/b", "ms": 65.0, "tokens": 81, "probs": {"decision": [0.9935, 0.0065]}}
+{"line": 611, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0011/a", "ms": 64.9, "tokens": 82, "probs": {"decision": [0.0023, 0.9977]}}
+{"line": 612, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0011/b", "ms": 64.9, "tokens": 83, "probs": {"decision": [0.9934, 0.0066]}}
+{"line": 613, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0012/a", "ms": 65.1, "tokens": 83, "probs": {"decision": [0.0033, 0.9967]}}
+{"line": 614, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0012/b", "ms": 64.6, "tokens": 82, "probs": {"decision": [0.9943, 0.0057]}}
+{"line": 615, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0013/a", "ms": 64.9, "tokens": 82, "probs": {"decision": [0.0022, 0.9978]}}
+{"line": 616, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0013/b", "ms": 64.7, "tokens": 83, "probs": {"decision": [0.9938, 0.0062]}}
+{"line": 617, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0014/a", "ms": 64.9, "tokens": 83, "probs": {"decision": [0.0038, 0.9962]}}
+{"line": 618, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0014/b", "ms": 64.9, "tokens": 82, "probs": {"decision": [0.9926, 0.0074]}}
+{"line": 619, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0015/a", "ms": 64.4, "tokens": 81, "probs": {"decision": [0.0023, 0.9977]}}
+{"line": 620, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0015/b", "ms": 64.8, "tokens": 82, "probs": {"decision": [0.9936, 0.0064]}}
+{"line": 621, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0016/a", "ms": 65.0, "tokens": 82, "probs": {"decision": [0.0033, 0.9967]}}
+{"line": 622, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0016/b", "ms": 64.9, "tokens": 83, "probs": {"decision": [0.9934, 0.0066]}}
+{"line": 623, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0017/a", "ms": 65.2, "tokens": 83, "probs": {"decision": [0.0039, 0.9961]}}
+{"line": 624, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0017/b", "ms": 65.5, "tokens": 83, "probs": {"decision": [0.9922, 0.0078]}}
+{"line": 625, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0018/a", "ms": 65.3, "tokens": 84, "probs": {"decision": [0.0028, 0.9972]}}
+{"line": 626, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0018/b", "ms": 65.2, "tokens": 84, "probs": {"decision": [0.9946, 0.0054]}}
+{"line": 627, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0019/a", "ms": 65.3, "tokens": 82, "probs": {"decision": [0.0027, 0.9973]}}
+{"line": 628, "record": "contrastive/authorization/v3-legacy-transfer-authorization-0019/b", "ms": 64.8, "tokens": 83, "probs": {"decision": [0.9934, 0.0066]}}
+{"line": 629, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0000/a", "ms": 73.2, "tokens": 105, "probs": {"decision": [0.919692, 0.041304, 0.039004]}}
+{"line": 630, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0000/b", "ms": 117.5, "tokens": 104, "probs": {"decision": [0.2659, 0.617, 0.1171]}}
+{"line": 631, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0001/a", "ms": 71.0, "tokens": 105, "probs": {"decision": [0.249325, 0.572057, 0.178618]}}
+{"line": 632, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0001/b", "ms": 71.7, "tokens": 106, "probs": {"decision": [0.0749, 0.8496, 0.0755]}}
+{"line": 633, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0002/a", "ms": 71.5, "tokens": 105, "probs": {"decision": [0.876088, 0.063106, 0.060806]}}
+{"line": 634, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0002/b", "ms": 70.6, "tokens": 104, "probs": {"decision": [0.751125, 0.174783, 0.074093]}}
+{"line": 635, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0003/a", "ms": 70.6, "tokens": 105, "probs": {"decision": [0.1793, 0.5553, 0.2654]}}
+{"line": 636, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0003/b", "ms": 70.8, "tokens": 105, "probs": {"decision": [0.067793, 0.519148, 0.413059]}}
+{"line": 637, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0004/a", "ms": 71.0, "tokens": 104, "probs": {"decision": [0.224522, 0.616362, 0.159116]}}
+{"line": 638, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0004/b", "ms": 71.5, "tokens": 105, "probs": {"decision": [0.1053, 0.8194, 0.0753]}}
+{"line": 639, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0005/a", "ms": 73.1, "tokens": 105, "probs": {"decision": [0.159916, 0.571057, 0.269027]}}
+{"line": 640, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0005/b", "ms": 77.0, "tokens": 105, "probs": {"decision": [0.0639, 0.4696, 0.4665]}}
+{"line": 641, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0006/a", "ms": 75.6, "tokens": 106, "probs": {"decision": [0.9728, 0.014, 0.0132]}}
+{"line": 642, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0006/b", "ms": 73.5, "tokens": 106, "probs": {"decision": [0.0849, 0.8469, 0.0682]}}
+{"line": 643, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0007/a", "ms": 70.8, "tokens": 104, "probs": {"decision": [0.2476, 0.6017, 0.1507]}}
+{"line": 644, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0007/b", "ms": 70.6, "tokens": 104, "probs": {"decision": [0.1003, 0.8003, 0.0994]}}
+{"line": 645, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0008/a", "ms": 74.2, "tokens": 106, "probs": {"decision": [0.3206, 0.5609, 0.1185]}}
+{"line": 646, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0008/b", "ms": 74.6, "tokens": 106, "probs": {"decision": [0.0752, 0.6508, 0.274]}}
+{"line": 647, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0009/a", "ms": 71.2, "tokens": 104, "probs": {"decision": [0.9574, 0.023, 0.0196]}}
+{"line": 648, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0009/b", "ms": 71.6, "tokens": 105, "probs": {"decision": [0.225577, 0.691931, 0.082492]}}
+{"line": 649, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0010/a", "ms": 70.6, "tokens": 104, "probs": {"decision": [0.976, 0.0124, 0.0116]}}
+{"line": 650, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0010/b", "ms": 71.0, "tokens": 105, "probs": {"decision": [0.0341, 0.0989, 0.867]}}
+{"line": 651, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0011/a", "ms": 71.2, "tokens": 105, "probs": {"decision": [0.8942, 0.0491, 0.0567]}}
+{"line": 652, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0011/b", "ms": 73.2, "tokens": 104, "probs": {"decision": [0.0359, 0.9149, 0.0492]}}
+{"line": 653, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0012/a", "ms": 75.2, "tokens": 104, "probs": {"decision": [0.9778, 0.0113, 0.0109]}}
+{"line": 654, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0012/b", "ms": 71.3, "tokens": 105, "probs": {"decision": [0.0579, 0.4259, 0.5162]}}
+{"line": 655, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0013/a", "ms": 70.7, "tokens": 105, "probs": {"decision": [0.4358, 0.4455, 0.1187]}}
+{"line": 656, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0013/b", "ms": 70.9, "tokens": 106, "probs": {"decision": [0.0827, 0.5456, 0.3717]}}
+{"line": 657, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0014/a", "ms": 71.9, "tokens": 103, "probs": {"decision": [0.1898, 0.6921, 0.1181]}}
+{"line": 658, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0014/b", "ms": 70.7, "tokens": 104, "probs": {"decision": [0.0764, 0.4268, 0.4968]}}
+{"line": 659, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0015/a", "ms": 71.1, "tokens": 104, "probs": {"decision": [0.9499, 0.0262, 0.0239]}}
+{"line": 660, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0015/b", "ms": 70.4, "tokens": 103, "probs": {"decision": [0.5467, 0.3434, 0.1099]}}
+{"line": 661, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0016/a", "ms": 70.4, "tokens": 104, "probs": {"decision": [0.3109, 0.5459, 0.1432]}}
+{"line": 662, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0016/b", "ms": 72.6, "tokens": 105, "probs": {"decision": [0.0894, 0.7519, 0.1587]}}
+{"line": 663, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0017/a", "ms": 72.6, "tokens": 104, "probs": {"decision": [0.9623, 0.0202, 0.0175]}}
+{"line": 664, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0017/b", "ms": 71.6, "tokens": 105, "probs": {"decision": [0.2336, 0.6552, 0.1112]}}
+{"line": 665, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0018/a", "ms": 71.6, "tokens": 103, "probs": {"decision": [0.162116, 0.681468, 0.156416]}}
+{"line": 666, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0018/b", "ms": 71.2, "tokens": 104, "probs": {"decision": [0.073, 0.6479, 0.2791]}}
+{"line": 667, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0019/a", "ms": 71.1, "tokens": 105, "probs": {"decision": [0.192519, 0.666967, 0.140514]}}
+{"line": 668, "record": "contrastive/deadline/v3-legacy-transfer-deadline-0019/b", "ms": 73.9, "tokens": 105, "probs": {"decision": [0.1527, 0.5138, 0.3335]}}
+{"line": 669, "record": "composition/v3-composition-transfer/held_and_or/0/relevant/a", "ms": 84.2, "tokens": 151, "probs": {"decision": [0.0053, 0.9947]}}
+{"line": 670, "record": "composition/v3-composition-transfer/held_and_or/0/relevant/b", "ms": 83.0, "tokens": 151, "probs": {"decision": [0.978, 0.022]}}
+{"line": 671, "record": "composition/v3-composition-transfer/held_and_or/0/irrelevant/a", "ms": 82.6, "tokens": 151, "probs": {"decision": [0.0053, 0.9947]}}
+{"line": 672, "record": "composition/v3-composition-transfer/held_and_or/0/irrelevant/b", "ms": 82.3, "tokens": 151, "probs": {"decision": [0.0048, 0.9952]}}
+{"line": 673, "record": "composition/v3-composition-transfer/held_and_or/1/relevant/a", "ms": 80.7, "tokens": 142, "probs": {"decision": [0.0093, 0.9907]}}
+{"line": 674, "record": "composition/v3-composition-transfer/held_and_or/1/relevant/b", "ms": 80.6, "tokens": 143, "probs": {"decision": [0.9965, 0.0035]}}
+{"line": 675, "record": "composition/v3-composition-transfer/held_and_or/1/irrelevant/a", "ms": 79.6, "tokens": 142, "probs": {"decision": [0.0093, 0.9907]}}
+{"line": 676, "record": "composition/v3-composition-transfer/held_and_or/1/irrelevant/b", "ms": 79.9, "tokens": 142, "probs": {"decision": [0.0095, 0.9905]}}
+{"line": 677, "record": "composition/v3-composition-transfer/held_and_or/2/relevant/a", "ms": 89.0, "tokens": 172, "probs": {"decision": [0.1698, 0.8302]}}
+{"line": 678, "record": "composition/v3-composition-transfer/held_and_or/2/relevant/b", "ms": 88.8, "tokens": 173, "probs": {"decision": [0.9931, 0.0069]}}
+{"line": 679, "record": "composition/v3-composition-transfer/held_and_or/2/irrelevant/a", "ms": 91.9, "tokens": 172, "probs": {"decision": [0.1698, 0.8302]}}
+{"line": 680, "record": "composition/v3-composition-transfer/held_and_or/2/irrelevant/b", "ms": 90.1, "tokens": 172, "probs": {"decision": [0.174, 0.826]}}
+{"line": 681, "record": "composition/v3-composition-transfer/held_and_or/3/relevant/a", "ms": 75.5, "tokens": 128, "probs": {"decision": [0.9951, 0.0049]}}
+{"line": 682, "record": "composition/v3-composition-transfer/held_and_or/3/relevant/b", "ms": 70.7, "tokens": 128, "probs": {"decision": [0.0061, 0.9939]}}
+{"line": 683, "record": "composition/v3-composition-transfer/held_and_or/3/irrelevant/a", "ms": 73.5, "tokens": 128, "probs": {"decision": [0.9951, 0.0049]}}
+{"line": 684, "record": "composition/v3-composition-transfer/held_and_or/3/irrelevant/b", "ms": 70.6, "tokens": 128, "probs": {"decision": [0.9951, 0.0049]}}
+{"line": 685, "record": "composition/v3-composition-transfer/held_and_or/4/relevant/a", "ms": 84.6, "tokens": 155, "probs": {"decision": [0.2973, 0.7027]}}
+{"line": 686, "record": "composition/v3-composition-transfer/held_and_or/4/relevant/b", "ms": 83.0, "tokens": 155, "probs": {"decision": [0.995, 0.005]}}
+{"line": 687, "record": "composition/v3-composition-transfer/held_and_or/4/irrelevant/a", "ms": 82.9, "tokens": 155, "probs": {"decision": [0.2973, 0.7027]}}
+{"line": 688, "record": "composition/v3-composition-transfer/held_and_or/4/irrelevant/b", "ms": 82.8, "tokens": 155, "probs": {"decision": [0.2957, 0.7043]}}
+{"line": 689, "record": "composition/v3-composition-transfer/held_and_or/5/relevant/a", "ms": 83.1, "tokens": 151, "probs": {"decision": [0.9908, 0.0092]}}
+{"line": 690, "record": "composition/v3-composition-transfer/held_and_or/5/relevant/b", "ms": 82.9, "tokens": 151, "probs": {"decision": [0.0108, 0.9892]}}
+{"line": 691, "record": "composition/v3-composition-transfer/held_and_or/5/irrelevant/a", "ms": 83.4, "tokens": 151, "probs": {"decision": [0.9908, 0.0092]}}
+{"line": 692, "record": "composition/v3-composition-transfer/held_and_or/5/irrelevant/b", "ms": 82.6, "tokens": 151, "probs": {"decision": [0.991, 0.009]}}
+{"line": 693, "record": "composition/v3-composition-transfer/held_and_or/6/relevant/a", "ms": 70.9, "tokens": 128, "probs": {"decision": [0.9964, 0.0036]}}
+{"line": 694, "record": "composition/v3-composition-transfer/held_and_or/6/relevant/b", "ms": 70.6, "tokens": 128, "probs": {"decision": [0.0032, 0.9968]}}
+{"line": 695, "record": "composition/v3-composition-transfer/held_and_or/6/irrelevant/a", "ms": 70.7, "tokens": 128, "probs": {"decision": [0.9964, 0.0036]}}
+{"line": 696, "record": "composition/v3-composition-transfer/held_and_or/6/irrelevant/b", "ms": 70.8, "tokens": 128, "probs": {"decision": [0.9963, 0.0037]}}
+{"line": 697, "record": "composition/v3-composition-transfer/held_and_or/7/relevant/a", "ms": 70.5, "tokens": 128, "probs": {"decision": [0.0038, 0.9962]}}
+{"line": 698, "record": "composition/v3-composition-transfer/held_and_or/7/relevant/b", "ms": 70.9, "tokens": 128, "probs": {"decision": [0.9989, 0.0011]}}
+{"line": 699, "record": "composition/v3-composition-transfer/held_and_or/7/irrelevant/a", "ms": 71.0, "tokens": 128, "probs": {"decision": [0.0038, 0.9962]}}
+{"line": 700, "record": "composition/v3-composition-transfer/held_and_or/7/irrelevant/b", "ms": 70.4, "tokens": 128, "probs": {"decision": [0.0039, 0.9961]}}
+{"line": 701, "record": "composition/v3-composition-transfer/held_or_not/0/relevant/a", "ms": 85.6, "tokens": 145, "probs": {"decision": [0.0064, 0.9936]}}
+{"line": 702, "record": "composition/v3-composition-transfer/held_or_not/0/relevant/b", "ms": 80.1, "tokens": 145, "probs": {"decision": [0.9944, 0.0056]}}
+{"line": 703, "record": "composition/v3-composition-transfer/held_or_not/0/irrelevant/a", "ms": 82.3, "tokens": 145, "probs": {"decision": [0.0064, 0.9936]}}
+{"line": 704, "record": "composition/v3-composition-transfer/held_or_not/0/irrelevant/b", "ms": 79.6, "tokens": 145, "probs": {"decision": [0.0069, 0.9931]}}
+{"line": 705, "record": "composition/v3-composition-transfer/held_or_not/1/relevant/a", "ms": 82.7, "tokens": 152, "probs": {"decision": [0.997, 0.003]}}
+{"line": 706, "record": "composition/v3-composition-transfer/held_or_not/1/relevant/b", "ms": 82.8, "tokens": 152, "probs": {"decision": [0.0067, 0.9933]}}
+{"line": 707, "record": "composition/v3-composition-transfer/held_or_not/1/irrelevant/a", "ms": 82.3, "tokens": 152, "probs": {"decision": [0.997, 0.003]}}
+{"line": 708, "record": "composition/v3-composition-transfer/held_or_not/1/irrelevant/b", "ms": 82.3, "tokens": 152, "probs": {"decision": [0.9971, 0.0029]}}
+{"line": 709, "record": "composition/v3-composition-transfer/held_or_not/2/relevant/a", "ms": 87.8, "tokens": 164, "probs": {"decision": [0.0372, 0.9628]}}
+{"line": 710, "record": "composition/v3-composition-transfer/held_or_not/2/relevant/b", "ms": 86.9, "tokens": 164, "probs": {"decision": [0.6595, 0.3405]}}
+{"line": 711, "record": "composition/v3-composition-transfer/held_or_not/2/irrelevant/a", "ms": 86.5, "tokens": 164, "probs": {"decision": [0.0372, 0.9628]}}
+{"line": 712, "record": "composition/v3-composition-transfer/held_or_not/2/irrelevant/b", "ms": 86.9, "tokens": 164, "probs": {"decision": [0.037, 0.963]}}
+{"line": 713, "record": "composition/v3-composition-transfer/held_or_not/3/relevant/a", "ms": 83.6, "tokens": 151, "probs": {"decision": [0.9974, 0.0026]}}
+{"line": 714, "record": "composition/v3-composition-transfer/held_or_not/3/relevant/b", "ms": 83.0, "tokens": 151, "probs": {"decision": [0.0206, 0.9794]}}
+{"line": 715, "record": "composition/v3-composition-transfer/held_or_not/3/irrelevant/a", "ms": 82.2, "tokens": 151, "probs": {"decision": [0.9974, 0.0026]}}
+{"line": 716, "record": "composition/v3-composition-transfer/held_or_not/3/irrelevant/b", "ms": 82.4, "tokens": 151, "probs": {"decision": [0.9975, 0.0025]}}
+{"line": 717, "record": "composition/v3-composition-transfer/held_or_not/4/relevant/a", "ms": 179.4, "tokens": 187, "probs": {"decision": [0.0215, 0.9785]}}
+{"line": 718, "record": "composition/v3-composition-transfer/held_or_not/4/relevant/b", "ms": 89.2, "tokens": 187, "probs": {"decision": [0.8704, 0.1296]}}
+{"line": 719, "record": "composition/v3-composition-transfer/held_or_not/4/irrelevant/a", "ms": 91.5, "tokens": 187, "probs": {"decision": [0.0215, 0.9785]}}
+{"line": 720, "record": "composition/v3-composition-transfer/held_or_not/4/irrelevant/b", "ms": 89.1, "tokens": 187, "probs": {"decision": [0.0241, 0.9759]}}
+{"line": 721, "record": "composition/v3-composition-transfer/held_or_not/5/relevant/a", "ms": 191.1, "tokens": 211, "probs": {"decision": [0.4503, 0.5497]}}
+{"line": 722, "record": "composition/v3-composition-transfer/held_or_not/5/relevant/b", "ms": 95.5, "tokens": 211, "probs": {"decision": [0.4707, 0.5293]}}
+{"line": 723, "record": "composition/v3-composition-transfer/held_or_not/5/irrelevant/a", "ms": 92.8, "tokens": 211, "probs": {"decision": [0.4503, 0.5497]}}
+{"line": 724, "record": "composition/v3-composition-transfer/held_or_not/5/irrelevant/b", "ms": 93.1, "tokens": 211, "probs": {"decision": [0.4813, 0.5187]}}
+{"line": 725, "record": "composition/v3-composition-transfer/held_or_not/6/relevant/a", "ms": 80.6, "tokens": 141, "probs": {"decision": [0.0124, 0.9876]}}
+{"line": 726, "record": "composition/v3-composition-transfer/held_or_not/6/relevant/b", "ms": 80.5, "tokens": 140, "probs": {"decision": [0.9983, 0.0017]}}
+{"line": 727, "record": "composition/v3-composition-transfer/held_or_not/6/irrelevant/a", "ms": 79.5, "tokens": 141, "probs": {"decision": [0.0124, 0.9876]}}
+{"line": 728, "record": "composition/v3-composition-transfer/held_or_not/6/irrelevant/b", "ms": 79.2, "tokens": 141, "probs": {"decision": [0.012, 0.988]}}
+{"line": 729, "record": "composition/v3-composition-transfer/held_or_not/7/relevant/a", "ms": 83.5, "tokens": 149, "probs": {"decision": [0.9927, 0.0073]}}
+{"line": 730, "record": "composition/v3-composition-transfer/held_or_not/7/relevant/b", "ms": 83.0, "tokens": 149, "probs": {"decision": [0.0095, 0.9905]}}
+{"line": 731, "record": "composition/v3-composition-transfer/held_or_not/7/irrelevant/a", "ms": 82.6, "tokens": 149, "probs": {"decision": [0.9927, 0.0073]}}
+{"line": 732, "record": "composition/v3-composition-transfer/held_or_not/7/irrelevant/b", "ms": 86.3, "tokens": 149, "probs": {"decision": [0.9928, 0.0072]}}
+{"line": 733, "record": "composition/v3-composition-transfer/held_conditional/0/relevant/a", "ms": 71.4, "tokens": 128, "probs": {"decision": [0.0113, 0.9887]}}
+{"line": 734, "record": "composition/v3-composition-transfer/held_conditional/0/relevant/b", "ms": 70.7, "tokens": 128, "probs": {"decision": [0.9848, 0.0152]}}
+{"line": 735, "record": "composition/v3-composition-transfer/held_conditional/0/irrelevant/a", "ms": 70.7, "tokens": 128, "probs": {"decision": [0.0113, 0.9887]}}
+{"line": 736, "record": "composition/v3-composition-transfer/held_conditional/0/irrelevant/b", "ms": 70.6, "tokens": 128, "probs": {"decision": [0.0092, 0.9908]}}
+{"line": 737, "record": "composition/v3-composition-transfer/held_conditional/1/relevant/a", "ms": 79.8, "tokens": 139, "probs": {"decision": [0.0318, 0.9682]}}
+{"line": 738, "record": "composition/v3-composition-transfer/held_conditional/1/relevant/b", "ms": 81.1, "tokens": 138, "probs": {"decision": [0.9874, 0.0126]}}
+{"line": 739, "record": "composition/v3-composition-transfer/held_conditional/1/irrelevant/a", "ms": 79.4, "tokens": 139, "probs": {"decision": [0.0318, 0.9682]}}
+{"line": 740, "record": "composition/v3-composition-transfer/held_conditional/1/irrelevant/b", "ms": 79.5, "tokens": 139, "probs": {"decision": [0.0325, 0.9675]}}
+{"line": 741, "record": "composition/v3-composition-transfer/held_conditional/2/relevant/a", "ms": 89.1, "tokens": 175, "probs": {"decision": [0.0117, 0.9883]}}
+{"line": 742, "record": "composition/v3-composition-transfer/held_conditional/2/relevant/b", "ms": 90.4, "tokens": 175, "probs": {"decision": [0.6244, 0.3756]}}
+{"line": 743, "record": "composition/v3-composition-transfer/held_conditional/2/irrelevant/a", "ms": 88.1, "tokens": 175, "probs": {"decision": [0.0117, 0.9883]}}
+{"line": 744, "record": "composition/v3-composition-transfer/held_conditional/2/irrelevant/b", "ms": 87.7, "tokens": 175, "probs": {"decision": [0.0123, 0.9877]}}
+{"line": 745, "record": "composition/v3-composition-transfer/held_conditional/3/relevant/a", "ms": 125.6, "tokens": 165, "probs": {"decision": [0.5621, 0.4379]}}
+{"line": 746, "record": "composition/v3-composition-transfer/held_conditional/3/relevant/b", "ms": 87.3, "tokens": 165, "probs": {"decision": [0.1963, 0.8037]}}
+{"line": 747, "record": "composition/v3-composition-transfer/held_conditional/3/irrelevant/a", "ms": 86.9, "tokens": 165, "probs": {"decision": [0.5621, 0.4379]}}
+{"line": 748, "record": "composition/v3-composition-transfer/held_conditional/3/irrelevant/b", "ms": 87.2, "tokens": 165, "probs": {"decision": [0.6025, 0.3975]}}
+{"line": 749, "record": "composition/v3-composition-transfer/held_conditional/4/relevant/a", "ms": 93.6, "tokens": 172, "probs": {"decision": [0.9604, 0.0396]}}
+{"line": 750, "record": "composition/v3-composition-transfer/held_conditional/4/relevant/b", "ms": 87.9, "tokens": 172, "probs": {"decision": [0.0478, 0.9522]}}
+{"line": 751, "record": "composition/v3-composition-transfer/held_conditional/4/irrelevant/a", "ms": 88.3, "tokens": 172, "probs": {"decision": [0.9604, 0.0396]}}
+{"line": 752, "record": "composition/v3-composition-transfer/held_conditional/4/irrelevant/b", "ms": 87.6, "tokens": 172, "probs": {"decision": [0.9578, 0.0422]}}
+{"line": 753, "record": "composition/v3-composition-transfer/held_conditional/5/relevant/a", "ms": 85.0, "tokens": 159, "probs": {"decision": [0.9653, 0.0347]}}
+{"line": 754, "record": "composition/v3-composition-transfer/held_conditional/5/relevant/b", "ms": 83.8, "tokens": 159, "probs": {"decision": [0.9492, 0.0508]}}
+{"line": 755, "record": "composition/v3-composition-transfer/held_conditional/5/irrelevant/a", "ms": 83.2, "tokens": 159, "probs": {"decision": [0.9653, 0.0347]}}
+{"line": 756, "record": "composition/v3-composition-transfer/held_conditional/5/irrelevant/b", "ms": 83.2, "tokens": 159, "probs": {"decision": [0.9754, 0.0246]}}
+{"line": 757, "record": "composition/v3-composition-transfer/held_conditional/6/relevant/a", "ms": 91.7, "tokens": 171, "probs": {"decision": [0.0657, 0.9343]}}
+{"line": 758, "record": "composition/v3-composition-transfer/held_conditional/6/relevant/b", "ms": 87.5, "tokens": 171, "probs": {"decision": [0.9888, 0.0112]}}
+{"line": 759, "record": "composition/v3-composition-transfer/held_conditional/6/irrelevant/a", "ms": 87.6, "tokens": 171, "probs": {"decision": [0.0657, 0.9343]}}
+{"line": 760, "record": "composition/v3-composition-transfer/held_conditional/6/irrelevant/b", "ms": 88.4, "tokens": 171, "probs": {"decision": [0.0758, 0.9242]}}
+{"line": 761, "record": "composition/v3-composition-transfer/held_conditional/7/relevant/a", "ms": 79.7, "tokens": 137, "probs": {"decision": [0.0265, 0.9735]}}
+{"line": 762, "record": "composition/v3-composition-transfer/held_conditional/7/relevant/b", "ms": 82.0, "tokens": 137, "probs": {"decision": [0.006, 0.994]}}
+{"line": 763, "record": "composition/v3-composition-transfer/held_conditional/7/irrelevant/a", "ms": 79.4, "tokens": 137, "probs": {"decision": [0.0265, 0.9735]}}
+{"line": 764, "record": "composition/v3-composition-transfer/held_conditional/7/irrelevant/b", "ms": 79.4, "tokens": 137, "probs": {"decision": [0.0362, 0.9638]}}

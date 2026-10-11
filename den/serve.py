@@ -5,7 +5,8 @@
     curl -s localhost:8009/v1/systemone -H 'content-type: application/json' -d '{"state": "...", "questions": {...}}'
     den predict --run runs/round2 requests.jsonl
 
-Set DEN_API_KEY to require `Authorization: Bearer <key>` on /v1/*.
+Set DEN_API_KEY to require `Authorization: Bearer <key>` on /v1/*. `GET /v1/models` answers in TypeSafe's shape
+(`models`: name, description, release_date) for the typesafe-sdk, and in the earlier `data` shape beside it.
 """
 
 from __future__ import annotations
@@ -16,6 +17,7 @@ import json
 import os
 import sys
 import threading
+from datetime import date
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
@@ -23,10 +25,17 @@ from typing import Any
 
 from .api import RecordError
 from .paths import locate
-from .runtime import DEFAULT_NAME, Model, respond
+from .runtime import DEFAULT_NAME, SERVE_FILES, Model, respond
 
 
-def handler(model: Model, name: str, key: str | None) -> type[BaseHTTPRequestHandler]:
+def describe(model: Model) -> str:
+    meta = model.meta
+    lora = f"LoRA r{meta['lora']}" if meta.get("lora") else "frozen backbone"
+    head = f"{meta.get('kind')} head"
+    return f"{meta.get('base')} + {lora} + {head} (one forward pass, calibrated T={model.temperature:.2f})"
+
+
+def handler(model: Model, name: str, key: str | None, released: str = "") -> type[BaseHTTPRequestHandler]:
     lock = threading.Lock()  # one forward pass at a time: the backbones are not thread-safe
 
     class Handler(BaseHTTPRequestHandler):
@@ -55,8 +64,11 @@ def handler(model: Model, name: str, key: str | None) -> type[BaseHTTPRequestHan
                 self._send(HTTPStatus.OK, {"status": "ok"})
             elif self.path == "/v1/models":
                 device = model.backbone.device
-                self._send(HTTPStatus.OK, {"data": [{"id": name, "backend": device.backend, "dtype": device.dtype,
-                                                     "temperature": model.temperature}]})  # fmt: skip
+                self._send(HTTPStatus.OK, {
+                    "models": [{"name": name, "description": describe(model), "release_date": released}],
+                    "data": [{"id": name, "backend": device.backend, "dtype": device.dtype,
+                              "temperature": model.temperature}],
+                })  # fmt: skip
             else:
                 self._send(HTTPStatus.NOT_FOUND, {"error": f"no route {self.path}"})
 
@@ -92,11 +104,14 @@ def serve_main(argv: list[str] | None = None) -> int:
     p.add_argument("--host", default="127.0.0.1", help="0.0.0.0 to accept other machines")
     p.add_argument("--port", type=int, default=8009)
     p.add_argument("--name", default=DEFAULT_NAME, help="the model id this server reports")
+    p.add_argument("--release-date", help="YYYY-MM-DD for /v1/models; default the date head.json was written")
     p.add_argument("--backend")
     args = p.parse_args(argv)
-    model = Model(locate(args.run), args.backend)
+    run = locate(args.run, SERVE_FILES)
+    model = Model(run, args.backend)
+    released = args.release_date or date.fromtimestamp((run / "head.json").stat().st_mtime).isoformat()
     # one thread: MLX's GPU stream belongs to the thread that loaded the model
-    server = HTTPServer((args.host, args.port), handler(model, args.name, os.environ.get("DEN_API_KEY")))
+    server = HTTPServer((args.host, args.port), handler(model, args.name, os.environ.get("DEN_API_KEY"), released))
     print(f"den serving {args.run} as {args.name} on http://{args.host}:{args.port}/v1/systemone", flush=True)
     with contextlib.suppress(KeyboardInterrupt):
         server.serve_forever()
@@ -109,7 +124,7 @@ def predict_main(argv: list[str] | None = None) -> int:
     p.add_argument("requests", nargs="?", default="-", help="JSONL of /v1/systemone requests; - reads stdin")
     p.add_argument("--backend")
     args = p.parse_args(argv)
-    model = Model(locate(args.run), args.backend)
+    model = Model(locate(args.run, SERVE_FILES), args.backend)
     text = sys.stdin.read() if args.requests == "-" else Path(args.requests).read_text(encoding="utf-8")
     for line in filter(str.strip, text.splitlines()):
         print(json.dumps(respond(model, json.loads(line))), flush=True)

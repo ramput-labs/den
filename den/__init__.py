@@ -11,6 +11,6 @@ if TYPE_CHECKING:
 def load(run: str, backend: str | None = None) -> Model:
     """A trained run, from a directory, `hf:<org>/<name>[@<revision>]` or `release:<version>`."""
     from .paths import locate
-    from .runtime import Model
+    from .runtime import SERVE_FILES, Model
 
-    return Model(locate(run), backend)
+    return Model(locate(run, SERVE_FILES), backend)
