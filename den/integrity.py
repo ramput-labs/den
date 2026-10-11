@@ -1,6 +1,7 @@
 """`den check-run`: is a finished run intact? Checked from its files after the merge and before every upload: the head
 and adapter load and are finite, and `merged/` has the base's exact layout with exactly the adapted weights changed.
-`integrity.json` also lists every model file's sha256.
+Its weights must be the canonical merge (`lora.fold`), so a server can rebuild them from the adapter byte for byte:
+`integrity.json` lists every model file's sha256, and `runtime.rebuild` checks a rebuilt `merged/` against them.
 """
 
 from __future__ import annotations
@@ -48,10 +49,20 @@ def _finite(path: Path) -> tuple[int, list[str]]:
     return len(names), bad
 
 
-def _merged(merged: Path, base: Path, modules: int) -> list[tuple[str, bool, str]]:
+def _merged(run: Path, base: Path, modules: int) -> list[tuple[str, bool, str]]:
     from safetensors import safe_open
 
+    from .lora import adapter, fold, text_prefix
+
+    merged = run / "merged"
     checks: list[tuple[str, bool, str]] = []
+    try:
+        pairs, scale = adapter(run)
+    except SystemExit as e:
+        pairs, scale, unreadable = {}, 0.0, str(e)
+    else:
+        unreadable = ""
+    uncanonical: list[str] = []
     base_files = {f.name for f in base.iterdir() if f.is_file() and not f.name.startswith(".")}
     ours = {f.name for f in merged.iterdir() if f.is_file() and not f.name.startswith(".")}
     checks.append(("merged has the base's files", base_files == ours, f"missing {sorted(base_files - ours)[:3]}, "
@@ -62,7 +73,9 @@ def _merged(merged: Path, base: Path, modules: int) -> list[tuple[str, bool, str
     changed: list[str] = []
     layout: list[str] = []
     broken: list[str] = []
-    for shard in sorted(n for n in base_files & ours if n.endswith(".safetensors")):
+    shards = sorted(n for n in base_files & ours if n.endswith(".safetensors"))
+    prefix = text_prefix([k for shard in shards for k in _names(base / shard)])
+    for shard in shards:
         with safe_open(base / shard, "pt") as b, safe_open(merged / shard, "pt") as m:
             if set(b.keys()) != set(m.keys()):
                 layout.append(shard)
@@ -75,9 +88,15 @@ def _merged(merged: Path, base: Path, modules: int) -> list[tuple[str, bool, str
                     changed.append(key)
                     if not bool(torch.isfinite(new).all()):
                         broken.append(key)
+                    ab = pairs.get(key.removeprefix(prefix))
+                    if ab is None or not torch.equal(new, fold(old, *ab, scale)):
+                        uncanonical.append(key)
     checks.append(("merged tensors keep the base's names, shapes and dtypes", not layout, f"differ: {layout[:3]}"))
     checks.append((f"exactly the {modules} adapted weights changed", len(changed) == modules, f"{len(changed)}"))
     checks.append(("changed weights are finite", not broken, f"non-finite: {broken[:3]}"))
+    canonical = not unreadable and not uncanonical
+    detail = unreadable or f"differ: {uncanonical[:3]}"
+    checks.append(("merged weights are the canonical merge of the adapter (lora.fold)", canonical, detail))
     vision = [k for k in changed if ".visual." in k or not k.endswith(".weight")]
     checks.append(("no vision-tower or non-weight tensor changed", not vision, f"{vision[:3]}"))
     return checks
@@ -103,7 +122,7 @@ def check(run: Path, base: Path | None = None) -> dict[str, Any]:
         size = hidden_size(merged)
         checks.append(("head fits the merged hidden size", head.get("hidden_size") == size, f"backbone {size}"))
         if base is not None:
-            checks += _merged(merged, base, modules)
+            checks += _merged(run, base, modules)
         else:
             bad = [n for shard in sorted(merged.glob("*.safetensors")) for n in _finite(shard)[1]]
             checks.append(("merged weights are finite", not bad, f"non-finite: {bad[:3]}"))

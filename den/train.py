@@ -241,7 +241,7 @@ def train(
 ) -> None:
     from . import lora as lora_module
     from .head import HeadConfig, make_head, save_head
-    from .lora import LORA_PRESETS, LoraConfig, adapted, save_merged, warm_start
+    from .lora import LORA_PRESETS, LoraConfig, adapted, merge, warm_start
 
     lora = LoraConfig(args.lora, args.lora_alpha or 2 * args.lora, targets=LORA_PRESETS[args.lora_targets],
                       rslora=args.rslora)  # fmt: skip
@@ -437,7 +437,7 @@ def train(
     (out / "run.json").write_text(json.dumps(run, indent=2) + "\n", encoding="utf-8")
     print(f"saved {out}", flush=True)
     if lora.rank and args.merge:  # last: the adapter and head are already safe if this fails
-        print(f"saved {out / 'merged'}  ({save_merged(backbone, model_path, out / 'merged')} merged weights)")
+        print(f"saved {out / 'merged'}  ({merge(model_path, out, out / 'merged')} merged weights)")  # the saved adapter
         from .integrity import write
 
         if not write(out, model_path)["ok"]:

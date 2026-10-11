@@ -435,13 +435,32 @@ def test_split_gives_each_question_the_state_alone() -> None:
     assert "Is it late?" not in text(rows[0]) and "Which team?" not in text(rows[1])  # no question sees another
 
 
-def test_save_merged_folds_lora_into_the_base_layout(tmp_path: Path) -> None:
+def test_fold_is_the_same_bytes_on_any_thread_count_and_rounds_once() -> None:
+    """The canonical merge: float64 on the CPU, rounded once to the weight's dtype, whatever the BLAS threading, so a
+    server's rebuild of merged/ is byte for byte the evaluated one (an H100's TF32 merge is not reproducible)."""
+    from den.lora import fold
+
+    torch.manual_seed(0)
+    w, a, b = torch.randn(64, 48).to(torch.bfloat16), torch.randn(16, 48), torch.randn(64, 16) * 0.01
+    threads = torch.get_num_threads()
+    try:
+        torch.set_num_threads(1)
+        one = fold(w, a, b, 2.0)
+        torch.set_num_threads(max(threads, 4))
+        many = fold(w, a, b, 2.0)
+    finally:
+        torch.set_num_threads(threads)
+    assert one.dtype == torch.bfloat16 and torch.equal(one.view(torch.int16), many.view(torch.int16))
+    assert torch.equal(one, (w.double() + 2.0 * (b.double() @ a.double())).to(torch.bfloat16))
+
+
+def test_merge_folds_the_saved_adapter_into_the_base_layout(tmp_path: Path) -> None:
     import json
 
     import peft
     from safetensors.torch import load_file, save_file
 
-    from den.lora import save_merged
+    from den.lora import merge
 
     class Attn(torch.nn.Module):
         def __init__(self) -> None:
@@ -487,7 +506,8 @@ def test_save_merged_folds_lora_into_the_base_layout(tmp_path: Path) -> None:
     x = torch.randn(5, 4)
     expected = [base_model.model.layers[i].self_attn.q_proj(x) for i in range(2)]  # wrapped in place by peft
 
-    assert save_merged(adapted, base, tmp_path / "merged") == 2
+    adapted.save_pretrained(str(tmp_path / "run"))  # merge reads the adapter as training saved it, not the live model
+    assert merge(base, tmp_path / "run", tmp_path / "merged") == 2
     merged = load_file(tmp_path / "merged" / "model.safetensors")
     for i in range(2):
         got = x @ merged[f"model.language_model.layers.{i}.self_attn.q_proj.weight"].T
@@ -554,7 +574,7 @@ def test_merged_export_answers_like_the_adapter(tmp_path: Path) -> None:
     import shutil
 
     from den.head import save_head
-    from den.lora import LoraConfig, load_backbone, save_merged, text_tower
+    from den.lora import LoraConfig, load_backbone, merge, text_tower
     from den.runtime import Model
 
     torch.manual_seed(0)
@@ -593,7 +613,8 @@ def test_merged_export_answers_like_the_adapter(tmp_path: Path) -> None:
                 hidden = text_tower(model)(input_ids=torch.tensor([example.ids]), use_cache=False).last_hidden_state
                 want.append(head(hidden, [example])[0][0].float())
     run = tmp_path / "train-workspace"
-    save_merged(model, MODEL, run / "merged")
+    model.save_pretrained(run)
+    merge(MODEL, run, run / "merged")
     save_head(run, head, base="qwen3.5-4b", lora=8, temperature=1.0)
     del model
     gc.collect()

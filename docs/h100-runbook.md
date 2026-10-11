@@ -171,7 +171,8 @@ Both rounds:
   `calibration/core` plus the 18 per-source calibration splits (9,312 questions), one T per question type
   (`--calibrate-by-type`; `run.json` `calibration_report.temperatures`).
 - **Merge:** the last stage of each round writes `merged/`, the base checkpoint's own files with all 248 adapted
-  weights replaced by W + scale × B·A.
+  weights replaced by W + scale × B·A (`lora.fold`: float64 on the CPU, one rounding to bf16, so any machine rebuilds
+  the same bytes; `den check-run` refuses any other merge).
 
 Runs land in `runs/kev-recipe/{1-base,2-dates,3-documents,4-skills}` and `runs/round2`.
 
@@ -379,7 +380,7 @@ What the Hub repo then holds (`den publish` bundles it):
 
 | Path | What |
 |---|---|
-| `merged/` | the shipped model: LoRA folded into bf16 weights, loads like the base checkpoint |
+| `merged/` | v1 only. From v2 on it stays on the training box: `integrity.json` holds its sha256, and servers rebuild it from the adapter (`runtime.rebuild`) |
 | `adapter_model.safetensors`, `adapter_config.json` | the LoRA alone, for use on top of `Qwen/Qwen3.5-4B-Base` |
 | `head.safetensors`, `head.json` | the pointer head's weights, and its config (kind, size, backbone hidden size) and T |
 | `run.json`, `training_config.json`, `eval.json` | how it was trained (loss log `train_history`, validation curve `dev_history`, `calibration_report`, `best`, GPU and peak memory) and measured (every eval entry has `read_at`) |

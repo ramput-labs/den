@@ -67,7 +67,7 @@ def test_model_card_states_the_licences(tmp_path: Path) -> None:
     run = {"base": "qwen3.5-4b", "licences": {"open": 90, "restricted": 10}}
     (tmp_path / "run.json").write_text(json.dumps(run))
     text = card(tmp_path, "org/den")
-    assert "license: apache-2.0" in text and "base_model_relation: finetune" in text
+    assert "license: apache-2.0" in text and "base_model_relation: adapter" in text
     assert "| open | 90 |\n| restricted | 10 |" in text and "terms limit their use (restricted" in text
     (tmp_path / "run.json").write_text(json.dumps({**run, "licences": {"open": 90}, "max_licence": "share-alike"}))
     assert "allow commercial use (open or share-alike). Trained with `--max-licence share-alike`." in card(
@@ -187,7 +187,11 @@ def test_bundle_leaves_out_what_the_licences_forbid(tmp_path: Path, monkeypatch:
     assert "excluded" in public["dev/trec.jsonl"] and not (run / "data/dev/trec.jsonl").exists()
 
 
-def test_publish_never_uploads_excluded_data(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+def test_publish_never_uploads_excluded_data_or_merged_weights(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Licence-excluded data and merged/ stay off the Hub; an earlier version's merged/ on the repo is deleted, so it
+    can never be served beside this version's head (its tag keeps it)."""
+    import fnmatch
+
     import huggingface_hub
 
     from den import publish
@@ -196,8 +200,9 @@ def test_publish_never_uploads_excluded_data(tmp_path: Path, monkeypatch: pytest
     for f in set(publish.NEEDED) - {"run.json"}:
         (run / f).parent.mkdir(parents=True, exist_ok=True)
         (run / f).write_text("{}")
-    on_hub = {*publish.NEEDED, "README.md", "data/MANIFEST.json", "data/train/yelp.jsonl", "data/dev/trec.jsonl"}
-    calls: dict[str, list[str]] = {}
+    on_hub = {*publish.UPLOADED, "README.md", "data/MANIFEST.json", "data/train/yelp.jsonl", "data/dev/trec.jsonl",
+              "merged/config.json", "merged/model.safetensors"}  # fmt: skip
+    calls: dict[str, list[list[str]]] = {"deleted": []}
     private: list[bool] = []
 
     class Api:
@@ -208,12 +213,12 @@ def test_publish_never_uploads_excluded_data(tmp_path: Path, monkeypatch: pytest
             return type("Info", (), {"private": False})()  # already public: public rules apply
 
         def delete_files(self, repo: str, delete_patterns: list[str], commit_message: str) -> None:
-            on_hub.difference_update(delete_patterns)
-            calls["deleted"] = delete_patterns
+            on_hub.difference_update({f for f in on_hub if any(fnmatch.fnmatch(f, p) for p in delete_patterns)})
+            calls["deleted"].append(delete_patterns)
 
     def upload(repo: str, folder: Path, repo_type: str, ignore_patterns: list[str], **kw: bool) -> None:
         private.append(kw["private"])
-        calls["ignored"] = ignore_patterns
+        calls["ignored"] = [ignore_patterns]
 
     monkeypatch.setattr(publish, "verify", lambda run: None)
     monkeypatch.setattr(huggingface_hub, "HfApi", Api)
@@ -221,8 +226,9 @@ def test_publish_never_uploads_excluded_data(tmp_path: Path, monkeypatch: pytest
     monkeypatch.setattr(huggingface_hub, "upload_large_folder", upload)
     monkeypatch.setattr(huggingface_hub, "list_repo_files", lambda repo: sorted(on_hub))
     publish.publish(run, "org/den", private=True)
-    assert calls["deleted"] == ["data/dev/trec.jsonl", "data/train/yelp.jsonl"] and private == [False]
-    assert {"data/dev/trec.jsonl", "data/train/yelp.jsonl"} <= set(calls["ignored"])
+    assert calls["deleted"] == [["data/dev/trec.jsonl", "data/train/yelp.jsonl"], ["merged/*"]] and private == [False]
+    assert {"data/dev/trec.jsonl", "data/train/yelp.jsonl", "merged/*"} <= set(calls["ignored"][0])
+    assert not any(f.startswith("merged/") for f in on_hub)
     on_hub.add("data/train/yelp.jsonl")  # a copy that slipped through is caught after the upload
     monkeypatch.setattr(Api, "delete_files", lambda self, repo, delete_patterns, commit_message: None)
     with pytest.raises(SystemExit, match="licences exclude"):
