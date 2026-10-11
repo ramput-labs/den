@@ -86,8 +86,8 @@ setup-gpu: ## Linux + NVIDIA (driver >= 580): setup, then Unsloth on top without
 	@echo "make targets now skip uv's sync; for your own uv runs: export UV_NO_SYNC=1 && echo 'export UV_NO_SYNC=1' >> ~/.bashrc"
 
 check: ## lint, strict type-check, unit tests, claims vs evidence
-	$(UV) ruff check den scripts tests
-	$(UV) ruff format --check den scripts tests
+	$(UV) ruff check den scripts tests examples
+	$(UV) ruff format --check den scripts tests examples
 	$(UV) mypy
 	$(UV) pytest -q
 	$(UV) python -m scripts.verify_claims
@@ -216,6 +216,13 @@ release: ## publish RUN as VERSION, tag it on REPO, record releases/VERSION.json
 
 release-list: ## every released version, its parent and headline numbers
 	$(UV) den release list
+
+bench-run: ## den vs Kev-4B on every dev panel through both servers (benchmarks/): [DEN_URL=http://127.0.0.1:8009] [KEV_URL=http://127.0.0.1:8008]
+	$(UV) python -m scripts.run_benchmarks --model kev-4b=$(or $(KEV_URL),http://127.0.0.1:8008) \
+		--model den-v1=$(or $(DEN_URL),http://127.0.0.1:8009) --baseline kev-4b
+
+bench-plot: ## benchmarks/results.json -> plots (light + dark) and benchmarks/README.md
+	$(UV) python -m scripts.plot_benchmarks
 
 ##@ Local RTX 3070 (8 GB): the whole pipeline at small scale, before renting an H100 (docs/local-gpu.md)
 

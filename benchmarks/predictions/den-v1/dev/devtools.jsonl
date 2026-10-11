@@ -1,0 +1,900 @@
+{"line": 1, "record": "when2call/18c51a04-5161-4e35-be11-6e85d172d696", "ms": 591.3, "tokens": 1591, "probs": {"action": [0.6197, 0.1446, 0.133, 0.1027]}}
+{"line": 2, "record": "commitpackft/rust/1423", "ms": 175.1, "tokens": 394, "probs": {"change_type": [0.043104, 0.09741, 0.430843, 0.272827, 0.036404, 0.021602, 0.09781]}}
+{"line": 3, "record": "when2call/f564a228-e87f-42f1-aa4e-0cd2633a7b8c", "ms": 68.0, "tokens": 83, "probs": {"action": [0.0276, 0.0293, 0.5949, 0.3482]}}
+{"line": 4, "record": "commitpackft/python/4772", "ms": 197.7, "tokens": 429, "probs": {"change_type": [0.0955, 0.1579, 0.0621, 0.1218, 0.0383, 0.4268, 0.0976], "message_match": [0.9783, 0.0217]}}
+{"line": 5, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.api.handlers.UpdateHandlerTest#testHandleRequest__Asynchronous", "ms": 272.7, "tokens": 699, "probs": {"flaky": [0.7697, 0.2303]}}
+{"line": 6, "record": "when2call/66399dcd-49dc-44ea-95af-432b90bca46b", "ms": 241.5, "tokens": 600, "probs": {"action": [0.072, 0.191, 0.5095, 0.2275]}}
+{"line": 7, "record": "prompt_injection/deepset/test/51", "ms": 56.3, "tokens": 32, "probs": {"injection": [0.9293, 0.0707]}}
+{"line": 8, "record": "when2call/b6551584-635d-4cc5-b9b2-b9b8f3827eb1", "ms": 464.2, "tokens": 1224, "probs": {"action": [0.158916, 0.69537, 0.119912, 0.025803]}}
+{"line": 9, "record": "prompt_injection/deepset/train/241", "ms": 54.4, "tokens": 32, "probs": {"injection": [0.877, 0.123]}}
+{"line": 10, "record": "prompt_injection/deepset/train/352", "ms": 59.8, "tokens": 33, "probs": {"injection": [0.8212, 0.1788]}}
+{"line": 11, "record": "aegis/0758b37d0ce74549a80d8ac7dcb3157b", "ms": 61.1, "tokens": 27, "probs": {"unsafe": [0.6985, 0.3015]}}
+{"line": 12, "record": "commitpackft/javascript/43641", "ms": 171.9, "tokens": 332, "probs": {"change_type": [0.036996, 0.153785, 0.364064, 0.140486, 0.052295, 0.029097, 0.223278], "message_match": [0.0185, 0.9815]}}
+{"line": 13, "record": "commitpackft/python/36574", "ms": 452.3, "tokens": 1123, "probs": {"change_type": [0.0665, 0.1519, 0.3438, 0.1927, 0.0336, 0.0225, 0.189], "message_match": [0.9879, 0.0121]}}
+{"line": 14, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#headWithEscapedMappedQueryParams", "ms": 128.8, "tokens": 262, "probs": {"flaky": [0.2316, 0.7684]}}
+{"line": 15, "record": "prompt_injection/deepset/train/312", "ms": 59.9, "tokens": 36, "probs": {"injection": [0.795, 0.205]}}
+{"line": 16, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testBatchMutateBatchMutation", "ms": 227.1, "tokens": 572, "probs": {"flaky": [0.222, 0.778]}}
+{"line": 17, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.utilities.PredicateBuilderTest#testAndOr", "ms": 155.9, "tokens": 373, "probs": {"flaky": [0.9692, 0.0308]}}
+{"line": 18, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#verifierAccepts", "ms": 73.9, "tokens": 118, "probs": {"flaky": [0.5917, 0.4083]}}
+{"line": 19, "record": "prompt_injection/deepset/train/304", "ms": 60.3, "tokens": 36, "probs": {"injection": [0.6105, 0.3895]}}
+{"line": 20, "record": "commitpackft/python/37421", "ms": 175.1, "tokens": 357, "probs": {"change_type": [0.427143, 0.10051, 0.054905, 0.155316, 0.085009, 0.070207, 0.106911], "message_match": [0.0259, 0.9741]}}
+{"line": 21, "record": "aegis/aa8f9128820d4fb7900151fd2a25813c", "ms": 60.5, "tokens": 37, "probs": {"unsafe": [0.6605, 0.3395]}}
+{"line": 22, "record": "when2call/1c72a803-5328-41e9-b4d5-48c9c154553b", "ms": 390.8, "tokens": 1049, "probs": {"action": [0.424042, 0.368537, 0.10041, 0.107011]}}
+{"line": 23, "record": "prompt_injection/deepset/train/174", "ms": 61.3, "tokens": 37, "probs": {"injection": [0.8879, 0.1121]}}
+{"line": 24, "record": "when2call/297c3d81-5c8d-45aa-aaa0-a182ac4759c4", "ms": 135.4, "tokens": 289, "probs": {"action": [0.1382, 0.586, 0.1745, 0.1013]}}
+{"line": 25, "record": "codereviewer/cls-valid/18066", "ms": 193.0, "tokens": 507, "probs": {"needs_comment": [0.5174, 0.4826]}}
+{"line": 26, "record": "codereviewer/cls-test/14785", "ms": 96.6, "tokens": 207, "probs": {"needs_comment": [0.5213, 0.4787]}}
+{"line": 27, "record": "codereviewer/cls-test/16879", "ms": 91.0, "tokens": 174, "probs": {"needs_comment": [0.5462, 0.4538]}}
+{"line": 28, "record": "prompt_injection/deepset/train/87", "ms": 61.3, "tokens": 38, "probs": {"injection": [0.6869, 0.3131]}}
+{"line": 29, "record": "aegis/4f312af91f8a40c18f44a84de97ddf95", "ms": 59.7, "tokens": 35, "probs": {"unsafe": [0.4174, 0.5826]}}
+{"line": 30, "record": "prompt_injection/deepset/train/253", "ms": 56.5, "tokens": 30, "probs": {"injection": [0.8932, 0.1068]}}
+{"line": 31, "record": "codereviewer/cls-valid/12824", "ms": 143.9, "tokens": 329, "probs": {"needs_comment": [0.4224, 0.5776]}}
+{"line": 32, "record": "commitpackft/javascript/10178", "ms": 187.8, "tokens": 403, "probs": {"change_type": [0.127213, 0.080308, 0.029803, 0.087009, 0.036304, 0.553055, 0.086309], "message_match": [0.0249, 0.9751]}}
+{"line": 33, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.api.services.AmbariMetaInfoTest#isValidService", "ms": 66.2, "tokens": 85, "probs": {"flaky": [0.8453, 0.1547]}}
+{"line": 34, "record": "when2call/f64ac28a-d98e-4b3c-816c-594585d9ee62", "ms": 253.2, "tokens": 650, "probs": {"action": [0.0981, 0.3102, 0.3257, 0.266]}}
+{"line": 35, "record": "aegis/3f95c19fd8b04a278eeb7f7b1f11c32f", "ms": 61.9, "tokens": 48, "probs": {"unsafe": [0.1179, 0.8821]}}
+{"line": 36, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#postWithEscapedMappedQueryParams", "ms": 127.5, "tokens": 262, "probs": {"flaky": [0.2968, 0.7032]}}
+{"line": 37, "record": "commitpackft/c++/2490", "ms": 352.8, "tokens": 851, "probs": {"change_type": [0.058894, 0.067393, 0.084092, 0.085391, 0.606239, 0.033597, 0.064394], "message_match": [0.0199, 0.9801]}}
+{"line": 38, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testMultigetSlice", "ms": 149.3, "tokens": 352, "probs": {"flaky": [0.324, 0.676]}}
+{"line": 39, "record": "when2call/3e1ded3d-48bd-4ffb-95fd-27d8bf4e6d94", "ms": 523.7, "tokens": 1396, "probs": {"action": [0.208321, 0.539754, 0.160916, 0.091009]}}
+{"line": 40, "record": "aegis/2026c1cf4c4f4b718cdae407fa036bf3", "ms": 63.6, "tokens": 39, "probs": {"unsafe": [0.6998, 0.3002]}}
+{"line": 41, "record": "codereviewer/cls-test/40274", "ms": 105.6, "tokens": 244, "probs": {"needs_comment": [0.557, 0.443]}}
+{"line": 42, "record": "when2call/7db234fa-043c-4d62-aa62-3c25cc04fe60", "ms": 403.4, "tokens": 1047, "probs": {"action": [0.0526, 0.0664, 0.5347, 0.3463]}}
+{"line": 43, "record": "prompt_injection/deepset/train/517", "ms": 64.8, "tokens": 51, "probs": {"injection": [0.4871, 0.5129]}}
+{"line": 44, "record": "aegis/a758459f07fe4cf683e69c46d9e02660", "ms": 62.5, "tokens": 45, "probs": {"unsafe": [0.3924, 0.6076]}}
+{"line": 45, "record": "codereviewer/cls-test/16175", "ms": 102.2, "tokens": 235, "probs": {"needs_comment": [0.583, 0.417]}}
+{"line": 46, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#getBufferedReader", "ms": 84.3, "tokens": 155, "probs": {"flaky": [0.2538, 0.7462]}}
+{"line": 47, "record": "when2call/fa2ecb14-a6af-4ac3-ac60-cbfbc6d0b306", "ms": 130.0, "tokens": 276, "probs": {"action": [0.0987, 0.6003, 0.1345, 0.1665]}}
+{"line": 48, "record": "commitpackft/ruby/52785", "ms": 264.3, "tokens": 578, "probs": {"change_type": [0.0811, 0.1964, 0.1515, 0.2823, 0.0697, 0.0426, 0.1764], "message_match": [0.0459, 0.9541]}}
+{"line": 49, "record": "commitpackft/javascript/11088", "ms": 225.9, "tokens": 504, "probs": {"change_type": [0.1701, 0.208, 0.111, 0.2919, 0.0689, 0.0346, 0.1155], "message_match": [0.9886, 0.0114]}}
+{"line": 50, "record": "codereviewer/cls-test/10922", "ms": 136.7, "tokens": 315, "probs": {"needs_comment": [0.5047, 0.4953]}}
+{"line": 51, "record": "prompt_injection/deepset/train/444", "ms": 59.9, "tokens": 34, "probs": {"injection": [0.8286, 0.1714]}}
+{"line": 52, "record": "prompt_injection/deepset/train/208", "ms": 56.0, "tokens": 28, "probs": {"injection": [0.8886, 0.1114]}}
+{"line": 53, "record": "when2call/a738f72d-35b8-47c4-a8e1-1bbdefa857b2", "ms": 231.6, "tokens": 577, "probs": {"action": [0.105411, 0.217922, 0.448145, 0.228523]}}
+{"line": 54, "record": "aegis/185f4e9ba59b404dad864e179fbeeb0f", "ms": 785.2, "tokens": 2094, "probs": {"unsafe": [0.448, 0.552]}}
+{"line": 55, "record": "when2call/0d5f08c1-b9d8-4804-a9cd-3cd7729356da", "ms": 150.4, "tokens": 352, "probs": {"action": [0.14, 0.7636, 0.0441, 0.0523]}}
+{"line": 56, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testGetServices", "ms": 150.6, "tokens": 325, "probs": {"flaky": [0.5532, 0.4468]}}
+{"line": 57, "record": "commitpackft/javascript/14553", "ms": 167.7, "tokens": 294, "probs": {"change_type": [0.047005, 0.157216, 0.109611, 0.232623, 0.238824, 0.038004, 0.176718], "message_match": [0.9733, 0.0267]}}
+{"line": 58, "record": "codereviewer/cls-test/8091", "ms": 90.2, "tokens": 171, "probs": {"needs_comment": [0.6322, 0.3678]}}
+{"line": 59, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#locationHeader", "ms": 80.5, "tokens": 134, "probs": {"flaky": [0.7562, 0.2438]}}
+{"line": 60, "record": "commitpackft/python/31433", "ms": 177.9, "tokens": 360, "probs": {"change_type": [0.2246, 0.1776, 0.1026, 0.2865, 0.0446, 0.0257, 0.1384], "message_match": [0.9798, 0.0202]}}
+{"line": 61, "record": "prompt_injection/deepset/train/192", "ms": 57.1, "tokens": 28, "probs": {"injection": [0.8951, 0.1049]}}
+{"line": 62, "record": "aegis/30580ac4f8c8454381ef9998dc387dae", "ms": 66.1, "tokens": 87, "probs": {"unsafe": [0.7959, 0.2041]}}
+{"line": 63, "record": "codereviewer/cls-valid/11721", "ms": 137.3, "tokens": 289, "probs": {"needs_comment": [0.5725, 0.4275]}}
+{"line": 64, "record": "codereviewer/cls-valid/22013", "ms": 156.4, "tokens": 382, "probs": {"needs_comment": [0.5566, 0.4434]}}
+{"line": 65, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.connection.HThriftClientTest#testFailOnDoubleOpen", "ms": 65.7, "tokens": 70, "probs": {"flaky": [0.7934, 0.2066]}}
+{"line": 66, "record": "when2call/03167efa-28e3-4cbd-8e4c-657042f4c71d", "ms": 220.3, "tokens": 545, "probs": {"action": [0.8527, 0.0441, 0.0861, 0.0171]}}
+{"line": 67, "record": "aegis/56ad191a3c33404a8aab4f2e27234bf8", "ms": 391.1, "tokens": 934, "probs": {"unsafe": [0.3004, 0.6996], "category": [0.020802, 0.0009, 0.0002, 0.0004, 0.0009, 0.0006, 0.0014, 0.017202, 0.002, 0.950695, 0.0008, 0.0041]}}
+{"line": 68, "record": "aegis/696f5652a16c4e8ba16e449fdea04746", "ms": 131.3, "tokens": 154, "probs": {"unsafe": [0.2044, 0.7956], "category": [0.9499, 0.0071, 0.0035, 0.0226, 0.0019, 0.0008, 0.0011, 0.0055, 0.0032, 0.0004, 0.0004, 0.0036]}}
+{"line": 69, "record": "codereviewer/cls-valid/10649", "ms": 100.2, "tokens": 223, "probs": {"needs_comment": [0.5563, 0.4437]}}
+{"line": 70, "record": "commitpackft/javascript/44432", "ms": 601.3, "tokens": 1543, "probs": {"change_type": [0.1049, 0.0203, 0.0135, 0.0272, 0.0189, 0.7709, 0.0443], "message_match": [0.9899, 0.0101]}}
+{"line": 71, "record": "when2call/483e9a31-fb37-4d98-84f1-ce1d57597134", "ms": 324.5, "tokens": 806, "probs": {"action": [0.1357, 0.262, 0.3296, 0.2727]}}
+{"line": 72, "record": "commitpackft/javascript/25128", "ms": 200.1, "tokens": 434, "probs": {"change_type": [0.0693, 0.297, 0.116, 0.2622, 0.0582, 0.0324, 0.1649], "message_match": [0.0294, 0.9706]}}
+{"line": 73, "record": "prompt_injection/gandalf/train/597", "ms": 62.0, "tokens": 34, "probs": {"injection": [0.5512, 0.4488]}}
+{"line": 74, "record": "when2call/59c2daf0-5e3f-4457-b969-83f45583b332", "ms": 73.5, "tokens": 111, "probs": {"action": [0.0404, 0.0356, 0.7575, 0.1665]}}
+{"line": 75, "record": "codereviewer/cls-test/15204", "ms": 129.6, "tokens": 270, "probs": {"needs_comment": [0.5189, 0.4811]}}
+{"line": 76, "record": "codereviewer/cls-valid/13308", "ms": 158.5, "tokens": 375, "probs": {"needs_comment": [0.441, 0.559]}}
+{"line": 77, "record": "codereviewer/cls-test/14457", "ms": 80.3, "tokens": 136, "probs": {"needs_comment": [0.5205, 0.4795]}}
+{"line": 78, "record": "prompt_injection/gandalf/train/195", "ms": 54.0, "tokens": 32, "probs": {"injection": [0.5192, 0.4808]}}
+{"line": 79, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.agent.TestActionQueue#testConcurrentOperations", "ms": 253.4, "tokens": 659, "probs": {"flaky": [0.2308, 0.7692]}}
+{"line": 80, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#postWithEscapedVarargsQueryParams", "ms": 101.6, "tokens": 236, "probs": {"flaky": [0.323, 0.677]}}
+{"line": 81, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.model.MutatorTest#testSubDelete", "ms": 147.5, "tokens": 339, "probs": {"flaky": [0.5209, 0.4791]}}
+{"line": 82, "record": "prompt_injection/gandalf/validation/23", "ms": 63.0, "tokens": 39, "probs": {"injection": [0.2223, 0.7777]}}
+{"line": 83, "record": "aegis/d5cd897c836b4176a5121066fa1f88d2", "ms": 59.9, "tokens": 37, "probs": {"unsafe": [0.5985, 0.4015]}}
+{"line": 84, "record": "commitpackft/ruby/14659", "ms": 186.4, "tokens": 413, "probs": {"change_type": [0.1259, 0.0905, 0.0445, 0.1591, 0.4292, 0.0719, 0.0789], "message_match": [0.9538, 0.0462]}}
+{"line": 85, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.utilities.PredicateBuilderTest#testLessThanEqualToDouble", "ms": 88.9, "tokens": 182, "probs": {"flaky": [0.9728, 0.0272]}}
+{"line": 86, "record": "commitpackft/shell/24604", "ms": 190.3, "tokens": 426, "probs": {"change_type": [0.370337, 0.117812, 0.058406, 0.157816, 0.043204, 0.150815, 0.10161], "message_match": [0.3384, 0.6616]}}
+{"line": 87, "record": "aegis/adfae82b3f0a426fa38e3fd87d00c71c", "ms": 100.0, "tokens": 226, "probs": {"unsafe": [0.7082, 0.2918]}}
+{"line": 88, "record": "aegis/9261e09e057448e4aa1476a4660d584c", "ms": 66.0, "tokens": 78, "probs": {"unsafe": [0.1598, 0.8402]}}
+{"line": 89, "record": "commitpackft/c/5540", "ms": 330.7, "tokens": 790, "probs": {"change_type": [0.031303, 0.023102, 0.015902, 0.023302, 0.844784, 0.026903, 0.034703], "message_match": [0.9913, 0.0087]}}
+{"line": 90, "record": "codereviewer/cls-test/35989", "ms": 158.4, "tokens": 370, "probs": {"needs_comment": [0.5691, 0.4309]}}
+{"line": 91, "record": "aegis/70a5efd0f62641919a85c7ad7518da7a", "ms": 62.5, "tokens": 45, "probs": {"unsafe": [0.174, 0.826]}}
+{"line": 92, "record": "commitpackft/javascript/10984", "ms": 419.2, "tokens": 1086, "probs": {"change_type": [0.1651, 0.1076, 0.1988, 0.3416, 0.049, 0.0277, 0.1102], "message_match": [0.0591, 0.9409]}}
+{"line": 93, "record": "codereviewer/cls-valid/8579", "ms": 104.3, "tokens": 234, "probs": {"needs_comment": [0.5431, 0.4569]}}
+{"line": 94, "record": "prompt_injection/gandalf/train/84", "ms": 61.4, "tokens": 37, "probs": {"injection": [0.7141, 0.2859]}}
+{"line": 95, "record": "flakeflagger/hector-client-hector/me.prettyprint.hector.api.ApiV2SystemTest#testSubColumnQuery", "ms": 130.1, "tokens": 261, "probs": {"flaky": [0.6612, 0.3388]}}
+{"line": 96, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testServiceUpdateRecursive", "ms": 871.7, "tokens": 2336, "probs": {"flaky": [0.3394, 0.6606]}}
+{"line": 97, "record": "when2call/ff9815f7-9902-4f51-be8c-1d95cc426a67", "ms": 151.5, "tokens": 323, "probs": {"action": [0.09709, 0.363564, 0.352665, 0.186681]}}
+{"line": 98, "record": "commitpackft/ruby/58343", "ms": 180.4, "tokens": 326, "probs": {"change_type": [0.104, 0.0284, 0.0141, 0.0331, 0.026, 0.7481, 0.0463], "message_match": [0.0135, 0.9865]}}
+{"line": 99, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.bootstrap.BootStrapResourceTest#bootStrapGet", "ms": 81.7, "tokens": 132, "probs": {"flaky": [0.1476, 0.8524]}}
+{"line": 100, "record": "commitpackft/shell/23132", "ms": 175.3, "tokens": 331, "probs": {"change_type": [0.043796, 0.107189, 0.219878, 0.137186, 0.19668, 0.041796, 0.253475], "message_match": [0.9393, 0.0607]}}
+{"line": 101, "record": "aegis/8348a45a9c97496892477ae1ac7bc263", "ms": 216.1, "tokens": 524, "probs": {"unsafe": [0.768, 0.232]}}
+{"line": 102, "record": "commitpackft/c#/5565", "ms": 164.9, "tokens": 306, "probs": {"change_type": [0.0903, 0.2349, 0.1463, 0.243, 0.0505, 0.0334, 0.2016], "message_match": [0.9289, 0.0711]}}
+{"line": 103, "record": "prompt_injection/deepset/train/290", "ms": 60.3, "tokens": 33, "probs": {"injection": [0.8052, 0.1948]}}
+{"line": 104, "record": "aegis/26a8ae2ca0184ed293929dcd010afb03", "ms": 61.3, "tokens": 24, "probs": {"unsafe": [0.9317, 0.0683]}}
+{"line": 105, "record": "prompt_injection/gandalf/train/54", "ms": 60.0, "tokens": 35, "probs": {"injection": [0.6963, 0.3037]}}
+{"line": 106, "record": "prompt_injection/deepset/train/260", "ms": 61.1, "tokens": 51, "probs": {"injection": [0.378, 0.622]}}
+{"line": 107, "record": "codereviewer/cls-valid/13712", "ms": 91.4, "tokens": 194, "probs": {"needs_comment": [0.5443, 0.4557]}}
+{"line": 108, "record": "prompt_injection/gandalf/test/61", "ms": 55.9, "tokens": 26, "probs": {"injection": [0.2424, 0.7576]}}
+{"line": 109, "record": "aegis/d4ae0c87937d4ec89ad898c487ae1e1f", "ms": 55.4, "tokens": 25, "probs": {"unsafe": [0.9292, 0.0708]}}
+{"line": 110, "record": "aegis/dc3f6af00c994f3c9bd9940df51b4866", "ms": 60.1, "tokens": 37, "probs": {"unsafe": [0.1492, 0.8508]}}
+{"line": 111, "record": "aegis/0bcf892b477f4bee96e43a79fff099bd", "ms": 55.9, "tokens": 28, "probs": {"unsafe": [0.1946, 0.8054]}}
+{"line": 112, "record": "flakeflagger/hector-client-hector/me.prettyprint.hector.api.ClockResolutionTest#testMicrosecondsSync", "ms": 92.9, "tokens": 199, "probs": {"flaky": [0.2806, 0.7194]}}
+{"line": 113, "record": "prompt_injection/deepset/train/136", "ms": 56.7, "tokens": 28, "probs": {"injection": [0.9046, 0.0954]}}
+{"line": 114, "record": "aegis/8f8f37db523d419aa02a5de8b0c1d6b5", "ms": 56.0, "tokens": 28, "probs": {"unsafe": [0.2736, 0.7264]}}
+{"line": 115, "record": "prompt_injection/gandalf/train/453", "ms": 59.5, "tokens": 37, "probs": {"injection": [0.292, 0.708]}}
+{"line": 116, "record": "when2call/7e163d42-994c-4dcc-8086-6302ed5421aa", "ms": 71.7, "tokens": 113, "probs": {"action": [0.021102, 0.015302, 0.20072, 0.762876]}}
+{"line": 117, "record": "aegis/4ad63e4303ae45d8ab5703241af8dcd0", "ms": 59.5, "tokens": 35, "probs": {"unsafe": [0.825, 0.175]}}
+{"line": 118, "record": "prompt_injection/deepset/train/157", "ms": 58.5, "tokens": 28, "probs": {"injection": [0.9553, 0.0447]}}
+{"line": 119, "record": "commitpackft/ruby/23792", "ms": 190.3, "tokens": 440, "probs": {"change_type": [0.3256, 0.0956, 0.0715, 0.1675, 0.0876, 0.0946, 0.1576], "message_match": [0.9881, 0.0119]}}
+{"line": 120, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.internal.ClusterControllerImplTest#testUpdateResources", "ms": 99.0, "tokens": 236, "probs": {"flaky": [0.8697, 0.1303]}}
+{"line": 121, "record": "commitpackft/ruby/22608", "ms": 279.5, "tokens": 623, "probs": {"change_type": [0.345665, 0.091291, 0.086691, 0.224678, 0.078692, 0.057794, 0.115188], "message_match": [0.0146, 0.9854]}}
+{"line": 122, "record": "aegis/bd006a3ccebe4f0d86cda888e2d61cc0", "ms": 56.2, "tokens": 28, "probs": {"unsafe": [0.4119, 0.5881]}}
+{"line": 123, "record": "flakeflagger/hector-client-hector/me.prettyprint.hector.api.ApiV2SystemTest#testMultigetSubSliceQuery", "ms": 233.7, "tokens": 579, "probs": {"flaky": [0.2616, 0.7384]}}
+{"line": 124, "record": "commitpackft/ruby/57250", "ms": 557.4, "tokens": 1375, "probs": {"change_type": [0.108289, 0.144986, 0.132387, 0.259274, 0.232177, 0.050295, 0.072593], "message_match": [0.0559, 0.9441]}}
+{"line": 125, "record": "when2call/bf750de7-df76-4960-961d-aff7f4057808", "ms": 97.7, "tokens": 216, "probs": {"action": [0.6121, 0.0541, 0.1424, 0.1914]}}
+{"line": 126, "record": "codereviewer/cls-valid/36343", "ms": 238.9, "tokens": 592, "probs": {"needs_comment": [0.4729, 0.5271]}}
+{"line": 127, "record": "codereviewer/cls-valid/49463", "ms": 142.9, "tokens": 319, "probs": {"needs_comment": [0.4844, 0.5156]}}
+{"line": 128, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.api.query.QueryImplTest#testAddProperty__localSubCategory", "ms": 170.0, "tokens": 394, "probs": {"flaky": [0.8821, 0.1179]}}
+{"line": 129, "record": "codereviewer/cls-valid/8290", "ms": 148.1, "tokens": 322, "probs": {"needs_comment": [0.4347, 0.5653]}}
+{"line": 130, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testGetHosts", "ms": 284.1, "tokens": 753, "probs": {"flaky": [0.6882, 0.3118]}}
+{"line": 131, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.examples.ExampleDaoV2Test#testInsertGetDelete", "ms": 90.0, "tokens": 162, "probs": {"flaky": [0.1408, 0.8592]}}
+{"line": 132, "record": "codereviewer/cls-valid/40858", "ms": 158.1, "tokens": 364, "probs": {"needs_comment": [0.5019, 0.4981]}}
+{"line": 133, "record": "prompt_injection/deepset/train/162", "ms": 62.7, "tokens": 35, "probs": {"injection": [0.9099, 0.0901]}}
+{"line": 134, "record": "codereviewer/cls-valid/36012", "ms": 168.8, "tokens": 395, "probs": {"needs_comment": [0.5063, 0.4937]}}
+{"line": 135, "record": "when2call/2f5f9083-dc1c-4db4-8b90-5d1499acf311", "ms": 133.0, "tokens": 271, "probs": {"action": [0.5125, 0.172, 0.1877, 0.1278]}}
+{"line": 136, "record": "when2call/59141ffc-581b-4e68-a371-51e2dd947ffe", "ms": 448.8, "tokens": 1207, "probs": {"action": [0.7819, 0.0719, 0.0791, 0.0671]}}
+{"line": 137, "record": "when2call/866d57b2-2ac8-41ef-adda-e70914db57db", "ms": 66.5, "tokens": 78, "probs": {"action": [0.059506, 0.050505, 0.615562, 0.274427]}}
+{"line": 138, "record": "when2call/f52fc786-7745-4c1f-96fe-951103c96188", "ms": 135.3, "tokens": 261, "probs": {"action": [0.6597, 0.1535, 0.1101, 0.0767]}}
+{"line": 139, "record": "prompt_injection/deepset/test/35", "ms": 61.9, "tokens": 36, "probs": {"injection": [0.9644, 0.0356]}}
+{"line": 140, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testGetClusters", "ms": 97.9, "tokens": 213, "probs": {"flaky": [0.7309, 0.2691]}}
+{"line": 141, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.state.cluster.ClusterTest#testSetHostState", "ms": 71.2, "tokens": 99, "probs": {"flaky": [0.8846, 0.1154]}}
+{"line": 142, "record": "prompt_injection/deepset/test/86", "ms": 60.5, "tokens": 42, "probs": {"injection": [0.8127, 0.1873]}}
+{"line": 143, "record": "prompt_injection/deepset/test/83", "ms": 59.5, "tokens": 34, "probs": {"injection": [0.8151, 0.1849]}}
+{"line": 144, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.utilities.PredicateBuilderTest#testBlocks", "ms": 280.6, "tokens": 768, "probs": {"flaky": [0.9743, 0.0257]}}
+{"line": 145, "record": "codereviewer/cls-valid/24629", "ms": 194.6, "tokens": 510, "probs": {"needs_comment": [0.5362, 0.4638]}}
+{"line": 146, "record": "codereviewer/cls-valid/13126", "ms": 133.4, "tokens": 279, "probs": {"needs_comment": [0.5741, 0.4259]}}
+{"line": 147, "record": "prompt_injection/gandalf/validation/81", "ms": 61.8, "tokens": 36, "probs": {"injection": [0.3215, 0.6785]}}
+{"line": 148, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#getWithVarargsQueryParams", "ms": 100.8, "tokens": 231, "probs": {"flaky": [0.3006, 0.6994]}}
+{"line": 149, "record": "commitpackft/ruby/11078", "ms": 776.7, "tokens": 2011, "probs": {"change_type": [0.1036, 0.0339, 0.0139, 0.0273, 0.0119, 0.7634, 0.046], "message_match": [0.9874, 0.0126]}}
+{"line": 150, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#basicAuthentication", "ms": 140.7, "tokens": 275, "probs": {"flaky": [0.291, 0.709]}}
+{"line": 151, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.dao.SimpleCassandraDaoTest#testInsertGetDelete", "ms": 77.1, "tokens": 123, "probs": {"flaky": [0.2831, 0.7169]}}
+{"line": 152, "record": "prompt_injection/deepset/train/16", "ms": 57.1, "tokens": 29, "probs": {"injection": [0.8849, 0.1151]}}
+{"line": 153, "record": "when2call/a963a08e-1ec8-40d4-9c48-e85acef340cb", "ms": 175.8, "tokens": 438, "probs": {"action": [0.1234, 0.2619, 0.3774, 0.2373]}}
+{"line": 154, "record": "codereviewer/cls-valid/13374", "ms": 131.3, "tokens": 278, "probs": {"needs_comment": [0.3924, 0.6076]}}
+{"line": 155, "record": "commitpackft/java/16604", "ms": 193.8, "tokens": 446, "probs": {"change_type": [0.0367, 0.2175, 0.1394, 0.2006, 0.0684, 0.2217, 0.1157], "message_match": [0.9903, 0.0097]}}
+{"line": 156, "record": "commitpackft/php/22809", "ms": 179.7, "tokens": 379, "probs": {"change_type": [0.174383, 0.186081, 0.072493, 0.239776, 0.164884, 0.043396, 0.118988], "message_match": [0.9888, 0.0112]}}
+{"line": 157, "record": "when2call/ffe93083-b030-4c00-bb63-cf9585e047b5", "ms": 94.9, "tokens": 218, "probs": {"action": [0.4596, 0.0702, 0.2, 0.2702]}}
+{"line": 158, "record": "prompt_injection/gandalf/train/194", "ms": 60.7, "tokens": 43, "probs": {"injection": [0.2746, 0.7254]}}
+{"line": 159, "record": "when2call/12cc7435-8bd5-4079-b1b5-ff2c6b37d659", "ms": 189.6, "tokens": 501, "probs": {"action": [0.438, 0.253, 0.2061, 0.1029]}}
+{"line": 160, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testCreateServiceWithInvalidInfo", "ms": 155.7, "tokens": 361, "probs": {"flaky": [0.4161, 0.5839]}}
+{"line": 161, "record": "codereviewer/cls-valid/12125", "ms": 90.7, "tokens": 192, "probs": {"needs_comment": [0.1063, 0.8937]}}
+{"line": 162, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testCreateClusterWithDesiredClusterConfigs", "ms": 63.3, "tokens": 60, "probs": {"flaky": [0.3965, 0.6035]}}
+{"line": 163, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testGetSuperColumn", "ms": 61.9, "tokens": 55, "probs": {"flaky": [0.1965, 0.8035]}}
+{"line": 164, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.CassandraClusterTest#testDescribeKeyspaces", "ms": 65.1, "tokens": 81, "probs": {"flaky": [0.124, 0.876]}}
+{"line": 165, "record": "when2call/735d4c32-4488-4ed2-b639-83e4a2671244", "ms": 129.6, "tokens": 281, "probs": {"action": [0.083592, 0.647635, 0.170083, 0.09869]}}
+{"line": 166, "record": "codereviewer/cls-valid/12599", "ms": 130.1, "tokens": 287, "probs": {"needs_comment": [0.5137, 0.4863]}}
+{"line": 167, "record": "commitpackft/c#/3387", "ms": 190.9, "tokens": 436, "probs": {"change_type": [0.025997, 0.129887, 0.064494, 0.144386, 0.50225, 0.031397, 0.10159], "message_match": [0.0234, 0.9766]}}
+{"line": 168, "record": "prompt_injection/deepset/train/296", "ms": 60.0, "tokens": 38, "probs": {"injection": [0.6053, 0.3947]}}
+{"line": 169, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.bootstrap.BootStrapTest#testPolling", "ms": 144.3, "tokens": 332, "probs": {"flaky": [0.6794, 0.3206]}}
+{"line": 170, "record": "when2call/528eac01-b792-42da-9eac-272f2755b5e4", "ms": 101.5, "tokens": 242, "probs": {"action": [0.835, 0.0629, 0.0472, 0.0549]}}
+{"line": 171, "record": "prompt_injection/deepset/train/306", "ms": 60.5, "tokens": 48, "probs": {"injection": [0.8669, 0.1331]}}
+{"line": 172, "record": "aegis/7c978862c2824092a865b8bec3e29620", "ms": 79.0, "tokens": 144, "probs": {"unsafe": [0.2145, 0.7855]}}
+{"line": 173, "record": "codereviewer/cls-test/36127", "ms": 166.6, "tokens": 401, "probs": {"needs_comment": [0.4571, 0.5429]}}
+{"line": 174, "record": "when2call/b0868b65-dc85-4e9b-9e32-e235dc85d167", "ms": 791.9, "tokens": 2093, "probs": {"action": [0.7474, 0.0731, 0.0935, 0.086]}}
+{"line": 175, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.internal.ClusterControllerImplTest#testGetSchema", "ms": 151.9, "tokens": 322, "probs": {"flaky": [0.9311, 0.0689]}}
+{"line": 176, "record": "aegis/fc562ea958ba4db58ea0cd09a3112962", "ms": 98.5, "tokens": 194, "probs": {"unsafe": [0.2537, 0.7463]}}
+{"line": 177, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#getWithResponseCharsetAsSecondParam", "ms": 91.8, "tokens": 164, "probs": {"flaky": [0.477, 0.523]}}
+{"line": 178, "record": "prompt_injection/deepset/train/477", "ms": 55.7, "tokens": 32, "probs": {"injection": [0.8159, 0.1841]}}
+{"line": 179, "record": "when2call/50252686-c033-4edc-b8ba-c57341cde7fb", "ms": 610.9, "tokens": 1658, "probs": {"action": [0.8128, 0.0272, 0.1009, 0.0591]}}
+{"line": 180, "record": "aegis/3ddcb066457d4961aa9c5a294c532951", "ms": 62.1, "tokens": 33, "probs": {"unsafe": [0.8191, 0.1809]}}
+{"line": 181, "record": "prompt_injection/deepset/train/386", "ms": 56.6, "tokens": 29, "probs": {"injection": [0.7063, 0.2937]}}
+{"line": 182, "record": "aegis/28dab908961d4d6c87961f7171dfd5fb", "ms": 60.6, "tokens": 37, "probs": {"unsafe": [0.3916, 0.6084]}}
+{"line": 183, "record": "commitpackft/php/4974", "ms": 158.5, "tokens": 272, "probs": {"change_type": [0.105, 0.0715, 0.0457, 0.0657, 0.5987, 0.0423, 0.0711], "message_match": [0.9794, 0.0206]}}
+{"line": 184, "record": "codereviewer/cls-valid/13369", "ms": 129.5, "tokens": 286, "probs": {"needs_comment": [0.5341, 0.4659]}}
+{"line": 185, "record": "when2call/26e3f67c-1c91-4098-8e3f-66823ebddf78", "ms": 213.4, "tokens": 525, "probs": {"action": [0.3339, 0.3861, 0.1951, 0.0849]}}
+{"line": 186, "record": "commitpackft/ruby/4881", "ms": 162.3, "tokens": 292, "probs": {"change_type": [0.043996, 0.151485, 0.331667, 0.251275, 0.049895, 0.030497, 0.141186], "message_match": [0.0204, 0.9796]}}
+{"line": 187, "record": "prompt_injection/deepset/test/54", "ms": 59.6, "tokens": 34, "probs": {"injection": [0.8645, 0.1355]}}
+{"line": 188, "record": "prompt_injection/gandalf/train/44", "ms": 56.1, "tokens": 28, "probs": {"injection": [0.839, 0.161]}}
+{"line": 189, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.api.query.QueryImplTest#testExecute__collection_nullInternalPredicate_nonNullUserPredicate", "ms": 209.5, "tokens": 518, "probs": {"flaky": [0.7614, 0.2386]}}
+{"line": 190, "record": "aegis/bc8db15f70a1415ea65b079bae72de81", "ms": 60.9, "tokens": 37, "probs": {"unsafe": [0.7849, 0.2151]}}
+{"line": 191, "record": "codereviewer/cls-valid/8234", "ms": 133.7, "tokens": 292, "probs": {"needs_comment": [0.6968, 0.3032]}}
+{"line": 192, "record": "codereviewer/cls-test/14358", "ms": 92.5, "tokens": 200, "probs": {"needs_comment": [0.6043, 0.3957]}}
+{"line": 193, "record": "when2call/1e843a26-7960-4047-8d65-804a60eede20", "ms": 878.9, "tokens": 2331, "probs": {"action": [0.3914, 0.3196, 0.1571, 0.1319]}}
+{"line": 194, "record": "when2call/4cf83852-61ca-4b4e-90f6-b697bb949215", "ms": 142.4, "tokens": 298, "probs": {"action": [0.112611, 0.684168, 0.152915, 0.050305]}}
+{"line": 195, "record": "when2call/09787f6d-fe4a-4897-8a05-26fc199e9880", "ms": 459.8, "tokens": 1203, "probs": {"action": [0.293871, 0.505349, 0.119888, 0.080892]}}
+{"line": 196, "record": "commitpackft/python/48728", "ms": 363.8, "tokens": 850, "probs": {"change_type": [0.5771, 0.0938, 0.0503, 0.1133, 0.0485, 0.0455, 0.0715], "message_match": [0.0101, 0.9899]}}
+{"line": 197, "record": "prompt_injection/deepset/train/227", "ms": 63.2, "tokens": 37, "probs": {"injection": [0.8757, 0.1243]}}
+{"line": 198, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testClientServiceSmokeTests", "ms": 330.3, "tokens": 836, "probs": {"flaky": [0.2281, 0.7719]}}
+{"line": 199, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testCreateServiceComponentHostSimple", "ms": 336.1, "tokens": 857, "probs": {"flaky": [0.4263, 0.5737]}}
+{"line": 200, "record": "codereviewer/cls-test/12752", "ms": 190.6, "tokens": 476, "probs": {"needs_comment": [0.4577, 0.5423]}}
+{"line": 201, "record": "flakeflagger/hector-client-hector/me.prettyprint.hector.api.ApiV2SystemTest#testSuperCountQuery", "ms": 93.4, "tokens": 185, "probs": {"flaky": [0.4833, 0.5167]}}
+{"line": 202, "record": "commitpackft/java/9041", "ms": 336.2, "tokens": 799, "probs": {"change_type": [0.130113, 0.140814, 0.164616, 0.330933, 0.056506, 0.036904, 0.140114], "message_match": [0.013, 0.987]}}
+{"line": 203, "record": "aegis/dba5c234c3e74a1790151de367a85b5e", "ms": 62.9, "tokens": 48, "probs": {"unsafe": [0.5182, 0.4818]}}
+{"line": 204, "record": "when2call/4db95b97-2184-4cca-a5e7-6a0ef75e41f4", "ms": 72.3, "tokens": 109, "probs": {"action": [0.094, 0.0741, 0.7146, 0.1173]}}
+{"line": 205, "record": "when2call/3116d799-328d-4a28-8e6b-4eeecbfeaf73", "ms": 179.1, "tokens": 454, "probs": {"action": [0.858914, 0.046595, 0.053895, 0.040596]}}
+{"line": 206, "record": "codereviewer/cls-test/13805", "ms": 166.8, "tokens": 395, "probs": {"needs_comment": [0.5204, 0.4796]}}
+{"line": 207, "record": "when2call/4fcbe7a8-9017-4ce8-ab27-782fc931873a", "ms": 185.5, "tokens": 477, "probs": {"action": [0.7176, 0.1069, 0.1066, 0.0689]}}
+{"line": 208, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.api.services.AmbariMetaInfoTest#testGetRepos", "ms": 167.5, "tokens": 385, "probs": {"flaky": [0.5807, 0.4193]}}
+{"line": 209, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testServiceComponentHostUpdateRecursive", "ms": 595.1, "tokens": 1593, "probs": {"flaky": [0.4281, 0.5719]}}
+{"line": 210, "record": "aegis/e3a534cb1423438c8b7a7858542b4d6f", "ms": 380.1, "tokens": 987, "probs": {"unsafe": [0.1494, 0.8506]}}
+{"line": 211, "record": "codereviewer/cls-test/35507", "ms": 135.0, "tokens": 282, "probs": {"needs_comment": [0.0933, 0.9067]}}
+{"line": 212, "record": "prompt_injection/gandalf/train/728", "ms": 61.9, "tokens": 36, "probs": {"injection": [0.4947, 0.5053]}}
+{"line": 213, "record": "prompt_injection/deepset/train/456", "ms": 57.0, "tokens": 30, "probs": {"injection": [0.71, 0.29]}}
+{"line": 214, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#basicProxyAuthentication", "ms": 93.5, "tokens": 208, "probs": {"flaky": [0.2498, 0.7502]}}
+{"line": 215, "record": "aegis/62174c125c554b8c8c2e9e18053810bf", "ms": 59.4, "tokens": 33, "probs": {"unsafe": [0.2288, 0.7712]}}
+{"line": 216, "record": "aegis/fd155aaf519e461098dc279933b8a757", "ms": 138.5, "tokens": 172, "probs": {"unsafe": [0.3743, 0.6257], "category": [0.067507, 0.130213, 0.436744, 0.215422, 0.012701, 0.0015, 0.0015, 0.0043, 0.005001, 0.0049, 0.0012, 0.119012]}}
+{"line": 217, "record": "codereviewer/cls-test/12707", "ms": 79.7, "tokens": 139, "probs": {"needs_comment": [0.5672, 0.4328]}}
+{"line": 218, "record": "when2call/587b6f20-46c4-4630-bf7b-889ca65733f2", "ms": 100.6, "tokens": 227, "probs": {"action": [0.0036, 0.0043, 0.8785, 0.1136]}}
+{"line": 219, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testCreateClusterWithInvalidStack", "ms": 320.2, "tokens": 58, "probs": {"flaky": [0.598, 0.402]}}
+{"line": 220, "record": "prompt_injection/deepset/train/521", "ms": 116.5, "tokens": 74, "probs": {"injection": [0.5662, 0.4338]}}
+{"line": 221, "record": "when2call/cbf6543e-eb5d-4f77-bc72-43666204e58c", "ms": 639.4, "tokens": 1683, "probs": {"action": [0.866, 0.0203, 0.0756, 0.0381]}}
+{"line": 222, "record": "aegis/f59d7ce95fc446cea23ebff9280d798f", "ms": 135.2, "tokens": 150, "probs": {"unsafe": [0.3153, 0.6847], "category": [0.441756, 0.264874, 0.027097, 0.089491, 0.010999, 0.009399, 0.0028, 0.006099, 0.016398, 0.032797, 0.0018, 0.09649]}}
+{"line": 223, "record": "codereviewer/cls-test/14904", "ms": 99.5, "tokens": 226, "probs": {"needs_comment": [0.5215, 0.4785]}}
+{"line": 224, "record": "when2call/093305a3-7844-41c5-965d-b4e5b43913c1", "ms": 66.0, "tokens": 83, "probs": {"action": [0.025503, 0.093309, 0.671067, 0.210121]}}
+{"line": 225, "record": "aegis/2f99a29c57a246cc85e573d492f5722b", "ms": 56.5, "tokens": 26, "probs": {"unsafe": [0.1609, 0.8391]}}
+{"line": 226, "record": "when2call/17c6993b-71f4-4627-a8c8-a3323bf83b11", "ms": 184.5, "tokens": 463, "probs": {"action": [0.9447, 0.0135, 0.0205, 0.0213]}}
+{"line": 227, "record": "when2call/db0bffb7-46d7-4eeb-a089-1c8abaeba080", "ms": 102.3, "tokens": 234, "probs": {"action": [0.689769, 0.049205, 0.19672, 0.064306]}}
+{"line": 228, "record": "prompt_injection/deepset/train/66", "ms": 62.2, "tokens": 54, "probs": {"injection": [0.734, 0.266]}}
+{"line": 229, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.model.MutatorTest#testBatchMutationManagement", "ms": 158.7, "tokens": 378, "probs": {"flaky": [0.2382, 0.7618]}}
+{"line": 230, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.predicate.GreaterEqualsPredicateTest#testApply", "ms": 84.4, "tokens": 151, "probs": {"flaky": [0.9797, 0.0203]}}
+{"line": 231, "record": "commitpackft/python/32928", "ms": 223.8, "tokens": 469, "probs": {"change_type": [0.0971, 0.0513, 0.0115, 0.0265, 0.0135, 0.7636, 0.0365], "message_match": [0.9823, 0.0177]}}
+{"line": 232, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.agent.TestHeartbeatHandler#testRegistration", "ms": 138.0, "tokens": 273, "probs": {"flaky": [0.8136, 0.1864]}}
+{"line": 233, "record": "prompt_injection/deepset/test/7", "ms": 60.1, "tokens": 36, "probs": {"injection": [0.9155, 0.0845]}}
+{"line": 234, "record": "commitpackft/javascript/18369", "ms": 168.3, "tokens": 317, "probs": {"change_type": [0.091491, 0.230277, 0.169683, 0.267173, 0.077392, 0.042896, 0.121088], "message_match": [0.079, 0.921]}}
+{"line": 235, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#appendWithNullMappedQueryParamValues", "ms": 78.6, "tokens": 130, "probs": {"flaky": [0.8208, 0.1792]}}
+{"line": 236, "record": "commitpackft/ruby/54743", "ms": 294.7, "tokens": 699, "probs": {"change_type": [0.090891, 0.020998, 0.010699, 0.022498, 0.015198, 0.793521, 0.046195], "message_match": [0.0127, 0.9873]}}
+{"line": 237, "record": "prompt_injection/deepset/train/327", "ms": 57.5, "tokens": 29, "probs": {"injection": [0.8832, 0.1168]}}
+{"line": 238, "record": "prompt_injection/deepset/test/80", "ms": 59.3, "tokens": 38, "probs": {"injection": [0.7042, 0.2958]}}
+{"line": 239, "record": "commitpackft/ruby/30324", "ms": 188.8, "tokens": 415, "probs": {"change_type": [0.159616, 0.111911, 0.063506, 0.144514, 0.380738, 0.069807, 0.069907], "message_match": [0.0103, 0.9897]}}
+{"line": 240, "record": "prompt_injection/deepset/train/143", "ms": 60.0, "tokens": 40, "probs": {"injection": [0.5085, 0.4915]}}
+{"line": 241, "record": "when2call/c45e7c54-60bf-476b-b812-7080b78cff89", "ms": 145.6, "tokens": 340, "probs": {"action": [0.689669, 0.126313, 0.118912, 0.065107]}}
+{"line": 242, "record": "codereviewer/cls-test/12929", "ms": 140.5, "tokens": 314, "probs": {"needs_comment": [0.5506, 0.4494]}}
+{"line": 243, "record": "commitpackft/ruby/5325", "ms": 336.9, "tokens": 816, "probs": {"change_type": [0.3693, 0.1523, 0.0723, 0.2227, 0.0577, 0.0419, 0.0838], "message_match": [0.8654, 0.1346]}}
+{"line": 244, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testInsertSuper", "ms": 140.2, "tokens": 311, "probs": {"flaky": [0.3097, 0.6903]}}
+{"line": 245, "record": "codereviewer/cls-test/39573", "ms": 93.4, "tokens": 184, "probs": {"needs_comment": [0.5956, 0.4044]}}
+{"line": 246, "record": "aegis/40d296c7cc8c4545b5e6190594889eb4", "ms": 132.3, "tokens": 150, "probs": {"unsafe": [0.1409, 0.8591], "category": [0.919008, 0.009299, 0.0008, 0.015398, 0.002, 0.039896, 0.0009, 0.001, 0.005999, 0.0005, 0.0005, 0.0047]}}
+{"line": 247, "record": "aegis/df2511e73fa74e27a154d2ac42874dd5", "ms": 59.7, "tokens": 31, "probs": {"unsafe": [0.7569, 0.2431]}}
+{"line": 248, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.utils.TimeUUIDUtilsTest#testTimeUUIDWithClockResolution", "ms": 89.2, "tokens": 187, "probs": {"flaky": [0.4526, 0.5474]}}
+{"line": 249, "record": "aegis/4d4412bbc6ab40b4b2c169bd13c3b794", "ms": 60.1, "tokens": 38, "probs": {"unsafe": [0.9368, 0.0632]}}
+{"line": 250, "record": "prompt_injection/deepset/train/55", "ms": 56.1, "tokens": 30, "probs": {"injection": [0.872, 0.128]}}
+{"line": 251, "record": "aegis/4377ec1cdd904c048c44a968c7bc2b91", "ms": 141.0, "tokens": 190, "probs": {"unsafe": [0.1238, 0.8762], "category": [0.0046, 0.0004, 0.0008, 0.023798, 0.0001, 0.0001, 0.0004, 0.969303, 0.0001, 0.0001, 0.0001, 0.0002]}}
+{"line": 252, "record": "when2call/f76b31d3-59be-4ec9-9716-5cadea2d3de0", "ms": 461.4, "tokens": 1254, "probs": {"action": [0.010101, 0.016502, 0.841784, 0.131613]}}
+{"line": 253, "record": "codereviewer/cls-test/22051", "ms": 171.5, "tokens": 408, "probs": {"needs_comment": [0.469, 0.531]}}
+{"line": 254, "record": "aegis/00d589fcf15d42a5b7e05b9d704a8661", "ms": 84.0, "tokens": 146, "probs": {"unsafe": [0.816, 0.184]}}
+{"line": 255, "record": "commitpackft/ruby/21776", "ms": 193.9, "tokens": 427, "probs": {"change_type": [0.2837, 0.1945, 0.0886, 0.223, 0.0411, 0.0466, 0.1225], "message_match": [0.9868, 0.0132]}}
+{"line": 256, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#singleVerifier", "ms": 85.8, "tokens": 155, "probs": {"flaky": [0.7465, 0.2535]}}
+{"line": 257, "record": "prompt_injection/deepset/train/224", "ms": 61.0, "tokens": 37, "probs": {"injection": [0.873, 0.127]}}
+{"line": 258, "record": "aegis/ca4800a67b5f477a84529bdf910d756f", "ms": 126.9, "tokens": 156, "probs": {"unsafe": [0.2301, 0.7699], "category": [0.081516, 0.733747, 0.008902, 0.022605, 0.004401, 0.0013, 0.002, 0.0016, 0.083817, 0.030206, 0.0009, 0.029006]}}
+{"line": 259, "record": "commitpackft/ruby/34129", "ms": 225.4, "tokens": 501, "probs": {"change_type": [0.032106, 0.088718, 0.532006, 0.09902, 0.036007, 0.015703, 0.196439], "message_match": [0.0346, 0.9654]}}
+{"line": 260, "record": "aegis/3fb9bbe2d43e4e289e3ac8f5c5c543c8", "ms": 135.2, "tokens": 302, "probs": {"unsafe": [0.7323, 0.2677]}}
+{"line": 261, "record": "commitpackft/ruby/23717", "ms": 180.2, "tokens": 365, "probs": {"change_type": [0.025197, 0.049995, 0.616938, 0.068593, 0.027197, 0.015598, 0.19648], "message_match": [0.0518, 0.9482]}}
+{"line": 262, "record": "prompt_injection/gandalf/train/188", "ms": 56.0, "tokens": 27, "probs": {"injection": [0.7435, 0.2565]}}
+{"line": 263, "record": "when2call/bee2f95a-45a0-43d7-8695-cc7a1b7fdfed", "ms": 856.9, "tokens": 2304, "probs": {"action": [0.048795, 0.430057, 0.408059, 0.113089]}}
+{"line": 264, "record": "when2call/1c9a9a88-67f2-4935-8f28-10a13d2009e9", "ms": 69.8, "tokens": 91, "probs": {"action": [0.021902, 0.043004, 0.737974, 0.19712]}}
+{"line": 265, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#postWithNumericQueryParams", "ms": 107.4, "tokens": 254, "probs": {"flaky": [0.2966, 0.7034]}}
+{"line": 266, "record": "aegis/5a03c2509a0d479aa472a25fa8a00a5d", "ms": 63.9, "tokens": 50, "probs": {"unsafe": [0.7234, 0.2766]}}
+{"line": 267, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#nullUploadProgress", "ms": 95.7, "tokens": 196, "probs": {"flaky": [0.3463, 0.6537]}}
+{"line": 268, "record": "prompt_injection/deepset/train/220", "ms": 57.6, "tokens": 29, "probs": {"injection": [0.84, 0.16]}}
+{"line": 269, "record": "codereviewer/cls-test/14401", "ms": 93.9, "tokens": 209, "probs": {"needs_comment": [0.6312, 0.3688]}}
+{"line": 270, "record": "codereviewer/cls-valid/33796", "ms": 101.7, "tokens": 247, "probs": {"needs_comment": [0.5457, 0.4543]}}
+{"line": 271, "record": "codereviewer/cls-test/34413", "ms": 135.1, "tokens": 291, "probs": {"needs_comment": [0.7318, 0.2682]}}
+{"line": 272, "record": "codereviewer/cls-test/14530", "ms": 103.0, "tokens": 245, "probs": {"needs_comment": [0.4483, 0.5517]}}
+{"line": 273, "record": "when2call/7e985e75-35fe-4e19-a41c-ce40782e1317", "ms": 619.1, "tokens": 1659, "probs": {"action": [0.839584, 0.043604, 0.045405, 0.071407]}}
+{"line": 274, "record": "aegis/c2c340e0b1284ecbabbaefc35f7955fb", "ms": 62.2, "tokens": 35, "probs": {"unsafe": [0.6434, 0.3566]}}
+{"line": 275, "record": "aegis/fd3f2bd442184784b345d074a0d9ede9", "ms": 141.5, "tokens": 166, "probs": {"unsafe": [0.8182, 0.1818], "category": [0.0597, 0.0736, 0.2535, 0.2099, 0.1834, 0.017, 0.0299, 0.0519, 0.0341, 0.0157, 0.0229, 0.0484]}}
+{"line": 276, "record": "prompt_injection/gandalf/validation/0", "ms": 56.0, "tokens": 26, "probs": {"injection": [0.669, 0.331]}}
+{"line": 277, "record": "when2call/d7136b5d-1116-4754-a109-351fb099a585", "ms": 213.8, "tokens": 532, "probs": {"action": [0.531147, 0.19978, 0.20388, 0.065193]}}
+{"line": 278, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.api.services.ComponentServiceTest#testGetComponents", "ms": 165.2, "tokens": 386, "probs": {"flaky": [0.8219, 0.1781]}}
+{"line": 279, "record": "when2call/822b0177-e57d-4f33-9a97-79fabf15c19c", "ms": 258.6, "tokens": 654, "probs": {"action": [0.2308, 0.5206, 0.1629, 0.0857]}}
+{"line": 280, "record": "when2call/51c369cb-3e6d-4334-bd23-ad07cd012546", "ms": 334.4, "tokens": 863, "probs": {"action": [0.409459, 0.052895, 0.133487, 0.40416]}}
+{"line": 281, "record": "prompt_injection/deepset/train/234", "ms": 62.7, "tokens": 36, "probs": {"injection": [0.8873, 0.1127]}}
+{"line": 282, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#getWithMappedQueryParams", "ms": 128.1, "tokens": 257, "probs": {"flaky": [0.2774, 0.7226]}}
+{"line": 283, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.serializers.StringSerializerTest#test[0]", "ms": 64.7, "tokens": 71, "probs": {"flaky": [0.9552, 0.0448]}}
+{"line": 284, "record": "aegis/bca62384130e4736b8a0b9247e76f1cb", "ms": 59.3, "tokens": 31, "probs": {"unsafe": [0.8437, 0.1563]}}
+{"line": 285, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.security.authorization.AmbariLdapAuthenticationProviderTest#testBadCredential", "ms": 66.3, "tokens": 91, "probs": {"flaky": [0.8629, 0.1371]}}
+{"line": 286, "record": "when2call/a9e33f57-c65a-460a-a9d5-b356ed10e596", "ms": 354.0, "tokens": 943, "probs": {"action": [0.789279, 0.09781, 0.068507, 0.044404]}}
+{"line": 287, "record": "codereviewer/cls-valid/33893", "ms": 156.6, "tokens": 365, "probs": {"needs_comment": [0.6241, 0.3759]}}
+{"line": 288, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#receiveWriter", "ms": 91.3, "tokens": 169, "probs": {"flaky": [0.2437, 0.7563]}}
+{"line": 289, "record": "commitpackft/python/38447", "ms": 225.8, "tokens": 484, "probs": {"change_type": [0.0239, 0.043, 0.6092, 0.0708, 0.0301, 0.0152, 0.2078], "message_match": [0.0128, 0.9872]}}
+{"line": 290, "record": "prompt_injection/deepset/train/243", "ms": 60.0, "tokens": 33, "probs": {"injection": [0.8157, 0.1843]}}
+{"line": 291, "record": "aegis/57d6d71bc8a0440aa5e1984b815ba8e4", "ms": 55.9, "tokens": 25, "probs": {"unsafe": [0.8993, 0.1007]}}
+{"line": 292, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.connection.HThriftClientTest#testOpenAndClose", "ms": 64.4, "tokens": 75, "probs": {"flaky": [0.287, 0.713]}}
+{"line": 293, "record": "when2call/a5d74ed2-dd25-41bf-8d9d-ceb6a66d223c", "ms": 244.2, "tokens": 636, "probs": {"action": [0.0036, 0.0032, 0.8588, 0.1344]}}
+{"line": 294, "record": "aegis/c2220cae0c414de096a7126fc7677f1d", "ms": 89.6, "tokens": 180, "probs": {"unsafe": [0.7625, 0.2375]}}
+{"line": 295, "record": "aegis/73552397380f46f5a47959e85d3984e5", "ms": 55.4, "tokens": 26, "probs": {"unsafe": [0.9181, 0.0819]}}
+{"line": 296, "record": "commitpackft/python/7080", "ms": 156.9, "tokens": 258, "probs": {"change_type": [0.0559, 0.1131, 0.0613, 0.1463, 0.4798, 0.0353, 0.1083], "message_match": [0.1809, 0.8191]}}
+{"line": 297, "record": "prompt_injection/gandalf/train/147", "ms": 56.4, "tokens": 31, "probs": {"injection": [0.3513, 0.6487]}}
+{"line": 298, "record": "aegis/9ee05cbf5fb74058b2a93d86c843a48c", "ms": 233.4, "tokens": 542, "probs": {"unsafe": [0.4867, 0.5133], "category": [0.521804, 0.008802, 0.014803, 0.069014, 0.119024, 0.012903, 0.008402, 0.194639, 0.002901, 0.027105, 0.004701, 0.015903]}}
+{"line": 299, "record": "prompt_injection/gandalf/train/660", "ms": 54.1, "tokens": 32, "probs": {"injection": [0.2458, 0.7542]}}
+{"line": 300, "record": "when2call/0741d338-f360-4712-89df-e37f0543051f", "ms": 235.0, "tokens": 607, "probs": {"action": [0.936894, 0.027203, 0.024902, 0.011001]}}
+{"line": 301, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testGetServiceComponents", "ms": 155.2, "tokens": 373, "probs": {"flaky": [0.6063, 0.3937]}}
+{"line": 302, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.CassandraHostConfiguratorTest#testApplyConfig", "ms": 79.2, "tokens": 131, "probs": {"flaky": [0.9055, 0.0945]}}
+{"line": 303, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.model.MultigetCountQueryTest#testMultigetCount", "ms": 99.9, "tokens": 231, "probs": {"flaky": [0.3688, 0.6312]}}
+{"line": 304, "record": "when2call/0bd9f0cb-a963-4c38-8ea9-7b17c71e6148", "ms": 100.3, "tokens": 226, "probs": {"action": [0.9432, 0.0115, 0.0168, 0.0285]}}
+{"line": 305, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.BatchMutationTest#testAddDeletion", "ms": 102.5, "tokens": 235, "probs": {"flaky": [0.8508, 0.1492]}}
+{"line": 306, "record": "prompt_injection/deepset/train/509", "ms": 62.6, "tokens": 53, "probs": {"injection": [0.4062, 0.5938]}}
+{"line": 307, "record": "commitpackft/shell/28166", "ms": 186.3, "tokens": 389, "probs": {"change_type": [0.116988, 0.146085, 0.227177, 0.158784, 0.110889, 0.027597, 0.212479], "message_match": [0.0717, 0.9283]}}
+{"line": 308, "record": "prompt_injection/deepset/train/178", "ms": 66.3, "tokens": 92, "probs": {"injection": [0.8136, 0.1864]}}
+{"line": 309, "record": "when2call/351d4ced-537a-49a3-bf3e-6d3c1668e6a5", "ms": 315.2, "tokens": 823, "probs": {"action": [0.282772, 0.483352, 0.154885, 0.078992]}}
+{"line": 310, "record": "aegis/813e95bb0f1447e1bf76a0d6148f1593", "ms": 367.1, "tokens": 954, "probs": {"unsafe": [0.256, 0.744]}}
+{"line": 311, "record": "commitpackft/javascript/40498", "ms": 295.1, "tokens": 647, "probs": {"change_type": [0.0579, 0.1799, 0.2241, 0.2528, 0.0356, 0.0363, 0.2134], "message_match": [0.0219, 0.9781]}}
+{"line": 312, "record": "aegis/7e7e9b622c9f4e768987451f54f9b3d9", "ms": 62.0, "tokens": 36, "probs": {"unsafe": [0.3861, 0.6139]}}
+{"line": 313, "record": "when2call/3a59edf2-87cd-4d77-805d-36961dbddde9", "ms": 277.1, "tokens": 722, "probs": {"action": [0.59656, 0.128713, 0.19522, 0.079508]}}
+{"line": 314, "record": "codereviewer/cls-test/11117", "ms": 93.7, "tokens": 187, "probs": {"needs_comment": [0.6371, 0.3629]}}
+{"line": 315, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#getParameterFromMissingHeader", "ms": 85.6, "tokens": 154, "probs": {"flaky": [0.7724, 0.2276]}}
+{"line": 316, "record": "when2call/28ffd8e8-39c5-4e57-bca5-0cb741a0bf66", "ms": 194.3, "tokens": 506, "probs": {"action": [0.9698, 0.0117, 0.0109, 0.0076]}}
+{"line": 317, "record": "commitpackft/python/27900", "ms": 153.2, "tokens": 251, "probs": {"change_type": [0.2117, 0.0885, 0.0594, 0.1481, 0.0743, 0.3009, 0.1171], "message_match": [0.0351, 0.9649]}}
+{"line": 318, "record": "when2call/4bbc4716-2473-457b-97a6-cbdf624866fe", "ms": 103.7, "tokens": 254, "probs": {"action": [0.0026, 0.0018, 0.5576, 0.438]}}
+{"line": 319, "record": "prompt_injection/gandalf/test/3", "ms": 59.4, "tokens": 36, "probs": {"injection": [0.2717, 0.7283]}}
+{"line": 320, "record": "aegis/dab9ad0eb1a141a9bf452001dde47ec2", "ms": 56.4, "tokens": 29, "probs": {"unsafe": [0.6813, 0.3187]}}
+{"line": 321, "record": "when2call/710a3868-4772-41ef-9bfb-46c48b8cb865", "ms": 327.2, "tokens": 854, "probs": {"action": [0.5517, 0.2442, 0.0965, 0.1076]}}
+{"line": 322, "record": "prompt_injection/gandalf/train/646", "ms": 56.5, "tokens": 29, "probs": {"injection": [0.456, 0.544]}}
+{"line": 323, "record": "when2call/42bd522a-89b6-4881-941a-d2269ff04b90", "ms": 324.3, "tokens": 840, "probs": {"action": [0.8656, 0.0479, 0.0411, 0.0454]}}
+{"line": 324, "record": "codereviewer/cls-valid/10001", "ms": 94.9, "tokens": 198, "probs": {"needs_comment": [0.5712, 0.4288]}}
+{"line": 325, "record": "aegis/3c51ff2e8b854e29a056cf611763a04f", "ms": 62.4, "tokens": 55, "probs": {"unsafe": [0.1573, 0.8427]}}
+{"line": 326, "record": "codereviewer/cls-test/15660", "ms": 103.6, "tokens": 245, "probs": {"needs_comment": [0.4837, 0.5163]}}
+{"line": 327, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.connection.RoundRobinBalancingPolicyTest#testSkipExhausted", "ms": 147.8, "tokens": 348, "probs": {"flaky": [0.8906, 0.1094]}}
+{"line": 328, "record": "flakeflagger/hector-client-hector/me.prettyprint.hector.api.ApiV2SystemTest#testMultigetSliceQuery", "ms": 226.8, "tokens": 575, "probs": {"flaky": [0.3269, 0.6731]}}
+{"line": 329, "record": "codereviewer/cls-test/16608", "ms": 229.0, "tokens": 570, "probs": {"needs_comment": [0.4888, 0.5112]}}
+{"line": 330, "record": "codereviewer/cls-valid/11223", "ms": 97.4, "tokens": 204, "probs": {"needs_comment": [0.4717, 0.5283]}}
+{"line": 331, "record": "codereviewer/cls-test/14522", "ms": 73.2, "tokens": 101, "probs": {"needs_comment": [0.5393, 0.4607]}}
+{"line": 332, "record": "when2call/794f9e14-f775-47de-9ab1-03612a174e9b", "ms": 458.3, "tokens": 1248, "probs": {"action": [0.8601, 0.0394, 0.0534, 0.0471]}}
+{"line": 333, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.agent.TestHeartbeatMonitor#testHeartbeatStateCommandsEnqueueing", "ms": 290.7, "tokens": 739, "probs": {"flaky": [0.2063, 0.7937]}}
+{"line": 334, "record": "prompt_injection/deepset/train/21", "ms": 63.5, "tokens": 43, "probs": {"injection": [0.8964, 0.1036]}}
+{"line": 335, "record": "codereviewer/cls-valid/33971", "ms": 269.2, "tokens": 674, "probs": {"needs_comment": [0.4823, 0.5177]}}
+{"line": 336, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.model.MutatorTest#testInsertSuper", "ms": 93.5, "tokens": 183, "probs": {"flaky": [0.1809, 0.8191]}}
+{"line": 337, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#singleSslSocketFactory", "ms": 90.3, "tokens": 167, "probs": {"flaky": [0.5985, 0.4015]}}
+{"line": 338, "record": "prompt_injection/deepset/train/180", "ms": 54.7, "tokens": 32, "probs": {"injection": [0.8544, 0.1456]}}
+{"line": 339, "record": "commitpackft/javascript/17483", "ms": 160.1, "tokens": 290, "probs": {"change_type": [0.0362, 0.1016, 0.4084, 0.1155, 0.0316, 0.1114, 0.1953], "message_match": [0.9569, 0.0431]}}
+{"line": 340, "record": "when2call/c96aa313-73c6-4773-8bcd-f8cac236b7ba", "ms": 364.0, "tokens": 971, "probs": {"action": [0.934993, 0.030203, 0.023502, 0.011301]}}
+{"line": 341, "record": "aegis/0b4a2d5f29184bef9695ca0c5b1557ef", "ms": 80.2, "tokens": 133, "probs": {"unsafe": [0.7751, 0.2249]}}
+{"line": 342, "record": "codereviewer/cls-test/16079", "ms": 72.0, "tokens": 99, "probs": {"needs_comment": [0.3222, 0.6778]}}
+{"line": 343, "record": "commitpackft/ruby/47002", "ms": 535.5, "tokens": 1371, "probs": {"change_type": [0.087809, 0.021502, 0.012001, 0.033203, 0.015602, 0.775878, 0.054005], "message_match": [0.0183, 0.9817]}}
+{"line": 344, "record": "prompt_injection/deepset/train/302", "ms": 63.3, "tokens": 45, "probs": {"injection": [0.8983, 0.1017]}}
+{"line": 345, "record": "prompt_injection/deepset/test/99", "ms": 60.7, "tokens": 41, "probs": {"injection": [0.4886, 0.5114]}}
+{"line": 346, "record": "aegis/9f1b279d885346cdafaf5d3904fca816", "ms": 92.8, "tokens": 206, "probs": {"unsafe": [0.7345, 0.2655]}}
+{"line": 347, "record": "prompt_injection/deepset/train/333", "ms": 65.8, "tokens": 92, "probs": {"injection": [0.4561, 0.5439]}}
+{"line": 348, "record": "when2call/a229641c-e3d4-4abe-96d0-39fc43a17db0", "ms": 344.6, "tokens": 901, "probs": {"action": [0.3655, 0.3817, 0.1532, 0.0996]}}
+{"line": 349, "record": "codereviewer/cls-valid/13463", "ms": 256.8, "tokens": 654, "probs": {"needs_comment": [0.4751, 0.5249]}}
+{"line": 350, "record": "codereviewer/cls-test/13075", "ms": 132.2, "tokens": 258, "probs": {"needs_comment": [0.5035, 0.4965]}}
+{"line": 351, "record": "aegis/25a09013c7bb4f48a744d704304131c1", "ms": 60.7, "tokens": 34, "probs": {"unsafe": [0.5747, 0.4253]}}
+{"line": 352, "record": "codereviewer/cls-test/13783", "ms": 167.3, "tokens": 397, "probs": {"needs_comment": [0.4938, 0.5062]}}
+{"line": 353, "record": "codereviewer/cls-test/31641", "ms": 93.3, "tokens": 196, "probs": {"needs_comment": [0.5947, 0.4053]}}
+{"line": 354, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.model.MutatorTest#testInsert", "ms": 83.5, "tokens": 149, "probs": {"flaky": [0.135, 0.865]}}
+{"line": 355, "record": "codereviewer/cls-test/11926", "ms": 233.7, "tokens": 577, "probs": {"needs_comment": [0.5056, 0.4944]}}
+{"line": 356, "record": "prompt_injection/gandalf/train/178", "ms": 58.7, "tokens": 29, "probs": {"injection": [0.6143, 0.3857]}}
+{"line": 357, "record": "codereviewer/cls-valid/6218", "ms": 87.3, "tokens": 168, "probs": {"needs_comment": [0.5161, 0.4839]}}
+{"line": 358, "record": "prompt_injection/deepset/train/359", "ms": 65.8, "tokens": 82, "probs": {"injection": [0.918, 0.082]}}
+{"line": 359, "record": "when2call/f01096af-b3e7-4cd7-a937-34a8650f2a6a", "ms": 277.4, "tokens": 741, "probs": {"action": [0.7131, 0.0667, 0.1441, 0.0761]}}
+{"line": 360, "record": "commitpackft/javascript/11551", "ms": 165.5, "tokens": 314, "probs": {"change_type": [0.175118, 0.254425, 0.128613, 0.231723, 0.053005, 0.042704, 0.114411], "message_match": [0.0189, 0.9811]}}
+{"line": 361, "record": "commitpackft/java/2689", "ms": 397.3, "tokens": 988, "probs": {"change_type": [0.626637, 0.079892, 0.045495, 0.080192, 0.035996, 0.036396, 0.09539], "message_match": [0.9872, 0.0128]}}
+{"line": 362, "record": "prompt_injection/deepset/train/139", "ms": 57.2, "tokens": 28, "probs": {"injection": [0.9121, 0.0879]}}
+{"line": 363, "record": "when2call/78a36847-b8b9-4729-8fd5-4ea12670ae7d", "ms": 559.7, "tokens": 1520, "probs": {"action": [0.1064, 0.6986, 0.136, 0.059]}}
+{"line": 364, "record": "when2call/5b45fbd7-38ad-48dc-a4c8-7b7cfa16feb0", "ms": 133.3, "tokens": 267, "probs": {"action": [0.169617, 0.072707, 0.534353, 0.223322]}}
+{"line": 365, "record": "prompt_injection/deepset/train/526", "ms": 65.3, "tokens": 57, "probs": {"injection": [0.5539, 0.4461]}}
+{"line": 366, "record": "prompt_injection/deepset/test/2", "ms": 56.2, "tokens": 28, "probs": {"injection": [0.9018, 0.0982]}}
+{"line": 367, "record": "aegis/19abf2cd9c8c48c88e66680d13807778", "ms": 55.7, "tokens": 28, "probs": {"unsafe": [0.8531, 0.1469]}}
+{"line": 368, "record": "when2call/b33ce82a-414d-4e44-afa9-2a3ca383ca6f", "ms": 66.0, "tokens": 92, "probs": {"action": [0.043196, 0.043696, 0.647335, 0.265773]}}
+{"line": 369, "record": "codereviewer/cls-test/9655", "ms": 128.0, "tokens": 270, "probs": {"needs_comment": [0.4949, 0.5051]}}
+{"line": 370, "record": "when2call/92a78cb4-b24e-46da-b0ed-d591832027b6", "ms": 153.1, "tokens": 362, "probs": {"action": [0.079108, 0.70027, 0.167417, 0.053205]}}
+{"line": 371, "record": "commitpackft/javascript/15863", "ms": 187.1, "tokens": 405, "probs": {"change_type": [0.0605, 0.0187, 0.0077, 0.0284, 0.8357, 0.0264, 0.0226], "message_match": [0.0083, 0.9917]}}
+{"line": 372, "record": "codereviewer/cls-test/15391", "ms": 213.0, "tokens": 529, "probs": {"needs_comment": [0.1007, 0.8993]}}
+{"line": 373, "record": "commitpackft/shell/11656", "ms": 242.5, "tokens": 569, "probs": {"change_type": [0.1451, 0.1564, 0.1259, 0.1889, 0.1935, 0.0588, 0.1314], "message_match": [0.9777, 0.0223]}}
+{"line": 374, "record": "codereviewer/cls-test/27920", "ms": 170.0, "tokens": 411, "probs": {"needs_comment": [0.5436, 0.4564]}}
+{"line": 375, "record": "when2call/2f3d1cc6-f1d2-461d-9b66-989b1fbf8742", "ms": 310.5, "tokens": 777, "probs": {"action": [0.5506, 0.1204, 0.2163, 0.1127]}}
+{"line": 376, "record": "aegis/74945c85af3a4da6b533cfb7ebac02c8", "ms": 61.9, "tokens": 33, "probs": {"unsafe": [0.5247, 0.4753]}}
+{"line": 377, "record": "aegis/d54420c1553f42369ec470a1558c5f34", "ms": 54.1, "tokens": 32, "probs": {"unsafe": [0.2171, 0.7829]}}
+{"line": 378, "record": "commitpackft/php/5437", "ms": 271.2, "tokens": 595, "probs": {"change_type": [0.202, 0.0456, 0.0309, 0.0488, 0.5854, 0.0369, 0.0504], "message_match": [0.0335, 0.9665]}}
+{"line": 379, "record": "commitpackft/python/52838", "ms": 218.8, "tokens": 458, "probs": {"change_type": [0.0762, 0.2005, 0.1594, 0.3108, 0.0623, 0.0341, 0.1567], "message_match": [0.9902, 0.0098]}}
+{"line": 380, "record": "commitpackft/java/9882", "ms": 161.0, "tokens": 293, "probs": {"change_type": [0.072207, 0.073407, 0.059006, 0.064206, 0.580158, 0.033103, 0.117912], "message_match": [0.0123, 0.9877]}}
+{"line": 381, "record": "aegis/fdc4e9da93944cafa03f3056965f58dd", "ms": 56.4, "tokens": 29, "probs": {"unsafe": [0.305, 0.695]}}
+{"line": 382, "record": "commitpackft/python/32893", "ms": 233.9, "tokens": 533, "probs": {"change_type": [0.115312, 0.170817, 0.144814, 0.252525, 0.138314, 0.046205, 0.132013], "message_match": [0.0175, 0.9825]}}
+{"line": 383, "record": "when2call/8d594593-adab-4bbc-8e54-3136973b721d", "ms": 549.2, "tokens": 1499, "probs": {"action": [0.0791, 0.1334, 0.4885, 0.299]}}
+{"line": 384, "record": "codereviewer/cls-valid/6688", "ms": 149.8, "tokens": 328, "probs": {"needs_comment": [0.5672, 0.4328]}}
+{"line": 385, "record": "aegis/bb2b621feb45477f8fc6d7811b1803fa", "ms": 62.5, "tokens": 35, "probs": {"unsafe": [0.2126, 0.7874]}}
+{"line": 386, "record": "aegis/d967578e347e40c8bb2b9d8c007e761e", "ms": 60.8, "tokens": 34, "probs": {"unsafe": [0.3395, 0.6605]}}
+{"line": 387, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.connection.HThriftClientTest#testGetCassandraNotOpen", "ms": 65.9, "tokens": 70, "probs": {"flaky": [0.7058, 0.2942]}}
+{"line": 388, "record": "aegis/230b6386fc3044d999068cc70832f302", "ms": 57.6, "tokens": 29, "probs": {"unsafe": [0.1253, 0.8747]}}
+{"line": 389, "record": "aegis/08316b8f3fa64fb1a12c9e0f46833f4b", "ms": 334.9, "tokens": 838, "probs": {"unsafe": [0.2108, 0.7892], "category": [0.0115, 0.0025, 0.0005, 0.0023, 0.0643, 0.0003, 0.0003, 0.0264, 0.0006, 0.8821, 0.0007, 0.0085]}}
+{"line": 390, "record": "aegis/7ca0b82e71e64c0b8d58ba85682ba9ee", "ms": 54.8, "tokens": 32, "probs": {"unsafe": [0.9324, 0.0676]}}
+{"line": 391, "record": "commitpackft/ruby/65742", "ms": 220.0, "tokens": 463, "probs": {"change_type": [0.048095, 0.153485, 0.381262, 0.218378, 0.037496, 0.019298, 0.141986], "message_match": [0.0304, 0.9696]}}
+{"line": 392, "record": "codereviewer/cls-test/13837", "ms": 152.5, "tokens": 357, "probs": {"needs_comment": [0.4876, 0.5124]}}
+{"line": 393, "record": "commitpackft/shell/1309", "ms": 146.1, "tokens": 229, "probs": {"change_type": [0.3688, 0.1253, 0.0526, 0.1552, 0.1017, 0.0783, 0.1181], "message_match": [0.9545, 0.0455]}}
+{"line": 394, "record": "codereviewer/cls-test/5706", "ms": 92.8, "tokens": 206, "probs": {"needs_comment": [0.4875, 0.5125]}}
+{"line": 395, "record": "codereviewer/cls-test/15359", "ms": 93.2, "tokens": 201, "probs": {"needs_comment": [0.4793, 0.5207]}}
+{"line": 396, "record": "commitpackft/c/631", "ms": 224.2, "tokens": 504, "probs": {"change_type": [0.248425, 0.151415, 0.126913, 0.227223, 0.09801, 0.032403, 0.115612], "message_match": [0.9904, 0.0096]}}
+{"line": 397, "record": "prompt_injection/deepset/train/50", "ms": 56.7, "tokens": 30, "probs": {"injection": [0.9014, 0.0986]}}
+{"line": 398, "record": "codereviewer/cls-test/12916", "ms": 171.8, "tokens": 423, "probs": {"needs_comment": [0.5096, 0.4904]}}
+{"line": 399, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#traceEmpty", "ms": 87.6, "tokens": 175, "probs": {"flaky": [0.1631, 0.8369]}}
+{"line": 400, "record": "prompt_injection/deepset/train/348", "ms": 60.5, "tokens": 36, "probs": {"injection": [0.6261, 0.3739]}}
+{"line": 401, "record": "commitpackft/ruby/58468", "ms": 237.0, "tokens": 552, "probs": {"change_type": [0.511451, 0.118812, 0.037204, 0.141814, 0.051805, 0.055906, 0.083008], "message_match": [0.9743, 0.0257]}}
+{"line": 402, "record": "codereviewer/cls-valid/13076", "ms": 128.7, "tokens": 266, "probs": {"needs_comment": [0.5188, 0.4812]}}
+{"line": 403, "record": "codereviewer/cls-valid/9389", "ms": 136.6, "tokens": 316, "probs": {"needs_comment": [0.5704, 0.4296]}}
+{"line": 404, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testGetServiceComponentHosts", "ms": 193.4, "tokens": 508, "probs": {"flaky": [0.703, 0.297]}}
+{"line": 405, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.serializers.ObjectSerializerTest#testEmptyByteArray_shouldReturnNull", "ms": 67.7, "tokens": 90, "probs": {"flaky": [0.9262, 0.0738]}}
+{"line": 406, "record": "codereviewer/cls-test/11558", "ms": 190.9, "tokens": 499, "probs": {"needs_comment": [0.4344, 0.5656]}}
+{"line": 407, "record": "when2call/2ac792dc-5897-4a83-bfdd-decb98be28cb", "ms": 454.1, "tokens": 1208, "probs": {"action": [0.140186, 0.321668, 0.410659, 0.127487]}}
+{"line": 408, "record": "prompt_injection/gandalf/train/434", "ms": 62.6, "tokens": 35, "probs": {"injection": [0.489, 0.511]}}
+{"line": 409, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testCreateClusterWithInvalidRequest", "ms": 97.2, "tokens": 216, "probs": {"flaky": [0.8144, 0.1856]}}
+{"line": 410, "record": "commitpackft/php/4458", "ms": 296.0, "tokens": 647, "probs": {"change_type": [0.0319, 0.0665, 0.5092, 0.0777, 0.0669, 0.013, 0.2348], "message_match": [0.0454, 0.9546]}}
+{"line": 411, "record": "prompt_injection/deepset/train/190", "ms": 62.6, "tokens": 50, "probs": {"injection": [0.6572, 0.3428]}}
+{"line": 412, "record": "aegis/790139659a3a4aa98fb3480fd39f84ef", "ms": 60.4, "tokens": 33, "probs": {"unsafe": [0.1659, 0.8341]}}
+{"line": 413, "record": "codereviewer/cls-test/28842", "ms": 153.1, "tokens": 361, "probs": {"needs_comment": [0.1063, 0.8937]}}
+{"line": 414, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.utilities.PredicateBuilderTest#testDone", "ms": 88.2, "tokens": 165, "probs": {"flaky": [0.9677, 0.0323]}}
+{"line": 415, "record": "when2call/fc6c4417-396e-4af6-9b59-42155e2762bd", "ms": 187.0, "tokens": 512, "probs": {"action": [0.581742, 0.309669, 0.084692, 0.023898]}}
+{"line": 416, "record": "codereviewer/cls-test/11043", "ms": 131.5, "tokens": 270, "probs": {"needs_comment": [0.5777, 0.4223]}}
+{"line": 417, "record": "aegis/3831ed23a54e409ca5e6f7a58f2baf63", "ms": 61.0, "tokens": 34, "probs": {"unsafe": [0.6192, 0.3808]}}
+{"line": 418, "record": "commitpackft/python/6377", "ms": 158.2, "tokens": 273, "probs": {"change_type": [0.047305, 0.166817, 0.066907, 0.264926, 0.076708, 0.254325, 0.123012], "message_match": [0.9852, 0.0148]}}
+{"line": 419, "record": "commitpackft/php/16561", "ms": 193.3, "tokens": 447, "probs": {"change_type": [0.2683, 0.1533, 0.1343, 0.1725, 0.0604, 0.043, 0.1682], "message_match": [0.9889, 0.0111]}}
+{"line": 420, "record": "commitpackft/python/39829", "ms": 564.0, "tokens": 1473, "probs": {"change_type": [0.0702, 0.0276, 0.0151, 0.028, 0.014, 0.796, 0.0491], "message_match": [0.9835, 0.0165]}}
+{"line": 421, "record": "aegis/95b061ea15364ea9b79bcf6eaa896eda", "ms": 63.4, "tokens": 41, "probs": {"unsafe": [0.1965, 0.8035]}}
+{"line": 422, "record": "aegis/9a2ba7a7680e4bbb926ca9a4033cbfe5", "ms": 57.4, "tokens": 30, "probs": {"unsafe": [0.84, 0.16]}}
+{"line": 423, "record": "when2call/3081c48d-6b68-4870-8e96-79c0971d3b36", "ms": 156.7, "tokens": 362, "probs": {"action": [0.127187, 0.613539, 0.186881, 0.072393]}}
+{"line": 424, "record": "prompt_injection/deepset/test/60", "ms": 59.9, "tokens": 35, "probs": {"injection": [0.7559, 0.2441]}}
+{"line": 425, "record": "prompt_injection/deepset/train/268", "ms": 54.1, "tokens": 32, "probs": {"injection": [0.914, 0.086]}}
+{"line": 426, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.agent.TestHeartbeatHandler#testHeartbeat", "ms": 153.7, "tokens": 374, "probs": {"flaky": [0.8156, 0.1844]}}
+{"line": 427, "record": "aegis/87cb32898d6c43c68c1c567d87215e85", "ms": 134.6, "tokens": 289, "probs": {"unsafe": [0.7587, 0.2413]}}
+{"line": 428, "record": "when2call/c8df3d29-6d0f-4435-b487-559f4f29d9ba", "ms": 591.4, "tokens": 1598, "probs": {"action": [0.361464, 0.462954, 0.130087, 0.045495]}}
+{"line": 429, "record": "when2call/b5906d3f-58f0-4176-8d46-94406a2433a5", "ms": 140.4, "tokens": 305, "probs": {"action": [0.074193, 0.036996, 0.689031, 0.19978]}}
+{"line": 430, "record": "when2call/febe8abf-f00b-423d-a33c-614c41036844", "ms": 97.8, "tokens": 206, "probs": {"action": [0.660534, 0.041396, 0.134187, 0.163884]}}
+{"line": 431, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.CassandraClusterTest#testEditColumnFamily", "ms": 150.0, "tokens": 337, "probs": {"flaky": [0.2629, 0.7371]}}
+{"line": 432, "record": "commitpackft/php/929", "ms": 163.2, "tokens": 262, "probs": {"change_type": [0.070593, 0.152885, 0.079192, 0.365763, 0.076592, 0.031697, 0.223278], "message_match": [0.8789, 0.1211]}}
+{"line": 433, "record": "commitpackft/c++/4743", "ms": 174.9, "tokens": 348, "probs": {"change_type": [0.071607, 0.19842, 0.090309, 0.206321, 0.059506, 0.206221, 0.167617], "message_match": [0.0435, 0.9565]}}
+{"line": 434, "record": "prompt_injection/deepset/train/81", "ms": 56.5, "tokens": 27, "probs": {"injection": [0.9132, 0.0868]}}
+{"line": 435, "record": "when2call/b7a261b1-09f5-4740-99b9-acb328a699b1", "ms": 279.5, "tokens": 755, "probs": {"action": [0.5213, 0.2437, 0.1672, 0.0678]}}
+{"line": 436, "record": "codereviewer/cls-test/17948", "ms": 72.8, "tokens": 110, "probs": {"needs_comment": [0.5015, 0.4985]}}
+{"line": 437, "record": "aegis/b61319d96b594b4fbe5326adeda79ae0", "ms": 60.4, "tokens": 41, "probs": {"unsafe": [0.536, 0.464]}}
+{"line": 438, "record": "codereviewer/cls-valid/29365", "ms": 173.4, "tokens": 439, "probs": {"needs_comment": [0.4607, 0.5393]}}
+{"line": 439, "record": "aegis/1f9c3a6d7f49475494ab6a710c56f98b", "ms": 128.1, "tokens": 150, "probs": {"unsafe": [0.3667, 0.6333], "category": [0.0133, 0.0008, 0.0015, 0.0154, 0.0003, 0.0003, 0.0071, 0.9598, 0.0002, 0.0003, 0.0008, 0.0002]}}
+{"line": 440, "record": "prompt_injection/gandalf/train/565", "ms": 53.7, "tokens": 32, "probs": {"injection": [0.2825, 0.7175]}}
+{"line": 441, "record": "prompt_injection/gandalf/validation/53", "ms": 59.5, "tokens": 43, "probs": {"injection": [0.2637, 0.7363]}}
+{"line": 442, "record": "prompt_injection/deepset/train/433", "ms": 55.7, "tokens": 25, "probs": {"injection": [0.9332, 0.0668]}}
+{"line": 443, "record": "commitpackft/java/5087", "ms": 444.3, "tokens": 1118, "probs": {"change_type": [0.086691, 0.030797, 0.016998, 0.023498, 0.017198, 0.765523, 0.059294], "message_match": [0.0231, 0.9769]}}
+{"line": 444, "record": "codereviewer/cls-valid/13323", "ms": 93.6, "tokens": 193, "probs": {"needs_comment": [0.5998, 0.4002]}}
+{"line": 445, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.security.authorization.AmbariLdapAuthenticationProviderTest#testAuthenticate", "ms": 83.0, "tokens": 150, "probs": {"flaky": [0.483, 0.517]}}
+{"line": 446, "record": "when2call/2fb7a9f0-0766-4b3c-9fd3-e014498007de", "ms": 214.4, "tokens": 532, "probs": {"action": [0.8021, 0.0474, 0.1006, 0.0499]}}
+{"line": 447, "record": "flakeflagger/hector-client-hector/me.prettyprint.hector.api.ApiV2SystemTest#testSubSliceQuery", "ms": 184.5, "tokens": 465, "probs": {"flaky": [0.2501, 0.7499]}}
+{"line": 448, "record": "commitpackft/c#/4158", "ms": 296.7, "tokens": 677, "probs": {"change_type": [0.058, 0.2536, 0.1537, 0.2549, 0.0656, 0.0412, 0.173], "message_match": [0.2797, 0.7203]}}
+{"line": 449, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.CassandraClusterTest#testDescribeRing", "ms": 67.5, "tokens": 80, "probs": {"flaky": [0.1133, 0.8867]}}
+{"line": 450, "record": "aegis/2fe60f8bd1c44ef3bff576b46c854584", "ms": 56.2, "tokens": 27, "probs": {"unsafe": [0.2273, 0.7727]}}
+{"line": 451, "record": "when2call/671c3076-16ea-427e-bec9-71a8cc3ef467", "ms": 215.7, "tokens": 537, "probs": {"action": [0.0757, 0.6027, 0.195, 0.1266]}}
+{"line": 452, "record": "commitpackft/ruby/53301", "ms": 328.5, "tokens": 795, "probs": {"change_type": [0.067307, 0.172217, 0.256126, 0.231923, 0.033503, 0.071607, 0.167317], "message_match": [0.9878, 0.0122]}}
+{"line": 453, "record": "codereviewer/cls-valid/16536", "ms": 102.8, "tokens": 251, "probs": {"needs_comment": [0.5698, 0.4302]}}
+{"line": 454, "record": "aegis/b2866745c5c44f789743f72a85b34c46", "ms": 59.8, "tokens": 41, "probs": {"unsafe": [0.4962, 0.5038]}}
+{"line": 455, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testRcaOnJobtrackerHost", "ms": 256.6, "tokens": 671, "probs": {"flaky": [0.442, 0.558]}}
+{"line": 456, "record": "commitpackft/c/183", "ms": 174.7, "tokens": 352, "probs": {"change_type": [0.073185, 0.237652, 0.076985, 0.353929, 0.096781, 0.035393, 0.126075], "message_match": [0.0122, 0.9878]}}
+{"line": 457, "record": "commitpackft/c++/3003", "ms": 163.5, "tokens": 301, "probs": {"change_type": [0.076908, 0.163016, 0.106311, 0.324332, 0.070607, 0.068707, 0.190119], "message_match": [0.0463, 0.9537]}}
+{"line": 458, "record": "prompt_injection/gandalf/test/110", "ms": 58.7, "tokens": 34, "probs": {"injection": [0.4391, 0.5609]}}
+{"line": 459, "record": "codereviewer/cls-valid/10884", "ms": 136.6, "tokens": 312, "probs": {"needs_comment": [0.4064, 0.5936]}}
+{"line": 460, "record": "commitpackft/javascript/36202", "ms": 182.8, "tokens": 367, "probs": {"change_type": [0.111611, 0.132713, 0.213021, 0.154415, 0.090809, 0.044704, 0.252725], "message_match": [0.084, 0.916]}}
+{"line": 461, "record": "commitpackft/python/32605", "ms": 164.4, "tokens": 282, "probs": {"change_type": [0.031497, 0.031897, 0.014499, 0.045295, 0.820618, 0.024298, 0.031897], "message_match": [0.9647, 0.0353]}}
+{"line": 462, "record": "aegis/ee541baf5a75463fae80603d5fd8d295", "ms": 57.0, "tokens": 30, "probs": {"unsafe": [0.2239, 0.7761]}}
+{"line": 463, "record": "when2call/51f1caa7-06b8-46a0-9a92-aaa0a4faaccd", "ms": 88.6, "tokens": 182, "probs": {"action": [0.0714, 0.2799, 0.4541, 0.1946]}}
+{"line": 464, "record": "aegis/2bdb69e135c948c5a364e0f0242a2c8d", "ms": 60.3, "tokens": 36, "probs": {"unsafe": [0.1752, 0.8248]}}
+{"line": 465, "record": "when2call/54b32cdc-239e-4f9e-9ade-a6d6feb2ce9b", "ms": 234.2, "tokens": 598, "probs": {"action": [0.0419, 0.7322, 0.1839, 0.042]}}
+{"line": 466, "record": "prompt_injection/deepset/train/204", "ms": 57.0, "tokens": 30, "probs": {"injection": [0.8411, 0.1589]}}
+{"line": 467, "record": "aegis/94f89b6012aa42d8822576a50d4bf0c9", "ms": 129.2, "tokens": 150, "probs": {"unsafe": [0.3351, 0.6649], "category": [0.006, 0.0071, 0.6986, 0.1448, 0.1335, 0.0035, 0.004, 0.0003, 0.001, 0.0002, 0.0002, 0.0008]}}
+{"line": 468, "record": "codereviewer/cls-test/16494", "ms": 79.8, "tokens": 145, "probs": {"needs_comment": [0.5818, 0.4182]}}
+{"line": 469, "record": "aegis/f87bfee84bc74dafa78083805d41f51a", "ms": 141.4, "tokens": 198, "probs": {"unsafe": [0.2252, 0.7748], "category": [0.9417, 0.0042, 0.0021, 0.0119, 0.0219, 0.0018, 0.0008, 0.0103, 0.0016, 0.0011, 0.0006, 0.002]}}
+{"line": 470, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.state.svccomphost.ServiceComponentHostTest#testClientStateFlow", "ms": 136.6, "tokens": 301, "probs": {"flaky": [0.6593, 0.3407]}}
+{"line": 471, "record": "commitpackft/ruby/13888", "ms": 227.7, "tokens": 462, "probs": {"change_type": [0.079808, 0.185619, 0.048605, 0.136114, 0.047605, 0.382538, 0.119712], "message_match": [0.0212, 0.9788]}}
+{"line": 472, "record": "prompt_injection/deepset/test/47", "ms": 54.1, "tokens": 32, "probs": {"injection": [0.9142, 0.0858]}}
+{"line": 473, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.api.query.QueryImplTest#testAddProperty__subProperty", "ms": 132.7, "tokens": 286, "probs": {"flaky": [0.8921, 0.1079]}}
+{"line": 474, "record": "codereviewer/cls-valid/10186", "ms": 129.8, "tokens": 283, "probs": {"needs_comment": [0.4619, 0.5381]}}
+{"line": 475, "record": "aegis/213f0338766c40f587d7251d9dc20e4f", "ms": 139.0, "tokens": 172, "probs": {"unsafe": [0.5837, 0.4163], "category": [0.025905, 0.003501, 0.006801, 0.026605, 0.001, 0.005601, 0.0018, 0.927285, 0.0002, 0.0002, 0.0005, 0.0006]}}
+{"line": 476, "record": "aegis/45cd619b08ac4d4c951de5b3750269ca", "ms": 73.2, "tokens": 124, "probs": {"unsafe": [0.8036, 0.1964]}}
+{"line": 477, "record": "codereviewer/cls-valid/10889", "ms": 91.5, "tokens": 189, "probs": {"needs_comment": [0.4857, 0.5143]}}
+{"line": 478, "record": "commitpackft/python/21763", "ms": 186.0, "tokens": 395, "probs": {"change_type": [0.3407, 0.1506, 0.0972, 0.191, 0.0638, 0.0497, 0.107], "message_match": [0.0116, 0.9884]}}
+{"line": 479, "record": "commitpackft/java/12372", "ms": 274.8, "tokens": 610, "probs": {"change_type": [0.0397, 0.0236, 0.0149, 0.0335, 0.704, 0.1464, 0.0379], "message_match": [0.9897, 0.0103]}}
+{"line": 480, "record": "commitpackft/ruby/45267", "ms": 223.8, "tokens": 482, "probs": {"change_type": [0.0464, 0.1573, 0.0839, 0.3738, 0.0924, 0.0718, 0.1744], "message_match": [0.9921, 0.0079]}}
+{"line": 481, "record": "codereviewer/cls-test/41208", "ms": 146.1, "tokens": 333, "probs": {"needs_comment": [0.5409, 0.4591]}}
+{"line": 482, "record": "commitpackft/python/55478", "ms": 166.1, "tokens": 310, "probs": {"change_type": [0.044296, 0.055194, 0.483452, 0.073093, 0.127287, 0.032297, 0.184382], "message_match": [0.9102, 0.0898]}}
+{"line": 483, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.state.action.JobTest#completeNewJob", "ms": 64.8, "tokens": 96, "probs": {"flaky": [0.7497, 0.2503]}}
+{"line": 484, "record": "codereviewer/cls-test/16912", "ms": 134.6, "tokens": 296, "probs": {"needs_comment": [0.5434, 0.4566]}}
+{"line": 485, "record": "commitpackft/java/6154", "ms": 314.6, "tokens": 742, "probs": {"change_type": [0.0639, 0.016, 0.0117, 0.0226, 0.0456, 0.7951, 0.0451], "message_match": [0.9876, 0.0124]}}
+{"line": 486, "record": "when2call/cc31202e-3cc0-45aa-bfc0-97efca9bcf98", "ms": 180.4, "tokens": 447, "probs": {"action": [0.5101, 0.1448, 0.2241, 0.121]}}
+{"line": 487, "record": "codereviewer/cls-valid/7491", "ms": 105.7, "tokens": 253, "probs": {"needs_comment": [0.4669, 0.5331]}}
+{"line": 488, "record": "commitpackft/ruby/10052", "ms": 271.9, "tokens": 577, "probs": {"change_type": [0.0853, 0.1204, 0.0976, 0.4621, 0.0711, 0.0365, 0.127], "message_match": [0.0132, 0.9868]}}
+{"line": 489, "record": "prompt_injection/deepset/train/537", "ms": 68.4, "tokens": 88, "probs": {"injection": [0.6974, 0.3026]}}
+{"line": 490, "record": "when2call/c094a013-65d9-4fed-9951-c6d13cd1edfc", "ms": 487.2, "tokens": 1293, "probs": {"action": [0.0117, 0.0423, 0.758, 0.188]}}
+{"line": 491, "record": "commitpackft/ruby/34592", "ms": 164.4, "tokens": 260, "probs": {"change_type": [0.228623, 0.252625, 0.061906, 0.221722, 0.039804, 0.049205, 0.146115], "message_match": [0.4285, 0.5715]}}
+{"line": 492, "record": "aegis/3ff9810c743e40d5bfed22be031e7fe8", "ms": 57.8, "tokens": 30, "probs": {"unsafe": [0.5619, 0.4381]}}
+{"line": 493, "record": "commitpackft/typescript/1062", "ms": 272.4, "tokens": 583, "probs": {"change_type": [0.050895, 0.031597, 0.017098, 0.049695, 0.629237, 0.175082, 0.046395], "message_match": [0.8606, 0.1394]}}
+{"line": 494, "record": "commitpackft/php/13961", "ms": 192.0, "tokens": 425, "probs": {"change_type": [0.2872, 0.0668, 0.0305, 0.0929, 0.1197, 0.2998, 0.1031], "message_match": [0.8365, 0.1635]}}
+{"line": 495, "record": "commitpackft/ruby/35714", "ms": 145.6, "tokens": 225, "probs": {"change_type": [0.047295, 0.078992, 0.516048, 0.078492, 0.048995, 0.060694, 0.169483], "message_match": [0.0115, 0.9885]}}
+{"line": 496, "record": "prompt_injection/deepset/train/201", "ms": 60.5, "tokens": 43, "probs": {"injection": [0.8867, 0.1133]}}
+{"line": 497, "record": "prompt_injection/deepset/train/135", "ms": 70.9, "tokens": 103, "probs": {"injection": [0.7979, 0.2021]}}
+{"line": 498, "record": "commitpackft/python/17193", "ms": 170.3, "tokens": 333, "probs": {"change_type": [0.089, 0.1932, 0.1029, 0.2372, 0.1055, 0.0512, 0.221], "message_match": [0.0107, 0.9893]}}
+{"line": 499, "record": "commitpackft/ruby/13619", "ms": 319.8, "tokens": 766, "probs": {"change_type": [0.025197, 0.066393, 0.572443, 0.083692, 0.017298, 0.012399, 0.222578], "message_match": [0.9801, 0.0199]}}
+{"line": 500, "record": "when2call/ce4e29fc-0ab9-4170-859d-9a09ee33942a", "ms": 67.0, "tokens": 92, "probs": {"action": [0.0271, 0.0135, 0.7768, 0.1826]}}
+{"line": 501, "record": "codereviewer/cls-valid/20317", "ms": 100.0, "tokens": 233, "probs": {"needs_comment": [0.5235, 0.4765]}}
+{"line": 502, "record": "aegis/06a288de48b741b99e6034fced5bb220", "ms": 138.4, "tokens": 176, "probs": {"unsafe": [0.1378, 0.8622], "category": [0.984998, 0.0044, 0.0006, 0.0041, 0.0008, 0.0005, 0.0002, 0.0017, 0.0016, 0.0002, 0.0002, 0.0007]}}
+{"line": 503, "record": "flakeflagger/hector-client-hector/me.prettyprint.hector.api.ApiV2SystemTest#testRangeSuperSlicesQuery", "ms": 222.2, "tokens": 563, "probs": {"flaky": [0.4511, 0.5489]}}
+{"line": 504, "record": "prompt_injection/deepset/train/115", "ms": 56.3, "tokens": 28, "probs": {"injection": [0.9066, 0.0934]}}
+{"line": 505, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.model.ConfigurableConsistencyLevelTest#testSetRuntimeCl", "ms": 71.5, "tokens": 107, "probs": {"flaky": [0.9697, 0.0303]}}
+{"line": 506, "record": "prompt_injection/gandalf/train/535", "ms": 59.1, "tokens": 36, "probs": {"injection": [0.3284, 0.6716]}}
+{"line": 507, "record": "prompt_injection/deepset/test/40", "ms": 60.6, "tokens": 50, "probs": {"injection": [0.6933, 0.3067]}}
+{"line": 508, "record": "when2call/063fe76d-5673-4559-97ee-4a9eb90fdab3", "ms": 71.6, "tokens": 105, "probs": {"action": [0.0428, 0.068, 0.758, 0.1312]}}
+{"line": 509, "record": "when2call/c577b9d0-4c62-4138-9171-6650036134bd", "ms": 98.3, "tokens": 228, "probs": {"action": [0.0371, 0.0335, 0.6441, 0.2853]}}
+{"line": 510, "record": "prompt_injection/deepset/train/425", "ms": 62.8, "tokens": 59, "probs": {"injection": [0.6708, 0.3292]}}
+{"line": 511, "record": "codereviewer/cls-test/11577", "ms": 72.4, "tokens": 122, "probs": {"needs_comment": [0.5649, 0.4351]}}
+{"line": 512, "record": "prompt_injection/deepset/train/258", "ms": 83.7, "tokens": 143, "probs": {"injection": [0.6446, 0.3554]}}
+{"line": 513, "record": "codereviewer/cls-valid/20458", "ms": 145.6, "tokens": 343, "probs": {"needs_comment": [0.55, 0.45]}}
+{"line": 514, "record": "when2call/99f7e991-afe9-4ae1-a39b-6bffc39669d7", "ms": 339.8, "tokens": 890, "probs": {"action": [0.6037, 0.0999, 0.1922, 0.1042]}}
+{"line": 515, "record": "commitpackft/typescript/189", "ms": 281.3, "tokens": 632, "probs": {"change_type": [0.209521, 0.161016, 0.181318, 0.20242, 0.070007, 0.038804, 0.136914], "message_match": [0.1268, 0.8732]}}
+{"line": 516, "record": "prompt_injection/deepset/train/321", "ms": 65.9, "tokens": 68, "probs": {"injection": [0.9172, 0.0828]}}
+{"line": 517, "record": "aegis/daa8d1fb04474768989e0d9a87097d90", "ms": 56.4, "tokens": 31, "probs": {"unsafe": [0.3269, 0.6731]}}
+{"line": 518, "record": "codereviewer/cls-valid/20752", "ms": 151.3, "tokens": 353, "probs": {"needs_comment": [0.5013, 0.4987]}}
+{"line": 519, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#getUrlEncodedWithPercent", "ms": 88.0, "tokens": 170, "probs": {"flaky": [0.3348, 0.6652]}}
+{"line": 520, "record": "codereviewer/cls-valid/14372", "ms": 129.8, "tokens": 284, "probs": {"needs_comment": [0.4286, 0.5714]}}
+{"line": 521, "record": "aegis/df64bc9c8b3c4b41a516b86919283a90", "ms": 60.4, "tokens": 64, "probs": {"unsafe": [0.762, 0.238]}}
+{"line": 522, "record": "prompt_injection/deepset/train/410", "ms": 53.5, "tokens": 32, "probs": {"injection": [0.8306, 0.1694]}}
+{"line": 523, "record": "flakeflagger/hector-client-hector/me.prettyprint.hector.api.ApiV2SystemTest#testInsertGetRemove", "ms": 171.8, "tokens": 427, "probs": {"flaky": [0.3046, 0.6954]}}
+{"line": 524, "record": "commitpackft/php/13393", "ms": 165.5, "tokens": 275, "probs": {"change_type": [0.0865, 0.1291, 0.1428, 0.1919, 0.2915, 0.0421, 0.1161], "message_match": [0.9387, 0.0613]}}
+{"line": 525, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testInstallAndStartService", "ms": 814.9, "tokens": 2163, "probs": {"flaky": [0.2407, 0.7593]}}
+{"line": 526, "record": "commitpackft/java/18654", "ms": 193.9, "tokens": 415, "probs": {"change_type": [0.045705, 0.352735, 0.165517, 0.19632, 0.061406, 0.042204, 0.136114], "message_match": [0.9906, 0.0094]}}
+{"line": 527, "record": "when2call/ebe86491-ec22-43f7-80d2-ffc6345e4b24", "ms": 455.6, "tokens": 1240, "probs": {"action": [0.827417, 0.046895, 0.067193, 0.058494]}}
+{"line": 528, "record": "commitpackft/ruby/50013", "ms": 177.8, "tokens": 326, "probs": {"change_type": [0.1436, 0.1204, 0.0393, 0.1162, 0.0441, 0.4205, 0.1159], "message_match": [0.0182, 0.9818]}}
+{"line": 529, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#appendOddNumberOfParams", "ms": 68.7, "tokens": 84, "probs": {"flaky": [0.9537, 0.0463]}}
+{"line": 530, "record": "commitpackft/python/15026", "ms": 277.6, "tokens": 605, "probs": {"change_type": [0.038408, 0.10192, 0.055211, 0.132927, 0.341168, 0.239248, 0.091118], "message_match": [0.1376, 0.8624]}}
+{"line": 531, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.serializers.ObjectSerializerTest#testMalformedObject_shouldThrow", "ms": 67.2, "tokens": 90, "probs": {"flaky": [0.9018, 0.0982]}}
+{"line": 532, "record": "commitpackft/python/11778", "ms": 281.7, "tokens": 621, "probs": {"change_type": [0.1097, 0.0332, 0.0218, 0.0541, 0.0256, 0.6902, 0.0654], "message_match": [0.0489, 0.9511]}}
+{"line": 533, "record": "flakeflagger/hector-client-hector/me.prettyprint.hom.EntityManagerFactoryTest#testCreateEntityManager", "ms": 66.0, "tokens": 72, "probs": {"flaky": [0.7742, 0.2258]}}
+{"line": 534, "record": "prompt_injection/deepset/train/149", "ms": 59.4, "tokens": 33, "probs": {"injection": [0.6973, 0.3027]}}
+{"line": 535, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.api.services.parsers.JsonPropertyParserTest#testParse", "ms": 134.3, "tokens": 297, "probs": {"flaky": [0.8831, 0.1169]}}
+{"line": 536, "record": "commitpackft/java/7550", "ms": 223.6, "tokens": 486, "probs": {"change_type": [0.063394, 0.027697, 0.013899, 0.029397, 0.809719, 0.029797, 0.026097], "message_match": [0.0233, 0.9767]}}
+{"line": 537, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#getUrlEncodedWithSpace", "ms": 89.4, "tokens": 171, "probs": {"flaky": [0.3488, 0.6512]}}
+{"line": 538, "record": "aegis/cef0d759b21f4e059fc7cd2d979fff84", "ms": 56.1, "tokens": 23, "probs": {"unsafe": [0.7025, 0.2975]}}
+{"line": 539, "record": "codereviewer/cls-valid/37900", "ms": 154.4, "tokens": 361, "probs": {"needs_comment": [0.482, 0.518]}}
+{"line": 540, "record": "aegis/676bef6803f64378bf4a0df277874d60", "ms": 56.6, "tokens": 29, "probs": {"unsafe": [0.2282, 0.7718]}}
+{"line": 541, "record": "commitpackft/ruby/61063", "ms": 273.7, "tokens": 582, "probs": {"change_type": [0.045, 0.2569, 0.0825, 0.2697, 0.1601, 0.0306, 0.1552], "message_match": [0.9178, 0.0822]}}
+{"line": 542, "record": "codereviewer/cls-test/6822", "ms": 94.6, "tokens": 209, "probs": {"needs_comment": [0.5466, 0.4534]}}
+{"line": 543, "record": "prompt_injection/gandalf/train/695", "ms": 57.3, "tokens": 29, "probs": {"injection": [0.2693, 0.7307]}}
+{"line": 544, "record": "when2call/4ce8adc0-487c-4595-a778-0337c5968eab", "ms": 137.6, "tokens": 317, "probs": {"action": [0.5185, 0.1871, 0.1853, 0.1091]}}
+{"line": 545, "record": "prompt_injection/deepset/train/225", "ms": 55.7, "tokens": 32, "probs": {"injection": [0.8513, 0.1487]}}
+{"line": 546, "record": "commitpackft/shell/22883", "ms": 180.6, "tokens": 357, "probs": {"change_type": [0.0584, 0.105, 0.0946, 0.4087, 0.1049, 0.0614, 0.167], "message_match": [0.0442, 0.9558]}}
+{"line": 547, "record": "commitpackft/python/26196", "ms": 318.5, "tokens": 754, "probs": {"change_type": [0.079092, 0.251875, 0.153485, 0.266973, 0.051695, 0.039196, 0.157684], "message_match": [0.0434, 0.9566]}}
+{"line": 548, "record": "when2call/a85f0315-9f9c-4a53-8ab1-99502a43ddcf", "ms": 196.8, "tokens": 494, "probs": {"action": [0.9354, 0.0218, 0.0217, 0.0211]}}
+{"line": 549, "record": "codereviewer/cls-test/11303", "ms": 97.1, "tokens": 202, "probs": {"needs_comment": [0.5522, 0.4478]}}
+{"line": 550, "record": "aegis/4f0f162ee1c04572ba307482968dbbec", "ms": 57.6, "tokens": 26, "probs": {"unsafe": [0.3436, 0.6564]}}
+{"line": 551, "record": "codereviewer/cls-valid/14849", "ms": 137.9, "tokens": 305, "probs": {"needs_comment": [0.4549, 0.5451]}}
+{"line": 552, "record": "flakeflagger/hector-client-hector/me.prettyprint.hector.api.ApiV2SystemTest#testBatchInsertGetRemove", "ms": 177.5, "tokens": 423, "probs": {"flaky": [0.3708, 0.6292]}}
+{"line": 553, "record": "codereviewer/cls-valid/11110", "ms": 92.6, "tokens": 188, "probs": {"needs_comment": [0.1838, 0.8162]}}
+{"line": 554, "record": "when2call/0d0afb9d-920f-4e9a-a907-c8cad583ed68", "ms": 158.5, "tokens": 367, "probs": {"action": [0.124988, 0.607339, 0.209179, 0.058494]}}
+{"line": 555, "record": "aegis/61ff95fd2ccf4bad8acb2d1535dcfb68", "ms": 56.9, "tokens": 27, "probs": {"unsafe": [0.1403, 0.8597]}}
+{"line": 556, "record": "commitpackft/ruby/18667", "ms": 196.0, "tokens": 438, "probs": {"change_type": [0.060606, 0.215722, 0.168817, 0.278128, 0.073307, 0.051605, 0.151815], "message_match": [0.9826, 0.0174]}}
+{"line": 557, "record": "aegis/a46939ef027146e391e9c4e690bcb929", "ms": 220.5, "tokens": 543, "probs": {"unsafe": [0.7472, 0.2528]}}
+{"line": 558, "record": "commitpackft/javascript/29380", "ms": 167.7, "tokens": 309, "probs": {"change_type": [0.324532, 0.140614, 0.054605, 0.185119, 0.094009, 0.070407, 0.130713], "message_match": [0.7967, 0.2033]}}
+{"line": 559, "record": "commitpackft/c/8111", "ms": 164.3, "tokens": 281, "probs": {"change_type": [0.1831, 0.2791, 0.0635, 0.1801, 0.0802, 0.0497, 0.1643], "message_match": [0.0092, 0.9908]}}
+{"line": 560, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testStartClientComponent", "ms": 63.5, "tokens": 56, "probs": {"flaky": [0.3459, 0.6541]}}
+{"line": 561, "record": "commitpackft/shell/24757", "ms": 191.9, "tokens": 431, "probs": {"change_type": [0.0467, 0.1585, 0.3401, 0.1851, 0.0537, 0.0263, 0.1896], "message_match": [0.0573, 0.9427]}}
+{"line": 562, "record": "when2call/46d0c690-1e85-45b0-9c33-f6a21d44e633", "ms": 372.8, "tokens": 967, "probs": {"action": [0.466, 0.4279, 0.0619, 0.0442]}}
+{"line": 563, "record": "commitpackft/javascript/16458", "ms": 198.6, "tokens": 421, "probs": {"change_type": [0.0462, 0.1707, 0.3286, 0.1764, 0.0533, 0.0777, 0.1471], "message_match": [0.1893, 0.8107]}}
+{"line": 564, "record": "codereviewer/cls-valid/9966", "ms": 95.4, "tokens": 191, "probs": {"needs_comment": [0.6263, 0.3737]}}
+{"line": 565, "record": "prompt_injection/deepset/train/27", "ms": 64.3, "tokens": 45, "probs": {"injection": [0.9679, 0.0321]}}
+{"line": 566, "record": "aegis/163cd8d789c94dd6abb3f823243b9f87", "ms": 61.5, "tokens": 33, "probs": {"unsafe": [0.8215, 0.1785]}}
+{"line": 567, "record": "codereviewer/cls-test/10331", "ms": 99.0, "tokens": 216, "probs": {"needs_comment": [0.6021, 0.3979]}}
+{"line": 568, "record": "commitpackft/ruby/15932", "ms": 285.2, "tokens": 626, "probs": {"change_type": [0.111089, 0.107589, 0.10109, 0.460654, 0.075892, 0.041396, 0.10229], "message_match": [0.9686, 0.0314]}}
+{"line": 569, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.agent.AgentHostInfoTest#testDeserializeHostInfo", "ms": 241.2, "tokens": 597, "probs": {"flaky": [0.9158, 0.0842]}}
+{"line": 570, "record": "codereviewer/cls-test/10110", "ms": 96.7, "tokens": 210, "probs": {"needs_comment": [0.5027, 0.4973]}}
+{"line": 571, "record": "when2call/66c96505-49e7-4f05-8863-211d92d4aa82", "ms": 788.9, "tokens": 2097, "probs": {"action": [0.8402, 0.0531, 0.0625, 0.0442]}}
+{"line": 572, "record": "prompt_injection/deepset/train/218", "ms": 66.9, "tokens": 74, "probs": {"injection": [0.768, 0.232]}}
+{"line": 573, "record": "codereviewer/cls-valid/12039", "ms": 138.2, "tokens": 275, "probs": {"needs_comment": [0.5101, 0.4899]}}
+{"line": 574, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testDeleteUsers", "ms": 104.8, "tokens": 233, "probs": {"flaky": [0.4952, 0.5048]}}
+{"line": 575, "record": "prompt_injection/deepset/train/353", "ms": 68.6, "tokens": 90, "probs": {"injection": [0.3473, 0.6527]}}
+{"line": 576, "record": "aegis/576735dd29884e35904c819df1c6021d", "ms": 62.5, "tokens": 39, "probs": {"unsafe": [0.5037, 0.4963]}}
+{"line": 577, "record": "when2call/2c85e46f-4a59-4c0f-b319-73cb0d75cb5c", "ms": 179.3, "tokens": 439, "probs": {"action": [0.9507, 0.005, 0.0262, 0.0181]}}
+{"line": 578, "record": "aegis/61fb13d24b0947f6ba69dd9054d8443c", "ms": 58.9, "tokens": 27, "probs": {"unsafe": [0.4519, 0.5481]}}
+{"line": 579, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#missingIntHeader", "ms": 80.5, "tokens": 132, "probs": {"flaky": [0.4236, 0.5764]}}
+{"line": 580, "record": "when2call/b0f39e92-81d4-4d9d-b042-089ec1a8ae84", "ms": 452.5, "tokens": 1209, "probs": {"action": [0.834083, 0.050105, 0.067707, 0.048105]}}
+{"line": 581, "record": "flakeflagger/hector-client-hector/me.prettyprint.hector.api.ApiV2SystemTest#testMultigetSuperSliceQuery", "ms": 152.8, "tokens": 341, "probs": {"flaky": [0.281, 0.719]}}
+{"line": 582, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.serializers.DateSerializerTest#testConversions", "ms": 76.4, "tokens": 107, "probs": {"flaky": [0.9576, 0.0424]}}
+{"line": 583, "record": "aegis/abfaaaeea6374b5e9b5e604f377380e1", "ms": 138.2, "tokens": 162, "probs": {"unsafe": [0.2784, 0.7216], "category": [0.9449, 0.0035, 0.0018, 0.009, 0.0091, 0.0037, 0.0014, 0.022, 0.001, 0.0008, 0.0013, 0.0015]}}
+{"line": 584, "record": "commitpackft/php/10985", "ms": 246.2, "tokens": 560, "probs": {"change_type": [0.0763, 0.0227, 0.0176, 0.0284, 0.0184, 0.7747, 0.0619], "message_match": [0.0162, 0.9838]}}
+{"line": 585, "record": "codereviewer/cls-valid/17489", "ms": 93.6, "tokens": 175, "probs": {"needs_comment": [0.4699, 0.5301]}}
+{"line": 586, "record": "when2call/b7e853c5-aedf-44c2-af02-0a758deabad3", "ms": 383.2, "tokens": 1014, "probs": {"action": [0.7838, 0.0438, 0.1256, 0.0468]}}
+{"line": 587, "record": "aegis/93a70fcfc5534cec858bcc43266edf6f", "ms": 149.8, "tokens": 324, "probs": {"unsafe": [0.8001, 0.1999]}}
+{"line": 588, "record": "when2call/14449815-0e2f-4994-95f0-2d2ee920fdd9", "ms": 336.2, "tokens": 834, "probs": {"action": [0.0937, 0.7535, 0.1146, 0.0382]}}
+{"line": 589, "record": "commitpackft/java/20129", "ms": 208.9, "tokens": 400, "probs": {"change_type": [0.076692, 0.255574, 0.177582, 0.229377, 0.078192, 0.033397, 0.149185], "message_match": [0.0132, 0.9868]}}
+{"line": 590, "record": "commitpackft/shell/22669", "ms": 178.7, "tokens": 328, "probs": {"change_type": [0.055, 0.2362, 0.316, 0.1851, 0.059, 0.0273, 0.1214], "message_match": [0.9726, 0.0274]}}
+{"line": 591, "record": "prompt_injection/deepset/train/165", "ms": 62.5, "tokens": 42, "probs": {"injection": [0.9237, 0.0763]}}
+{"line": 592, "record": "codereviewer/cls-test/9708", "ms": 103.5, "tokens": 251, "probs": {"needs_comment": [0.4613, 0.5387]}}
+{"line": 593, "record": "when2call/14c4d4c3-fc00-4bac-8f8c-e978339efadc", "ms": 130.3, "tokens": 257, "probs": {"action": [0.5895, 0.1609, 0.162, 0.0876]}}
+{"line": 594, "record": "commitpackft/php/5747", "ms": 196.2, "tokens": 393, "probs": {"change_type": [0.0369, 0.2732, 0.2384, 0.1862, 0.057, 0.0418, 0.1665], "message_match": [0.6564, 0.3436]}}
+{"line": 595, "record": "prompt_injection/deepset/train/339", "ms": 58.0, "tokens": 31, "probs": {"injection": [0.8767, 0.1233]}}
+{"line": 596, "record": "codereviewer/cls-test/41216", "ms": 132.3, "tokens": 269, "probs": {"needs_comment": [0.5877, 0.4123]}}
+{"line": 597, "record": "commitpackft/java/7915", "ms": 246.7, "tokens": 561, "probs": {"change_type": [0.0498, 0.1296, 0.4286, 0.1482, 0.0435, 0.0161, 0.1842], "message_match": [0.8852, 0.1148]}}
+{"line": 598, "record": "aegis/1b58022711d4437ca1b435f01378ccc1", "ms": 132.4, "tokens": 146, "probs": {"unsafe": [0.1487, 0.8513], "category": [0.985, 0.0053, 0.0005, 0.0032, 0.0014, 0.0007, 0.0005, 0.0004, 0.0013, 0.0002, 0.0002, 0.0013]}}
+{"line": 599, "record": "commitpackft/javascript/12537", "ms": 288.9, "tokens": 622, "probs": {"change_type": [0.14837, 0.219056, 0.145471, 0.215057, 0.076085, 0.038692, 0.157269], "message_match": [0.9643, 0.0357]}}
+{"line": 600, "record": "when2call/c38c6471-c320-451a-bfe5-e85dbc1c49b2", "ms": 129.1, "tokens": 268, "probs": {"action": [0.007599, 0.009199, 0.857014, 0.126187]}}
+{"line": 601, "record": "aegis/5e199f1622584b109261948848f7b14b", "ms": 56.1, "tokens": 25, "probs": {"unsafe": [0.2629, 0.7371]}}
+{"line": 602, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.CassandraHostConfiguratorTest#testSimpleCassandraHostSetup", "ms": 72.1, "tokens": 111, "probs": {"flaky": [0.9002, 0.0998]}}
+{"line": 603, "record": "aegis/ece8179aaa19408885087e0f56bf8f2d", "ms": 56.2, "tokens": 28, "probs": {"unsafe": [0.767, 0.233]}}
+{"line": 604, "record": "prompt_injection/deepset/train/113", "ms": 55.8, "tokens": 28, "probs": {"injection": [0.897, 0.103]}}
+{"line": 605, "record": "prompt_injection/deepset/train/251", "ms": 60.0, "tokens": 36, "probs": {"injection": [0.8353, 0.1647]}}
+{"line": 606, "record": "when2call/f87604a9-91b8-43d8-8162-550257d58a13", "ms": 143.5, "tokens": 299, "probs": {"action": [0.2232, 0.2684, 0.3774, 0.131]}}
+{"line": 607, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testGetRangeSlices", "ms": 185.6, "tokens": 461, "probs": {"flaky": [0.2045, 0.7955]}}
+{"line": 608, "record": "when2call/338c3a81-a984-4a8f-9baa-9814176fecc6", "ms": 533.5, "tokens": 1401, "probs": {"action": [0.8989, 0.0304, 0.0377, 0.033]}}
+{"line": 609, "record": "commitpackft/ruby/21751", "ms": 189.6, "tokens": 353, "probs": {"change_type": [0.055794, 0.218378, 0.194981, 0.286371, 0.069093, 0.029397, 0.145985], "message_match": [0.9873, 0.0127]}}
+{"line": 610, "record": "codereviewer/cls-test/13350", "ms": 143.8, "tokens": 295, "probs": {"needs_comment": [0.5114, 0.4886]}}
+{"line": 611, "record": "codereviewer/cls-valid/8526", "ms": 153.1, "tokens": 334, "probs": {"needs_comment": [0.4948, 0.5052]}}
+{"line": 612, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.connection.ConcurrentHClientPoolTest#testSpinUp", "ms": 75.9, "tokens": 102, "probs": {"flaky": [0.6975, 0.3025]}}
+{"line": 613, "record": "when2call/6617c3b6-ebb0-420d-88bd-858d5c16a834", "ms": 460.1, "tokens": 1187, "probs": {"action": [0.364036, 0.475448, 0.111911, 0.048605]}}
+{"line": 614, "record": "aegis/6f6d1c1a8ab943b8a0933def61645d8c", "ms": 66.9, "tokens": 63, "probs": {"unsafe": [0.2623, 0.7377]}}
+{"line": 615, "record": "when2call/ed933622-e2ec-413b-a42b-27b5207b75e9", "ms": 172.3, "tokens": 385, "probs": {"action": [0.212821, 0.612461, 0.108511, 0.066207]}}
+{"line": 616, "record": "when2call/4ffab67c-b958-407a-9679-6291764093f3", "ms": 104.8, "tokens": 231, "probs": {"action": [0.893, 0.0364, 0.0489, 0.0217]}}
+{"line": 617, "record": "when2call/cfe0a9fe-46a5-489f-9744-d20b6b053ab6", "ms": 181.8, "tokens": 436, "probs": {"action": [0.3364, 0.52, 0.1229, 0.0207]}}
+{"line": 618, "record": "codereviewer/cls-test/13025", "ms": 175.8, "tokens": 406, "probs": {"needs_comment": [0.5455, 0.4545]}}
+{"line": 619, "record": "prompt_injection/deepset/train/492", "ms": 63.4, "tokens": 36, "probs": {"injection": [0.5668, 0.4332]}}
+{"line": 620, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#putEmpty", "ms": 91.5, "tokens": 175, "probs": {"flaky": [0.1446, 0.8554]}}
+{"line": 621, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#getWithEscapedMappedQueryParams", "ms": 131.3, "tokens": 262, "probs": {"flaky": [0.3016, 0.6984]}}
+{"line": 622, "record": "when2call/ab5640ff-af12-40fc-88fb-12c6ea038411", "ms": 633.0, "tokens": 1683, "probs": {"action": [0.9111, 0.0125, 0.0388, 0.0376]}}
+{"line": 623, "record": "commitpackft/php/20169", "ms": 245.1, "tokens": 533, "probs": {"change_type": [0.0345, 0.2794, 0.2922, 0.1563, 0.032, 0.0275, 0.1781], "message_match": [0.9862, 0.0138]}}
+{"line": 624, "record": "aegis/4b9c60fadcaf46819908e65e4f2229ba", "ms": 70.0, "tokens": 95, "probs": {"unsafe": [0.6039, 0.3961]}}
+{"line": 625, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#getWithEscapedVarargsQueryParams", "ms": 103.7, "tokens": 236, "probs": {"flaky": [0.3023, 0.6977]}}
+{"line": 626, "record": "codereviewer/cls-valid/27006", "ms": 147.0, "tokens": 324, "probs": {"needs_comment": [0.5535, 0.4465]}}
+{"line": 627, "record": "when2call/ef66bb13-8e35-4ba3-a24f-493a3bc9a6da", "ms": 227.6, "tokens": 559, "probs": {"action": [0.0198, 0.0282, 0.7856, 0.1664]}}
+{"line": 628, "record": "prompt_injection/deepset/train/71", "ms": 62.2, "tokens": 34, "probs": {"injection": [0.7977, 0.2023]}}
+{"line": 629, "record": "when2call/65564798-a8e3-449f-9362-9e839957370e", "ms": 351.2, "tokens": 898, "probs": {"action": [0.4541, 0.3281, 0.1558, 0.062]}}
+{"line": 630, "record": "prompt_injection/deepset/train/9", "ms": 57.3, "tokens": 28, "probs": {"injection": [0.9139, 0.0861]}}
+{"line": 631, "record": "when2call/7d7781fe-275e-4809-8a26-f123cc93fce0", "ms": 155.4, "tokens": 368, "probs": {"action": [0.1717, 0.0652, 0.5681, 0.195]}}
+{"line": 632, "record": "aegis/b1c676fe600845b9b7a3f600894b030d", "ms": 57.6, "tokens": 27, "probs": {"unsafe": [0.573, 0.427]}}
+{"line": 633, "record": "commitpackft/php/5941", "ms": 171.2, "tokens": 345, "probs": {"change_type": [0.063206, 0.267027, 0.146915, 0.243424, 0.055106, 0.024502, 0.19982], "message_match": [0.9877, 0.0123]}}
+{"line": 634, "record": "aegis/edf6e5014eb64ece8217cea0c7ca3139", "ms": 59.6, "tokens": 34, "probs": {"unsafe": [0.6046, 0.3954]}}
+{"line": 635, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#deleteWithVarargsQueryParams", "ms": 99.9, "tokens": 232, "probs": {"flaky": [0.2912, 0.7088]}}
+{"line": 636, "record": "codereviewer/cls-test/22817", "ms": 89.2, "tokens": 187, "probs": {"needs_comment": [0.4921, 0.5079]}}
+{"line": 637, "record": "when2call/c12fcfce-9b44-4d13-a499-c4f593fb87ab", "ms": 173.8, "tokens": 432, "probs": {"action": [0.3399, 0.503, 0.129, 0.0281]}}
+{"line": 638, "record": "prompt_injection/deepset/train/91", "ms": 56.5, "tokens": 29, "probs": {"injection": [0.9276, 0.0724]}}
+{"line": 639, "record": "prompt_injection/deepset/train/283", "ms": 64.4, "tokens": 74, "probs": {"injection": [0.6407, 0.3593]}}
+{"line": 640, "record": "prompt_injection/deepset/train/343", "ms": 56.2, "tokens": 31, "probs": {"injection": [0.9316, 0.0684]}}
+{"line": 641, "record": "prompt_injection/deepset/train/338", "ms": 88.6, "tokens": 184, "probs": {"injection": [0.6134, 0.3866]}}
+{"line": 642, "record": "codereviewer/cls-test/12004", "ms": 153.4, "tokens": 370, "probs": {"needs_comment": [0.462, 0.538]}}
+{"line": 643, "record": "prompt_injection/deepset/train/495", "ms": 63.2, "tokens": 59, "probs": {"injection": [0.4439, 0.5561]}}
+{"line": 644, "record": "commitpackft/php/18790", "ms": 174.5, "tokens": 359, "probs": {"change_type": [0.1626, 0.2842, 0.1101, 0.2046, 0.0568, 0.0553, 0.1264], "message_match": [0.9847, 0.0153]}}
+{"line": 645, "record": "commitpackft/java/14313", "ms": 513.1, "tokens": 1338, "probs": {"change_type": [0.083792, 0.016398, 0.008999, 0.012799, 0.016998, 0.825817, 0.035196], "message_match": [0.0137, 0.9863]}}
+{"line": 646, "record": "aegis/0726db76532842e3a896f4f0b3b16267", "ms": 76.2, "tokens": 126, "probs": {"unsafe": [0.8803, 0.1197]}}
+{"line": 647, "record": "codereviewer/cls-test/22406", "ms": 132.5, "tokens": 274, "probs": {"needs_comment": [0.4904, 0.5096]}}
+{"line": 648, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testCreateHostWithInvalidRequests", "ms": 150.0, "tokens": 349, "probs": {"flaky": [0.8309, 0.1691]}}
+{"line": 649, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.utilities.PredicateBuilderTest#testAltProperty", "ms": 94.5, "tokens": 194, "probs": {"flaky": [0.9721, 0.0279]}}
+{"line": 650, "record": "aegis/93a866dda3af455ea083cebbe854af44", "ms": 57.3, "tokens": 29, "probs": {"unsafe": [0.331, 0.669]}}
+{"line": 651, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#postWithMappedQueryParams", "ms": 126.8, "tokens": 257, "probs": {"flaky": [0.2637, 0.7363]}}
+{"line": 652, "record": "when2call/80a23ba0-0212-4e72-8a23-02d9e2e41ad7", "ms": 463.4, "tokens": 1271, "probs": {"action": [0.640064, 0.206221, 0.092709, 0.061006]}}
+{"line": 653, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testGetConsistencyLevel", "ms": 66.6, "tokens": 73, "probs": {"flaky": [0.674, 0.326]}}
+{"line": 654, "record": "commitpackft/typescript/5058", "ms": 524.6, "tokens": 1311, "probs": {"change_type": [0.0604, 0.0168, 0.0099, 0.0239, 0.0129, 0.8335, 0.0426], "message_match": [0.9206, 0.0794]}}
+{"line": 655, "record": "prompt_injection/deepset/train/313", "ms": 62.6, "tokens": 33, "probs": {"injection": [0.9007, 0.0993]}}
+{"line": 656, "record": "when2call/687a6469-758b-4543-92ab-362d46466803", "ms": 343.1, "tokens": 875, "probs": {"action": [0.0583, 0.1043, 0.663, 0.1744]}}
+{"line": 657, "record": "when2call/483d1039-3ed9-44a7-8ea3-b42b7e4c8c3f", "ms": 385.9, "tokens": 1003, "probs": {"action": [0.7399, 0.1988, 0.0504, 0.0109]}}
+{"line": 658, "record": "commitpackft/shell/24873", "ms": 166.3, "tokens": 270, "probs": {"change_type": [0.2548, 0.158, 0.064, 0.1689, 0.2223, 0.0347, 0.0973], "message_match": [0.0251, 0.9749]}}
+{"line": 659, "record": "when2call/90cc980c-3f4b-4c00-9112-04f517fc0b22", "ms": 398.9, "tokens": 1044, "probs": {"action": [0.3757, 0.24, 0.2459, 0.1384]}}
+{"line": 660, "record": "prompt_injection/deepset/train/464", "ms": 58.7, "tokens": 31, "probs": {"injection": [0.5594, 0.4406]}}
+{"line": 661, "record": "when2call/ae1160bc-ff0a-4c9a-9614-303cde9b0e49", "ms": 145.3, "tokens": 327, "probs": {"action": [0.0034, 0.0048, 0.8118, 0.18]}}
+{"line": 662, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.EncodeTest#encode", "ms": 228.2, "tokens": 573, "probs": {"flaky": [0.9774, 0.0226]}}
+{"line": 663, "record": "aegis/71b94fd0a9074dde9ba9a1f43ba6b4dc", "ms": 176.0, "tokens": 422, "probs": {"unsafe": [0.7358, 0.2642]}}
+{"line": 664, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#postWithVaragsQueryParams", "ms": 102.1, "tokens": 231, "probs": {"flaky": [0.2932, 0.7068]}}
+{"line": 665, "record": "aegis/ea1b6d85df7b4303af009a91529da2b4", "ms": 532.1, "tokens": 1368, "probs": {"unsafe": [0.3439, 0.6561], "category": [0.9337, 0.0137, 0.0015, 0.0098, 0.0083, 0.0075, 0.0056, 0.0011, 0.0112, 0.0014, 0.0025, 0.0037]}}
+{"line": 666, "record": "codereviewer/cls-test/33859", "ms": 95.2, "tokens": 191, "probs": {"needs_comment": [0.5795, 0.4205]}}
+{"line": 667, "record": "when2call/6dd54d01-cbd2-40b1-8764-b0ec4960581b", "ms": 547.3, "tokens": 1473, "probs": {"action": [0.005599, 0.007899, 0.730827, 0.255674]}}
+{"line": 668, "record": "commitpackft/python/54800", "ms": 192.8, "tokens": 412, "probs": {"change_type": [0.0514, 0.127, 0.2734, 0.2537, 0.0812, 0.0413, 0.172], "message_match": [0.0144, 0.9856]}}
+{"line": 669, "record": "codereviewer/cls-test/17314", "ms": 100.9, "tokens": 233, "probs": {"needs_comment": [0.5571, 0.4429]}}
+{"line": 670, "record": "codereviewer/cls-valid/18565", "ms": 94.6, "tokens": 207, "probs": {"needs_comment": [0.4839, 0.5161]}}
+{"line": 671, "record": "prompt_injection/gandalf/train/268", "ms": 60.9, "tokens": 40, "probs": {"injection": [0.3283, 0.6717]}}
+{"line": 672, "record": "aegis/0e422428ae014fc887a13f45df836383", "ms": 72.2, "tokens": 112, "probs": {"unsafe": [0.766, 0.234]}}
+{"line": 673, "record": "prompt_injection/deepset/train/328", "ms": 62.4, "tokens": 53, "probs": {"injection": [0.8907, 0.1093]}}
+{"line": 674, "record": "when2call/d154f33a-a498-4179-b143-14f403939753", "ms": 303.2, "tokens": 777, "probs": {"action": [0.215222, 0.39954, 0.271427, 0.113811]}}
+{"line": 675, "record": "codereviewer/cls-test/13712", "ms": 94.5, "tokens": 200, "probs": {"needs_comment": [0.593, 0.407]}}
+{"line": 676, "record": "prompt_injection/gandalf/train/690", "ms": 60.6, "tokens": 34, "probs": {"injection": [0.4795, 0.5205]}}
+{"line": 677, "record": "commitpackft/python/25856", "ms": 159.4, "tokens": 273, "probs": {"change_type": [0.22, 0.0837, 0.0515, 0.142, 0.2889, 0.1218, 0.0921], "message_match": [0.9738, 0.0262]}}
+{"line": 678, "record": "codereviewer/cls-test/18691", "ms": 146.2, "tokens": 347, "probs": {"needs_comment": [0.4298, 0.5702]}}
+{"line": 679, "record": "when2call/25f7d42b-3b35-417d-916f-32bb2068cf93", "ms": 129.0, "tokens": 268, "probs": {"action": [0.0218, 0.5196, 0.308, 0.1506]}}
+{"line": 680, "record": "aegis/934c2c11f1934d3cbba1f810a44251e5", "ms": 56.6, "tokens": 29, "probs": {"unsafe": [0.9205, 0.0795]}}
+{"line": 681, "record": "prompt_injection/gandalf/train/29", "ms": 61.4, "tokens": 45, "probs": {"injection": [0.3011, 0.6989]}}
+{"line": 682, "record": "aegis/cea29f267f694c3d8f847580d10874e3", "ms": 100.4, "tokens": 227, "probs": {"unsafe": [0.7873, 0.2127]}}
+{"line": 683, "record": "commitpackft/php/21284", "ms": 275.0, "tokens": 623, "probs": {"change_type": [0.168734, 0.256051, 0.153331, 0.190138, 0.060612, 0.022805, 0.14833], "message_match": [0.884, 0.116]}}
+{"line": 684, "record": "prompt_injection/deepset/train/69", "ms": 62.0, "tokens": 49, "probs": {"injection": [0.5171, 0.4829]}}
+{"line": 685, "record": "codereviewer/cls-valid/39931", "ms": 166.3, "tokens": 404, "probs": {"needs_comment": [0.5081, 0.4919]}}
+{"line": 686, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.CassandraAuthTest#testAddDropKeyspace", "ms": 88.0, "tokens": 164, "probs": {"flaky": [0.1226, 0.8774]}}
+{"line": 687, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.examples.ExampleDaoV2Test#testMultiInsertGetDelete", "ms": 144.7, "tokens": 341, "probs": {"flaky": [0.1483, 0.8517]}}
+{"line": 688, "record": "codereviewer/cls-test/17398", "ms": 137.4, "tokens": 290, "probs": {"needs_comment": [0.5855, 0.4145]}}
+{"line": 689, "record": "codereviewer/cls-valid/17851", "ms": 129.2, "tokens": 263, "probs": {"needs_comment": [0.5375, 0.4625]}}
+{"line": 690, "record": "codereviewer/cls-valid/13665", "ms": 94.9, "tokens": 201, "probs": {"needs_comment": [0.6926, 0.3074]}}
+{"line": 691, "record": "commitpackft/python/53147", "ms": 223.8, "tokens": 465, "probs": {"change_type": [0.032097, 0.046995, 0.518148, 0.076492, 0.027697, 0.017298, 0.281272], "message_match": [0.9371, 0.0629]}}
+{"line": 692, "record": "when2call/c2a456a8-a433-4f67-9261-a99af824f7c7", "ms": 376.6, "tokens": 969, "probs": {"action": [0.1668, 0.6978, 0.0809, 0.0545]}}
+{"line": 693, "record": "aegis/0cbedb322a194f2dbc19e76bf8b3abd3", "ms": 63.9, "tokens": 50, "probs": {"unsafe": [0.4794, 0.5206]}}
+{"line": 694, "record": "prompt_injection/deepset/train/490", "ms": 73.1, "tokens": 106, "probs": {"injection": [0.3598, 0.6402]}}
+{"line": 695, "record": "commitpackft/javascript/41390", "ms": 183.2, "tokens": 367, "probs": {"change_type": [0.0581, 0.2812, 0.0778, 0.2083, 0.0527, 0.037, 0.2849], "message_match": [0.0313, 0.9687]}}
+{"line": 696, "record": "codereviewer/cls-valid/38802", "ms": 269.5, "tokens": 696, "probs": {"needs_comment": [0.6658, 0.3342]}}
+{"line": 697, "record": "commitpackft/javascript/7833", "ms": 183.8, "tokens": 371, "probs": {"change_type": [0.0266, 0.0755, 0.5945, 0.0681, 0.0246, 0.0141, 0.1966], "message_match": [0.0268, 0.9732]}}
+{"line": 698, "record": "codereviewer/cls-test/13657", "ms": 96.6, "tokens": 201, "probs": {"needs_comment": [0.544, 0.456]}}
+{"line": 699, "record": "aegis/9696a0f0a1d749a3843e11d042c735d3", "ms": 64.8, "tokens": 65, "probs": {"unsafe": [0.8712, 0.1288]}}
+{"line": 700, "record": "prompt_injection/deepset/train/461", "ms": 61.4, "tokens": 47, "probs": {"injection": [0.9332, 0.0668]}}
+{"line": 701, "record": "aegis/10113494ec5b4690b099f6a10231f4c8", "ms": 55.9, "tokens": 29, "probs": {"unsafe": [0.8526, 0.1474]}}
+{"line": 702, "record": "aegis/40e178b63bc04decad1f9fed4453e308", "ms": 144.8, "tokens": 332, "probs": {"unsafe": [0.3857, 0.6143]}}
+{"line": 703, "record": "aegis/151260a4d8c4465e898e17c95c9eaf31", "ms": 138.8, "tokens": 170, "probs": {"unsafe": [0.3016, 0.6984], "category": [0.001, 0.0021, 0.1354, 0.0257, 0.8276, 0.0008, 0.0011, 0.0007, 0.0005, 0.0005, 0.0004, 0.0042]}}
+{"line": 704, "record": "commitpackft/c++/2530", "ms": 190.9, "tokens": 441, "probs": {"change_type": [0.0461, 0.0565, 0.1036, 0.1512, 0.03, 0.4707, 0.1419], "message_match": [0.0932, 0.9068]}}
+{"line": 705, "record": "when2call/6d510932-1f2f-4760-bbb2-4e5420083d1a", "ms": 66.3, "tokens": 87, "probs": {"action": [0.0328, 0.0282, 0.8475, 0.0915]}}
+{"line": 706, "record": "codereviewer/cls-valid/6219", "ms": 186.9, "tokens": 492, "probs": {"needs_comment": [0.5899, 0.4101]}}
+{"line": 707, "record": "prompt_injection/deepset/train/167", "ms": 61.1, "tokens": 45, "probs": {"injection": [0.9404, 0.0596]}}
+{"line": 708, "record": "aegis/3f6efa19aa3d4135bf8e70b8d07027f3", "ms": 60.8, "tokens": 45, "probs": {"unsafe": [0.1152, 0.8848]}}
+{"line": 709, "record": "aegis/59bbd7a0f9654ba4a2da338953083fa1", "ms": 56.7, "tokens": 30, "probs": {"unsafe": [0.4109, 0.5891]}}
+{"line": 710, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#getSingleParameterQuoted", "ms": 82.3, "tokens": 149, "probs": {"flaky": [0.7503, 0.2497]}}
+{"line": 711, "record": "when2call/82e168a6-c35d-44d4-b552-559372f65944", "ms": 375.2, "tokens": 1003, "probs": {"action": [0.6201, 0.0723, 0.1963, 0.1113]}}
+{"line": 712, "record": "flakeflagger/hector-client-hector/me.prettyprint.hector.api.ApiV2SystemTest#testSuperSliceQuery", "ms": 237.5, "tokens": 586, "probs": {"flaky": [0.4018, 0.5982]}}
+{"line": 713, "record": "flakeflagger/hector-client-hector/me.prettyprint.hom.HectorObjectMapperTest#testIsNotSerializable", "ms": 67.7, "tokens": 66, "probs": {"flaky": [0.9707, 0.0293]}}
+{"line": 714, "record": "commitpackft/ruby/19764", "ms": 179.1, "tokens": 365, "probs": {"change_type": [0.0504, 0.2555, 0.0595, 0.0788, 0.4677, 0.0344, 0.0537], "message_match": [0.9839, 0.0161]}}
+{"line": 715, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.api.services.ServiceServiceTest#testUpdateServices", "ms": 160.7, "tokens": 378, "probs": {"flaky": [0.826, 0.174]}}
+{"line": 716, "record": "codereviewer/cls-valid/12952", "ms": 89.8, "tokens": 175, "probs": {"needs_comment": [0.0847, 0.9153]}}
+{"line": 717, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testGetSlice", "ms": 146.7, "tokens": 352, "probs": {"flaky": [0.3284, 0.6716]}}
+{"line": 718, "record": "aegis/6e78381bccd64288922195eeafe453c5", "ms": 60.9, "tokens": 37, "probs": {"unsafe": [0.5604, 0.4396]}}
+{"line": 719, "record": "codereviewer/cls-valid/13075", "ms": 180.8, "tokens": 460, "probs": {"needs_comment": [0.5977, 0.4023]}}
+{"line": 720, "record": "prompt_injection/deepset/train/48", "ms": 62.0, "tokens": 41, "probs": {"injection": [0.9113, 0.0887]}}
+{"line": 721, "record": "when2call/fc239189-3636-4444-9da9-83f75bff29ca", "ms": 411.3, "tokens": 1090, "probs": {"action": [0.1679, 0.2185, 0.4267, 0.1869]}}
+{"line": 722, "record": "aegis/bcc2753c2bda41a58fe74146f441155c", "ms": 57.7, "tokens": 29, "probs": {"unsafe": [0.2322, 0.7678]}}
+{"line": 723, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testGetSuperRangeSlice", "ms": 130.5, "tokens": 280, "probs": {"flaky": [0.258, 0.742]}}
+{"line": 724, "record": "aegis/7f42c0cc85ba4434b5ef9be77c7b78fb", "ms": 57.1, "tokens": 28, "probs": {"unsafe": [0.7728, 0.2272]}}
+{"line": 725, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.CassandraAuthTest#testInsertAndGetAndRemove", "ms": 153.2, "tokens": 358, "probs": {"flaky": [0.2967, 0.7033]}}
+{"line": 726, "record": "codereviewer/cls-test/8003", "ms": 88.1, "tokens": 177, "probs": {"needs_comment": [0.4915, 0.5085]}}
+{"line": 727, "record": "prompt_injection/deepset/train/297", "ms": 56.2, "tokens": 30, "probs": {"injection": [0.8415, 0.1585]}}
+{"line": 728, "record": "aegis/a463ee5255194581b39a6c887f8b37fa", "ms": 55.8, "tokens": 26, "probs": {"unsafe": [0.9379, 0.0621]}}
+{"line": 729, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#postUrlEmpty", "ms": 88.0, "tokens": 178, "probs": {"flaky": [0.2352, 0.7648]}}
+{"line": 730, "record": "aegis/4cf501c45a9f422bb39219aeaf5e9d46", "ms": 126.5, "tokens": 156, "probs": {"unsafe": [0.1737, 0.8263], "category": [0.0046, 0.0015, 0.0025, 0.054495, 0.0005, 0.0004, 0.0007, 0.933307, 0.0007, 0.0001, 0.0002, 0.001]}}
+{"line": 731, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.orm.TestOrmImpl#testConcurrentModification", "ms": 173.8, "tokens": 442, "probs": {"flaky": [0.3689, 0.6311]}}
+{"line": 732, "record": "prompt_injection/deepset/train/205", "ms": 55.9, "tokens": 31, "probs": {"injection": [0.8661, 0.1339]}}
+{"line": 733, "record": "codereviewer/cls-valid/36199", "ms": 128.0, "tokens": 272, "probs": {"needs_comment": [0.4375, 0.5625]}}
+{"line": 734, "record": "codereviewer/cls-valid/26985", "ms": 88.5, "tokens": 175, "probs": {"needs_comment": [0.5701, 0.4299]}}
+{"line": 735, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testGetServicesWithFilters", "ms": 277.9, "tokens": 740, "probs": {"flaky": [0.4753, 0.5247]}}
+{"line": 736, "record": "commitpackft/javascript/30610", "ms": 232.4, "tokens": 513, "probs": {"change_type": [0.0452, 0.06, 0.4414, 0.1252, 0.1991, 0.0151, 0.114], "message_match": [0.9817, 0.0183]}}
+{"line": 737, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.utilities.PredicateBuilderTest#testLessFloat", "ms": 90.0, "tokens": 172, "probs": {"flaky": [0.9754, 0.0246]}}
+{"line": 738, "record": "commitpackft/ruby/17249", "ms": 275.2, "tokens": 602, "probs": {"change_type": [0.111189, 0.140286, 0.275272, 0.242376, 0.041496, 0.027797, 0.161584], "message_match": [0.9883, 0.0117]}}
+{"line": 739, "record": "when2call/61b43d80-2979-4970-8185-461d8e22ead8", "ms": 265.4, "tokens": 687, "probs": {"action": [0.0227, 0.4486, 0.3723, 0.1564]}}
+{"line": 740, "record": "when2call/ee30537e-d930-40d5-9ffd-114ba5e39efa", "ms": 174.1, "tokens": 415, "probs": {"action": [0.60236, 0.173017, 0.160416, 0.064206]}}
+{"line": 741, "record": "when2call/e0988812-b89b-4bbd-947f-ec5f8c94d3e4", "ms": 272.0, "tokens": 703, "probs": {"action": [0.9518, 0.0151, 0.0138, 0.0193]}}
+{"line": 742, "record": "prompt_injection/deepset/train/142", "ms": 59.6, "tokens": 31, "probs": {"injection": [0.909, 0.091]}}
+{"line": 743, "record": "codereviewer/cls-test/16354", "ms": 94.5, "tokens": 204, "probs": {"needs_comment": [0.1406, 0.8594]}}
+{"line": 744, "record": "commitpackft/python/42655", "ms": 661.5, "tokens": 1678, "probs": {"change_type": [0.5334, 0.1011, 0.0621, 0.0966, 0.0734, 0.0556, 0.0778], "message_match": [0.9901, 0.0099]}}
+{"line": 745, "record": "commitpackft/javascript/19285", "ms": 167.6, "tokens": 295, "probs": {"change_type": [0.1738, 0.2326, 0.1391, 0.2339, 0.0492, 0.0298, 0.1416], "message_match": [0.042, 0.958]}}
+{"line": 746, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#deleteWithMappedQueryParams", "ms": 129.5, "tokens": 258, "probs": {"flaky": [0.2664, 0.7336]}}
+{"line": 747, "record": "when2call/7d4294e4-d627-434d-a80e-8295ed2a5187", "ms": 193.4, "tokens": 506, "probs": {"action": [0.0474, 0.7215, 0.1266, 0.1045]}}
+{"line": 748, "record": "prompt_injection/gandalf/train/42", "ms": 61.6, "tokens": 46, "probs": {"injection": [0.1949, 0.8051]}}
+{"line": 749, "record": "aegis/055743056a3c46dd96c887db994a9148", "ms": 59.8, "tokens": 37, "probs": {"unsafe": [0.6399, 0.3601]}}
+{"line": 750, "record": "codereviewer/cls-test/7901", "ms": 99.4, "tokens": 239, "probs": {"needs_comment": [0.4329, 0.5671]}}
+{"line": 751, "record": "aegis/36331205bb5a4991b6ba57b2f117b495", "ms": 271.2, "tokens": 719, "probs": {"unsafe": [0.5332, 0.4668]}}
+{"line": 752, "record": "when2call/a436498f-64da-42bf-bbdf-16b371357f18", "ms": 137.9, "tokens": 293, "probs": {"action": [0.334567, 0.205979, 0.171783, 0.287671]}}
+{"line": 753, "record": "prompt_injection/deepset/train/264", "ms": 61.0, "tokens": 40, "probs": {"injection": [0.8362, 0.1638]}}
+{"line": 754, "record": "commitpackft/shell/25315", "ms": 221.4, "tokens": 470, "probs": {"change_type": [0.239848, 0.215743, 0.109022, 0.25215, 0.063913, 0.030206, 0.089118], "message_match": [0.9736, 0.0264]}}
+{"line": 755, "record": "prompt_injection/deepset/test/16", "ms": 62.4, "tokens": 55, "probs": {"injection": [0.515, 0.485]}}
+{"line": 756, "record": "when2call/87cee888-f769-46d0-ae3f-797d4b9f9174", "ms": 134.1, "tokens": 296, "probs": {"action": [0.2728, 0.256, 0.3311, 0.1401]}}
+{"line": 757, "record": "commitpackft/ruby/29723", "ms": 189.1, "tokens": 424, "probs": {"change_type": [0.3581, 0.0953, 0.0873, 0.2138, 0.0728, 0.0583, 0.1144], "message_match": [0.9609, 0.0391]}}
+{"line": 758, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#appendMultipleVarargsQueryParams", "ms": 71.9, "tokens": 106, "probs": {"flaky": [0.818, 0.182]}}
+{"line": 759, "record": "aegis/a932a404af294c3ca89dfc56b088ef46", "ms": 56.3, "tokens": 30, "probs": {"unsafe": [0.8518, 0.1482]}}
+{"line": 760, "record": "when2call/10ed315e-f38a-4171-a4e3-6475351f3381", "ms": 101.1, "tokens": 241, "probs": {"action": [0.848015, 0.053795, 0.081592, 0.016598]}}
+{"line": 761, "record": "flakeflagger/hector-client-hector/me.prettyprint.hom.ClassCacheMgrTest#testBadPojo", "ms": 64.9, "tokens": 82, "probs": {"flaky": [0.95, 0.05]}}
+{"line": 762, "record": "codereviewer/cls-valid/6481", "ms": 90.1, "tokens": 190, "probs": {"needs_comment": [0.4885, 0.5115]}}
+{"line": 763, "record": "when2call/f82d9727-5e25-4668-91b1-16f9c660e389", "ms": 153.9, "tokens": 375, "probs": {"action": [0.0155, 0.0088, 0.5769, 0.3988]}}
+{"line": 764, "record": "commitpackft/python/15184", "ms": 187.1, "tokens": 399, "probs": {"change_type": [0.09561, 0.10301, 0.182518, 0.182218, 0.149515, 0.074507, 0.212621], "message_match": [0.9879, 0.0121]}}
+{"line": 765, "record": "codereviewer/cls-test/12481", "ms": 89.7, "tokens": 188, "probs": {"needs_comment": [0.6643, 0.3357]}}
+{"line": 766, "record": "codereviewer/cls-valid/16004", "ms": 91.3, "tokens": 174, "probs": {"needs_comment": [0.4657, 0.5343]}}
+{"line": 767, "record": "when2call/cf474eec-32d0-4cc6-9e2b-40b4520654ff", "ms": 71.1, "tokens": 105, "probs": {"action": [0.049405, 0.044604, 0.719872, 0.186119]}}
+{"line": 768, "record": "aegis/df46ee4c04424712b13cf89f1946b7be", "ms": 55.3, "tokens": 27, "probs": {"unsafe": [0.7804, 0.2196]}}
+{"line": 769, "record": "codereviewer/cls-valid/9511", "ms": 136.3, "tokens": 317, "probs": {"needs_comment": [0.4201, 0.5799]}}
+{"line": 770, "record": "aegis/8ad3179fbb6c4492891c6140d97783f6", "ms": 57.3, "tokens": 24, "probs": {"unsafe": [0.5745, 0.4255]}}
+{"line": 771, "record": "prompt_injection/deepset/train/61", "ms": 55.8, "tokens": 31, "probs": {"injection": [0.9266, 0.0734]}}
+{"line": 772, "record": "codereviewer/cls-valid/14731", "ms": 87.1, "tokens": 167, "probs": {"needs_comment": [0.6587, 0.3413]}}
+{"line": 773, "record": "aegis/d0189eb6741449ed961794a04e36003c", "ms": 56.1, "tokens": 28, "probs": {"unsafe": [0.2725, 0.7275]}}
+{"line": 774, "record": "aegis/274b910e37fd4434813f1370cdd2b6f2", "ms": 99.0, "tokens": 235, "probs": {"unsafe": [0.8017, 0.1983]}}
+{"line": 775, "record": "commitpackft/ruby/24901", "ms": 170.8, "tokens": 329, "probs": {"change_type": [0.0382, 0.2309, 0.2683, 0.198, 0.0473, 0.0299, 0.1874], "message_match": [0.9853, 0.0147]}}
+{"line": 776, "record": "codereviewer/cls-test/14827", "ms": 222.3, "tokens": 567, "probs": {"needs_comment": [0.3581, 0.6419]}}
+{"line": 777, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testGetRangeSlice", "ms": 137.1, "tokens": 308, "probs": {"flaky": [0.2232, 0.7768]}}
+{"line": 778, "record": "commitpackft/ruby/36327", "ms": 159.0, "tokens": 287, "probs": {"change_type": [0.547045, 0.086491, 0.041896, 0.114489, 0.053495, 0.050595, 0.105989], "message_match": [0.012, 0.988]}}
+{"line": 779, "record": "commitpackft/javascript/11197", "ms": 220.1, "tokens": 478, "probs": {"change_type": [0.0568, 0.3399, 0.0864, 0.2554, 0.0539, 0.0366, 0.171], "message_match": [0.0181, 0.9819]}}
+{"line": 780, "record": "flakeflagger/hector-client-hector/me.prettyprint.hom.HectorObjectMapperTest#testIsSerializable", "ms": 63.1, "tokens": 62, "probs": {"flaky": [0.9732, 0.0268]}}
+{"line": 781, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.model.MutatorTest#testRowDeletion", "ms": 134.3, "tokens": 301, "probs": {"flaky": [0.4127, 0.5873]}}
+{"line": 782, "record": "commitpackft/javascript/1380", "ms": 658.8, "tokens": 1672, "probs": {"change_type": [0.0965, 0.1043, 0.1764, 0.2854, 0.1534, 0.0202, 0.1638], "message_match": [0.9892, 0.0108]}}
+{"line": 783, "record": "aegis/be1dd22edb0447028d9c54d906560de3", "ms": 54.9, "tokens": 32, "probs": {"unsafe": [0.1935, 0.8065]}}
+{"line": 784, "record": "prompt_injection/gandalf/train/169", "ms": 60.7, "tokens": 40, "probs": {"injection": [0.3229, 0.6771]}}
+{"line": 785, "record": "flakeflagger/hector-client-hector/me.prettyprint.hector.api.ApiV2SystemTest#testSubCountQuery", "ms": 88.9, "tokens": 185, "probs": {"flaky": [0.5466, 0.4534]}}
+{"line": 786, "record": "when2call/04ec1926-871e-412a-b5ef-da97d1af5792", "ms": 611.3, "tokens": 1651, "probs": {"action": [0.2255, 0.3593, 0.2605, 0.1547]}}
+{"line": 787, "record": "when2call/e866e28d-1b76-44bf-b2bd-19d45c86d67c", "ms": 261.1, "tokens": 645, "probs": {"action": [0.037, 0.7489, 0.1209, 0.0932]}}
+{"line": 788, "record": "prompt_injection/gandalf/test/85", "ms": 59.0, "tokens": 29, "probs": {"injection": [0.7195, 0.2805]}}
+{"line": 789, "record": "prompt_injection/deepset/train/330", "ms": 61.0, "tokens": 37, "probs": {"injection": [0.9227, 0.0773]}}
+{"line": 790, "record": "commitpackft/javascript/25206", "ms": 403.9, "tokens": 1025, "probs": {"change_type": [0.6417, 0.0965, 0.0302, 0.1211, 0.0302, 0.0245, 0.0558], "message_match": [0.9881, 0.0119]}}
+{"line": 791, "record": "prompt_injection/gandalf/validation/16", "ms": 58.3, "tokens": 30, "probs": {"injection": [0.4466, 0.5534]}}
+{"line": 792, "record": "when2call/4f5b2512-cee4-43f2-bd81-eb5ecc7a5802", "ms": 183.2, "tokens": 475, "probs": {"action": [0.0595, 0.2054, 0.5495, 0.1856]}}
+{"line": 793, "record": "when2call/f6b775bb-04a7-4ca0-ad83-e2377a31fa98", "ms": 222.3, "tokens": 546, "probs": {"action": [0.143, 0.2371, 0.4276, 0.1923]}}
+{"line": 794, "record": "codereviewer/cls-test/14678", "ms": 103.2, "tokens": 243, "probs": {"needs_comment": [0.6472, 0.3528]}}
+{"line": 795, "record": "aegis/774ef3119ceb4f7cba7fa1c843b33ab3", "ms": 56.7, "tokens": 27, "probs": {"unsafe": [0.3785, 0.6215]}}
+{"line": 796, "record": "prompt_injection/gandalf/train/205", "ms": 59.8, "tokens": 36, "probs": {"injection": [0.2591, 0.7409]}}
+{"line": 797, "record": "when2call/f20071e4-b6e7-4e32-ba0a-632122584c6a", "ms": 92.8, "tokens": 212, "probs": {"action": [0.770123, 0.031697, 0.09579, 0.10239]}}
+{"line": 798, "record": "when2call/4c7f9270-5974-4950-8aec-73a66e75b2a4", "ms": 127.3, "tokens": 259, "probs": {"action": [0.0233, 0.8881, 0.063, 0.0256]}}
+{"line": 799, "record": "aegis/951af3859c1e4c04a03f7075c926e964", "ms": 128.7, "tokens": 154, "probs": {"unsafe": [0.162, 0.838], "category": [0.9598, 0.0156, 0.0006, 0.0094, 0.0008, 0.001, 0.0006, 0.0011, 0.0085, 0.0003, 0.0003, 0.002]}}
+{"line": 800, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.api.services.ServiceServiceTest#testDeleteService", "ms": 164.5, "tokens": 387, "probs": {"flaky": [0.8352, 0.1648]}}
+{"line": 801, "record": "aegis/4bc857481a7848ccb7a1749a55faa799", "ms": 67.1, "tokens": 91, "probs": {"unsafe": [0.7557, 0.2443]}}
+{"line": 802, "record": "prompt_injection/deepset/train/35", "ms": 56.3, "tokens": 31, "probs": {"injection": [0.9366, 0.0634]}}
+{"line": 803, "record": "aegis/e501a230a851483bb05c66b7a1b14c31", "ms": 70.8, "tokens": 99, "probs": {"unsafe": [0.3948, 0.6052]}}
+{"line": 804, "record": "commitpackft/ruby/36456", "ms": 273.0, "tokens": 610, "probs": {"change_type": [0.1898, 0.1968, 0.1045, 0.2734, 0.1007, 0.0314, 0.1034], "message_match": [0.984, 0.016]}}
+{"line": 805, "record": "commitpackft/shell/16258", "ms": 188.9, "tokens": 427, "probs": {"change_type": [0.2336, 0.0838, 0.0467, 0.1351, 0.0472, 0.3411, 0.1125], "message_match": [0.1047, 0.8953]}}
+{"line": 806, "record": "codereviewer/cls-test/26014", "ms": 213.9, "tokens": 541, "probs": {"needs_comment": [0.4757, 0.5243]}}
+{"line": 807, "record": "codereviewer/cls-test/15232", "ms": 80.5, "tokens": 143, "probs": {"needs_comment": [0.5927, 0.4073]}}
+{"line": 808, "record": "commitpackft/ruby/20004", "ms": 165.9, "tokens": 321, "probs": {"change_type": [0.0534, 0.1924, 0.111, 0.2796, 0.2071, 0.0443, 0.1122], "message_match": [0.9878, 0.0122]}}
+{"line": 809, "record": "prompt_injection/gandalf/train/452", "ms": 56.1, "tokens": 29, "probs": {"injection": [0.2757, 0.7243]}}
+{"line": 810, "record": "aegis/98425c2eee3f4a45ac535d4f20347342", "ms": 56.6, "tokens": 27, "probs": {"unsafe": [0.225, 0.775]}}
+{"line": 811, "record": "when2call/b0e713de-929b-44e6-a743-94fe45b368d7", "ms": 152.1, "tokens": 358, "probs": {"action": [0.2998, 0.551, 0.0883, 0.0609]}}
+{"line": 812, "record": "codereviewer/cls-test/28460", "ms": 86.9, "tokens": 164, "probs": {"needs_comment": [0.6594, 0.3406]}}
+{"line": 813, "record": "codereviewer/cls-test/14553", "ms": 127.4, "tokens": 264, "probs": {"needs_comment": [0.6827, 0.3173]}}
+{"line": 814, "record": "prompt_injection/deepset/train/28", "ms": 57.3, "tokens": 28, "probs": {"injection": [0.8795, 0.1205]}}
+{"line": 815, "record": "aegis/e54081fefcc14d90bcd63eedc6157838", "ms": 60.0, "tokens": 44, "probs": {"unsafe": [0.7042, 0.2958]}}
+{"line": 816, "record": "aegis/748e960e6cff40a6863dac3b15bdcb25", "ms": 56.7, "tokens": 31, "probs": {"unsafe": [0.1529, 0.8471]}}
+{"line": 817, "record": "aegis/b05188e015df441f8a0aa6b32bd9e130", "ms": 56.3, "tokens": 28, "probs": {"unsafe": [0.7724, 0.2276]}}
+{"line": 818, "record": "when2call/5aa3d4af-0ada-451d-bc96-12bab178106e", "ms": 303.3, "tokens": 787, "probs": {"action": [0.247125, 0.447845, 0.234323, 0.070707]}}
+{"line": 819, "record": "aegis/6d6ee55515bd4ab4bdb0d4ee3021e752", "ms": 57.5, "tokens": 29, "probs": {"unsafe": [0.2781, 0.7219]}}
+{"line": 820, "record": "when2call/69f11a85-d57e-4894-8632-e6a7bdf839fe", "ms": 99.2, "tokens": 226, "probs": {"action": [0.0548, 0.0484, 0.5709, 0.3259]}}
+{"line": 821, "record": "commitpackft/c/7277", "ms": 220.7, "tokens": 478, "probs": {"change_type": [0.249125, 0.160316, 0.160516, 0.143114, 0.144114, 0.036804, 0.106011], "message_match": [0.975, 0.025]}}
+{"line": 822, "record": "prompt_injection/deepset/train/159", "ms": 55.8, "tokens": 29, "probs": {"injection": [0.9025, 0.0975]}}
+{"line": 823, "record": "codereviewer/cls-valid/19373", "ms": 153.4, "tokens": 371, "probs": {"needs_comment": [0.4926, 0.5074]}}
+{"line": 824, "record": "commitpackft/python/21886", "ms": 238.1, "tokens": 571, "probs": {"change_type": [0.1035, 0.1214, 0.1578, 0.2953, 0.155, 0.0556, 0.1114], "message_match": [0.9736, 0.0264]}}
+{"line": 825, "record": "aegis/19b3d20480084140a51e310fb0a841a6", "ms": 56.2, "tokens": 25, "probs": {"unsafe": [0.8765, 0.1235]}}
+{"line": 826, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testBatchUpdateInsertAndDelOnSame", "ms": 212.1, "tokens": 523, "probs": {"flaky": [0.2037, 0.7963]}}
+{"line": 827, "record": "when2call/3243b9bf-188a-4b6b-9762-36cf4ca0e617", "ms": 456.5, "tokens": 1231, "probs": {"action": [0.865287, 0.065007, 0.041004, 0.028703]}}
+{"line": 828, "record": "when2call/111918b1-9b83-4771-a7f1-c6dcce735323", "ms": 150.9, "tokens": 349, "probs": {"action": [0.8532, 0.0503, 0.0587, 0.0378]}}
+{"line": 829, "record": "codereviewer/cls-test/8600", "ms": 149.0, "tokens": 330, "probs": {"needs_comment": [0.4112, 0.5888]}}
+{"line": 830, "record": "codereviewer/cls-test/6383", "ms": 142.7, "tokens": 303, "probs": {"needs_comment": [0.4468, 0.5532]}}
+{"line": 831, "record": "when2call/220e5ff7-ce50-4959-a61b-01db17224746", "ms": 310.1, "tokens": 782, "probs": {"action": [0.0031, 0.0235, 0.8433, 0.1301]}}
+{"line": 832, "record": "prompt_injection/deepset/train/476", "ms": 57.3, "tokens": 26, "probs": {"injection": [0.8408, 0.1592]}}
+{"line": 833, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#getUrlEncodedWithUnicode", "ms": 89.4, "tokens": 174, "probs": {"flaky": [0.3211, 0.6789]}}
+{"line": 834, "record": "prompt_injection/deepset/test/78", "ms": 60.4, "tokens": 46, "probs": {"injection": [0.9019, 0.0981]}}
+{"line": 835, "record": "commitpackft/c#/8970", "ms": 176.2, "tokens": 365, "probs": {"change_type": [0.033003, 0.236224, 0.135614, 0.128513, 0.316932, 0.030103, 0.119612], "message_match": [0.7437, 0.2563]}}
+{"line": 836, "record": "commitpackft/ruby/67352", "ms": 186.5, "tokens": 404, "probs": {"change_type": [0.0817, 0.2257, 0.1123, 0.291, 0.0733, 0.0333, 0.1827], "message_match": [0.0246, 0.9754]}}
+{"line": 837, "record": "prompt_injection/deepset/train/454", "ms": 59.9, "tokens": 34, "probs": {"injection": [0.8921, 0.1079]}}
+{"line": 838, "record": "aegis/0737b53ab3224002a4314eb5525bb1aa", "ms": 130.2, "tokens": 164, "probs": {"unsafe": [0.3843, 0.6157], "category": [0.0056, 0.0015, 0.7446, 0.2424, 0.0021, 0.0002, 0.0002, 0.0019, 0.0001, 0.0002, 0.0, 0.0012]}}
+{"line": 839, "record": "prompt_injection/gandalf/train/270", "ms": 59.1, "tokens": 36, "probs": {"injection": [0.7043, 0.2957]}}
+{"line": 840, "record": "codereviewer/cls-test/16774", "ms": 88.7, "tokens": 184, "probs": {"needs_comment": [0.5229, 0.4771]}}
+{"line": 841, "record": "commitpackft/shell/25655", "ms": 222.3, "tokens": 493, "probs": {"change_type": [0.1166, 0.3001, 0.1156, 0.27, 0.0727, 0.0324, 0.0926], "message_match": [0.1544, 0.8456]}}
+{"line": 842, "record": "aegis/b2d68bd6a3ce47fd91c6b6f3fb36a30b", "ms": 56.7, "tokens": 31, "probs": {"unsafe": [0.2638, 0.7362]}}
+{"line": 843, "record": "aegis/70b1966ce832483fb09f2cfef67ef090", "ms": 56.8, "tokens": 31, "probs": {"unsafe": [0.9447, 0.0553]}}
+{"line": 844, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testCreateServicesWithInvalidRequest", "ms": 301.1, "tokens": 773, "probs": {"flaky": [0.6707, 0.3293]}}
+{"line": 845, "record": "prompt_injection/gandalf/train/402", "ms": 57.1, "tokens": 26, "probs": {"injection": [0.6893, 0.3107]}}
+{"line": 846, "record": "when2call/d9836e0b-fab4-459c-a3ae-ba570fd7343e", "ms": 129.8, "tokens": 284, "probs": {"action": [0.0131, 0.0143, 0.8561, 0.1165]}}
+{"line": 847, "record": "aegis/8d1be0d9840043598461e751869fc7c8", "ms": 144.3, "tokens": 212, "probs": {"unsafe": [0.2886, 0.7114], "category": [0.016002, 0.0023, 0.0005, 0.0004, 0.0013, 0.0015, 0.0002, 0.0002, 0.0005, 0.973397, 0.0002, 0.0035]}}
+{"line": 848, "record": "when2call/6cd1cd03-58c0-4ab9-8bbf-abfc22e27782", "ms": 279.1, "tokens": 749, "probs": {"action": [0.072407, 0.669567, 0.20002, 0.058006]}}
+{"line": 849, "record": "aegis/4894040f8c484723a4cc896a2aeb7fe5", "ms": 56.8, "tokens": 31, "probs": {"unsafe": [0.9132, 0.0868]}}
+{"line": 850, "record": "flakeflagger/kevinsawicki-http-request/com.github.kevinsawicki.http.HttpRequestTest#getReaderWithCharset", "ms": 86.7, "tokens": 163, "probs": {"flaky": [0.2934, 0.7066]}}
+{"line": 851, "record": "commitpackft/ruby/56491", "ms": 220.9, "tokens": 482, "probs": {"change_type": [0.0492, 0.0183, 0.0096, 0.0296, 0.8497, 0.0193, 0.0243], "message_match": [0.9845, 0.0155]}}
+{"line": 852, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testServiceComponentUpdateRecursive", "ms": 683.4, "tokens": 1853, "probs": {"flaky": [0.3688, 0.6312]}}
+{"line": 853, "record": "commitpackft/php/9895", "ms": 194.4, "tokens": 401, "probs": {"change_type": [0.359564, 0.111089, 0.085391, 0.169083, 0.050095, 0.058794, 0.165983], "message_match": [0.9917, 0.0083]}}
+{"line": 854, "record": "commitpackft/python/13517", "ms": 241.7, "tokens": 534, "probs": {"change_type": [0.0614, 0.0261, 0.0275, 0.0597, 0.7629, 0.0303, 0.0321], "message_match": [0.0216, 0.9784]}}
+{"line": 855, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testCreateClusterSimple", "ms": 89.9, "tokens": 170, "probs": {"flaky": [0.3111, 0.6889]}}
+{"line": 856, "record": "codereviewer/cls-test/16679", "ms": 102.6, "tokens": 242, "probs": {"needs_comment": [0.5563, 0.4437]}}
+{"line": 857, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testMultigetCount", "ms": 157.1, "tokens": 383, "probs": {"flaky": [0.3997, 0.6003]}}
+{"line": 858, "record": "codereviewer/cls-test/31846", "ms": 131.0, "tokens": 279, "probs": {"needs_comment": [0.4878, 0.5122]}}
+{"line": 859, "record": "prompt_injection/gandalf/train/64", "ms": 66.5, "tokens": 84, "probs": {"injection": [0.2649, 0.7351]}}
+{"line": 860, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testInsertAndGetAndRemove", "ms": 136.1, "tokens": 317, "probs": {"flaky": [0.3529, 0.6471]}}
+{"line": 861, "record": "aegis/d7c8a79f24044be4b5195737f8dace3a", "ms": 56.6, "tokens": 31, "probs": {"unsafe": [0.454, 0.546]}}
+{"line": 862, "record": "prompt_injection/deepset/test/73", "ms": 64.3, "tokens": 43, "probs": {"injection": [0.8715, 0.1285]}}
+{"line": 863, "record": "commitpackft/javascript/817", "ms": 309.3, "tokens": 723, "probs": {"change_type": [0.061194, 0.10469, 0.278872, 0.243676, 0.055194, 0.023998, 0.232377], "message_match": [0.0722, 0.9278]}}
+{"line": 864, "record": "when2call/e73b8b21-7acb-4c51-b0d5-e5d89c0a3853", "ms": 66.6, "tokens": 87, "probs": {"action": [0.0271, 0.0282, 0.7793, 0.1654]}}
+{"line": 865, "record": "prompt_injection/deepset/train/230", "ms": 56.4, "tokens": 31, "probs": {"injection": [0.902, 0.098]}}
+{"line": 866, "record": "codereviewer/cls-test/9470", "ms": 153.2, "tokens": 371, "probs": {"needs_comment": [0.4553, 0.5447]}}
+{"line": 867, "record": "when2call/5f458e97-7a56-4b8f-a944-93010c0e0496", "ms": 283.2, "tokens": 767, "probs": {"action": [0.2655, 0.412, 0.2317, 0.0908]}}
+{"line": 868, "record": "when2call/8e4a7306-d54e-4750-b1da-ea284cdb822c", "ms": 94.7, "tokens": 205, "probs": {"action": [0.4761, 0.0466, 0.2034, 0.2739]}}
+{"line": 869, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.controller.AmbariManagementControllerTest#testCreateServicesMultiple", "ms": 138.4, "tokens": 314, "probs": {"flaky": [0.6065, 0.3935]}}
+{"line": 870, "record": "commitpackft/javascript/20454", "ms": 297.5, "tokens": 699, "probs": {"change_type": [0.451445, 0.119412, 0.073807, 0.137314, 0.052405, 0.041504, 0.124112], "message_match": [0.0731, 0.9269]}}
+{"line": 871, "record": "flakeflagger/apache-ambari/org.apache.ambari.server.bootstrap.BootStrapTest#testRun", "ms": 157.1, "tokens": 379, "probs": {"flaky": [0.1301, 0.8699]}}
+{"line": 872, "record": "aegis/63d00eba3b4d46a49ceec53f38520cb6", "ms": 134.8, "tokens": 160, "probs": {"unsafe": [0.5624, 0.4376], "category": [0.009502, 0.001, 0.0012, 0.020204, 0.0003, 0.0001, 0.003101, 0.963693, 0.0001, 0.0001, 0.0004, 0.0003]}}
+{"line": 873, "record": "prompt_injection/deepset/train/475", "ms": 56.3, "tokens": 30, "probs": {"injection": [0.8682, 0.1318]}}
+{"line": 874, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.serializers.TypeInferringSerializerTest#testConversions", "ms": 65.3, "tokens": 81, "probs": {"flaky": [0.7914, 0.2086]}}
+{"line": 875, "record": "commitpackft/javascript/29423", "ms": 162.2, "tokens": 311, "probs": {"change_type": [0.0834, 0.1672, 0.0944, 0.2255, 0.0498, 0.1637, 0.216], "message_match": [0.9821, 0.0179]}}
+{"line": 876, "record": "aegis/0c76f0132292406e861abc7c6b2eb4f7", "ms": 56.3, "tokens": 29, "probs": {"unsafe": [0.412, 0.588]}}
+{"line": 877, "record": "commitpackft/ruby/15417", "ms": 225.6, "tokens": 501, "probs": {"change_type": [0.080708, 0.019202, 0.008601, 0.035204, 0.018702, 0.791279, 0.046305], "message_match": [0.9822, 0.0178]}}
+{"line": 878, "record": "codereviewer/cls-test/16228", "ms": 128.8, "tokens": 278, "probs": {"needs_comment": [0.5261, 0.4739]}}
+{"line": 879, "record": "codereviewer/cls-test/17754", "ms": 100.3, "tokens": 236, "probs": {"needs_comment": [0.5252, 0.4748]}}
+{"line": 880, "record": "commitpackft/python/31922", "ms": 186.3, "tokens": 389, "probs": {"change_type": [0.0367, 0.1099, 0.4556, 0.1119, 0.04, 0.0172, 0.2287], "message_match": [0.0199, 0.9801]}}
+{"line": 881, "record": "aegis/39ff17cda7a945aaaad6ad7708c8c7a6", "ms": 87.7, "tokens": 169, "probs": {"unsafe": [0.3862, 0.6138]}}
+{"line": 882, "record": "aegis/cae5205fcaaf4610bf0bb0b0cecbe6ff", "ms": 64.8, "tokens": 80, "probs": {"unsafe": [0.8323, 0.1677]}}
+{"line": 883, "record": "commitpackft/python/45027", "ms": 219.5, "tokens": 471, "probs": {"change_type": [0.106511, 0.025203, 0.018902, 0.044404, 0.018602, 0.713771, 0.072607], "message_match": [0.0175, 0.9825]}}
+{"line": 884, "record": "prompt_injection/deepset/train/381", "ms": 59.7, "tokens": 37, "probs": {"injection": [0.373, 0.627]}}
+{"line": 885, "record": "prompt_injection/deepset/train/388", "ms": 55.9, "tokens": 27, "probs": {"injection": [0.846, 0.154]}}
+{"line": 886, "record": "codereviewer/cls-test/16270", "ms": 92.0, "tokens": 190, "probs": {"needs_comment": [0.5503, 0.4497]}}
+{"line": 887, "record": "when2call/3c1850e3-3e60-4358-adc0-aa7e55abc3c9", "ms": 153.0, "tokens": 368, "probs": {"action": [0.7011, 0.1534, 0.0995, 0.046]}}
+{"line": 888, "record": "when2call/2da30c2f-c5a4-4540-a071-fc4e7ae5a639", "ms": 154.9, "tokens": 360, "probs": {"action": [0.214, 0.6048, 0.1549, 0.0263]}}
+{"line": 889, "record": "codereviewer/cls-test/13657", "ms": 92.0, "tokens": 193, "probs": {"needs_comment": [0.5609, 0.4391]}}
+{"line": 890, "record": "aegis/36bc8b6407df43faac6a295d4cdfa703", "ms": 59.7, "tokens": 35, "probs": {"unsafe": [0.6053, 0.3947]}}
+{"line": 891, "record": "codereviewer/cls-test/15238", "ms": 78.6, "tokens": 140, "probs": {"needs_comment": [0.5891, 0.4109]}}
+{"line": 892, "record": "prompt_injection/deepset/train/20", "ms": 54.2, "tokens": 32, "probs": {"injection": [0.8325, 0.1675]}}
+{"line": 893, "record": "codereviewer/cls-test/15785", "ms": 154.3, "tokens": 376, "probs": {"needs_comment": [0.6868, 0.3132]}}
+{"line": 894, "record": "codereviewer/cls-valid/7067", "ms": 128.0, "tokens": 259, "probs": {"needs_comment": [0.4967, 0.5033]}}
+{"line": 895, "record": "aegis/013cee39a03e482a959b76406337c095", "ms": 138.2, "tokens": 172, "probs": {"unsafe": [0.22, 0.78], "category": [0.535254, 0.033503, 0.039304, 0.033303, 0.058906, 0.005401, 0.026103, 0.015702, 0.0012, 0.025103, 0.092809, 0.133413]}}
+{"line": 896, "record": "prompt_injection/deepset/test/102", "ms": 61.2, "tokens": 44, "probs": {"injection": [0.752, 0.248]}}
+{"line": 897, "record": "prompt_injection/gandalf/train/773", "ms": 60.2, "tokens": 37, "probs": {"injection": [0.3458, 0.6542]}}
+{"line": 898, "record": "flakeflagger/hector-client-hector/me.prettyprint.cassandra.service.KeyspaceTest#testBatchMutate", "ms": 271.6, "tokens": 720, "probs": {"flaky": [0.1854, 0.8146]}}
+{"line": 899, "record": "when2call/e72adef2-8366-474c-bad3-13c620b2f9b4", "ms": 254.8, "tokens": 645, "probs": {"action": [0.2261, 0.5345, 0.1677, 0.0717]}}
+{"line": 900, "record": "aegis/7a927d2b6c4f49919ea597f89543b512", "ms": 63.9, "tokens": 55, "probs": {"unsafe": [0.8054, 0.1946]}}

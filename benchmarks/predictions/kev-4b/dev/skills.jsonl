@@ -1,0 +1,700 @@
+{"line": 1, "record": "hard-v1/tradeoff/development/00027", "ms": 224.1, "tokens": 354, "probs": {"choice": [0.390839, 0.182118, 0.154615, 0.006701, 0.092209, 0.173517], "meets": [0.1251, 0.8749]}}
+{"line": 2, "record": "hard-v1/multi_hop/development/00040", "ms": 149.2, "tokens": 173, "probs": {"affected": [0.015302, 0.053105, 0.029703, 0.90189]}}
+{"line": 3, "record": "hard-v1/tradeoff/development/00023", "ms": 214.3, "tokens": 336, "probs": {"choice": [0.033203, 0.835784, 0.131013], "meets": [0.9583, 0.0417]}}
+{"line": 4, "record": "hard-v1/ambiguous/development/00066", "ms": 154.1, "tokens": 181, "probs": {"decision": [0.0407, 0.9555, 0.0038]}}
+{"line": 5, "record": "hard-v1/temporal_numeric/development/00048", "ms": 133.0, "tokens": 132, "probs": {"date": [0.2971, 0.1133, 0.334, 0.1891, 0.0665]}}
+{"line": 6, "record": "hard-v1/ambiguous/development/00072", "ms": 141.1, "tokens": 148, "probs": {"decision": [0.244776, 0.458254, 0.29697]}}
+{"line": 7, "record": "hard-v1/long_policy/development/00032", "ms": 1475.9, "tokens": 3137, "probs": {"outcome": [0.3536, 0.2317, 0.0544, 0.021, 0.3393], "amount": [0.494049, 0.149115, 0.003, 0.321532, 0.032303]}}
+{"line": 8, "record": "hard-v1/tradeoff/development/00002", "ms": 188.8, "tokens": 237, "probs": {"choice": [0.008, 0.0271, 0.7441, 0.2208], "meets": [0.7572, 0.2428]}}
+{"line": 9, "record": "hard-v1/tradeoff/development/00050", "ms": 228.1, "tokens": 322, "probs": {"choice": [0.0855, 0.0021, 0.0025, 0.9058, 0.0041], "meets": [0.0347, 0.9653]}}
+{"line": 10, "record": "hard-v1/temporal_numeric/development/00079", "ms": 153.4, "tokens": 172, "probs": {"refund": [0.1316, 0.2498, 0.2257, 0.1489, 0.244]}}
+{"line": 11, "record": "hard-v1/long_policy/development/00011", "ms": 1290.4, "tokens": 2752, "probs": {"outcome": [0.087791, 0.09619, 0.235376, 0.009699, 0.570943], "amount": [0.0347, 0.0054, 0.1661, 0.742, 0.0518]}}
+{"line": 12, "record": "hard-v1/ambiguous/development/00070", "ms": 140.4, "tokens": 127, "probs": {"decision": [0.1129, 0.1753, 0.7118]}}
+{"line": 13, "record": "hard-v1/long_policy/development/00085", "ms": 1336.7, "tokens": 2915, "probs": {"outcome": [0.4054, 0.033, 0.0667, 0.0215, 0.4734], "amount": [0.79698, 0.005001, 0.060606, 0.024102, 0.113311]}}
+{"line": 14, "record": "hard-v1/judge/development/00084", "ms": 158.9, "tokens": 143, "probs": {"correct": [0.4832, 0.5168], "value": [0.518752, 0.182018, 0.0031, 0.158016, 0.138114]}}
+{"line": 15, "record": "hard-v1/judge/development/00004", "ms": 152.4, "tokens": 127, "probs": {"correct": [0.2836, 0.7164], "value": [0.005399, 0.80462, 0.084592, 0.025097, 0.080292]}}
+{"line": 16, "record": "hard-v1/tradeoff/development/00038", "ms": 219.0, "tokens": 332, "probs": {"choice": [0.9853, 0.0082, 0.0065], "meets": [0.8974, 0.1026]}}
+{"line": 17, "record": "hard-v1/temporal_numeric/development/00092", "ms": 138.8, "tokens": 138, "probs": {"date": [0.368463, 0.405059, 0.047895, 0.167483, 0.011099]}}
+{"line": 18, "record": "hard-v1/tradeoff/development/00093", "ms": 175.7, "tokens": 269, "probs": {"choice": [0.0572, 0.0025, 0.9321, 0.0082], "meets": [0.7577, 0.2423]}}
+{"line": 19, "record": "hard-v1/judge/development/00053", "ms": 156.5, "tokens": 140, "probs": {"correct": [0.3361, 0.6639], "value": [0.8577, 0.0234, 0.1049, 0.0105, 0.0035]}}
+{"line": 20, "record": "hard-v1/probability/development/00070", "ms": 167.8, "tokens": 235, "probs": {"value": [0.926, 0.0074, 0.0247, 0.0378, 0.0041], "bucket": [0.155884, 0.235076, 0.214179, 0.216478, 0.108689, 0.069693]}}
+{"line": 21, "record": "hard-v1/multi_hop/development/00060", "ms": 171.4, "tokens": 232, "probs": {"controller": [0.0182, 0.042, 0.0518, 0.2755, 0.6125], "interest": [0.0573, 0.006, 0.8872, 0.0226, 0.0269]}}
+{"line": 22, "record": "hard-v1/probability/development/00051", "ms": 134.5, "tokens": 121, "probs": {"value": [0.0027, 0.001, 0.0005, 0.0007, 0.9951]}}
+{"line": 23, "record": "hard-v1/ambiguous/development/00051", "ms": 132.4, "tokens": 115, "probs": {"decision": [0.236476, 0.471953, 0.291571]}}
+{"line": 24, "record": "hard-v1/judge/development/00068", "ms": 147.5, "tokens": 127, "probs": {"correct": [0.3465, 0.6535], "value": [0.9369, 0.0026, 0.0031, 0.0062, 0.0512]}}
+{"line": 25, "record": "hard-v1/judge/development/00040", "ms": 150.8, "tokens": 154, "probs": {"correct": [0.4828, 0.5172], "value": [0.1073, 0.1549, 0.1861, 0.2749, 0.2768]}}
+{"line": 26, "record": "hard-v1/judge/development/00080", "ms": 143.6, "tokens": 119, "probs": {"correct": [0.2, 0.8], "value": [0.0006, 0.0062, 0.0032, 0.0231, 0.9669]}}
+{"line": 27, "record": "hard-v1/temporal_numeric/development/00010", "ms": 133.1, "tokens": 138, "probs": {"date": [0.3243, 0.2262, 0.1831, 0.1172, 0.1492]}}
+{"line": 28, "record": "hard-v1/ambiguous/development/00034", "ms": 143.1, "tokens": 178, "probs": {"decision": [0.036496, 0.062194, 0.006399, 0.894911]}}
+{"line": 29, "record": "hard-v1/ambiguous/development/00015", "ms": 130.4, "tokens": 131, "probs": {"decision": [0.0931, 0.733, 0.1739]}}
+{"line": 30, "record": "hard-v1/tradeoff/development/00018", "ms": 206.7, "tokens": 321, "probs": {"choice": [0.005699, 0.191681, 0.011899, 0.760824, 0.029897], "meets": [0.1724, 0.8276]}}
+{"line": 31, "record": "hard-v1/tradeoff/development/00032", "ms": 206.5, "tokens": 336, "probs": {"choice": [0.655834, 0.051195, 0.021898, 0.271073], "meets": [0.8673, 0.1327]}}
+{"line": 32, "record": "hard-v1/tradeoff/development/00057", "ms": 219.2, "tokens": 350, "probs": {"choice": [0.1207, 0.8079, 0.0205, 0.0509], "meets": [0.741, 0.259]}}
+{"line": 33, "record": "hard-v1/tradeoff/development/00026", "ms": 189.7, "tokens": 314, "probs": {"choice": [0.0111, 0.925, 0.0487, 0.0046, 0.0106], "meets": [0.9667, 0.0333]}}
+{"line": 34, "record": "hard-v1/long_policy/development/00046", "ms": 1350.7, "tokens": 2710, "probs": {"outcome": [0.029997, 0.0027, 0.028297, 0.854715, 0.084292], "amount": [0.0008, 0.0402, 0.0015, 0.0075, 0.95]}}
+{"line": 35, "record": "hard-v1/probability/development/00090", "ms": 192.4, "tokens": 244, "probs": {"value": [0.024198, 0.0033, 0.045495, 0.016498, 0.910509], "bucket": [0.003, 0.0045, 0.0057, 0.0075, 0.0229, 0.9564]}}
+{"line": 36, "record": "hard-v1/long_policy/development/00006", "ms": 2333.1, "tokens": 4812, "probs": {"outcome": [0.012899, 0.011999, 0.392761, 0.161984, 0.420358], "amount": [0.0035, 0.2585, 0.0034, 0.1776, 0.557]}}
+{"line": 37, "record": "hard-v1/temporal_numeric/development/00075", "ms": 134.2, "tokens": 122, "probs": {"date": [0.619, 0.1497, 0.1855, 0.0458]}}
+{"line": 38, "record": "hard-v1/judge/development/00026", "ms": 140.0, "tokens": 102, "probs": {"correct": [0.4485, 0.5515], "value": [0.8602, 0.0974, 0.0028, 0.0396]}}
+{"line": 39, "record": "hard-v1/multi_hop/development/00003", "ms": 168.7, "tokens": 210, "probs": {"controller": [0.90091, 0.010599, 0.027697, 0.054595, 0.006199], "interest": [0.0012, 0.0093, 0.9881, 0.0014]}}
+{"line": 40, "record": "hard-v1/temporal_numeric/development/00080", "ms": 137.7, "tokens": 150, "probs": {"local": [0.0218, 0.3204, 0.0435, 0.288, 0.3263]}}
+{"line": 41, "record": "hard-v1/ambiguous/development/00048", "ms": 130.7, "tokens": 144, "probs": {"decision": [0.4195, 0.1928, 0.3877]}}
+{"line": 42, "record": "hard-v1/tradeoff/development/00029", "ms": 176.5, "tokens": 289, "probs": {"choice": [0.628463, 0.018302, 0.126113, 0.011801, 0.215322], "meets": [0.151, 0.849]}}
+{"line": 43, "record": "hard-v1/temporal_numeric/development/00022", "ms": 141.7, "tokens": 128, "probs": {"days": [0.0593, 0.3506, 0.0208, 0.506, 0.0633], "late": [0.4428, 0.5572]}}
+{"line": 44, "record": "hard-v1/long_policy/development/00023", "ms": 1107.1, "tokens": 2372, "probs": {"outcome": [0.0596, 0.4484, 0.1998, 0.0279, 0.2643], "amount": [0.1694, 0.7366, 0.0017, 0.0078, 0.0845]}}
+{"line": 45, "record": "hard-v1/ambiguous/development/00009", "ms": 152.0, "tokens": 166, "probs": {"decision": [0.023802, 0.034903, 0.483548, 0.457746]}}
+{"line": 46, "record": "hard-v1/tradeoff/development/00064", "ms": 171.5, "tokens": 225, "probs": {"choice": [0.244324, 0.721072, 0.034603], "meets": [0.1187, 0.8813]}}
+{"line": 47, "record": "hard-v1/long_policy/development/00036", "ms": 641.5, "tokens": 1280, "probs": {"outcome": [0.723772, 0.209321, 0.015402, 0.039504, 0.012001], "amount": [0.0086, 0.009, 0.6171, 0.3539, 0.0114]}}
+{"line": 48, "record": "hard-v1/judge/development/00007", "ms": 156.3, "tokens": 126, "probs": {"correct": [0.8599, 0.1401], "value": [0.0052, 0.0008, 0.006, 0.9864, 0.0016]}}
+{"line": 49, "record": "hard-v1/temporal_numeric/development/00065", "ms": 138.9, "tokens": 131, "probs": {"date": [0.2623, 0.0986, 0.2219, 0.1375, 0.2797]}}
+{"line": 50, "record": "hard-v1/probability/development/00042", "ms": 161.9, "tokens": 229, "probs": {"value": [0.030603, 0.048005, 0.0037, 0.916092, 0.0016], "bucket": [0.0379, 0.0765, 0.1133, 0.297, 0.3306, 0.1447]}}
+{"line": 51, "record": "hard-v1/temporal_numeric/development/00072", "ms": 147.9, "tokens": 128, "probs": {"days": [0.0158, 0.0133, 0.0242, 0.1884, 0.7583], "late": [0.5239, 0.4761]}}
+{"line": 52, "record": "hard-v1/temporal_numeric/development/00077", "ms": 144.5, "tokens": 168, "probs": {"refund": [0.1161, 0.0249, 0.0766, 0.718, 0.0644]}}
+{"line": 53, "record": "hard-v1/ambiguous/development/00090", "ms": 133.4, "tokens": 122, "probs": {"decision": [0.0799, 0.8315, 0.0886]}}
+{"line": 54, "record": "hard-v1/tradeoff/development/00085", "ms": 220.8, "tokens": 376, "probs": {"choice": [0.342366, 0.184982, 0.016598, 0.284172, 0.121988, 0.049895], "meets": [0.1757, 0.8243]}}
+{"line": 55, "record": "hard-v1/ambiguous/development/00063", "ms": 133.0, "tokens": 119, "probs": {"decision": [0.8757, 0.0614, 0.0629]}}
+{"line": 56, "record": "hard-v1/multi_hop/development/00077", "ms": 154.0, "tokens": 179, "probs": {"affected": [0.0262, 0.0237, 0.1346, 0.8104, 0.0051]}}
+{"line": 57, "record": "hard-v1/long_policy/development/00040", "ms": 1604.4, "tokens": 3435, "probs": {"outcome": [0.1387, 0.2101, 0.37, 0.1974, 0.0838], "amount": [0.0426, 0.2491, 0.0301, 0.09, 0.5882]}}
+{"line": 58, "record": "hard-v1/long_policy/development/00024", "ms": 2362.8, "tokens": 5086, "probs": {"outcome": [0.0506, 0.1046, 0.0013, 0.0029, 0.8406], "amount": [0.0061, 0.0018, 0.0157, 0.9355, 0.0409]}}
+{"line": 59, "record": "hard-v1/temporal_numeric/development/00020", "ms": 140.2, "tokens": 147, "probs": {"local": [0.06, 0.8934, 0.026, 0.0069, 0.0137]}}
+{"line": 60, "record": "hard-v1/judge/development/00088", "ms": 138.9, "tokens": 106, "probs": {"correct": [0.5431, 0.4569], "value": [0.0016, 0.0212, 0.943, 0.0342]}}
+{"line": 61, "record": "hard-v1/ambiguous/development/00069", "ms": 134.7, "tokens": 128, "probs": {"decision": [0.0227, 0.9278, 0.0495]}}
+{"line": 62, "record": "hard-v1/temporal_numeric/development/00040", "ms": 133.2, "tokens": 150, "probs": {"pay": [0.2489, 0.1251, 0.2491, 0.2314, 0.1455]}}
+{"line": 63, "record": "hard-v1/judge/development/00037", "ms": 142.3, "tokens": 133, "probs": {"correct": [0.3609, 0.6391], "value": [0.136286, 0.837616, 0.018998, 0.0011, 0.005999]}}
+{"line": 64, "record": "hard-v1/multi_hop/development/00055", "ms": 156.9, "tokens": 216, "probs": {"controller": [0.019198, 0.011599, 0.10309, 0.018098, 0.848015], "interest": [0.0019, 0.0166, 0.0047, 0.9768]}}
+{"line": 65, "record": "hard-v1/tradeoff/development/00071", "ms": 254.1, "tokens": 482, "probs": {"choice": [0.224, 0.1019, 0.4979, 0.0126, 0.1636], "meets": [0.198, 0.802]}}
+{"line": 66, "record": "hard-v1/ambiguous/development/00039", "ms": 132.7, "tokens": 133, "probs": {"decision": [0.7834, 0.0839, 0.1327]}}
+{"line": 67, "record": "hard-v1/multi_hop/development/00024", "ms": 136.4, "tokens": 147, "probs": {"affected": [0.0039, 0.894889, 0.088309, 0.0032, 0.009701]}}
+{"line": 68, "record": "hard-v1/judge/development/00091", "ms": 147.3, "tokens": 155, "probs": {"correct": [0.4434, 0.5566], "value": [0.1617, 0.2118, 0.2921, 0.3169, 0.0175]}}
+{"line": 69, "record": "hard-v1/judge/development/00094", "ms": 143.0, "tokens": 133, "probs": {"correct": [0.7152, 0.2848], "value": [0.1845, 0.7023, 0.0065, 0.076, 0.0307]}}
+{"line": 70, "record": "hard-v1/long_policy/development/00097", "ms": 744.7, "tokens": 1683, "probs": {"outcome": [0.449345, 0.434843, 0.013001, 0.028003, 0.074807], "amount": [0.053595, 0.011499, 0.220378, 0.344966, 0.369563]}}
+{"line": 71, "record": "hard-v1/tradeoff/development/00062", "ms": 191.4, "tokens": 291, "probs": {"choice": [0.009699, 0.017098, 0.533047, 0.440156], "meets": [0.6997, 0.3003]}}
+{"line": 72, "record": "hard-v1/temporal_numeric/development/00006", "ms": 141.2, "tokens": 151, "probs": {"local": [0.584742, 0.09609, 0.085991, 0.168483, 0.064694]}}
+{"line": 73, "record": "hard-v1/multi_hop/development/00028", "ms": 210.7, "tokens": 316, "probs": {"paged": [0.148115, 0.279128, 0.059406, 0.513351]}}
+{"line": 74, "record": "hard-v1/probability/development/00079", "ms": 135.8, "tokens": 117, "probs": {"value": [0.0033, 0.9289, 0.065, 0.0019, 0.0009]}}
+{"line": 75, "record": "hard-v1/judge/development/00048", "ms": 155.7, "tokens": 155, "probs": {"correct": [0.49, 0.51], "value": [0.170517, 0.178218, 0.224822, 0.191319, 0.235124]}}
+{"line": 76, "record": "hard-v1/long_policy/development/00009", "ms": 1524.2, "tokens": 3290, "probs": {"outcome": [0.0132, 0.0341, 0.0148, 0.0155, 0.9224], "amount": [0.911491, 0.0037, 0.0033, 0.063106, 0.018402]}}
+{"line": 77, "record": "hard-v1/multi_hop/development/00009", "ms": 145.0, "tokens": 153, "probs": {"affected": [0.0264, 0.0041, 0.9499, 0.0196]}}
+{"line": 78, "record": "hard-v1/tradeoff/development/00030", "ms": 184.2, "tokens": 304, "probs": {"choice": [0.2672, 0.2695, 0.2135, 0.0081, 0.2417], "meets": [0.119, 0.881]}}
+{"line": 79, "record": "hard-v1/long_policy/development/00047", "ms": 1978.2, "tokens": 4370, "probs": {"outcome": [0.0295, 0.1899, 0.6269, 0.008, 0.1457], "amount": [0.0007, 0.007699, 0.024498, 0.0012, 0.965903]}}
+{"line": 80, "record": "hard-v1/tradeoff/development/00077", "ms": 185.9, "tokens": 286, "probs": {"choice": [0.9332, 0.0022, 0.0032, 0.005, 0.0564], "meets": [0.973, 0.027]}}
+{"line": 81, "record": "hard-v1/ambiguous/development/00059", "ms": 142.0, "tokens": 147, "probs": {"decision": [0.8061, 0.0483, 0.1456]}}
+{"line": 82, "record": "hard-v1/ambiguous/development/00035", "ms": 147.2, "tokens": 174, "probs": {"decision": [0.8754, 0.0654, 0.0082, 0.051]}}
+{"line": 83, "record": "hard-v1/long_policy/development/00021", "ms": 1193.2, "tokens": 2731, "probs": {"outcome": [0.6853, 0.0029, 0.2681, 0.0425, 0.0012], "amount": [0.0009, 0.9915, 0.0062, 0.0011, 0.0003]}}
+{"line": 84, "record": "hard-v1/probability/development/00026", "ms": 165.8, "tokens": 182, "probs": {"value": [0.8355, 0.0066, 0.018, 0.02, 0.1199], "more_likely": [0.2615, 0.7385]}}
+{"line": 85, "record": "hard-v1/judge/development/00095", "ms": 150.7, "tokens": 121, "probs": {"correct": [0.3506, 0.6494], "value": [0.0012, 0.020498, 0.0047, 0.0012, 0.972403]}}
+{"line": 86, "record": "hard-v1/judge/development/00042", "ms": 127.4, "tokens": 98, "probs": {"correct": [0.0339, 0.9661]}}
+{"line": 87, "record": "hard-v1/multi_hop/development/00049", "ms": 168.1, "tokens": 241, "probs": {"controller": [0.4234, 0.0677, 0.0362, 0.0252, 0.4475], "interest": [0.8308, 0.0167, 0.013, 0.1348, 0.0047]}}
+{"line": 88, "record": "hard-v1/multi_hop/development/00046", "ms": 201.7, "tokens": 311, "probs": {"paged": [0.0571, 0.3211, 0.2286, 0.3932]}}
+{"line": 89, "record": "hard-v1/judge/development/00033", "ms": 146.0, "tokens": 129, "probs": {"correct": [0.3391, 0.6609], "value": [0.089709, 0.006101, 0.890189, 0.008701, 0.005301]}}
+{"line": 90, "record": "hard-v1/temporal_numeric/development/00036", "ms": 142.1, "tokens": 174, "probs": {"refund": [0.213521, 0.114311, 0.183018, 0.40234, 0.086809]}}
+{"line": 91, "record": "hard-v1/temporal_numeric/development/00078", "ms": 134.4, "tokens": 124, "probs": {"days": [0.024598, 0.485351, 0.158184, 0.006899, 0.324968], "late": [0.5818, 0.4182]}}
+{"line": 92, "record": "hard-v1/probability/development/00092", "ms": 157.0, "tokens": 217, "probs": {"value": [0.9671, 0.0088, 0.0083, 0.0127, 0.0031], "bucket": [0.1378, 0.2117, 0.2401, 0.2155, 0.1324, 0.0625]}}
+{"line": 93, "record": "hard-v1/judge/development/00052", "ms": 121.2, "tokens": 96, "probs": {"correct": [0.989, 0.011]}}
+{"line": 94, "record": "hard-v1/multi_hop/development/00081", "ms": 191.6, "tokens": 309, "probs": {"paged": [0.323732, 0.352135, 0.292429, 0.031703]}}
+{"line": 95, "record": "hard-v1/judge/development/00019", "ms": 145.3, "tokens": 155, "probs": {"correct": [0.5469, 0.4531], "value": [0.164784, 0.229877, 0.089891, 0.290871, 0.224578]}}
+{"line": 96, "record": "hard-v1/ambiguous/development/00026", "ms": 143.8, "tokens": 178, "probs": {"decision": [0.9434, 0.0114, 0.0452]}}
+{"line": 97, "record": "hard-v1/probability/development/00019", "ms": 125.2, "tokens": 115, "probs": {"value": [0.0041, 0.0014, 0.0039, 0.9886, 0.002]}}
+{"line": 98, "record": "hard-v1/tradeoff/development/00021", "ms": 266.5, "tokens": 521, "probs": {"choice": [0.078092, 0.011299, 0.011399, 0.007099, 0.065893, 0.826217], "meets": [0.0126, 0.9874]}}
+{"line": 99, "record": "hard-v1/probability/development/00075", "ms": 130.2, "tokens": 121, "probs": {"choice": [0.1363, 0.2907, 0.573]}}
+{"line": 100, "record": "hard-v1/long_policy/development/00060", "ms": 2166.5, "tokens": 4738, "probs": {"outcome": [0.119, 0.0108, 0.7237, 0.1386, 0.0079], "amount": [0.0686, 0.5931, 0.0033, 0.0217, 0.3133]}}
+{"line": 101, "record": "hard-v1/ambiguous/development/00018", "ms": 140.8, "tokens": 126, "probs": {"decision": [0.9359, 0.0578, 0.0063]}}
+{"line": 102, "record": "hard-v1/temporal_numeric/development/00027", "ms": 137.3, "tokens": 134, "probs": {"date": [0.2214, 0.1426, 0.2298, 0.3632, 0.043]}}
+{"line": 103, "record": "hard-v1/ambiguous/development/00075", "ms": 134.1, "tokens": 122, "probs": {"decision": [0.8438, 0.0832, 0.073]}}
+{"line": 104, "record": "hard-v1/temporal_numeric/development/00037", "ms": 143.9, "tokens": 126, "probs": {"days": [0.0245, 0.024, 0.0219, 0.6555, 0.2741], "late": [0.3165, 0.6835]}}
+{"line": 105, "record": "hard-v1/multi_hop/development/00010", "ms": 174.1, "tokens": 260, "probs": {"controller": [0.417, 0.0539, 0.3951, 0.0786, 0.0554], "interest": [0.0336, 0.0511, 0.0227, 0.7535, 0.1391]}}
+{"line": 106, "record": "hard-v1/judge/development/00028", "ms": 149.0, "tokens": 137, "probs": {"correct": [0.9537, 0.0463], "value": [0.6094, 0.0173, 0.0887, 0.0597, 0.2249]}}
+{"line": 107, "record": "hard-v1/judge/development/00006", "ms": 139.5, "tokens": 123, "probs": {"correct": [0.3026, 0.6974], "value": [0.040196, 0.0003, 0.955904, 0.003, 0.0006]}}
+{"line": 108, "record": "hard-v1/probability/development/00089", "ms": 220.5, "tokens": 382, "probs": {"choice": [0.4853, 0.2069, 0.2676, 0.0402], "value": [0.224722, 0.134013, 0.29593, 0.144914, 0.20042]}}
+{"line": 109, "record": "hard-v1/temporal_numeric/development/00046", "ms": 131.3, "tokens": 150, "probs": {"local": [0.4079, 0.0157, 0.0141, 0.0472, 0.5151]}}
+{"line": 110, "record": "hard-v1/multi_hop/development/00032", "ms": 158.6, "tokens": 215, "probs": {"controller": [0.010599, 0.028297, 0.110989, 0.816518, 0.033597], "interest": [0.8838, 0.1021, 0.0057, 0.0084]}}
+{"line": 111, "record": "hard-v1/temporal_numeric/development/00064", "ms": 140.5, "tokens": 175, "probs": {"refund": [0.225, 0.1757, 0.0336, 0.2346, 0.3311]}}
+{"line": 112, "record": "hard-v1/temporal_numeric/development/00018", "ms": 149.1, "tokens": 204, "probs": {"due": [0.1809, 0.1696, 0.1645, 0.2827, 0.2023]}}
+{"line": 113, "record": "hard-v1/long_policy/development/00003", "ms": 2199.9, "tokens": 4850, "probs": {"outcome": [0.0153, 0.0782, 0.0145, 0.0766, 0.8154], "amount": [0.0373, 0.9497, 0.0038, 0.0075, 0.0017]}}
+{"line": 114, "record": "hard-v1/judge/development/00011", "ms": 158.4, "tokens": 159, "probs": {"correct": [0.4317, 0.5683], "value": [0.589059, 0.160616, 0.028503, 0.139114, 0.082708]}}
+{"line": 115, "record": "hard-v1/judge/development/00050", "ms": 141.8, "tokens": 113, "probs": {"correct": [0.9484, 0.0516], "value": [0.248325, 0.0007, 0.0033, 0.746575, 0.0011]}}
+{"line": 116, "record": "hard-v1/judge/development/00054", "ms": 146.0, "tokens": 126, "probs": {"correct": [0.4411, 0.5589], "value": [0.0059, 0.9327, 0.0291, 0.0316, 0.0007]}}
+{"line": 117, "record": "hard-v1/judge/development/00063", "ms": 124.8, "tokens": 100, "probs": {"correct": [0.106, 0.894]}}
+{"line": 118, "record": "hard-v1/tradeoff/development/00031", "ms": 165.9, "tokens": 269, "probs": {"choice": [0.0813, 0.8137, 0.0911, 0.0139], "meets": [0.1894, 0.8106]}}
+{"line": 119, "record": "hard-v1/judge/development/00078", "ms": 129.9, "tokens": 114, "probs": {"correct": [0.4956, 0.5044], "value": [0.002, 0.8349, 0.0148, 0.1154, 0.0329]}}
+{"line": 120, "record": "hard-v1/multi_hop/development/00059", "ms": 153.6, "tokens": 253, "probs": {"approver": [0.494851, 0.041696, 0.071893, 0.131887, 0.259674]}}
+{"line": 121, "record": "hard-v1/multi_hop/development/00061", "ms": 197.7, "tokens": 345, "probs": {"paged": [0.497, 0.0246, 0.244, 0.2344]}}
+{"line": 122, "record": "hard-v1/ambiguous/development/00078", "ms": 126.4, "tokens": 127, "probs": {"decision": [0.10069, 0.09889, 0.80042]}}
+{"line": 123, "record": "hard-v1/judge/development/00010", "ms": 130.6, "tokens": 109, "probs": {"correct": [0.4456, 0.5544], "value": [0.2042, 0.7405, 0.0077, 0.001, 0.0466]}}
+{"line": 124, "record": "hard-v1/judge/development/00014", "ms": 142.2, "tokens": 141, "probs": {"correct": [0.4858, 0.5142], "value": [0.0059, 0.4399, 0.0472, 0.3862, 0.1208]}}
+{"line": 125, "record": "hard-v1/probability/development/00093", "ms": 125.6, "tokens": 118, "probs": {"value": [0.0046, 0.9102, 0.0555, 0.0057, 0.024]}}
+{"line": 126, "record": "hard-v1/tradeoff/development/00075", "ms": 208.8, "tokens": 364, "probs": {"choice": [0.0073, 0.0031, 0.5465, 0.0036, 0.4395], "meets": [0.9239, 0.0761]}}
+{"line": 127, "record": "hard-v1/long_policy/development/00028", "ms": 770.6, "tokens": 1734, "probs": {"outcome": [0.0039, 0.0701, 0.8004, 0.0436, 0.082], "amount": [0.966597, 0.017302, 0.0032, 0.008701, 0.0042]}}
+{"line": 128, "record": "hard-v1/tradeoff/development/00039", "ms": 181.4, "tokens": 271, "probs": {"choice": [0.0008, 0.0017, 0.1911, 0.8064], "meets": [0.9342, 0.0658]}}
+{"line": 129, "record": "hard-v1/probability/development/00058", "ms": 135.5, "tokens": 117, "probs": {"value": [0.0002, 0.0024, 0.992799, 0.0011, 0.0035]}}
+{"line": 130, "record": "hard-v1/ambiguous/development/00076", "ms": 148.8, "tokens": 177, "probs": {"decision": [0.59634, 0.018598, 0.171983, 0.213079]}}
+{"line": 131, "record": "hard-v1/multi_hop/development/00004", "ms": 153.4, "tokens": 177, "probs": {"affected": [0.142586, 0.753625, 0.076192, 0.008799, 0.018798]}}
+{"line": 132, "record": "hard-v1/multi_hop/development/00018", "ms": 143.5, "tokens": 156, "probs": {"affected": [0.087209, 0.872687, 0.0025, 0.016902, 0.020702]}}
+{"line": 133, "record": "hard-v1/judge/development/00062", "ms": 151.3, "tokens": 159, "probs": {"correct": [0.481, 0.519], "value": [0.2061, 0.2717, 0.0853, 0.2142, 0.2227]}}
+{"line": 134, "record": "hard-v1/judge/development/00066", "ms": 122.1, "tokens": 99, "probs": {"correct": [0.0211, 0.9789]}}
+{"line": 135, "record": "hard-v1/ambiguous/development/00085", "ms": 128.6, "tokens": 139, "probs": {"decision": [0.7554, 0.1502, 0.0944]}}
+{"line": 136, "record": "hard-v1/multi_hop/development/00052", "ms": 190.1, "tokens": 310, "probs": {"paged": [0.152, 0.3304, 0.0859, 0.4317]}}
+{"line": 137, "record": "hard-v1/multi_hop/development/00042", "ms": 154.7, "tokens": 241, "probs": {"approver": [0.09779, 0.078292, 0.377862, 0.105589, 0.340466]}}
+{"line": 138, "record": "hard-v1/probability/development/00069", "ms": 124.9, "tokens": 116, "probs": {"choice": [0.1029, 0.2565, 0.6406]}}
+{"line": 139, "record": "hard-v1/temporal_numeric/development/00007", "ms": 137.0, "tokens": 128, "probs": {"days": [0.0134, 0.0147, 0.0124, 0.955, 0.0045], "late": [0.5781, 0.4219]}}
+{"line": 140, "record": "hard-v1/probability/development/00039", "ms": 126.2, "tokens": 120, "probs": {"value": [0.9443, 0.011, 0.0189, 0.0203, 0.0055]}}
+{"line": 141, "record": "hard-v1/multi_hop/development/00016", "ms": 157.2, "tokens": 215, "probs": {"controller": [0.009799, 0.018398, 0.056394, 0.909109, 0.006299], "interest": [0.9894, 0.0023, 0.0029, 0.0054]}}
+{"line": 142, "record": "hard-v1/ambiguous/development/00030", "ms": 127.9, "tokens": 136, "probs": {"decision": [0.801, 0.0753, 0.1237]}}
+{"line": 143, "record": "hard-v1/temporal_numeric/development/00053", "ms": 136.8, "tokens": 178, "probs": {"due": [0.2738, 0.3258, 0.1189, 0.2815]}}
+{"line": 144, "record": "hard-v1/probability/development/00071", "ms": 125.4, "tokens": 121, "probs": {"value": [0.0107, 0.0141, 0.029, 0.0022, 0.944]}}
+{"line": 145, "record": "hard-v1/tradeoff/development/00003", "ms": 164.8, "tokens": 269, "probs": {"choice": [0.045495, 0.025597, 0.221678, 0.707229], "meets": [0.2036, 0.7964]}}
+{"line": 146, "record": "hard-v1/multi_hop/development/00098", "ms": 156.2, "tokens": 251, "probs": {"approver": [0.2063, 0.0641, 0.4242, 0.2205, 0.0849]}}
+{"line": 147, "record": "hard-v1/probability/development/00091", "ms": 127.2, "tokens": 119, "probs": {"choice": [0.3059, 0.207, 0.4871]}}
+{"line": 148, "record": "hard-v1/temporal_numeric/development/00004", "ms": 138.5, "tokens": 175, "probs": {"refund": [0.1424, 0.0195, 0.079, 0.5376, 0.2215]}}
+{"line": 149, "record": "hard-v1/temporal_numeric/development/00047", "ms": 128.9, "tokens": 135, "probs": {"date": [0.1784, 0.1541, 0.2081, 0.3894, 0.07]}}
+{"line": 150, "record": "hard-v1/ambiguous/development/00058", "ms": 133.9, "tokens": 147, "probs": {"decision": [0.1026, 0.6337, 0.2637]}}
+{"line": 151, "record": "hard-v1/long_policy/development/00054", "ms": 1747.4, "tokens": 3863, "probs": {"outcome": [0.0036, 0.0038, 0.933307, 0.042096, 0.017198], "amount": [0.0011, 0.0048, 0.0032, 0.0016, 0.989299]}}
+{"line": 152, "record": "hard-v1/temporal_numeric/development/00038", "ms": 137.4, "tokens": 119, "probs": {"date": [0.2499, 0.2098, 0.4658, 0.0745]}}
+{"line": 153, "record": "hard-v1/judge/development/00092", "ms": 150.5, "tokens": 121, "probs": {"correct": [0.921, 0.079], "value": [0.0009, 0.0016, 0.0056, 0.9908, 0.0011]}}
+{"line": 154, "record": "hard-v1/temporal_numeric/development/00028", "ms": 138.6, "tokens": 150, "probs": {"pay": [0.2394, 0.2637, 0.2741, 0.0256, 0.1972]}}
+{"line": 155, "record": "hard-v1/probability/development/00020", "ms": 163.5, "tokens": 235, "probs": {"value": [0.1093, 0.0667, 0.0785, 0.0065, 0.739], "bucket": [0.19, 0.3158, 0.1702, 0.1475, 0.1046, 0.0719]}}
+{"line": 156, "record": "hard-v1/long_policy/development/00059", "ms": 2195.6, "tokens": 5031, "probs": {"outcome": [0.3425, 0.356, 0.0552, 0.0337, 0.2126], "amount": [0.0422, 0.6815, 0.1288, 0.0128, 0.1347]}}
+{"line": 157, "record": "hard-v1/temporal_numeric/development/00002", "ms": 151.7, "tokens": 188, "probs": {"due": [0.157584, 0.162784, 0.219878, 0.210179, 0.249575]}}
+{"line": 158, "record": "hard-v1/ambiguous/development/00010", "ms": 135.1, "tokens": 133, "probs": {"decision": [0.7657, 0.1072, 0.1271]}}
+{"line": 159, "record": "hard-v1/multi_hop/development/00082", "ms": 168.4, "tokens": 281, "probs": {"approver": [0.5339, 0.0449, 0.2734, 0.117, 0.0308]}}
+{"line": 160, "record": "hard-v1/temporal_numeric/development/00088", "ms": 131.0, "tokens": 148, "probs": {"local": [0.1891, 0.3053, 0.1176, 0.3579, 0.0301]}}
+{"line": 161, "record": "hard-v1/tradeoff/development/00012", "ms": 202.0, "tokens": 322, "probs": {"choice": [0.0088, 0.0308, 0.4963, 0.3123, 0.0081, 0.1437], "meets": [0.1136, 0.8864]}}
+{"line": 162, "record": "hard-v1/ambiguous/development/00067", "ms": 144.7, "tokens": 186, "probs": {"decision": [0.012, 0.0394, 0.9486]}}
+{"line": 163, "record": "hard-v1/ambiguous/development/00037", "ms": 124.9, "tokens": 115, "probs": {"decision": [0.7554, 0.0265, 0.2181]}}
+{"line": 164, "record": "hard-v1/tradeoff/development/00020", "ms": 255.0, "tokens": 499, "probs": {"choice": [0.034097, 0.182082, 0.394961, 0.127687, 0.261174], "meets": [0.2003, 0.7997]}}
+{"line": 165, "record": "hard-v1/tradeoff/development/00074", "ms": 166.1, "tokens": 261, "probs": {"choice": [0.1017, 0.006, 0.8732, 0.0191], "meets": [0.1059, 0.8941]}}
+{"line": 166, "record": "hard-v1/ambiguous/development/00044", "ms": 127.2, "tokens": 127, "probs": {"decision": [0.207, 0.6134, 0.1796]}}
+{"line": 167, "record": "hard-v1/ambiguous/development/00006", "ms": 127.1, "tokens": 135, "probs": {"decision": [0.117188, 0.113889, 0.768923]}}
+{"line": 168, "record": "hard-v1/probability/development/00065", "ms": 125.6, "tokens": 120, "probs": {"value": [0.9064, 0.0013, 0.0072, 0.0197, 0.0654]}}
+{"line": 169, "record": "hard-v1/ambiguous/development/00019", "ms": 126.8, "tokens": 130, "probs": {"decision": [0.8389, 0.1269, 0.0342]}}
+{"line": 170, "record": "hard-v1/judge/development/00031", "ms": 142.3, "tokens": 144, "probs": {"correct": [0.3772, 0.6228], "value": [0.165083, 0.146885, 0.318368, 0.009299, 0.360364]}}
+{"line": 171, "record": "hard-v1/judge/development/00015", "ms": 118.7, "tokens": 97, "probs": {"correct": [0.025, 0.975]}}
+{"line": 172, "record": "hard-v1/tradeoff/development/00006", "ms": 157.1, "tokens": 239, "probs": {"choice": [0.0126, 0.0832, 0.0161, 0.8881], "meets": [0.0469, 0.9531]}}
+{"line": 173, "record": "hard-v1/ambiguous/development/00094", "ms": 132.3, "tokens": 146, "probs": {"decision": [0.2548, 0.3069, 0.4383]}}
+{"line": 174, "record": "hard-v1/ambiguous/development/00053", "ms": 142.4, "tokens": 183, "probs": {"decision": [0.0118, 0.9447, 0.0435]}}
+{"line": 175, "record": "hard-v1/ambiguous/development/00084", "ms": 128.5, "tokens": 138, "probs": {"decision": [0.2065, 0.4742, 0.3193]}}
+{"line": 176, "record": "hard-v1/long_policy/development/00030", "ms": 1622.9, "tokens": 3703, "probs": {"outcome": [0.0137, 0.2761, 0.02, 0.3963, 0.2939], "amount": [0.086591, 0.707329, 0.076392, 0.128987, 0.0007]}}
+{"line": 177, "record": "hard-v1/temporal_numeric/development/00093", "ms": 141.6, "tokens": 152, "probs": {"local": [0.4276, 0.3437, 0.1673, 0.021, 0.0404]}}
+{"line": 178, "record": "hard-v1/temporal_numeric/development/00014", "ms": 138.5, "tokens": 147, "probs": {"local": [0.209879, 0.406459, 0.112789, 0.054095, 0.216778]}}
+{"line": 179, "record": "hard-v1/judge/development/00005", "ms": 147.9, "tokens": 132, "probs": {"correct": [0.4857, 0.5143], "value": [0.0657, 0.0019, 0.1875, 0.0073, 0.7376]}}
+{"line": 180, "record": "hard-v1/temporal_numeric/development/00096", "ms": 134.9, "tokens": 152, "probs": {"local": [0.2278, 0.1673, 0.5536, 0.0197, 0.0316]}}
+{"line": 181, "record": "hard-v1/multi_hop/development/00085", "ms": 153.9, "tokens": 211, "probs": {"controller": [0.9127, 0.0624, 0.0065, 0.0162, 0.0022], "interest": [0.9692, 0.0068, 0.0176, 0.0064]}}
+{"line": 182, "record": "hard-v1/judge/development/00027", "ms": 151.5, "tokens": 169, "probs": {"correct": [0.4805, 0.5195], "value": [0.2163, 0.4914, 0.2004, 0.0841, 0.0078]}}
+{"line": 183, "record": "hard-v1/ambiguous/development/00049", "ms": 127.0, "tokens": 144, "probs": {"decision": [0.1185, 0.0379, 0.8436]}}
+{"line": 184, "record": "hard-v1/temporal_numeric/development/00052", "ms": 129.7, "tokens": 153, "probs": {"local": [0.0935, 0.1017, 0.167, 0.5371, 0.1007]}}
+{"line": 185, "record": "hard-v1/ambiguous/development/00082", "ms": 142.8, "tokens": 179, "probs": {"decision": [0.007601, 0.90289, 0.089509]}}
+{"line": 186, "record": "hard-v1/multi_hop/development/00051", "ms": 140.1, "tokens": 168, "probs": {"affected": [0.044996, 0.09799, 0.829417, 0.0025, 0.025097]}}
+{"line": 187, "record": "hard-v1/probability/development/00096", "ms": 152.1, "tokens": 172, "probs": {"value": [0.0068, 0.98, 0.0022, 0.0053, 0.0057], "more_likely": [0.5398, 0.4602]}}
+{"line": 188, "record": "hard-v1/long_policy/development/00069", "ms": 1130.1, "tokens": 2583, "probs": {"outcome": [0.0612, 0.1337, 0.1525, 0.6456, 0.007], "amount": [0.1732, 0.1381, 0.0282, 0.2055, 0.455]}}
+{"line": 189, "record": "hard-v1/probability/development/00057", "ms": 162.4, "tokens": 201, "probs": {"value": [0.4173, 0.0052, 0.0147, 0.4443, 0.1185], "bucket": [0.0737, 0.1955, 0.3148, 0.3759, 0.0334, 0.0067]}}
+{"line": 190, "record": "hard-v1/probability/development/00007", "ms": 162.2, "tokens": 219, "probs": {"value": [0.017002, 0.0022, 0.0002, 0.978898, 0.0017], "bucket": [0.004, 0.0219, 0.0725, 0.2025, 0.6762, 0.0229]}}
+{"line": 191, "record": "hard-v1/multi_hop/development/00071", "ms": 172.6, "tokens": 280, "probs": {"paged": [0.1772, 0.5682, 0.1988, 0.0558]}}
+{"line": 192, "record": "hard-v1/tradeoff/development/00052", "ms": 173.6, "tokens": 264, "probs": {"choice": [0.005, 0.0526, 0.0727, 0.8697], "meets": [0.0977, 0.9023]}}
+{"line": 193, "record": "hard-v1/ambiguous/development/00047", "ms": 143.1, "tokens": 167, "probs": {"decision": [0.110989, 0.142686, 0.742826, 0.0035]}}
+{"line": 194, "record": "hard-v1/tradeoff/development/00065", "ms": 176.8, "tokens": 294, "probs": {"choice": [0.0064, 0.3389, 0.0773, 0.0942, 0.4832], "meets": [0.7185, 0.2815]}}
+{"line": 195, "record": "hard-v1/tradeoff/development/00053", "ms": 207.0, "tokens": 336, "probs": {"choice": [0.0027, 0.0076, 0.0027, 0.0215, 0.9655], "meets": [0.8726, 0.1274]}}
+{"line": 196, "record": "hard-v1/judge/development/00065", "ms": 134.5, "tokens": 114, "probs": {"correct": [0.9476, 0.0524], "value": [0.2488, 0.0215, 0.003, 0.7238, 0.0029]}}
+{"line": 197, "record": "hard-v1/temporal_numeric/development/00076", "ms": 130.9, "tokens": 144, "probs": {"pay": [0.4483, 0.2074, 0.0915, 0.0176, 0.2352]}}
+{"line": 198, "record": "hard-v1/ambiguous/development/00014", "ms": 144.1, "tokens": 149, "probs": {"decision": [0.179318, 0.442844, 0.377838]}}
+{"line": 199, "record": "hard-v1/long_policy/development/00019", "ms": 1466.9, "tokens": 3302, "probs": {"outcome": [0.639464, 0.019402, 0.10111, 0.062006, 0.178018], "amount": [0.0083, 0.1926, 0.0423, 0.4413, 0.3155]}}
+{"line": 200, "record": "hard-v1/probability/development/00078", "ms": 168.1, "tokens": 182, "probs": {"value": [0.1537, 0.0067, 0.0417, 0.7839, 0.014], "more_likely": [0.3208, 0.6792]}}
+{"line": 201, "record": "hard-v1/judge/development/00003", "ms": 126.6, "tokens": 94, "probs": {"correct": [0.0593, 0.9407]}}
+{"line": 202, "record": "hard-v1/judge/development/00072", "ms": 152.3, "tokens": 158, "probs": {"correct": [0.4446, 0.5554], "value": [0.2308, 0.1105, 0.0202, 0.5049, 0.1336]}}
+{"line": 203, "record": "hard-v1/temporal_numeric/development/00032", "ms": 142.4, "tokens": 175, "probs": {"refund": [0.2637, 0.1705, 0.3343, 0.0859, 0.1456]}}
+{"line": 204, "record": "hard-v1/long_policy/development/00031", "ms": 1794.9, "tokens": 4144, "probs": {"outcome": [0.0226, 0.2087, 0.1159, 0.5359, 0.1169], "amount": [0.1958, 0.0186, 0.4156, 0.1137, 0.2563]}}
+{"line": 205, "record": "hard-v1/ambiguous/development/00093", "ms": 151.4, "tokens": 167, "probs": {"decision": [0.0948, 0.2513, 0.0118, 0.6421]}}
+{"line": 206, "record": "hard-v1/judge/development/00059", "ms": 138.7, "tokens": 99, "probs": {"correct": [0.4629, 0.5371], "value": [0.026403, 0.0003, 0.021602, 0.951695]}}
+{"line": 207, "record": "hard-v1/long_policy/development/00053", "ms": 2055.3, "tokens": 4526, "probs": {"outcome": [0.0028, 0.0038, 0.038496, 0.891811, 0.063094], "amount": [0.9379, 0.0187, 0.0157, 0.0204, 0.0073]}}
+{"line": 208, "record": "hard-v1/tradeoff/development/00084", "ms": 177.9, "tokens": 252, "probs": {"choice": [0.2678, 0.725, 0.0072], "meets": [0.9531, 0.0469]}}
+{"line": 209, "record": "hard-v1/judge/development/00064", "ms": 149.8, "tokens": 141, "probs": {"correct": [0.3644, 0.6356], "value": [0.050905, 0.0042, 0.612361, 0.19772, 0.134813]}}
+{"line": 210, "record": "hard-v1/tradeoff/development/00080", "ms": 207.3, "tokens": 343, "probs": {"choice": [0.0087, 0.0071, 0.9513, 0.0329], "meets": [0.9519, 0.0481]}}
+{"line": 211, "record": "hard-v1/judge/development/00073", "ms": 121.3, "tokens": 102, "probs": {"correct": [0.784, 0.216]}}
+{"line": 212, "record": "hard-v1/tradeoff/development/00035", "ms": 174.2, "tokens": 278, "probs": {"choice": [0.176, 0.0297, 0.1917, 0.6026], "meets": [0.7754, 0.2246]}}
+{"line": 213, "record": "hard-v1/multi_hop/development/00087", "ms": 136.2, "tokens": 156, "probs": {"affected": [0.019298, 0.011499, 0.909509, 0.059694]}}
+{"line": 214, "record": "hard-v1/long_policy/development/00057", "ms": 1018.6, "tokens": 2257, "probs": {"outcome": [0.1107, 0.1488, 0.0125, 0.0157, 0.7123], "amount": [0.0391, 0.0093, 0.3873, 0.475, 0.0893]}}
+{"line": 215, "record": "hard-v1/probability/development/00028", "ms": 138.7, "tokens": 117, "probs": {"value": [0.001, 0.909491, 0.087709, 0.001, 0.0008]}}
+{"line": 216, "record": "hard-v1/ambiguous/development/00074", "ms": 136.7, "tokens": 137, "probs": {"decision": [0.764424, 0.109589, 0.125987]}}
+{"line": 217, "record": "hard-v1/temporal_numeric/development/00097", "ms": 136.3, "tokens": 153, "probs": {"pay": [0.2467, 0.193, 0.1792, 0.2182, 0.1629]}}
+{"line": 218, "record": "hard-v1/probability/development/00081", "ms": 126.3, "tokens": 120, "probs": {"choice": [0.1528, 0.2563, 0.5909]}}
+{"line": 219, "record": "hard-v1/judge/development/00041", "ms": 146.1, "tokens": 143, "probs": {"correct": [0.4131, 0.5869], "value": [0.7618, 0.0045, 0.0432, 0.1417, 0.0488]}}
+{"line": 220, "record": "hard-v1/judge/development/00061", "ms": 150.6, "tokens": 132, "probs": {"correct": [0.7844, 0.2156], "value": [0.8428, 0.0133, 0.0144, 0.0594, 0.0701]}}
+{"line": 221, "record": "hard-v1/probability/development/00095", "ms": 134.8, "tokens": 122, "probs": {"choice": [0.2595, 0.5716, 0.1689]}}
+{"line": 222, "record": "hard-v1/tradeoff/development/00043", "ms": 181.7, "tokens": 295, "probs": {"choice": [0.0101, 0.0099, 0.0231, 0.9569], "meets": [0.5903, 0.4097]}}
+{"line": 223, "record": "hard-v1/temporal_numeric/development/00099", "ms": 153.5, "tokens": 201, "probs": {"due": [0.162, 0.1653, 0.273, 0.2756, 0.1241]}}
+{"line": 224, "record": "hard-v1/probability/development/00061", "ms": 131.6, "tokens": 117, "probs": {"value": [0.0136, 0.0029, 0.0071, 0.0051, 0.9713]}}
+{"line": 225, "record": "hard-v1/judge/development/00077", "ms": 143.9, "tokens": 129, "probs": {"correct": [0.352, 0.648], "value": [0.002, 0.0005, 0.0179, 0.9786, 0.001]}}
+{"line": 226, "record": "hard-v1/ambiguous/development/00023", "ms": 129.3, "tokens": 109, "probs": {"decision": [0.0315, 0.916, 0.0525]}}
+{"line": 227, "record": "hard-v1/probability/development/00021", "ms": 237.8, "tokens": 383, "probs": {"choice": [0.053995, 0.680332, 0.020098, 0.245575], "value": [0.026003, 0.141814, 0.451245, 0.032503, 0.348435]}}
+{"line": 228, "record": "hard-v1/judge/development/00098", "ms": 139.9, "tokens": 101, "probs": {"correct": [0.3713, 0.6287], "value": [0.0003, 0.013299, 0.016498, 0.969903]}}
+{"line": 229, "record": "hard-v1/judge/development/00058", "ms": 149.8, "tokens": 132, "probs": {"correct": [0.4011, 0.5989], "value": [0.0021, 0.0292, 0.9497, 0.0076, 0.0114]}}
+{"line": 230, "record": "hard-v1/ambiguous/development/00020", "ms": 137.7, "tokens": 136, "probs": {"decision": [0.1633, 0.5922, 0.2445]}}
+{"line": 231, "record": "hard-v1/probability/development/00074", "ms": 160.9, "tokens": 201, "probs": {"value": [0.0089, 0.4193, 0.5689, 0.0024, 0.0005], "bucket": [0.0521, 0.1033, 0.2328, 0.4514, 0.1454, 0.015]}}
+{"line": 232, "record": "hard-v1/tradeoff/development/00011", "ms": 258.9, "tokens": 469, "probs": {"choice": [0.010301, 0.030603, 0.39814, 0.060906, 0.50005], "meets": [0.8435, 0.1565]}}
+{"line": 233, "record": "hard-v1/tradeoff/development/00089", "ms": 227.6, "tokens": 378, "probs": {"choice": [0.008599, 0.080092, 0.29817, 0.114989, 0.018698, 0.479452], "meets": [0.5429, 0.4571]}}
+{"line": 234, "record": "hard-v1/temporal_numeric/development/00015", "ms": 138.9, "tokens": 150, "probs": {"pay": [0.174017, 0.20022, 0.156916, 0.171117, 0.29773]}}
+{"line": 235, "record": "hard-v1/temporal_numeric/development/00090", "ms": 153.4, "tokens": 202, "probs": {"due": [0.195, 0.2027, 0.1018, 0.3239, 0.1766]}}
+{"line": 236, "record": "hard-v1/probability/development/00044", "ms": 135.3, "tokens": 120, "probs": {"value": [0.0009, 0.0013, 0.866313, 0.131387, 0.0001]}}
+{"line": 237, "record": "hard-v1/tradeoff/development/00078", "ms": 220.2, "tokens": 360, "probs": {"choice": [0.5217, 0.0038, 0.2631, 0.0102, 0.2012], "meets": [0.8808, 0.1192]}}
+{"line": 238, "record": "hard-v1/temporal_numeric/development/00060", "ms": 140.0, "tokens": 156, "probs": {"local": [0.071507, 0.082408, 0.553155, 0.182818, 0.110111]}}
+{"line": 239, "record": "hard-v1/long_policy/development/00061", "ms": 723.0, "tokens": 1493, "probs": {"outcome": [0.7028, 0.0246, 0.173, 0.0126, 0.087], "amount": [0.020102, 0.063406, 0.20412, 0.671367, 0.041004]}}
+{"line": 240, "record": "hard-v1/judge/development/00076", "ms": 157.2, "tokens": 128, "probs": {"correct": [0.5743, 0.4257], "value": [0.027003, 0.043004, 0.049405, 0.0028, 0.877788]}}
+{"line": 241, "record": "hard-v1/temporal_numeric/development/00085", "ms": 151.9, "tokens": 175, "probs": {"refund": [0.2079, 0.3027, 0.1331, 0.2745, 0.0818]}}
+{"line": 242, "record": "hard-v1/judge/development/00038", "ms": 154.7, "tokens": 127, "probs": {"correct": [0.7283, 0.2717], "value": [0.0038, 0.032197, 0.922608, 0.019698, 0.021698]}}
+{"line": 243, "record": "hard-v1/judge/development/00070", "ms": 156.4, "tokens": 155, "probs": {"correct": [0.5477, 0.4523], "value": [0.309969, 0.172183, 0.206279, 0.113389, 0.19818]}}
+{"line": 244, "record": "hard-v1/ambiguous/development/00079", "ms": 135.5, "tokens": 123, "probs": {"decision": [0.0289, 0.8766, 0.0945]}}
+{"line": 245, "record": "hard-v1/judge/development/00087", "ms": 141.4, "tokens": 112, "probs": {"correct": [0.8769, 0.1231], "value": [0.019298, 0.028097, 0.0012, 0.005699, 0.945705]}}
+{"line": 246, "record": "hard-v1/tradeoff/development/00056", "ms": 177.8, "tokens": 257, "probs": {"choice": [0.7652, 0.0167, 0.1806, 0.0375], "meets": [0.8582, 0.1418]}}
+{"line": 247, "record": "hard-v1/long_policy/development/00049", "ms": 2057.0, "tokens": 4374, "probs": {"outcome": [0.311731, 0.049705, 0.266527, 0.277828, 0.094209], "amount": [0.0092, 0.7736, 0.0511, 0.1141, 0.052]}}
+{"line": 248, "record": "hard-v1/ambiguous/development/00025", "ms": 145.0, "tokens": 165, "probs": {"decision": [0.8881, 0.06, 0.0046, 0.0473]}}
+{"line": 249, "record": "hard-v1/ambiguous/development/00091", "ms": 132.9, "tokens": 123, "probs": {"decision": [0.0438, 0.0213, 0.9349]}}
+{"line": 250, "record": "hard-v1/temporal_numeric/development/00035", "ms": 136.4, "tokens": 141, "probs": {"pay": [0.2959, 0.2221, 0.0716, 0.4104]}}
+{"line": 251, "record": "hard-v1/long_policy/development/00044", "ms": 1439.8, "tokens": 3209, "probs": {"outcome": [0.09959, 0.029497, 0.427857, 0.381562, 0.061494], "amount": [0.0794, 0.0032, 0.1266, 0.2246, 0.5662]}}
+{"line": 252, "record": "hard-v1/probability/development/00082", "ms": 163.7, "tokens": 219, "probs": {"value": [0.045305, 0.0022, 0.924592, 0.007801, 0.020102], "bucket": [0.112, 0.2173, 0.2482, 0.2425, 0.1248, 0.0552]}}
+{"line": 253, "record": "hard-v1/tradeoff/development/00000", "ms": 212.3, "tokens": 326, "probs": {"choice": [0.0156, 0.3338, 0.1299, 0.2056, 0.3151], "meets": [0.3161, 0.6839]}}
+{"line": 254, "record": "hard-v1/probability/development/00023", "ms": 133.4, "tokens": 121, "probs": {"value": [0.0185, 0.0806, 0.5162, 0.0223, 0.3624]}}
+{"line": 255, "record": "hard-v1/probability/development/00076", "ms": 130.7, "tokens": 119, "probs": {"value": [0.0122, 0.5147, 0.0125, 0.003, 0.4576]}}
+{"line": 256, "record": "hard-v1/temporal_numeric/development/00033", "ms": 142.9, "tokens": 129, "probs": {"days": [0.161884, 0.029397, 0.006499, 0.051295, 0.750925], "late": [0.3963, 0.6037]}}
+{"line": 257, "record": "hard-v1/long_policy/development/00020", "ms": 1899.6, "tokens": 4296, "probs": {"outcome": [0.0135, 0.0248, 0.0227, 0.9351, 0.0039], "amount": [0.0025, 0.048105, 0.008601, 0.001, 0.939794]}}
+{"line": 258, "record": "hard-v1/long_policy/development/00058", "ms": 1544.5, "tokens": 3382, "probs": {"outcome": [0.0013, 0.009001, 0.0017, 0.0005, 0.987499], "amount": [0.0003, 0.0015, 0.9807, 0.0163, 0.0012]}}
+{"line": 259, "record": "hard-v1/judge/development/00085", "ms": 131.3, "tokens": 93, "probs": {"correct": [0.9514, 0.0486]}}
+{"line": 260, "record": "hard-v1/tradeoff/development/00028", "ms": 178.9, "tokens": 272, "probs": {"choice": [0.0076, 0.0127, 0.0147, 0.965], "meets": [0.9718, 0.0282]}}
+{"line": 261, "record": "hard-v1/ambiguous/development/00043", "ms": 140.4, "tokens": 124, "probs": {"decision": [0.0276, 0.0441, 0.9283]}}
+{"line": 262, "record": "hard-v1/probability/development/00083", "ms": 196.7, "tokens": 327, "probs": {"choice": [0.319, 0.4363, 0.2447], "value": [0.2317, 0.0194, 0.0018, 0.2366, 0.5105]}}
+{"line": 263, "record": "hard-v1/ambiguous/development/00055", "ms": 139.4, "tokens": 142, "probs": {"decision": [0.923508, 0.028997, 0.047495]}}
+{"line": 264, "record": "hard-v1/multi_hop/development/00074", "ms": 196.7, "tokens": 309, "probs": {"paged": [0.20078, 0.258174, 0.261074, 0.279972]}}
+{"line": 265, "record": "hard-v1/long_policy/development/00039", "ms": 1451.9, "tokens": 3254, "probs": {"outcome": [0.20028, 0.683632, 0.061794, 0.049795, 0.0045], "amount": [0.006001, 0.059006, 0.061206, 0.793679, 0.080108]}}
+{"line": 266, "record": "hard-v1/multi_hop/development/00041", "ms": 205.7, "tokens": 315, "probs": {"paged": [0.3708, 0.3027, 0.2443, 0.0822]}}
+{"line": 267, "record": "hard-v1/probability/development/00046", "ms": 157.9, "tokens": 181, "probs": {"value": [0.007099, 0.0009, 0.89841, 0.042596, 0.050995], "more_likely": [0.4891, 0.5109]}}
+{"line": 268, "record": "hard-v1/temporal_numeric/development/00039", "ms": 142.5, "tokens": 175, "probs": {"due": [0.221222, 0.258826, 0.193519, 0.326433]}}
+{"line": 269, "record": "hard-v1/multi_hop/development/00005", "ms": 202.2, "tokens": 343, "probs": {"paged": [0.556344, 0.245075, 0.057294, 0.141286]}}
+{"line": 270, "record": "hard-v1/probability/development/00050", "ms": 126.3, "tokens": 114, "probs": {"choice": [0.2842, 0.1869, 0.5289]}}
+{"line": 271, "record": "hard-v1/tradeoff/development/00042", "ms": 203.7, "tokens": 330, "probs": {"choice": [0.055894, 0.211879, 0.732227], "meets": [0.528, 0.472]}}
+{"line": 272, "record": "hard-v1/long_policy/development/00007", "ms": 1806.8, "tokens": 4203, "probs": {"outcome": [0.6215, 0.0118, 0.1257, 0.2159, 0.0251], "amount": [0.051695, 0.510549, 0.006699, 0.225477, 0.205579]}}
+{"line": 273, "record": "hard-v1/probability/development/00077", "ms": 215.7, "tokens": 319, "probs": {"choice": [0.0177, 0.8398, 0.1425], "value": [0.0534, 0.2555, 0.3419, 0.056, 0.2932]}}
+{"line": 274, "record": "hard-v1/tradeoff/development/00001", "ms": 296.7, "tokens": 536, "probs": {"choice": [0.0117, 0.0102, 0.1333, 0.0056, 0.7681, 0.0711], "meets": [0.7528, 0.2472]}}
+{"line": 275, "record": "hard-v1/probability/development/00060", "ms": 164.9, "tokens": 203, "probs": {"value": [0.5564, 0.0025, 0.0033, 0.4336, 0.0042], "bucket": [0.078, 0.197, 0.3825, 0.3051, 0.0315, 0.0059]}}
+{"line": 276, "record": "hard-v1/judge/development/00049", "ms": 155.0, "tokens": 126, "probs": {"correct": [0.3464, 0.6536], "value": [0.0067, 0.0067, 0.9411, 0.0449, 0.0006]}}
+{"line": 277, "record": "hard-v1/ambiguous/development/00031", "ms": 137.3, "tokens": 119, "probs": {"decision": [0.4444, 0.2547, 0.3009]}}
+{"line": 278, "record": "hard-v1/temporal_numeric/development/00082", "ms": 153.6, "tokens": 198, "probs": {"due": [0.209579, 0.177682, 0.185681, 0.327767, 0.09929]}}
+{"line": 279, "record": "hard-v1/long_policy/development/00015", "ms": 1209.9, "tokens": 2735, "probs": {"outcome": [0.494951, 0.062094, 0.067493, 0.024798, 0.350665], "amount": [0.0604, 0.8445, 0.0868, 0.0023, 0.006]}}
+{"line": 280, "record": "hard-v1/ambiguous/development/00024", "ms": 145.5, "tokens": 175, "probs": {"decision": [0.0046, 0.036204, 0.577058, 0.382138]}}
+{"line": 281, "record": "hard-v1/probability/development/00063", "ms": 128.8, "tokens": 120, "probs": {"value": [0.010301, 0.977298, 0.0037, 0.0026, 0.006101]}}
+{"line": 282, "record": "hard-v1/probability/development/00029", "ms": 152.4, "tokens": 229, "probs": {"value": [0.176782, 0.047395, 0.761724, 0.006799, 0.007299], "bucket": [0.0301, 0.0721, 0.0716, 0.2359, 0.2478, 0.3425]}}
+{"line": 283, "record": "hard-v1/long_policy/development/00035", "ms": 893.3, "tokens": 2117, "probs": {"outcome": [0.0337, 0.0453, 0.0038, 0.8512, 0.066], "amount": [0.015698, 0.931407, 0.045795, 0.0013, 0.005799]}}
+{"line": 284, "record": "hard-v1/multi_hop/development/00083", "ms": 149.2, "tokens": 179, "probs": {"affected": [0.1771, 0.5669, 0.0265, 0.2295]}}
+{"line": 285, "record": "hard-v1/long_policy/development/00013", "ms": 865.7, "tokens": 2007, "probs": {"outcome": [0.0462, 0.4685, 0.0272, 0.3688, 0.0893], "amount": [0.247775, 0.030797, 0.010899, 0.313969, 0.39656]}}
+{"line": 286, "record": "hard-v1/long_policy/development/00014", "ms": 576.6, "tokens": 1241, "probs": {"outcome": [0.0115, 0.1069, 0.7013, 0.0029, 0.1774], "amount": [0.0152, 0.8206, 0.0651, 0.0008, 0.0983]}}
+{"line": 287, "record": "hard-v1/long_policy/development/00050", "ms": 1983.5, "tokens": 4693, "probs": {"outcome": [0.0309, 0.5753, 0.0074, 0.3432, 0.0432], "amount": [0.3537, 0.0074, 0.013, 0.0227, 0.6032]}}
+{"line": 288, "record": "hard-v1/temporal_numeric/development/00056", "ms": 141.0, "tokens": 169, "probs": {"refund": [0.1865, 0.0201, 0.1867, 0.2001, 0.4066]}}
+{"line": 289, "record": "hard-v1/ambiguous/development/00087", "ms": 133.8, "tokens": 141, "probs": {"decision": [0.0622, 0.8525, 0.0853]}}
+{"line": 290, "record": "hard-v1/multi_hop/development/00097", "ms": 171.9, "tokens": 264, "probs": {"controller": [0.035996, 0.363264, 0.514949, 0.039696, 0.046095], "interest": [0.042096, 0.026397, 0.330367, 0.030997, 0.570143]}}
+{"line": 291, "record": "hard-v1/temporal_numeric/development/00026", "ms": 135.9, "tokens": 156, "probs": {"local": [0.2945, 0.0753, 0.0303, 0.335, 0.2649]}}
+{"line": 292, "record": "hard-v1/multi_hop/development/00090", "ms": 149.3, "tokens": 217, "probs": {"approver": [0.027597, 0.029197, 0.067793, 0.850615, 0.024798]}}
+{"line": 293, "record": "hard-v1/temporal_numeric/development/00005", "ms": 139.4, "tokens": 126, "probs": {"days": [0.691331, 0.043996, 0.132287, 0.078692, 0.053695], "late": [0.5105, 0.4895]}}
+{"line": 294, "record": "hard-v1/tradeoff/development/00004", "ms": 218.7, "tokens": 394, "probs": {"choice": [0.109389, 0.812119, 0.045595, 0.032897], "meets": [0.7097, 0.2903]}}
+{"line": 295, "record": "hard-v1/judge/development/00016", "ms": 143.8, "tokens": 141, "probs": {"correct": [0.3536, 0.6464], "value": [0.3767, 0.1604, 0.0063, 0.3643, 0.0923]}}
+{"line": 296, "record": "hard-v1/ambiguous/development/00050", "ms": 128.4, "tokens": 131, "probs": {"decision": [0.263726, 0.132113, 0.60416]}}
+{"line": 297, "record": "hard-v1/multi_hop/development/00026", "ms": 159.1, "tokens": 254, "probs": {"paged": [0.0074, 0.1138, 0.7082, 0.1706]}}
+{"line": 298, "record": "hard-v1/probability/development/00099", "ms": 126.6, "tokens": 119, "probs": {"value": [0.0036, 0.0028, 0.0048, 0.0062, 0.9826]}}
+{"line": 299, "record": "hard-v1/judge/development/00079", "ms": 139.4, "tokens": 135, "probs": {"correct": [0.4343, 0.5657], "value": [0.0499, 0.2677, 0.0329, 0.6341, 0.0154]}}
+{"line": 300, "record": "hard-v1/judge/development/00044", "ms": 139.2, "tokens": 131, "probs": {"correct": [0.4194, 0.5806], "value": [0.8409, 0.0225, 0.0121, 0.003, 0.1215]}}
+{"line": 301, "record": "hard-v1/long_policy/development/00086", "ms": 1330.1, "tokens": 3231, "probs": {"outcome": [0.0144, 0.0633, 0.3788, 0.1967, 0.3468], "amount": [0.080492, 0.408159, 0.118888, 0.379562, 0.012899]}}
+{"line": 302, "record": "hard-v1/judge/development/00093", "ms": 145.5, "tokens": 140, "probs": {"correct": [0.3946, 0.6054], "value": [0.22, 0.0939, 0.5187, 0.1656, 0.0018]}}
+{"line": 303, "record": "hard-v1/multi_hop/development/00072", "ms": 189.3, "tokens": 288, "probs": {"approver": [0.334267, 0.042096, 0.137386, 0.363064, 0.123188]}}
+{"line": 304, "record": "hard-v1/long_policy/development/00062", "ms": 1206.9, "tokens": 2899, "probs": {"outcome": [0.221678, 0.063794, 0.053295, 0.324668, 0.336566], "amount": [0.8555, 0.0412, 0.0064, 0.0785, 0.0184]}}
+{"line": 305, "record": "hard-v1/temporal_numeric/development/00021", "ms": 131.6, "tokens": 127, "probs": {"date": [0.5915, 0.0893, 0.0856, 0.1017, 0.1319]}}
+{"line": 306, "record": "hard-v1/long_policy/development/00055", "ms": 1828.2, "tokens": 4328, "probs": {"outcome": [0.5567, 0.0059, 0.0137, 0.0177, 0.406], "amount": [0.0535, 0.0045, 0.6302, 0.2893, 0.0225]}}
+{"line": 307, "record": "hard-v1/ambiguous/development/00036", "ms": 129.9, "tokens": 124, "probs": {"decision": [0.0117, 0.8919, 0.0964]}}
+{"line": 308, "record": "hard-v1/temporal_numeric/development/00009", "ms": 150.8, "tokens": 214, "probs": {"due": [0.2162, 0.1646, 0.1393, 0.1751, 0.3048]}}
+{"line": 309, "record": "hard-v1/judge/development/00096", "ms": 147.9, "tokens": 134, "probs": {"correct": [0.4697, 0.5303], "value": [0.8521, 0.0117, 0.0427, 0.0282, 0.0653]}}
+{"line": 310, "record": "hard-v1/probability/development/00009", "ms": 127.1, "tokens": 115, "probs": {"value": [0.911, 0.0007, 0.0874, 0.0002, 0.0007]}}
+{"line": 311, "record": "hard-v1/tradeoff/development/00083", "ms": 202.9, "tokens": 337, "probs": {"choice": [0.0038, 0.9018, 0.0944], "meets": [0.2187, 0.7813]}}
+{"line": 312, "record": "hard-v1/judge/development/00051", "ms": 145.2, "tokens": 142, "probs": {"correct": [0.3762, 0.6238], "value": [0.216, 0.147, 0.399, 0.0055, 0.2325]}}
+{"line": 313, "record": "hard-v1/temporal_numeric/development/00098", "ms": 137.1, "tokens": 164, "probs": {"refund": [0.221578, 0.234777, 0.278872, 0.024198, 0.240576]}}
+{"line": 314, "record": "hard-v1/probability/development/00055", "ms": 126.7, "tokens": 116, "probs": {"choice": [0.2262, 0.5586, 0.2152]}}
+{"line": 315, "record": "hard-v1/probability/development/00010", "ms": 155.1, "tokens": 227, "probs": {"value": [0.0059, 0.9729, 0.0012, 0.0094, 0.0106], "bucket": [0.0029, 0.0047, 0.005599, 0.0046, 0.020098, 0.962104]}}
+{"line": 316, "record": "hard-v1/ambiguous/development/00064", "ms": 143.7, "tokens": 182, "probs": {"decision": [0.1641, 0.0148, 0.6701, 0.151]}}
+{"line": 317, "record": "hard-v1/long_policy/development/00088", "ms": 1427.9, "tokens": 3469, "probs": {"outcome": [0.817918, 0.011999, 0.0038, 0.0018, 0.164484], "amount": [0.008201, 0.0002, 0.980098, 0.010401, 0.0011]}}
+{"line": 318, "record": "hard-v1/long_policy/development/00033", "ms": 698.7, "tokens": 1633, "probs": {"outcome": [0.1243, 0.2859, 0.2482, 0.1262, 0.2154], "amount": [0.80108, 0.069207, 0.068607, 0.0038, 0.057306]}}
+{"line": 319, "record": "hard-v1/temporal_numeric/development/00061", "ms": 140.6, "tokens": 126, "probs": {"days": [0.1014, 0.0326, 0.0999, 0.3293, 0.4368], "late": [0.4298, 0.5702]}}
+{"line": 320, "record": "hard-v1/multi_hop/development/00045", "ms": 152.3, "tokens": 201, "probs": {"controller": [0.0892, 0.8659, 0.0321, 0.0073, 0.0055], "interest": [0.0284, 0.9691, 0.0025]}}
+{"line": 321, "record": "hard-v1/probability/development/00047", "ms": 127.7, "tokens": 119, "probs": {"value": [0.005001, 0.0037, 0.003, 0.013801, 0.974497]}}
+{"line": 322, "record": "hard-v1/temporal_numeric/development/00023", "ms": 137.8, "tokens": 168, "probs": {"refund": [0.2147, 0.2628, 0.1038, 0.0218, 0.3969]}}
+{"line": 323, "record": "hard-v1/probability/development/00040", "ms": 191.4, "tokens": 347, "probs": {"choice": [0.3389, 0.1596, 0.0592, 0.4423], "value": [0.221122, 0.336734, 0.269427, 0.110411, 0.062306]}}
+{"line": 324, "record": "hard-v1/ambiguous/development/00027", "ms": 137.9, "tokens": 170, "probs": {"decision": [0.0312, 0.0315, 0.9373]}}
+{"line": 325, "record": "hard-v1/judge/development/00089", "ms": 141.8, "tokens": 129, "probs": {"correct": [0.3782, 0.6218], "value": [0.0079, 0.4105, 0.1551, 0.0166, 0.4099]}}
+{"line": 326, "record": "hard-v1/judge/development/00057", "ms": 142.0, "tokens": 125, "probs": {"correct": [0.2799, 0.7201], "value": [0.001, 0.941206, 0.022698, 0.017698, 0.017398]}}
+{"line": 327, "record": "hard-v1/long_policy/development/00012", "ms": 1914.5, "tokens": 4614, "probs": {"outcome": [0.2036, 0.7151, 0.0127, 0.0216, 0.047], "amount": [0.0013, 0.1192, 0.0103, 0.0067, 0.8625]}}
+{"line": 328, "record": "hard-v1/multi_hop/development/00006", "ms": 166.7, "tokens": 237, "probs": {"controller": [0.709171, 0.020902, 0.210621, 0.026103, 0.033203], "interest": [0.0529, 0.1547, 0.0035, 0.7704, 0.0185]}}
+{"line": 329, "record": "hard-v1/probability/development/00034", "ms": 223.7, "tokens": 373, "probs": {"choice": [0.238076, 0.049195, 0.561444, 0.151285], "value": [0.048995, 0.163084, 0.170283, 0.329167, 0.288471]}}
+{"line": 330, "record": "hard-v1/ambiguous/development/00095", "ms": 137.3, "tokens": 147, "probs": {"decision": [0.7508, 0.1182, 0.131]}}
+{"line": 331, "record": "hard-v1/probability/development/00032", "ms": 127.6, "tokens": 113, "probs": {"value": [0.0007, 0.032503, 0.014601, 0.952095, 0.0001]}}
+{"line": 332, "record": "hard-v1/ambiguous/development/00002", "ms": 135.6, "tokens": 150, "probs": {"decision": [0.291129, 0.314131, 0.394739]}}
+{"line": 333, "record": "hard-v1/long_policy/development/00018", "ms": 1513.6, "tokens": 3671, "probs": {"outcome": [0.1394, 0.011, 0.0089, 0.0218, 0.8189], "amount": [0.0927, 0.8842, 0.0016, 0.0138, 0.0077]}}
+{"line": 334, "record": "hard-v1/ambiguous/development/00038", "ms": 137.4, "tokens": 152, "probs": {"decision": [0.0316, 0.0641, 0.9043]}}
+{"line": 335, "record": "hard-v1/judge/development/00056", "ms": 145.6, "tokens": 145, "probs": {"correct": [0.875, 0.125], "value": [0.3086, 0.2645, 0.2995, 0.0186, 0.1088]}}
+{"line": 336, "record": "hard-v1/ambiguous/development/00054", "ms": 137.0, "tokens": 146, "probs": {"decision": [0.0838, 0.0385, 0.8777]}}
+{"line": 337, "record": "hard-v1/multi_hop/development/00034", "ms": 192.3, "tokens": 306, "probs": {"paged": [0.0515, 0.3414, 0.3699, 0.2372]}}
+{"line": 338, "record": "hard-v1/multi_hop/development/00022", "ms": 161.0, "tokens": 257, "probs": {"approver": [0.0918, 0.0581, 0.2611, 0.1376, 0.4514]}}
+{"line": 339, "record": "hard-v1/multi_hop/development/00096", "ms": 145.3, "tokens": 180, "probs": {"affected": [0.230877, 0.605739, 0.144386, 0.018998]}}
+{"line": 340, "record": "hard-v1/tradeoff/development/00022", "ms": 204.9, "tokens": 338, "probs": {"choice": [0.2374, 0.0847, 0.6779], "meets": [0.2268, 0.7732]}}
+{"line": 341, "record": "hard-v1/temporal_numeric/development/00089", "ms": 131.8, "tokens": 153, "probs": {"pay": [0.1903, 0.163, 0.3591, 0.1126, 0.175]}}
+{"line": 342, "record": "hard-v1/probability/development/00054", "ms": 160.2, "tokens": 244, "probs": {"value": [0.006899, 0.054995, 0.856614, 0.0035, 0.077992], "bucket": [0.0033, 0.0041, 0.005, 0.0069, 0.0222, 0.9585]}}
+{"line": 343, "record": "hard-v1/probability/development/00084", "ms": 181.1, "tokens": 289, "probs": {"choice": [0.0247, 0.1292, 0.8461], "value": [0.3755, 0.0444, 0.2075, 0.2999, 0.0727]}}
+{"line": 344, "record": "hard-v1/ambiguous/development/00098", "ms": 139.9, "tokens": 177, "probs": {"decision": [0.2477, 0.1363, 0.606, 0.01]}}
+{"line": 345, "record": "hard-v1/probability/development/00068", "ms": 151.4, "tokens": 203, "probs": {"value": [0.0002, 0.0001, 0.0022, 0.0004, 0.9971], "bucket": [0.008401, 0.035304, 0.067607, 0.106311, 0.652565, 0.129813]}}
+{"line": 346, "record": "hard-v1/probability/development/00013", "ms": 127.1, "tokens": 115, "probs": {"choice": [0.4548, 0.3004, 0.2448]}}
+{"line": 347, "record": "hard-v1/multi_hop/development/00017", "ms": 193.5, "tokens": 312, "probs": {"paged": [0.3506, 0.2724, 0.0664, 0.3106]}}
+{"line": 348, "record": "hard-v1/judge/development/00046", "ms": 141.7, "tokens": 127, "probs": {"correct": [0.3015, 0.6985], "value": [0.0011, 0.002, 0.9644, 0.0068, 0.0257]}}
+{"line": 349, "record": "hard-v1/ambiguous/development/00004", "ms": 128.3, "tokens": 139, "probs": {"decision": [0.5436, 0.2797, 0.1767]}}
+{"line": 350, "record": "hard-v1/tradeoff/development/00091", "ms": 164.7, "tokens": 256, "probs": {"choice": [0.0763, 0.0536, 0.2655, 0.6046], "meets": [0.9471, 0.0529]}}
+{"line": 351, "record": "hard-v1/long_policy/development/00016", "ms": 1781.8, "tokens": 4272, "probs": {"outcome": [0.013401, 0.356336, 0.015702, 0.012801, 0.60176], "amount": [0.0351, 0.5299, 0.0132, 0.3107, 0.1111]}}
+{"line": 352, "record": "hard-v1/temporal_numeric/development/00074", "ms": 149.1, "tokens": 203, "probs": {"due": [0.2333, 0.0761, 0.0893, 0.3595, 0.2418]}}
+{"line": 353, "record": "hard-v1/multi_hop/development/00086", "ms": 161.1, "tokens": 261, "probs": {"approver": [0.8533, 0.0212, 0.0349, 0.026, 0.0646]}}
+{"line": 354, "record": "hard-v1/multi_hop/development/00078", "ms": 161.0, "tokens": 241, "probs": {"controller": [0.019602, 0.019002, 0.379738, 0.528453, 0.053205], "interest": [0.006401, 0.952795, 0.0023, 0.019902, 0.018602]}}
+{"line": 355, "record": "hard-v1/temporal_numeric/development/00063", "ms": 133.0, "tokens": 152, "probs": {"pay": [0.1856, 0.2047, 0.1939, 0.258, 0.1578]}}
+{"line": 356, "record": "hard-v1/probability/development/00003", "ms": 127.6, "tokens": 118, "probs": {"value": [0.0046, 0.001, 0.0022, 0.9916, 0.0006]}}
+{"line": 357, "record": "hard-v1/tradeoff/development/00013", "ms": 203.9, "tokens": 334, "probs": {"choice": [0.4717, 0.0066, 0.0228, 0.0151, 0.4838], "meets": [0.6133, 0.3867]}}
+{"line": 358, "record": "hard-v1/multi_hop/development/00048", "ms": 197.4, "tokens": 343, "probs": {"paged": [0.5462, 0.2308, 0.1142, 0.1088]}}
+{"line": 359, "record": "hard-v1/probability/development/00008", "ms": 154.7, "tokens": 220, "probs": {"value": [0.1613, 0.0313, 0.3852, 0.4146, 0.0076], "bucket": [0.168183, 0.278772, 0.231777, 0.156384, 0.110789, 0.054095]}}
+{"line": 360, "record": "hard-v1/long_policy/development/00068", "ms": 1517.4, "tokens": 3688, "probs": {"outcome": [0.1319, 0.3203, 0.5013, 0.0273, 0.0192], "amount": [0.5331, 0.0598, 0.2892, 0.0041, 0.1138]}}
+{"line": 361, "record": "hard-v1/probability/development/00066", "ms": 161.8, "tokens": 209, "probs": {"value": [0.0096, 0.1239, 0.005, 0.8378, 0.0237], "more_likely": [0.3197, 0.6803]}}
+{"line": 362, "record": "hard-v1/multi_hop/development/00029", "ms": 134.0, "tokens": 142, "probs": {"affected": [0.0267, 0.0543, 0.1556, 0.7634]}}
+{"line": 363, "record": "hard-v1/judge/development/00047", "ms": 143.5, "tokens": 129, "probs": {"correct": [0.836, 0.164], "value": [0.0123, 0.0848, 0.1154, 0.772, 0.0155]}}
+{"line": 364, "record": "hard-v1/temporal_numeric/development/00087", "ms": 131.7, "tokens": 138, "probs": {"date": [0.232923, 0.255626, 0.259126, 0.194519, 0.057806]}}
+{"line": 365, "record": "hard-v1/probability/development/00012", "ms": 126.5, "tokens": 113, "probs": {"choice": [0.1384, 0.308, 0.5536]}}
+{"line": 366, "record": "hard-v1/long_policy/development/00041", "ms": 1006.1, "tokens": 2445, "probs": {"outcome": [0.025003, 0.381138, 0.530153, 0.046405, 0.017302], "amount": [0.571643, 0.09949, 0.159884, 0.147785, 0.021198]}}
+{"line": 367, "record": "hard-v1/judge/development/00099", "ms": 142.3, "tokens": 122, "probs": {"correct": [0.8446, 0.1554], "value": [0.0002, 0.9912, 0.0032, 0.0042, 0.0012]}}
+{"line": 368, "record": "hard-v1/multi_hop/development/00047", "ms": 159.8, "tokens": 254, "probs": {"approver": [0.2127, 0.0972, 0.0622, 0.5041, 0.1238]}}
+{"line": 369, "record": "hard-v1/probability/development/00087", "ms": 127.8, "tokens": 121, "probs": {"choice": [0.545345, 0.223478, 0.231177]}}
+{"line": 370, "record": "hard-v1/temporal_numeric/development/00001", "ms": 129.8, "tokens": 132, "probs": {"date": [0.183182, 0.070693, 0.212379, 0.424058, 0.109689]}}
+{"line": 371, "record": "hard-v1/probability/development/00001", "ms": 161.6, "tokens": 255, "probs": {"value": [0.054095, 0.0021, 0.011499, 0.0041, 0.928207], "bucket": [0.020202, 0.068507, 0.187319, 0.366437, 0.253625, 0.10391]}}
+{"line": 372, "record": "hard-v1/probability/development/00072", "ms": 186.0, "tokens": 313, "probs": {"choice": [0.133587, 0.482852, 0.383562], "value": [0.125813, 0.206721, 0.20352, 0.457046, 0.006901]}}
+{"line": 373, "record": "hard-v1/temporal_numeric/development/00062", "ms": 139.7, "tokens": 175, "probs": {"due": [0.1492, 0.2578, 0.2392, 0.3538]}}
+{"line": 374, "record": "hard-v1/multi_hop/development/00075", "ms": 139.2, "tokens": 163, "probs": {"affected": [0.9793, 0.0129, 0.0023, 0.0055]}}
+{"line": 375, "record": "hard-v1/long_policy/development/00002", "ms": 696.5, "tokens": 1678, "probs": {"outcome": [0.020198, 0.355064, 0.022098, 0.49535, 0.107289], "amount": [0.318532, 0.013501, 0.057206, 0.533453, 0.077308]}}
+{"line": 376, "record": "hard-v1/tradeoff/development/00044", "ms": 208.4, "tokens": 351, "probs": {"choice": [0.024402, 0.006501, 0.935794, 0.013001, 0.020302], "meets": [0.9673, 0.0327]}}
+{"line": 377, "record": "hard-v1/tradeoff/development/00072", "ms": 165.8, "tokens": 268, "probs": {"choice": [0.4405, 0.3018, 0.2383, 0.0194], "meets": [0.963, 0.037]}}
+{"line": 378, "record": "hard-v1/probability/development/00014", "ms": 152.3, "tokens": 229, "probs": {"value": [0.020998, 0.19668, 0.0035, 0.745025, 0.033797], "bucket": [0.0297, 0.0584, 0.0681, 0.0721, 0.2182, 0.5535]}}
+{"line": 379, "record": "hard-v1/tradeoff/development/00054", "ms": 203.4, "tokens": 334, "probs": {"choice": [0.054, 0.6433, 0.1047, 0.1535, 0.0445], "meets": [0.3672, 0.6328]}}
+{"line": 380, "record": "hard-v1/long_policy/development/00000", "ms": 1453.6, "tokens": 3527, "probs": {"outcome": [0.0539, 0.0517, 0.0602, 0.8287, 0.0055], "amount": [0.710071, 0.050405, 0.0015, 0.074607, 0.163416]}}
+{"line": 381, "record": "hard-v1/tradeoff/development/00061", "ms": 252.5, "tokens": 485, "probs": {"choice": [0.005099, 0.014499, 0.030297, 0.805819, 0.144286], "meets": [0.0558, 0.9442]}}
+{"line": 382, "record": "hard-v1/probability/development/00037", "ms": 128.3, "tokens": 118, "probs": {"value": [0.8515, 0.003, 0.0037, 0.1322, 0.0096]}}
+{"line": 383, "record": "hard-v1/judge/development/00008", "ms": 139.6, "tokens": 135, "probs": {"correct": [0.8369, 0.1631], "value": [0.0097, 0.8341, 0.0933, 0.029, 0.0339]}}
+{"line": 384, "record": "hard-v1/tradeoff/development/00008", "ms": 172.8, "tokens": 294, "probs": {"choice": [0.056, 0.015, 0.9188, 0.0102], "meets": [0.1274, 0.8726]}}
+{"line": 385, "record": "hard-v1/multi_hop/development/00056", "ms": 145.7, "tokens": 190, "probs": {"affected": [0.08, 0.0328, 0.1678, 0.7059, 0.0135]}}
+{"line": 386, "record": "hard-v1/judge/development/00002", "ms": 148.5, "tokens": 147, "probs": {"correct": [0.9244, 0.0756], "value": [0.0084, 0.2135, 0.3388, 0.0675, 0.3718]}}
+{"line": 387, "record": "hard-v1/judge/development/00082", "ms": 155.5, "tokens": 165, "probs": {"correct": [0.4634, 0.5366], "value": [0.605061, 0.165717, 0.134013, 0.025903, 0.069307]}}
+{"line": 388, "record": "hard-v1/ambiguous/development/00096", "ms": 135.7, "tokens": 142, "probs": {"decision": [0.0921, 0.1131, 0.7948]}}
+{"line": 389, "record": "hard-v1/judge/development/00067", "ms": 143.6, "tokens": 127, "probs": {"correct": [0.5071, 0.4929], "value": [0.0343, 0.6932, 0.0206, 0.1648, 0.0871]}}
+{"line": 390, "record": "hard-v1/probability/development/00059", "ms": 155.6, "tokens": 191, "probs": {"value": [0.0219, 0.3884, 0.0667, 0.5175, 0.0055], "more_likely": [0.2056, 0.7944]}}
+{"line": 391, "record": "hard-v1/probability/development/00049", "ms": 153.9, "tokens": 217, "probs": {"value": [0.006001, 0.336134, 0.010301, 0.0027, 0.644864], "bucket": [0.144614, 0.213321, 0.289429, 0.247425, 0.092709, 0.012501]}}
+{"line": 392, "record": "hard-v1/multi_hop/development/00014", "ms": 206.0, "tokens": 349, "probs": {"paged": [0.1964, 0.4396, 0.0349, 0.3291]}}
+{"line": 393, "record": "hard-v1/temporal_numeric/development/00031", "ms": 130.2, "tokens": 138, "probs": {"date": [0.144386, 0.312569, 0.166383, 0.165183, 0.211479]}}
+{"line": 394, "record": "hard-v1/probability/development/00043", "ms": 153.0, "tokens": 211, "probs": {"value": [0.0005, 0.0041, 0.982298, 0.005601, 0.007501], "bucket": [0.0036, 0.007599, 0.008299, 0.009499, 0.032497, 0.938506]}}
+{"line": 395, "record": "hard-v1/temporal_numeric/development/00041", "ms": 132.6, "tokens": 152, "probs": {"local": [0.1885, 0.475, 0.1699, 0.1257, 0.0409]}}
+{"line": 396, "record": "hard-v1/ambiguous/development/00046", "ms": 139.5, "tokens": 178, "probs": {"decision": [0.013099, 0.927807, 0.050695, 0.008399]}}
+{"line": 397, "record": "hard-v1/tradeoff/development/00045", "ms": 260.5, "tokens": 516, "probs": {"choice": [0.0935, 0.0126, 0.082, 0.2652, 0.0237, 0.523], "meets": [0.8625, 0.1375]}}
+{"line": 398, "record": "hard-v1/temporal_numeric/development/00059", "ms": 131.6, "tokens": 150, "probs": {"local": [0.481948, 0.325333, 0.117412, 0.025203, 0.050105]}}
+{"line": 399, "record": "hard-v1/tradeoff/development/00009", "ms": 174.7, "tokens": 291, "probs": {"choice": [0.003, 0.919, 0.0056, 0.0724], "meets": [0.2742, 0.7258]}}
+{"line": 400, "record": "hard-v1/multi_hop/development/00076", "ms": 159.1, "tokens": 214, "probs": {"controller": [0.034103, 0.80218, 0.139814, 0.014601, 0.009301], "interest": [0.0005, 0.0006, 0.0008, 0.9981]}}
+{"line": 401, "record": "hard-v1/temporal_numeric/development/00066", "ms": 140.4, "tokens": 127, "probs": {"days": [0.012199, 0.09669, 0.062294, 0.784122, 0.044696], "late": [0.3533, 0.6467]}}
+{"line": 402, "record": "hard-v1/multi_hop/development/00038", "ms": 162.3, "tokens": 282, "probs": {"approver": [0.136186, 0.49615, 0.09579, 0.192581, 0.079292]}}
+{"line": 403, "record": "hard-v1/long_policy/development/00004", "ms": 1801.9, "tokens": 4327, "probs": {"outcome": [0.7739, 0.0349, 0.0035, 0.0064, 0.1813], "amount": [0.033397, 0.0035, 0.90091, 0.024198, 0.037996]}}
+{"line": 404, "record": "hard-v1/ambiguous/development/00086", "ms": 134.3, "tokens": 143, "probs": {"decision": [0.0911, 0.0956, 0.8133]}}
+{"line": 405, "record": "hard-v1/probability/development/00062", "ms": 155.8, "tokens": 207, "probs": {"value": [0.014901, 0.0012, 0.0012, 0.960796, 0.021902], "more_likely": [0.4286, 0.5714]}}
+{"line": 406, "record": "hard-v1/temporal_numeric/development/00008", "ms": 142.3, "tokens": 175, "probs": {"refund": [0.134713, 0.184318, 0.409341, 0.247025, 0.024602]}}
+{"line": 407, "record": "hard-v1/probability/development/00086", "ms": 152.0, "tokens": 201, "probs": {"value": [0.0004, 0.9992, 0.0, 0.0001, 0.0003], "bucket": [0.0248, 0.1904, 0.717, 0.064, 0.0016, 0.0022]}}
+{"line": 408, "record": "hard-v1/tradeoff/development/00079", "ms": 177.9, "tokens": 313, "probs": {"choice": [0.0029, 0.9312, 0.0065, 0.0449, 0.0016, 0.0129], "meets": [0.966, 0.034]}}
+{"line": 409, "record": "hard-v1/multi_hop/development/00063", "ms": 140.2, "tokens": 170, "probs": {"affected": [0.0478, 0.9421, 0.0051, 0.005]}}
+{"line": 410, "record": "hard-v1/probability/development/00000", "ms": 127.8, "tokens": 121, "probs": {"choice": [0.4491, 0.1129, 0.438]}}
+{"line": 411, "record": "hard-v1/probability/development/00035", "ms": 126.8, "tokens": 119, "probs": {"choice": [0.1049, 0.5884, 0.3067]}}
+{"line": 412, "record": "hard-v1/long_policy/development/00045", "ms": 1714.9, "tokens": 4191, "probs": {"outcome": [0.886789, 0.064306, 0.025003, 0.016502, 0.007401], "amount": [0.0006, 0.9294, 0.0151, 0.0244, 0.0305]}}
+{"line": 413, "record": "hard-v1/judge/development/00001", "ms": 149.5, "tokens": 162, "probs": {"correct": [0.5156, 0.4844], "value": [0.019798, 0.187881, 0.191381, 0.40326, 0.19768]}}
+{"line": 414, "record": "hard-v1/tradeoff/development/00046", "ms": 163.1, "tokens": 229, "probs": {"choice": [0.0726, 0.0188, 0.77, 0.1386], "meets": [0.2005, 0.7995]}}
+{"line": 415, "record": "hard-v1/probability/development/00017", "ms": 221.9, "tokens": 382, "probs": {"choice": [0.0621, 0.1787, 0.7088, 0.0504], "value": [0.1711, 0.0057, 0.1752, 0.0674, 0.5806]}}
+{"line": 416, "record": "hard-v1/probability/development/00031", "ms": 159.4, "tokens": 237, "probs": {"value": [0.0412, 0.0037, 0.0016, 0.0055, 0.948], "bucket": [0.082792, 0.175482, 0.255474, 0.241176, 0.160684, 0.084392]}}
+{"line": 417, "record": "hard-v1/judge/development/00039", "ms": 131.1, "tokens": 101, "probs": {"correct": [0.4353, 0.5647], "value": [0.0936, 0.8946, 0.0013, 0.0105]}}
+{"line": 418, "record": "hard-v1/tradeoff/development/00047", "ms": 175.1, "tokens": 313, "probs": {"choice": [0.60474, 0.011799, 0.0041, 0.341866, 0.037496], "meets": [0.9434, 0.0566]}}
+{"line": 419, "record": "hard-v1/tradeoff/development/00068", "ms": 203.2, "tokens": 328, "probs": {"choice": [0.4681, 0.0727, 0.0864, 0.3197, 0.0531], "meets": [0.6955, 0.3045]}}
+{"line": 420, "record": "hard-v1/long_policy/development/00029", "ms": 649.7, "tokens": 1516, "probs": {"outcome": [0.035596, 0.887811, 0.064994, 0.004, 0.007599], "amount": [0.0348, 0.0012, 0.018, 0.9444, 0.0016]}}
+{"line": 421, "record": "hard-v1/long_policy/development/00090", "ms": 1655.8, "tokens": 4044, "probs": {"outcome": [0.011101, 0.009701, 0.014601, 0.751675, 0.212921], "amount": [0.2555, 0.0137, 0.2042, 0.1137, 0.4129]}}
+{"line": 422, "record": "hard-v1/multi_hop/development/00015", "ms": 162.5, "tokens": 260, "probs": {"approver": [0.289, 0.0649, 0.3277, 0.1812, 0.1372]}}
+{"line": 423, "record": "hard-v1/tradeoff/development/00076", "ms": 217.1, "tokens": 396, "probs": {"choice": [0.2455, 0.2594, 0.4779, 0.0172], "meets": [0.1936, 0.8064]}}
+{"line": 424, "record": "hard-v1/judge/development/00030", "ms": 128.6, "tokens": 113, "probs": {"correct": [0.9736, 0.0264]}}
+{"line": 425, "record": "hard-v1/long_policy/development/00081", "ms": 1248.2, "tokens": 3036, "probs": {"outcome": [0.0147, 0.0647, 0.0095, 0.9058, 0.0053], "amount": [0.8725, 0.0686, 0.0015, 0.0193, 0.0381]}}
+{"line": 426, "record": "hard-v1/long_policy/development/00042", "ms": 899.7, "tokens": 2166, "probs": {"outcome": [0.135586, 0.021798, 0.49775, 0.226577, 0.118288], "amount": [0.346735, 0.008301, 0.0043, 0.033203, 0.607461]}}
+{"line": 427, "record": "hard-v1/multi_hop/development/00011", "ms": 162.8, "tokens": 259, "probs": {"approver": [0.0375, 0.1692, 0.4419, 0.3166, 0.0348]}}
+{"line": 428, "record": "hard-v1/ambiguous/development/00021", "ms": 128.1, "tokens": 119, "probs": {"decision": [0.3437, 0.4851, 0.1712]}}
+{"line": 429, "record": "hard-v1/temporal_numeric/development/00019", "ms": 133.6, "tokens": 153, "probs": {"pay": [0.2247, 0.2431, 0.328, 0.0396, 0.1646]}}
+{"line": 430, "record": "hard-v1/tradeoff/development/00059", "ms": 173.5, "tokens": 285, "probs": {"choice": [0.942, 0.0164, 0.0161, 0.0255], "meets": [0.955, 0.045]}}
+{"line": 431, "record": "hard-v1/long_policy/development/00096", "ms": 775.6, "tokens": 1859, "probs": {"outcome": [0.007901, 0.880788, 0.013301, 0.039504, 0.058506], "amount": [0.0011, 0.0026, 0.985901, 0.009399, 0.001]}}
+{"line": 432, "record": "hard-v1/judge/development/00055", "ms": 138.8, "tokens": 115, "probs": {"correct": [0.3099, 0.6901], "value": [0.0405, 0.0012, 0.0005, 0.9536, 0.0042]}}
+{"line": 433, "record": "hard-v1/multi_hop/development/00013", "ms": 171.4, "tokens": 268, "probs": {"controller": [0.0236, 0.0319, 0.7537, 0.1629, 0.0279], "interest": [0.0419, 0.0232, 0.153, 0.075, 0.7069]}}
+{"line": 434, "record": "hard-v1/long_policy/development/00093", "ms": 589.7, "tokens": 1374, "probs": {"outcome": [0.0234, 0.0029, 0.0128, 0.9581, 0.0028], "amount": [0.0352, 0.9514, 0.0011, 0.0049, 0.0074]}}
+{"line": 435, "record": "hard-v1/judge/development/00009", "ms": 143.1, "tokens": 129, "probs": {"correct": [0.3595, 0.6405], "value": [0.007199, 0.0024, 0.0008, 0.022298, 0.967303]}}
+{"line": 436, "record": "hard-v1/probability/development/00056", "ms": 161.6, "tokens": 256, "probs": {"value": [0.022798, 0.723028, 0.068993, 0.067193, 0.117988], "bucket": [0.0261, 0.0684, 0.1663, 0.3507, 0.2145, 0.174]}}
+{"line": 437, "record": "hard-v1/ambiguous/development/00092", "ms": 138.6, "tokens": 180, "probs": {"decision": [0.526, 0.2581, 0.1961, 0.0198]}}
+{"line": 438, "record": "hard-v1/multi_hop/development/00019", "ms": 155.5, "tokens": 248, "probs": {"approver": [0.079608, 0.030303, 0.127613, 0.09921, 0.663266]}}
+{"line": 439, "record": "hard-v1/temporal_numeric/development/00000", "ms": 132.6, "tokens": 153, "probs": {"pay": [0.2437, 0.1241, 0.314, 0.1811, 0.1371]}}
+{"line": 440, "record": "hard-v1/long_policy/development/00076", "ms": 1459.1, "tokens": 3574, "probs": {"outcome": [0.4169, 0.0082, 0.1127, 0.0527, 0.4095], "amount": [0.0534, 0.1596, 0.0384, 0.4667, 0.2819]}}
+{"line": 441, "record": "hard-v1/tradeoff/development/00051", "ms": 163.4, "tokens": 237, "probs": {"choice": [0.9384, 0.036, 0.0256], "meets": [0.531, 0.469]}}
+{"line": 442, "record": "hard-v1/judge/development/00018", "ms": 122.2, "tokens": 99, "probs": {"correct": [0.0334, 0.9666]}}
+{"line": 443, "record": "hard-v1/tradeoff/development/00081", "ms": 207.9, "tokens": 349, "probs": {"choice": [0.5255, 0.2501, 0.1379, 0.0047, 0.0818], "meets": [0.0635, 0.9365]}}
+{"line": 444, "record": "hard-v1/long_policy/development/00098", "ms": 1554.7, "tokens": 3794, "probs": {"outcome": [0.0061, 0.0207, 0.1293, 0.8375, 0.0064], "amount": [0.169083, 0.0034, 0.670833, 0.088291, 0.068393]}}
+{"line": 445, "record": "hard-v1/long_policy/development/00089", "ms": 1964.0, "tokens": 4782, "probs": {"outcome": [0.112389, 0.006399, 0.0042, 0.031297, 0.845715], "amount": [0.0012, 0.0205, 0.1282, 0.8455, 0.0046]}}
+{"line": 446, "record": "hard-v1/multi_hop/development/00025", "ms": 164.8, "tokens": 234, "probs": {"controller": [0.1162, 0.0391, 0.0677, 0.057, 0.72], "interest": [0.9218, 0.0119, 0.0053, 0.0483, 0.0127]}}
+{"line": 447, "record": "hard-v1/long_policy/development/00099", "ms": 988.5, "tokens": 2395, "probs": {"outcome": [0.783, 0.0768, 0.0026, 0.0331, 0.1045], "amount": [0.0344, 0.282, 0.61, 0.0047, 0.0689]}}
+{"line": 448, "record": "hard-v1/temporal_numeric/development/00011", "ms": 135.6, "tokens": 152, "probs": {"pay": [0.2357, 0.2146, 0.088, 0.2553, 0.2064]}}
+{"line": 449, "record": "hard-v1/probability/development/00094", "ms": 128.9, "tokens": 117, "probs": {"value": [0.9697, 0.0006, 0.0015, 0.0056, 0.0226]}}
+{"line": 450, "record": "hard-v1/judge/development/00081", "ms": 148.2, "tokens": 133, "probs": {"correct": [0.904, 0.096], "value": [0.8626, 0.0034, 0.0545, 0.0362, 0.0433]}}
+{"line": 451, "record": "hard-v1/probability/development/00015", "ms": 151.9, "tokens": 203, "probs": {"value": [0.0139, 0.0002, 0.9835, 0.0011, 0.0013], "bucket": [0.0076, 0.0306, 0.0852, 0.1697, 0.6404, 0.0665]}}
+{"line": 452, "record": "hard-v1/temporal_numeric/development/00012", "ms": 139.8, "tokens": 127, "probs": {"days": [0.1676, 0.0126, 0.0064, 0.8068, 0.0066], "late": [0.4748, 0.5252]}}
+{"line": 453, "record": "hard-v1/temporal_numeric/development/00068", "ms": 136.3, "tokens": 161, "probs": {"refund": [0.137, 0.3822, 0.127, 0.2197, 0.1341]}}
+{"line": 454, "record": "hard-v1/tradeoff/development/00015", "ms": 163.1, "tokens": 242, "probs": {"choice": [0.7243, 0.2421, 0.0336], "meets": [0.838, 0.162]}}
+{"line": 455, "record": "hard-v1/multi_hop/development/00066", "ms": 160.1, "tokens": 259, "probs": {"paged": [0.017598, 0.160684, 0.553345, 0.268373]}}
+{"line": 456, "record": "hard-v1/temporal_numeric/development/00030", "ms": 130.6, "tokens": 144, "probs": {"local": [0.5508, 0.2321, 0.0937, 0.0487, 0.0747]}}
+{"line": 457, "record": "hard-v1/judge/development/00075", "ms": 143.9, "tokens": 139, "probs": {"correct": [0.406, 0.594], "value": [0.0034, 0.10019, 0.710829, 0.150785, 0.034797]}}
+{"line": 458, "record": "hard-v1/probability/development/00036", "ms": 154.4, "tokens": 181, "probs": {"value": [0.0119, 0.8533, 0.0543, 0.0063, 0.0742], "more_likely": [0.1558, 0.8442]}}
+{"line": 459, "record": "hard-v1/temporal_numeric/development/00057", "ms": 149.4, "tokens": 210, "probs": {"due": [0.1419, 0.1779, 0.1595, 0.283, 0.2377]}}
+{"line": 460, "record": "hard-v1/probability/development/00045", "ms": 127.6, "tokens": 118, "probs": {"choice": [0.207721, 0.293029, 0.49925]}}
+{"line": 461, "record": "hard-v1/judge/development/00069", "ms": 141.7, "tokens": 124, "probs": {"correct": [0.5449, 0.4551], "value": [0.0243, 0.9602, 0.0029, 0.0112, 0.0014]}}
+{"line": 462, "record": "hard-v1/tradeoff/development/00019", "ms": 169.9, "tokens": 283, "probs": {"choice": [0.041496, 0.086491, 0.007699, 0.864314], "meets": [0.0805, 0.9195]}}
+{"line": 463, "record": "hard-v1/tradeoff/development/00055", "ms": 203.7, "tokens": 331, "probs": {"choice": [0.1974, 0.0504, 0.7522], "meets": [0.1178, 0.8822]}}
+{"line": 464, "record": "hard-v1/multi_hop/development/00062", "ms": 163.7, "tokens": 279, "probs": {"approver": [0.1018, 0.1787, 0.054, 0.5716, 0.0939]}}
+{"line": 465, "record": "hard-v1/multi_hop/development/00037", "ms": 148.1, "tokens": 198, "probs": {"affected": [0.0069, 0.7872, 0.0149, 0.0335, 0.1575]}}
+{"line": 466, "record": "hard-v1/tradeoff/development/00049", "ms": 208.0, "tokens": 352, "probs": {"choice": [0.0853, 0.2178, 0.0916, 0.6053], "meets": [0.2784, 0.7216]}}
+{"line": 467, "record": "hard-v1/long_policy/development/00087", "ms": 1300.9, "tokens": 3130, "probs": {"outcome": [0.164, 0.0439, 0.3812, 0.3923, 0.0186], "amount": [0.0024, 0.788321, 0.005799, 0.092991, 0.110489]}}
+{"line": 468, "record": "hard-v1/judge/development/00012", "ms": 142.4, "tokens": 116, "probs": {"correct": [0.4249, 0.5751], "value": [0.0081, 0.0002, 0.0009, 0.0002, 0.9906]}}
+{"line": 469, "record": "hard-v1/temporal_numeric/development/00086", "ms": 152.5, "tokens": 217, "probs": {"due": [0.2364, 0.2917, 0.2726, 0.0663, 0.133]}}
+{"line": 470, "record": "hard-v1/judge/development/00022", "ms": 143.8, "tokens": 130, "probs": {"correct": [0.3846, 0.6154], "value": [0.0163, 0.0965, 0.0036, 0.877, 0.0066]}}
+{"line": 471, "record": "hard-v1/tradeoff/development/00036", "ms": 167.9, "tokens": 255, "probs": {"choice": [0.7193, 0.0756, 0.0269, 0.1782], "meets": [0.7463, 0.2537]}}
+{"line": 472, "record": "hard-v1/multi_hop/development/00095", "ms": 198.6, "tokens": 341, "probs": {"paged": [0.025697, 0.255974, 0.334167, 0.384162]}}
+{"line": 473, "record": "hard-v1/tradeoff/development/00033", "ms": 162.3, "tokens": 237, "probs": {"choice": [0.046295, 0.072093, 0.881612], "meets": [0.4417, 0.5583]}}
+{"line": 474, "record": "hard-v1/temporal_numeric/development/00043", "ms": 133.3, "tokens": 149, "probs": {"pay": [0.1315, 0.3046, 0.064, 0.1696, 0.3303]}}
+{"line": 475, "record": "hard-v1/temporal_numeric/development/00013", "ms": 144.7, "tokens": 177, "probs": {"refund": [0.1753, 0.15, 0.1191, 0.3915, 0.1641]}}
+{"line": 476, "record": "hard-v1/tradeoff/development/00094", "ms": 247.6, "tokens": 474, "probs": {"choice": [0.182, 0.0168, 0.1925, 0.0045, 0.5718, 0.0324], "meets": [0.6559, 0.3441]}}
+{"line": 477, "record": "hard-v1/long_policy/development/00091", "ms": 867.2, "tokens": 2048, "probs": {"outcome": [0.079792, 0.027997, 0.885911, 0.0035, 0.0028], "amount": [0.917392, 0.0003, 0.0023, 0.057406, 0.022602]}}
+{"line": 478, "record": "hard-v1/probability/development/00053", "ms": 156.1, "tokens": 218, "probs": {"value": [0.435956, 0.256774, 0.143586, 0.148885, 0.014799], "bucket": [0.1396, 0.2445, 0.2317, 0.2292, 0.1111, 0.0439]}}
+{"line": 479, "record": "hard-v1/ambiguous/development/00022", "ms": 129.1, "tokens": 121, "probs": {"decision": [0.5736, 0.2228, 0.2036]}}
+{"line": 480, "record": "hard-v1/multi_hop/development/00068", "ms": 145.2, "tokens": 173, "probs": {"affected": [0.0812, 0.0228, 0.8484, 0.0476]}}
+{"line": 481, "record": "hard-v1/probability/development/00030", "ms": 127.7, "tokens": 118, "probs": {"choice": [0.20412, 0.567357, 0.228523]}}
+{"line": 482, "record": "hard-v1/probability/development/00067", "ms": 126.2, "tokens": 113, "probs": {"choice": [0.3901, 0.4258, 0.1841]}}
+{"line": 483, "record": "hard-v1/probability/development/00033", "ms": 153.5, "tokens": 219, "probs": {"value": [0.0041, 0.0599, 0.9258, 0.0061, 0.0041], "bucket": [0.1576, 0.3806, 0.2797, 0.1454, 0.027, 0.0097]}}
+{"line": 484, "record": "hard-v1/multi_hop/development/00035", "ms": 160.2, "tokens": 281, "probs": {"paged": [0.416758, 0.234077, 0.059594, 0.289571]}}
+{"line": 485, "record": "hard-v1/multi_hop/development/00064", "ms": 162.3, "tokens": 218, "probs": {"controller": [0.033603, 0.758576, 0.147915, 0.043404, 0.016502], "interest": [0.0086, 0.0039, 0.0047, 0.9828]}}
+{"line": 486, "record": "hard-v1/judge/development/00043", "ms": 142.4, "tokens": 128, "probs": {"correct": [0.7051, 0.2949], "value": [0.0043, 0.994399, 0.0009, 0.0002, 0.0002]}}
+{"line": 487, "record": "hard-v1/tradeoff/development/00007", "ms": 242.7, "tokens": 435, "probs": {"choice": [0.082908, 0.121012, 0.620562, 0.005201, 0.170317], "meets": [0.9393, 0.0607]}}
+{"line": 488, "record": "hard-v1/long_policy/development/00034", "ms": 590.2, "tokens": 1370, "probs": {"outcome": [0.009499, 0.009599, 0.136786, 0.145885, 0.69823], "amount": [0.0317, 0.0235, 0.9433, 0.0003, 0.0012]}}
+{"line": 489, "record": "hard-v1/temporal_numeric/development/00024", "ms": 142.0, "tokens": 165, "probs": {"refund": [0.2448, 0.0432, 0.4457, 0.2226, 0.0437]}}
+{"line": 490, "record": "hard-v1/multi_hop/development/00094", "ms": 199.0, "tokens": 283, "probs": {"paged": [0.372937, 0.242424, 0.319432, 0.065207]}}
+{"line": 491, "record": "hard-v1/multi_hop/development/00058", "ms": 206.8, "tokens": 343, "probs": {"paged": [0.4152, 0.1815, 0.3629, 0.0404]}}
+{"line": 492, "record": "hard-v1/judge/development/00021", "ms": 150.6, "tokens": 129, "probs": {"correct": [0.2849, 0.7151], "value": [0.0194, 0.0679, 0.9061, 0.002, 0.0046]}}
+{"line": 493, "record": "hard-v1/multi_hop/development/00099", "ms": 201.8, "tokens": 309, "probs": {"paged": [0.2618, 0.2143, 0.1385, 0.3854]}}
+{"line": 494, "record": "hard-v1/ambiguous/development/00062", "ms": 135.3, "tokens": 129, "probs": {"decision": [0.023702, 0.09961, 0.876688]}}
+{"line": 495, "record": "hard-v1/probability/development/00016", "ms": 129.8, "tokens": 120, "probs": {"value": [0.0007, 0.981698, 0.0002, 0.001, 0.016402]}}
+{"line": 496, "record": "hard-v1/temporal_numeric/development/00017", "ms": 149.7, "tokens": 203, "probs": {"due": [0.162384, 0.275472, 0.094691, 0.233377, 0.234077]}}
+{"line": 497, "record": "hard-v1/long_policy/development/00043", "ms": 1805.6, "tokens": 4368, "probs": {"outcome": [0.116212, 0.228123, 0.012501, 0.071007, 0.572157], "amount": [0.010399, 0.073193, 0.241176, 0.40236, 0.272873]}}
+{"line": 498, "record": "hard-v1/tradeoff/development/00025", "ms": 209.6, "tokens": 341, "probs": {"choice": [0.088, 0.4615, 0.4505], "meets": [0.7388, 0.2612]}}
+{"line": 499, "record": "hard-v1/long_policy/development/00048", "ms": 1398.3, "tokens": 3395, "probs": {"outcome": [0.0181, 0.06, 0.5536, 0.0278, 0.3405], "amount": [0.3708, 0.264, 0.0085, 0.0661, 0.2906]}}
+{"line": 500, "record": "hard-v1/multi_hop/development/00080", "ms": 163.3, "tokens": 260, "probs": {"paged": [0.3963, 0.0583, 0.2064, 0.339]}}
+{"line": 501, "record": "hard-v1/judge/development/00024", "ms": 146.7, "tokens": 127, "probs": {"correct": [0.9522, 0.0478], "value": [0.0098, 0.0035, 0.9707, 0.0135, 0.0025]}}
+{"line": 502, "record": "hard-v1/multi_hop/development/00007", "ms": 162.7, "tokens": 254, "probs": {"approver": [0.0478, 0.2673, 0.0678, 0.1615, 0.4556]}}
+{"line": 503, "record": "hard-v1/tradeoff/development/00070", "ms": 157.6, "tokens": 221, "probs": {"choice": [0.157616, 0.020902, 0.821482], "meets": [0.9498, 0.0502]}}
+{"line": 504, "record": "hard-v1/multi_hop/development/00012", "ms": 143.6, "tokens": 178, "probs": {"affected": [0.0028, 0.068093, 0.153785, 0.0027, 0.772623]}}
+{"line": 505, "record": "hard-v1/ambiguous/development/00056", "ms": 127.4, "tokens": 122, "probs": {"decision": [0.1103, 0.091, 0.7987]}}
+{"line": 506, "record": "hard-v1/tradeoff/development/00067", "ms": 209.2, "tokens": 349, "probs": {"choice": [0.0137, 0.0221, 0.0558, 0.9084], "meets": [0.4514, 0.5486]}}
+{"line": 507, "record": "hard-v1/temporal_numeric/development/00069", "ms": 151.4, "tokens": 220, "probs": {"due": [0.255526, 0.122812, 0.234523, 0.166417, 0.220722]}}
+{"line": 508, "record": "hard-v1/long_policy/development/00027", "ms": 1740.0, "tokens": 4253, "probs": {"outcome": [0.0173, 0.6944, 0.2488, 0.0145, 0.025], "amount": [0.017198, 0.10149, 0.019398, 0.082292, 0.779622]}}
+{"line": 509, "record": "hard-v1/judge/development/00035", "ms": 125.3, "tokens": 106, "probs": {"correct": [0.8977, 0.1023]}}
+{"line": 510, "record": "hard-v1/ambiguous/development/00017", "ms": 138.9, "tokens": 168, "probs": {"decision": [0.0575, 0.0332, 0.9093]}}
+{"line": 511, "record": "hard-v1/judge/development/00013", "ms": 143.1, "tokens": 127, "probs": {"correct": [0.6748, 0.3252], "value": [0.0889, 0.01, 0.8903, 0.0058, 0.005]}}
+{"line": 512, "record": "hard-v1/ambiguous/development/00042", "ms": 128.7, "tokens": 124, "probs": {"decision": [0.7463, 0.121, 0.1327]}}
+{"line": 513, "record": "hard-v1/judge/development/00032", "ms": 146.1, "tokens": 156, "probs": {"correct": [0.489, 0.511], "value": [0.5449, 0.1184, 0.2041, 0.0174, 0.1152]}}
+{"line": 514, "record": "hard-v1/ambiguous/development/00028", "ms": 128.0, "tokens": 125, "probs": {"decision": [0.145615, 0.678068, 0.176318]}}
+{"line": 515, "record": "hard-v1/tradeoff/development/00034", "ms": 207.4, "tokens": 356, "probs": {"choice": [0.0054, 0.0056, 0.989], "meets": [0.8767, 0.1233]}}
+{"line": 516, "record": "hard-v1/probability/development/00011", "ms": 221.5, "tokens": 380, "probs": {"choice": [0.40404, 0.213521, 0.310631, 0.071807], "value": [0.1995, 0.0494, 0.1113, 0.2709, 0.3689]}}
+{"line": 517, "record": "hard-v1/long_policy/development/00001", "ms": 978.2, "tokens": 2345, "probs": {"outcome": [0.226977, 0.150785, 0.468553, 0.020698, 0.132987], "amount": [0.0864, 0.0179, 0.2975, 0.3648, 0.2334]}}
+{"line": 518, "record": "hard-v1/ambiguous/development/00000", "ms": 144.9, "tokens": 174, "probs": {"decision": [0.017, 0.9375, 0.0455]}}
+{"line": 519, "record": "hard-v1/probability/development/00024", "ms": 153.2, "tokens": 211, "probs": {"value": [0.994699, 0.0003, 0.0015, 0.001, 0.0025], "bucket": [0.0018, 0.0063, 0.0078, 0.0163, 0.2309, 0.7369]}}
+{"line": 520, "record": "hard-v1/multi_hop/development/00033", "ms": 148.2, "tokens": 204, "probs": {"approver": [0.29933, 0.038304, 0.414841, 0.054205, 0.193319]}}
+{"line": 521, "record": "hard-v1/judge/development/00025", "ms": 142.7, "tokens": 128, "probs": {"correct": [0.2372, 0.7628], "value": [0.0012, 0.0008, 0.0092, 0.0026, 0.9862]}}
+{"line": 522, "record": "hard-v1/temporal_numeric/development/00045", "ms": 138.1, "tokens": 167, "probs": {"refund": [0.294271, 0.281272, 0.189781, 0.047895, 0.186781]}}
+{"line": 523, "record": "hard-v1/multi_hop/development/00069", "ms": 144.0, "tokens": 177, "probs": {"affected": [0.0147, 0.0783, 0.0036, 0.0024, 0.901]}}
+{"line": 524, "record": "hard-v1/probability/development/00018", "ms": 155.4, "tokens": 228, "probs": {"value": [0.9176, 0.0096, 0.031, 0.0074, 0.0344], "bucket": [0.0026, 0.0062, 0.0089, 0.0095, 0.0331, 0.9397]}}
+{"line": 525, "record": "hard-v1/long_policy/development/00056", "ms": 1891.4, "tokens": 4643, "probs": {"outcome": [0.005301, 0.006601, 0.673767, 0.106711, 0.207621], "amount": [0.0301, 0.8626, 0.0064, 0.0608, 0.0401]}}
+{"line": 526, "record": "hard-v1/ambiguous/development/00081", "ms": 130.7, "tokens": 131, "probs": {"decision": [0.029203, 0.019502, 0.951295]}}
+{"line": 527, "record": "hard-v1/long_policy/development/00092", "ms": 1132.0, "tokens": 2748, "probs": {"outcome": [0.274173, 0.449955, 0.011099, 0.19548, 0.069293], "amount": [0.6469, 0.0375, 0.2697, 0.0317, 0.0142]}}
+{"line": 528, "record": "hard-v1/probability/development/00041", "ms": 154.9, "tokens": 215, "probs": {"value": [0.0068, 0.0123, 0.0822, 0.0004, 0.8983], "bucket": [0.1222, 0.266, 0.4788, 0.1283, 0.0034, 0.0013]}}
+{"line": 529, "record": "hard-v1/long_policy/development/00022", "ms": 1829.8, "tokens": 4483, "probs": {"outcome": [0.0906, 0.0296, 0.2952, 0.3213, 0.2633], "amount": [0.2037, 0.0235, 0.7644, 0.0058, 0.0026]}}
+{"line": 530, "record": "hard-v1/multi_hop/development/00043", "ms": 156.6, "tokens": 247, "probs": {"approver": [0.060894, 0.165283, 0.334967, 0.374663, 0.064194]}}
+{"line": 531, "record": "hard-v1/ambiguous/development/00007", "ms": 129.6, "tokens": 118, "probs": {"decision": [0.4347, 0.3623, 0.203]}}
+{"line": 532, "record": "hard-v1/judge/development/00045", "ms": 132.1, "tokens": 104, "probs": {"correct": [0.5299, 0.4701], "value": [0.159016, 0.040904, 0.79718, 0.0029]}}
+{"line": 533, "record": "hard-v1/multi_hop/development/00020", "ms": 131.7, "tokens": 146, "probs": {"affected": [0.0257, 0.1822, 0.1426, 0.6495]}}
+{"line": 534, "record": "hard-v1/temporal_numeric/development/00054", "ms": 131.4, "tokens": 145, "probs": {"pay": [0.245825, 0.244424, 0.426943, 0.037104, 0.045705]}}
+{"line": 535, "record": "hard-v1/multi_hop/development/00036", "ms": 172.3, "tokens": 269, "probs": {"controller": [0.157016, 0.013301, 0.769677, 0.027903, 0.032103], "interest": [0.0095, 0.1978, 0.0675, 0.0185, 0.7067]}}
+{"line": 536, "record": "hard-v1/long_policy/development/00073", "ms": 1827.2, "tokens": 4468, "probs": {"outcome": [0.0012, 0.9788, 0.0011, 0.0103, 0.0086], "amount": [0.0011, 0.0023, 0.0041, 0.0377, 0.9548]}}
+{"line": 537, "record": "hard-v1/multi_hop/development/00091", "ms": 171.7, "tokens": 267, "probs": {"controller": [0.067407, 0.290429, 0.089609, 0.017702, 0.534853], "interest": [0.0213, 0.5396, 0.0611, 0.3515, 0.0265]}}
+{"line": 538, "record": "hard-v1/multi_hop/development/00089", "ms": 162.3, "tokens": 262, "probs": {"paged": [0.513051, 0.269127, 0.20132, 0.016502]}}
+{"line": 539, "record": "hard-v1/probability/development/00073", "ms": 154.1, "tokens": 216, "probs": {"value": [0.011, 0.3271, 0.6454, 0.0082, 0.0083], "bucket": [0.058, 0.133, 0.277, 0.4343, 0.0869, 0.0108]}}
+{"line": 540, "record": "hard-v1/multi_hop/development/00001", "ms": 130.1, "tokens": 132, "probs": {"affected": [0.016098, 0.002, 0.017298, 0.964604]}}
+{"line": 541, "record": "hard-v1/multi_hop/development/00093", "ms": 155.4, "tokens": 252, "probs": {"approver": [0.462254, 0.049895, 0.371963, 0.071993, 0.043896]}}
+{"line": 542, "record": "hard-v1/probability/development/00004", "ms": 153.4, "tokens": 229, "probs": {"value": [0.029097, 0.058094, 0.89791, 0.011999, 0.0029], "bucket": [0.018598, 0.036396, 0.032197, 0.093391, 0.274073, 0.545345]}}
+{"line": 543, "record": "hard-v1/judge/development/00083", "ms": 142.0, "tokens": 122, "probs": {"correct": [0.3955, 0.6045], "value": [0.0042, 0.0008, 0.957404, 0.029997, 0.007599]}}
+{"line": 544, "record": "hard-v1/probability/development/00002", "ms": 196.0, "tokens": 370, "probs": {"choice": [0.2432, 0.2307, 0.1906, 0.3355], "value": [0.2741, 0.3984, 0.1236, 0.0089, 0.195]}}
+{"line": 545, "record": "hard-v1/long_policy/development/00080", "ms": 677.3, "tokens": 1614, "probs": {"outcome": [0.1831, 0.1696, 0.0375, 0.1834, 0.4264], "amount": [0.0597, 0.0056, 0.5661, 0.0901, 0.2785]}}
+{"line": 546, "record": "hard-v1/long_policy/development/00083", "ms": 1089.7, "tokens": 2661, "probs": {"outcome": [0.0164, 0.6969, 0.1436, 0.0628, 0.0803], "amount": [0.1218, 0.0056, 0.003, 0.1487, 0.7209]}}
+{"line": 547, "record": "hard-v1/probability/development/00098", "ms": 127.9, "tokens": 119, "probs": {"choice": [0.3046, 0.1772, 0.5182]}}
+{"line": 548, "record": "hard-v1/long_policy/development/00082", "ms": 1371.3, "tokens": 3322, "probs": {"outcome": [0.1487, 0.7041, 0.0292, 0.0497, 0.0683], "amount": [0.1358, 0.006, 0.7026, 0.1444, 0.0112]}}
+{"line": 549, "record": "hard-v1/judge/development/00000", "ms": 135.1, "tokens": 111, "probs": {"correct": [0.4208, 0.5792], "value": [0.9044, 0.0006, 0.0119, 0.0693, 0.0138]}}
+{"line": 550, "record": "hard-v1/ambiguous/development/00041", "ms": 146.0, "tokens": 181, "probs": {"decision": [0.1868, 0.7868, 0.0264]}}
+{"line": 551, "record": "hard-v1/long_policy/development/00067", "ms": 746.5, "tokens": 1783, "probs": {"outcome": [0.0343, 0.1941, 0.031, 0.6572, 0.0834], "amount": [0.2332, 0.6817, 0.0025, 0.0044, 0.0782]}}
+{"line": 552, "record": "hard-v1/probability/development/00038", "ms": 160.3, "tokens": 237, "probs": {"value": [0.0023, 0.0038, 0.022298, 0.026497, 0.945105], "bucket": [0.1767, 0.2234, 0.1923, 0.1528, 0.1455, 0.1093]}}
+{"line": 553, "record": "hard-v1/temporal_numeric/development/00049", "ms": 141.4, "tokens": 128, "probs": {"days": [0.0264, 0.0262, 0.0063, 0.1844, 0.7567], "late": [0.4684, 0.5316]}}
+{"line": 554, "record": "hard-v1/ambiguous/development/00097", "ms": 128.3, "tokens": 139, "probs": {"decision": [0.052105, 0.047805, 0.90009]}}
+{"line": 555, "record": "hard-v1/ambiguous/development/00061", "ms": 129.2, "tokens": 122, "probs": {"decision": [0.8641, 0.0911, 0.0448]}}
+{"line": 556, "record": "hard-v1/multi_hop/development/00021", "ms": 197.2, "tokens": 316, "probs": {"paged": [0.3336, 0.3024, 0.2376, 0.1264]}}
+{"line": 557, "record": "hard-v1/judge/development/00097", "ms": 143.1, "tokens": 126, "probs": {"correct": [0.4863, 0.5137], "value": [0.0066, 0.0019, 0.9037, 0.0771, 0.0107]}}
+{"line": 558, "record": "hard-v1/multi_hop/development/00050", "ms": 139.4, "tokens": 157, "probs": {"affected": [0.9567, 0.0042, 0.0356, 0.0035]}}
+{"line": 559, "record": "hard-v1/probability/development/00052", "ms": 127.9, "tokens": 123, "probs": {"choice": [0.1745, 0.3248, 0.5007]}}
+{"line": 560, "record": "hard-v1/temporal_numeric/development/00067", "ms": 126.6, "tokens": 119, "probs": {"date": [0.262326, 0.170417, 0.224222, 0.343034]}}
+{"line": 561, "record": "hard-v1/tradeoff/development/00040", "ms": 251.0, "tokens": 489, "probs": {"choice": [0.0169, 0.0073, 0.0782, 0.8904, 0.0072], "meets": [0.9456, 0.0544]}}
+{"line": 562, "record": "hard-v1/judge/development/00036", "ms": 142.7, "tokens": 126, "probs": {"correct": [0.5602, 0.4398], "value": [0.178918, 0.017002, 0.030003, 0.032103, 0.741974]}}
+{"line": 563, "record": "hard-v1/temporal_numeric/development/00050", "ms": 137.4, "tokens": 165, "probs": {"refund": [0.1517, 0.2291, 0.2739, 0.1683, 0.177]}}
+{"line": 564, "record": "hard-v1/ambiguous/development/00088", "ms": 128.9, "tokens": 133, "probs": {"decision": [0.89779, 0.056106, 0.046105]}}
+{"line": 565, "record": "hard-v1/multi_hop/development/00073", "ms": 187.8, "tokens": 287, "probs": {"approver": [0.0637, 0.0718, 0.7049, 0.046, 0.1136]}}
+{"line": 566, "record": "hard-v1/probability/development/00027", "ms": 125.4, "tokens": 114, "probs": {"choice": [0.3144, 0.1577, 0.5279]}}
+{"line": 567, "record": "hard-v1/multi_hop/development/00031", "ms": 131.7, "tokens": 146, "probs": {"affected": [0.002, 0.0046, 0.9872, 0.0062]}}
+{"line": 568, "record": "hard-v1/probability/development/00080", "ms": 148.2, "tokens": 185, "probs": {"value": [0.9997, 0.0, 0.0, 0.0002, 0.0001], "bucket": [0.0792, 0.2971, 0.4076, 0.1977, 0.0109, 0.0075]}}
+{"line": 569, "record": "hard-v1/tradeoff/development/00060", "ms": 206.0, "tokens": 353, "probs": {"choice": [0.766323, 0.20138, 0.032297], "meets": [0.8641, 0.1359]}}
+{"line": 570, "record": "hard-v1/tradeoff/development/00069", "ms": 249.4, "tokens": 493, "probs": {"choice": [0.1538, 0.0149, 0.2155, 0.1643, 0.4515], "meets": [0.726, 0.274]}}
+{"line": 571, "record": "hard-v1/temporal_numeric/development/00058", "ms": 130.8, "tokens": 138, "probs": {"date": [0.3141, 0.1059, 0.0648, 0.2347, 0.2805]}}
+{"line": 572, "record": "hard-v1/long_policy/development/00066", "ms": 1444.4, "tokens": 3506, "probs": {"outcome": [0.9659, 0.0162, 0.0018, 0.0046, 0.0115], "amount": [0.0023, 0.0144, 0.0259, 0.0014, 0.956]}}
+{"line": 573, "record": "hard-v1/ambiguous/development/00045", "ms": 130.8, "tokens": 129, "probs": {"decision": [0.489051, 0.025097, 0.485851]}}
+{"line": 574, "record": "hard-v1/judge/development/00071", "ms": 141.9, "tokens": 133, "probs": {"correct": [0.3799, 0.6201], "value": [0.0451, 0.0306, 0.6118, 0.088, 0.2245]}}
+{"line": 575, "record": "hard-v1/temporal_numeric/development/00091", "ms": 132.2, "tokens": 148, "probs": {"pay": [0.259148, 0.346631, 0.171866, 0.126175, 0.096181]}}
+{"line": 576, "record": "hard-v1/tradeoff/development/00005", "ms": 211.1, "tokens": 368, "probs": {"choice": [0.0063, 0.8379, 0.0156, 0.0138, 0.1264], "meets": [0.8673, 0.1327]}}
+{"line": 577, "record": "hard-v1/ambiguous/development/00012", "ms": 127.8, "tokens": 118, "probs": {"decision": [0.087109, 0.147815, 0.765077]}}
+{"line": 578, "record": "hard-v1/tradeoff/development/00087", "ms": 157.7, "tokens": 235, "probs": {"choice": [0.0157, 0.0251, 0.9592], "meets": [0.096, 0.904]}}
+{"line": 579, "record": "hard-v1/tradeoff/development/00041", "ms": 155.6, "tokens": 218, "probs": {"choice": [0.0057, 0.9769, 0.0174], "meets": [0.0956, 0.9044]}}
+{"line": 580, "record": "hard-v1/temporal_numeric/development/00029", "ms": 140.4, "tokens": 127, "probs": {"days": [0.044296, 0.019798, 0.915808, 0.006799, 0.013299], "late": [0.3854, 0.6146]}}
+{"line": 581, "record": "hard-v1/ambiguous/development/00029", "ms": 126.1, "tokens": 111, "probs": {"decision": [0.954105, 0.017098, 0.028797]}}
+{"line": 582, "record": "hard-v1/ambiguous/development/00099", "ms": 139.2, "tokens": 176, "probs": {"decision": [0.0179, 0.9425, 0.0375, 0.0021]}}
+{"line": 583, "record": "hard-v1/ambiguous/development/00013", "ms": 126.7, "tokens": 120, "probs": {"decision": [0.9334, 0.0168, 0.0498]}}
+{"line": 584, "record": "hard-v1/ambiguous/development/00016", "ms": 143.4, "tokens": 176, "probs": {"decision": [0.9242, 0.0149, 0.0609]}}
+{"line": 585, "record": "hard-v1/long_policy/development/00072", "ms": 1896.0, "tokens": 4627, "probs": {"outcome": [0.735, 0.0886, 0.0266, 0.1294, 0.0204], "amount": [0.0014, 0.007601, 0.925193, 0.058506, 0.007301]}}
+{"line": 586, "record": "hard-v1/temporal_numeric/development/00034", "ms": 151.6, "tokens": 218, "probs": {"due": [0.094309, 0.20152, 0.268527, 0.189619, 0.246025]}}
+{"line": 587, "record": "hard-v1/long_policy/development/00084", "ms": 777.9, "tokens": 1864, "probs": {"outcome": [0.063594, 0.044296, 0.045695, 0.831717, 0.014699], "amount": [0.0023, 0.1029, 0.0169, 0.0017, 0.8762]}}
+{"line": 588, "record": "hard-v1/long_policy/development/00052", "ms": 1927.5, "tokens": 4718, "probs": {"outcome": [0.031897, 0.0048, 0.635136, 0.114589, 0.213579], "amount": [0.0134, 0.752, 0.0027, 0.1047, 0.1272]}}
+{"line": 589, "record": "hard-v1/tradeoff/development/00096", "ms": 225.6, "tokens": 410, "probs": {"choice": [0.1285, 0.2394, 0.1309, 0.5012], "meets": [0.7384, 0.2616]}}
+{"line": 590, "record": "hard-v1/probability/development/00006", "ms": 128.4, "tokens": 121, "probs": {"choice": [0.1495, 0.5034, 0.3471]}}
+{"line": 591, "record": "hard-v1/ambiguous/development/00071", "ms": 127.9, "tokens": 113, "probs": {"decision": [0.0509, 0.8961, 0.053]}}
+{"line": 592, "record": "hard-v1/multi_hop/development/00084", "ms": 164.6, "tokens": 282, "probs": {"paged": [0.1828, 0.1967, 0.3316, 0.2889]}}
+{"line": 593, "record": "hard-v1/multi_hop/development/00070", "ms": 173.2, "tokens": 257, "probs": {"controller": [0.6539, 0.0464, 0.2341, 0.0335, 0.0321], "interest": [0.0293, 0.045, 0.2121, 0.042, 0.6716]}}
+{"line": 594, "record": "hard-v1/ambiguous/development/00077", "ms": 138.0, "tokens": 165, "probs": {"decision": [0.0167, 0.0929, 0.3661, 0.5243]}}
+{"line": 595, "record": "hard-v1/long_policy/development/00063", "ms": 1367.4, "tokens": 3315, "probs": {"outcome": [0.0104, 0.4112, 0.4739, 0.0209, 0.0836], "amount": [0.0583, 0.0622, 0.0992, 0.0019, 0.7784]}}
+{"line": 596, "record": "hard-v1/tradeoff/development/00073", "ms": 269.2, "tokens": 527, "probs": {"choice": [0.5668, 0.1413, 0.0377, 0.2148, 0.0205, 0.0189], "meets": [0.0614, 0.9386]}}
+{"line": 597, "record": "hard-v1/ambiguous/development/00040", "ms": 144.6, "tokens": 176, "probs": {"decision": [0.0205, 0.0399, 0.9396]}}
+{"line": 598, "record": "hard-v1/ambiguous/development/00068", "ms": 129.5, "tokens": 124, "probs": {"decision": [0.9481, 0.0468, 0.0051]}}
+{"line": 599, "record": "hard-v1/ambiguous/development/00057", "ms": 128.8, "tokens": 123, "probs": {"decision": [0.9304, 0.0161, 0.0535]}}
+{"line": 600, "record": "hard-v1/ambiguous/development/00005", "ms": 128.6, "tokens": 124, "probs": {"decision": [0.1815, 0.6539, 0.1646]}}
+{"line": 601, "record": "hard-v1/ambiguous/development/00073", "ms": 135.8, "tokens": 148, "probs": {"decision": [0.147885, 0.134287, 0.717828]}}
+{"line": 602, "record": "hard-v1/temporal_numeric/development/00051", "ms": 133.0, "tokens": 153, "probs": {"pay": [0.1687, 0.1714, 0.3351, 0.1172, 0.2076]}}
+{"line": 603, "record": "hard-v1/judge/development/00074", "ms": 142.0, "tokens": 126, "probs": {"correct": [0.7105, 0.2895], "value": [0.8904, 0.0997, 0.0006, 0.0061, 0.0032]}}
+{"line": 604, "record": "hard-v1/judge/development/00060", "ms": 142.0, "tokens": 126, "probs": {"correct": [0.2858, 0.7142], "value": [0.0114, 0.0249, 0.0071, 0.0541, 0.9025]}}
+{"line": 605, "record": "hard-v1/multi_hop/development/00088", "ms": 140.7, "tokens": 168, "probs": {"affected": [0.0107, 0.9699, 0.0138, 0.0056]}}
+{"line": 606, "record": "hard-v1/judge/development/00090", "ms": 120.7, "tokens": 89, "probs": {"correct": [0.0222, 0.9778]}}
+{"line": 607, "record": "hard-v1/tradeoff/development/00095", "ms": 223.7, "tokens": 412, "probs": {"choice": [0.007399, 0.187681, 0.79912, 0.005799], "meets": [0.0744, 0.9256]}}
+{"line": 608, "record": "hard-v1/multi_hop/development/00027", "ms": 149.1, "tokens": 201, "probs": {"approver": [0.1074, 0.0743, 0.651, 0.0646, 0.1027]}}
+{"line": 609, "record": "hard-v1/long_policy/development/00005", "ms": 1452.9, "tokens": 3501, "probs": {"outcome": [0.318768, 0.0031, 0.080292, 0.049495, 0.548345], "amount": [0.0015, 0.011899, 0.0031, 0.949005, 0.034497]}}
+{"line": 610, "record": "hard-v1/probability/development/00005", "ms": 129.3, "tokens": 117, "probs": {"value": [0.915308, 0.007899, 0.020598, 0.028897, 0.027297]}}
+{"line": 611, "record": "hard-v1/ambiguous/development/00033", "ms": 129.1, "tokens": 131, "probs": {"decision": [0.0703, 0.1031, 0.8266]}}
+{"line": 612, "record": "hard-v1/tradeoff/development/00066", "ms": 202.4, "tokens": 321, "probs": {"choice": [0.1442, 0.6431, 0.092, 0.1038, 0.0169], "meets": [0.8437, 0.1563]}}
+{"line": 613, "record": "hard-v1/tradeoff/development/00016", "ms": 251.0, "tokens": 487, "probs": {"choice": [0.0007, 0.0023, 0.990301, 0.0033, 0.0034], "meets": [0.025, 0.975]}}
+{"line": 614, "record": "hard-v1/ambiguous/development/00001", "ms": 138.2, "tokens": 167, "probs": {"decision": [0.072, 0.0172, 0.9108]}}
+{"line": 615, "record": "hard-v1/multi_hop/development/00039", "ms": 163.2, "tokens": 233, "probs": {"controller": [0.293871, 0.09619, 0.021498, 0.544446, 0.043996], "interest": [0.905791, 0.005001, 0.0028, 0.005401, 0.081008]}}
+{"line": 616, "record": "hard-v1/long_policy/development/00017", "ms": 1883.4, "tokens": 4590, "probs": {"outcome": [0.0783, 0.024, 0.849, 0.0178, 0.0309], "amount": [0.0023, 0.0724, 0.9048, 0.0085, 0.012]}}
+{"line": 617, "record": "hard-v1/temporal_numeric/development/00083", "ms": 133.6, "tokens": 153, "probs": {"pay": [0.143, 0.1452, 0.1503, 0.2965, 0.265]}}
+{"line": 618, "record": "hard-v1/ambiguous/development/00052", "ms": 144.9, "tokens": 178, "probs": {"decision": [0.2764, 0.6727, 0.0509]}}
+{"line": 619, "record": "hard-v1/long_policy/development/00025", "ms": 873.7, "tokens": 2095, "probs": {"outcome": [0.025197, 0.068393, 0.216078, 0.569243, 0.121088], "amount": [0.0268, 0.493, 0.0664, 0.0034, 0.4104]}}
+{"line": 620, "record": "hard-v1/temporal_numeric/development/00094", "ms": 141.1, "tokens": 165, "probs": {"refund": [0.1598, 0.0208, 0.0236, 0.1122, 0.6836]}}
+{"line": 621, "record": "hard-v1/long_policy/development/00094", "ms": 1878.9, "tokens": 4606, "probs": {"outcome": [0.041796, 0.239876, 0.010399, 0.023498, 0.684432], "amount": [0.141786, 0.084992, 0.747325, 0.024798, 0.0011]}}
+{"line": 622, "record": "hard-v1/probability/development/00022", "ms": 128.5, "tokens": 120, "probs": {"choice": [0.231277, 0.562044, 0.206679]}}
+{"line": 623, "record": "hard-v1/multi_hop/development/00079", "ms": 164.2, "tokens": 282, "probs": {"approver": [0.010101, 0.031703, 0.021502, 0.035304, 0.90139]}}
+{"line": 624, "record": "hard-v1/temporal_numeric/development/00044", "ms": 140.5, "tokens": 126, "probs": {"days": [0.004, 0.0025, 0.9742, 0.0175, 0.0018], "late": [0.4543, 0.5457]}}
+{"line": 625, "record": "hard-v1/multi_hop/development/00057", "ms": 142.3, "tokens": 170, "probs": {"affected": [0.0122, 0.8247, 0.009, 0.0046, 0.1495]}}
+{"line": 626, "record": "hard-v1/multi_hop/development/00067", "ms": 170.5, "tokens": 268, "probs": {"controller": [0.016, 0.7198, 0.0199, 0.0427, 0.2016], "interest": [0.0194, 0.056, 0.0434, 0.5563, 0.3249]}}
+{"line": 627, "record": "hard-v1/ambiguous/development/00060", "ms": 128.9, "tokens": 127, "probs": {"decision": [0.0297, 0.9228, 0.0475]}}
+{"line": 628, "record": "hard-v1/multi_hop/development/00053", "ms": 172.2, "tokens": 271, "probs": {"controller": [0.127987, 0.012199, 0.829517, 0.018298, 0.011999], "interest": [0.461954, 0.471153, 0.018798, 0.022698, 0.025397]}}
+{"line": 629, "record": "hard-v1/tradeoff/development/00086", "ms": 258.6, "tokens": 505, "probs": {"choice": [0.192881, 0.022098, 0.059294, 0.705629, 0.020098], "meets": [0.6817, 0.3183]}}
+{"line": 630, "record": "hard-v1/temporal_numeric/development/00055", "ms": 139.7, "tokens": 127, "probs": {"days": [0.1387, 0.0121, 0.7376, 0.0878, 0.0238], "late": [0.4557, 0.5443]}}
+{"line": 631, "record": "hard-v1/judge/development/00029", "ms": 140.6, "tokens": 130, "probs": {"correct": [0.3112, 0.6888], "value": [0.1389, 0.0732, 0.0088, 0.771, 0.0081]}}
+{"line": 632, "record": "hard-v1/multi_hop/development/00044", "ms": 137.5, "tokens": 157, "probs": {"affected": [0.0103, 0.0032, 0.9807, 0.0058]}}
+{"line": 633, "record": "hard-v1/temporal_numeric/development/00042", "ms": 141.9, "tokens": 187, "probs": {"due": [0.2466, 0.3386, 0.2113, 0.0777, 0.1258]}}
+{"line": 634, "record": "hard-v1/probability/development/00085", "ms": 162.2, "tokens": 256, "probs": {"value": [0.068507, 0.007001, 0.265327, 0.055906, 0.60326], "bucket": [0.0199, 0.0512, 0.0648, 0.1303, 0.2869, 0.4469]}}
+{"line": 635, "record": "hard-v1/temporal_numeric/development/00081", "ms": 129.1, "tokens": 131, "probs": {"date": [0.207, 0.1199, 0.2155, 0.1779, 0.2797]}}
+{"line": 636, "record": "hard-v1/tradeoff/development/00024", "ms": 206.5, "tokens": 351, "probs": {"choice": [0.9136, 0.0789, 0.0075], "meets": [0.1049, 0.8951]}}
+{"line": 637, "record": "hard-v1/tradeoff/development/00048", "ms": 166.9, "tokens": 278, "probs": {"choice": [0.926507, 0.021498, 0.020698, 0.031297], "meets": [0.0471, 0.9529]}}
+{"line": 638, "record": "hard-v1/multi_hop/development/00023", "ms": 161.7, "tokens": 235, "probs": {"controller": [0.2726, 0.0081, 0.646, 0.0225, 0.0508], "interest": [0.011199, 0.018898, 0.0035, 0.956904, 0.009499]}}
+{"line": 639, "record": "hard-v1/multi_hop/development/00030", "ms": 172.6, "tokens": 266, "probs": {"controller": [0.0101, 0.827, 0.1331, 0.0111, 0.0187], "interest": [0.0613, 0.1275, 0.043, 0.7255, 0.0427]}}
+{"line": 640, "record": "hard-v1/long_policy/development/00008", "ms": 1586.7, "tokens": 3868, "probs": {"outcome": [0.0075, 0.0519, 0.9158, 0.0043, 0.0205], "amount": [0.0017, 0.9839, 0.0008, 0.0008, 0.0128]}}
+{"line": 641, "record": "hard-v1/ambiguous/development/00008", "ms": 139.7, "tokens": 180, "probs": {"decision": [0.022098, 0.832217, 0.053795, 0.091891]}}
+{"line": 642, "record": "hard-v1/temporal_numeric/development/00070", "ms": 132.6, "tokens": 153, "probs": {"pay": [0.1996, 0.22, 0.2516, 0.3013, 0.0275]}}
+{"line": 643, "record": "hard-v1/ambiguous/development/00080", "ms": 129.3, "tokens": 129, "probs": {"decision": [0.846285, 0.037304, 0.116412]}}
+{"line": 644, "record": "hard-v1/tradeoff/development/00082", "ms": 196.0, "tokens": 307, "probs": {"choice": [0.074207, 0.608561, 0.058806, 0.0043, 0.254125], "meets": [0.9634, 0.0366]}}
+{"line": 645, "record": "hard-v1/judge/development/00020", "ms": 133.1, "tokens": 108, "probs": {"correct": [0.8962, 0.1038], "value": [0.010599, 0.0009, 0.0015, 0.006499, 0.980502]}}
+{"line": 646, "record": "hard-v1/temporal_numeric/development/00095", "ms": 134.8, "tokens": 120, "probs": {"days": [0.0618, 0.0241, 0.221, 0.2616, 0.4315], "late": [0.4793, 0.5207]}}
+{"line": 647, "record": "hard-v1/temporal_numeric/development/00016", "ms": 131.0, "tokens": 138, "probs": {"date": [0.244976, 0.064594, 0.239676, 0.089491, 0.361264]}}
+{"line": 648, "record": "hard-v1/tradeoff/development/00090", "ms": 169.0, "tokens": 268, "probs": {"choice": [0.0051, 0.8775, 0.1174], "meets": [0.2362, 0.7638]}}
+{"line": 649, "record": "hard-v1/long_policy/development/00064", "ms": 1820.8, "tokens": 4475, "probs": {"outcome": [0.012499, 0.642036, 0.161384, 0.126387, 0.057694], "amount": [0.942, 0.0026, 0.0008, 0.0243, 0.0303]}}
+{"line": 650, "record": "hard-v1/multi_hop/development/00092", "ms": 133.4, "tokens": 149, "probs": {"affected": [0.0983, 0.1071, 0.0158, 0.7788]}}
+{"line": 651, "record": "hard-v1/judge/development/00034", "ms": 141.0, "tokens": 129, "probs": {"correct": [0.3267, 0.6733], "value": [0.664034, 0.0019, 0.083892, 0.10419, 0.145985]}}
+{"line": 652, "record": "hard-v1/long_policy/development/00074", "ms": 1866.7, "tokens": 4536, "probs": {"outcome": [0.022, 0.2485, 0.3378, 0.3804, 0.0113], "amount": [0.6711, 0.1466, 0.0163, 0.0647, 0.1013]}}
+{"line": 653, "record": "hard-v1/long_policy/development/00071", "ms": 1626.7, "tokens": 3972, "probs": {"outcome": [0.0029, 0.0104, 0.0016, 0.9637, 0.0214], "amount": [0.0007, 0.005401, 0.012001, 0.011101, 0.970797]}}
+{"line": 654, "record": "hard-v1/tradeoff/development/00010", "ms": 234.2, "tokens": 426, "probs": {"choice": [0.338666, 0.077392, 0.034097, 0.176682, 0.373163], "meets": [0.3047, 0.6953]}}
+{"line": 655, "record": "hard-v1/temporal_numeric/development/00073", "ms": 136.9, "tokens": 156, "probs": {"local": [0.855014, 0.005499, 0.056794, 0.073993, 0.008699]}}
+{"line": 656, "record": "hard-v1/long_policy/development/00026", "ms": 1080.8, "tokens": 2629, "probs": {"outcome": [0.7203, 0.1091, 0.0113, 0.0692, 0.0901], "amount": [0.0032, 0.924992, 0.006801, 0.0022, 0.062806]}}
+{"line": 657, "record": "hard-v1/long_policy/development/00077", "ms": 1168.0, "tokens": 2846, "probs": {"outcome": [0.0431, 0.0048, 0.9047, 0.0152, 0.0322], "amount": [0.019002, 0.011001, 0.10111, 0.29663, 0.572257]}}
+{"line": 658, "record": "hard-v1/tradeoff/development/00014", "ms": 228.8, "tokens": 419, "probs": {"choice": [0.6872, 0.2982, 0.0051, 0.0095], "meets": [0.0808, 0.9192]}}
+{"line": 659, "record": "hard-v1/temporal_numeric/development/00025", "ms": 149.3, "tokens": 203, "probs": {"due": [0.2353, 0.2227, 0.2088, 0.1401, 0.1931]}}
+{"line": 660, "record": "hard-v1/ambiguous/development/00011", "ms": 128.4, "tokens": 122, "probs": {"decision": [0.7594, 0.1622, 0.0784]}}
+{"line": 661, "record": "hard-v1/ambiguous/development/00003", "ms": 134.7, "tokens": 148, "probs": {"decision": [0.136686, 0.037896, 0.825417]}}
+{"line": 662, "record": "hard-v1/long_policy/development/00075", "ms": 580.0, "tokens": 1329, "probs": {"outcome": [0.3236, 0.5534, 0.0037, 0.0128, 0.1065], "amount": [0.557856, 0.083708, 0.340734, 0.015002, 0.0027]}}
+{"line": 663, "record": "hard-v1/temporal_numeric/development/00003", "ms": 132.0, "tokens": 149, "probs": {"local": [0.0083, 0.0123, 0.0098, 0.007, 0.9626]}}
+{"line": 664, "record": "hard-v1/ambiguous/development/00032", "ms": 135.4, "tokens": 149, "probs": {"decision": [0.0962, 0.8392, 0.0646]}}
+{"line": 665, "record": "hard-v1/probability/development/00097", "ms": 153.4, "tokens": 217, "probs": {"value": [0.009601, 0.006801, 0.409241, 0.005501, 0.568857], "bucket": [0.0778, 0.1939, 0.2624, 0.4094, 0.0479, 0.0086]}}
+{"line": 666, "record": "hard-v1/ambiguous/development/00065", "ms": 137.6, "tokens": 168, "probs": {"decision": [0.0761, 0.6848, 0.2318, 0.0073]}}
+{"line": 667, "record": "hard-v1/tradeoff/development/00088", "ms": 210.3, "tokens": 357, "probs": {"choice": [0.270973, 0.025897, 0.009599, 0.212179, 0.450855, 0.030497], "meets": [0.3482, 0.6518]}}
+{"line": 668, "record": "hard-v1/long_policy/development/00010", "ms": 977.3, "tokens": 2345, "probs": {"outcome": [0.160016, 0.025403, 0.618662, 0.015402, 0.180518], "amount": [0.566957, 0.133513, 0.018602, 0.248925, 0.032003]}}
+{"line": 669, "record": "hard-v1/ambiguous/development/00083", "ms": 147.4, "tokens": 185, "probs": {"decision": [0.925307, 0.063094, 0.011599]}}
+{"line": 670, "record": "hard-v1/long_policy/development/00051", "ms": 587.3, "tokens": 1355, "probs": {"outcome": [0.2054, 0.5602, 0.173, 0.0203, 0.0411], "amount": [0.013101, 0.184018, 0.789879, 0.009601, 0.0034]}}
+{"line": 671, "record": "hard-v1/multi_hop/development/00065", "ms": 165.5, "tokens": 282, "probs": {"approver": [0.042304, 0.005101, 0.818282, 0.10411, 0.030203]}}
+{"line": 672, "record": "hard-v1/probability/development/00088", "ms": 128.5, "tokens": 120, "probs": {"value": [0.0007, 0.0009, 0.0048, 0.990301, 0.0033]}}
+{"line": 673, "record": "hard-v1/tradeoff/development/00099", "ms": 203.7, "tokens": 327, "probs": {"choice": [0.1647, 0.148, 0.0057, 0.0116, 0.5606, 0.1094], "meets": [0.9722, 0.0278]}}
+{"line": 674, "record": "hard-v1/long_policy/development/00037", "ms": 765.9, "tokens": 1841, "probs": {"outcome": [0.019, 0.1136, 0.0101, 0.4766, 0.3807], "amount": [0.2941, 0.1075, 0.5062, 0.0707, 0.0215]}}
+{"line": 675, "record": "hard-v1/judge/development/00017", "ms": 142.3, "tokens": 132, "probs": {"correct": [0.5944, 0.4056], "value": [0.009099, 0.966303, 0.0022, 0.0031, 0.019298]}}
+{"line": 676, "record": "hard-v1/multi_hop/development/00008", "ms": 199.7, "tokens": 341, "probs": {"paged": [0.6313, 0.0375, 0.1182, 0.213]}}
+{"line": 677, "record": "hard-v1/probability/development/00064", "ms": 152.1, "tokens": 203, "probs": {"value": [0.0015, 0.0003, 0.9972, 0.0002, 0.0008], "bucket": [0.009799, 0.033997, 0.122788, 0.221878, 0.532147, 0.079392]}}
+{"line": 678, "record": "hard-v1/tradeoff/development/00092", "ms": 156.6, "tokens": 223, "probs": {"choice": [0.0059, 0.0075, 0.9866], "meets": [0.0362, 0.9638]}}
+{"line": 679, "record": "hard-v1/tradeoff/development/00017", "ms": 170.9, "tokens": 305, "probs": {"choice": [0.019202, 0.038304, 0.177018, 0.049305, 0.716172], "meets": [0.9133, 0.0867]}}
+{"line": 680, "record": "hard-v1/multi_hop/development/00000", "ms": 192.0, "tokens": 305, "probs": {"paged": [0.331567, 0.346365, 0.071793, 0.250275]}}
+{"line": 681, "record": "hard-v1/temporal_numeric/development/00071", "ms": 132.4, "tokens": 150, "probs": {"local": [0.205221, 0.10131, 0.630563, 0.029903, 0.033003]}}
+{"line": 682, "record": "hard-v1/long_policy/development/00038", "ms": 1605.9, "tokens": 3940, "probs": {"outcome": [0.1247, 0.0913, 0.0109, 0.0124, 0.7607], "amount": [0.9112, 0.0706, 0.0075, 0.0027, 0.008]}}
+{"line": 683, "record": "hard-v1/tradeoff/development/00058", "ms": 205.6, "tokens": 341, "probs": {"choice": [0.009, 0.0227, 0.0074, 0.9609], "meets": [0.9582, 0.0418]}}
+{"line": 684, "record": "hard-v1/multi_hop/development/00054", "ms": 198.9, "tokens": 337, "probs": {"paged": [0.1714, 0.4759, 0.2085, 0.1442]}}
+{"line": 685, "record": "hard-v1/judge/development/00086", "ms": 139.4, "tokens": 133, "probs": {"correct": [0.404, 0.596], "value": [0.007001, 0.09651, 0.008801, 0.886489, 0.0012]}}
+{"line": 686, "record": "hard-v1/long_policy/development/00095", "ms": 1783.4, "tokens": 4302, "probs": {"outcome": [0.635436, 0.013399, 0.015598, 0.076092, 0.259474], "amount": [0.0014, 0.0008, 0.064494, 0.913909, 0.019398]}}
+{"line": 687, "record": "hard-v1/judge/development/00023", "ms": 144.2, "tokens": 125, "probs": {"correct": [0.3113, 0.6887], "value": [0.0009, 0.0591, 0.0033, 0.9331, 0.0036]}}
+{"line": 688, "record": "hard-v1/ambiguous/development/00089", "ms": 130.0, "tokens": 127, "probs": {"decision": [0.0351, 0.9421, 0.0228]}}
+{"line": 689, "record": "hard-v1/long_policy/development/00065", "ms": 958.5, "tokens": 2293, "probs": {"outcome": [0.068193, 0.89521, 0.010599, 0.017898, 0.008099], "amount": [0.1446, 0.0183, 0.571, 0.1605, 0.1056]}}
+{"line": 690, "record": "hard-v1/tradeoff/development/00098", "ms": 212.2, "tokens": 345, "probs": {"choice": [0.9278, 0.0383, 0.0101, 0.0238], "meets": [0.8374, 0.1626]}}
+{"line": 691, "record": "hard-v1/probability/development/00048", "ms": 188.5, "tokens": 325, "probs": {"choice": [0.008, 0.285, 0.707], "value": [0.2506, 0.0362, 0.0662, 0.4224, 0.2246]}}
+{"line": 692, "record": "hard-v1/temporal_numeric/development/00084", "ms": 140.9, "tokens": 126, "probs": {"days": [0.039304, 0.005601, 0.005101, 0.355836, 0.594159], "late": [0.4602, 0.5398]}}
+{"line": 693, "record": "hard-v1/tradeoff/development/00063", "ms": 201.2, "tokens": 318, "probs": {"choice": [0.014201, 0.065507, 0.749575, 0.070207, 0.10051], "meets": [0.2089, 0.7911]}}
+{"line": 694, "record": "hard-v1/tradeoff/development/00097", "ms": 174.7, "tokens": 301, "probs": {"choice": [0.0057, 0.6368, 0.0243, 0.0459, 0.2873], "meets": [0.9715, 0.0285]}}
+{"line": 695, "record": "hard-v1/multi_hop/development/00002", "ms": 164.8, "tokens": 281, "probs": {"approver": [0.1172, 0.0175, 0.1677, 0.0364, 0.6612]}}
+{"line": 696, "record": "hard-v1/long_policy/development/00078", "ms": 587.1, "tokens": 1369, "probs": {"outcome": [0.0511, 0.5736, 0.004, 0.1078, 0.2635], "amount": [0.3915, 0.3438, 0.247, 0.0014, 0.0163]}}
+{"line": 697, "record": "hard-v1/probability/development/00025", "ms": 128.1, "tokens": 117, "probs": {"choice": [0.3345, 0.1667, 0.4988]}}
+{"line": 698, "record": "hard-v1/long_policy/development/00070", "ms": 1729.7, "tokens": 4264, "probs": {"outcome": [0.147715, 0.749075, 0.050005, 0.0037, 0.049505], "amount": [0.029003, 0.010501, 0.950395, 0.009901, 0.0002]}}
+{"line": 699, "record": "hard-v1/long_policy/development/00079", "ms": 1508.9, "tokens": 3702, "probs": {"outcome": [0.7841, 0.0123, 0.0456, 0.1279, 0.0301], "amount": [0.033403, 0.0031, 0.080608, 0.882488, 0.0004]}}
+{"line": 700, "record": "hard-v1/tradeoff/development/00037", "ms": 202.6, "tokens": 322, "probs": {"choice": [0.0006, 0.0034, 0.0026, 0.9898, 0.0036], "meets": [0.0112, 0.9888]}}

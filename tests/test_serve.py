@@ -6,7 +6,7 @@ import urllib.error
 import urllib.request
 from collections.abc import Iterator
 from http.server import ThreadingHTTPServer
-from typing import Any
+from typing import Any, ClassVar
 
 import pytest
 import torch
@@ -50,6 +50,7 @@ class Fake:
     """A stand-in for runtime.Model: favours the second option of every question."""
 
     temperature = 1.0
+    meta: ClassVar[dict[str, Any]] = {"base": "qwen3.5-4b", "lora": 16, "kind": "set"}
     backbone: Any = type("B", (), {"device": type("D", (), {"backend": "cpu", "dtype": "float32"})()})()
 
     def read(self, record: Record) -> tuple[list[torch.Tensor], int]:
@@ -89,7 +90,9 @@ def test_http_endpoint(server: str) -> None:
     assert status == 200 and body["answers"]["department"]["choice"] == "shipping"
     assert _call(f"{server}/v1/systemone", KEV_EXAMPLE, key="wrong")[0] == 401
     assert _call(f"{server}/v1/systemone", {"state": "s", "questions": {}})[0] == 400
-    assert _call(f"{server}/v1/models")[1]["data"][0]["id"] == "den-test"
+    models = _call(f"{server}/v1/models")[1]
+    assert models["data"][0]["id"] == "den-test" and models["models"][0]["name"] == "den-test"
+    assert models["models"][0]["description"].startswith("qwen3.5-4b + LoRA r16 + set head")
     assert _call(f"{server}/health", key=None) == (200, {"status": "ok"})
     assert _call(f"{server}/v1/other", {})[0] == 404
 

@@ -29,7 +29,8 @@ module-root = ""  # flat layout: the package lives at the repo root, like kev/
 [tool.mypy]
 strict = true
 python_version = "3.12"
-files = ["den", "scripts", "tests"]
+files = ["den", "scripts", "tests", "examples"]
+mypy_path = "examples"  # the example scripts, as tests/test_examples.py imports them
 
 [[tool.mypy.overrides]]
 # mlx/mlx-lm install only on Apple Silicon (see dependencies), unsloth only on Linux + CUDA: checked without them
@@ -53,7 +54,7 @@ markers = [
     "cuda: needs a CUDA GPU (run on the GPU box with `make test-cuda`)",
 ]
 addopts = "-m 'not model and not cuda'"
-pythonpath = [".", "tests"]  # ".": the scripts package
+pythonpath = [".", "tests", "examples"]  # ".": the scripts package; "examples": the example scripts
 
 [tool.uv]
 default-groups = ["dev", "breadth"]  # breadth: the libraries scripts/breadth.py needs, at the versions Kev built breadth-v1 with
@@ -65,12 +66,14 @@ breadth = [
     "scipy==1.18.1",
 ]
 dev = [
+    "matplotlib>=3.10",
     "mypy>=2.4.0",
     "peft>=0.21.2",
     "pyarrow-stubs>=20.0.0.20260819",
     "pytest>=9.1.1",
     "ruff>=0.16.10",
     "torch>=2.8",
+    "typesafe-sdk>=0.7.4",
 ]
 
 [tool.ruff.lint.per-file-ignores]

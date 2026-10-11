@@ -1,0 +1,16 @@
+{
+  "model": "jaredpalmer/kev-4b@139fdd94f1b6a6ad80cc15e08fcb99cac885a101",
+  "note": "Kev 1.0's own test results, read once by its author with Kev's fp32 evaluation path. Copied from the model card; not re-measured here (test partitions are read once per release candidate).",
+  "sources": [
+    "https://github.com/jaredpalmer/kev/blob/fe64b1274ea7f80d4095866df90666abb03e9cf6/docs/model-cards/kev-4b.md (Evaluation tables)",
+    "https://huggingface.co/jaredpalmer/kev-4b/blob/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md (model-index and results table)"
+  ],
+  "test": {
+    "test/transfer.jsonl": {"slice": "clean", "questions": 656, "accuracy": 0.838, "brier": 0.224, "ece": 0.017, "label": "transfer-v4 locked test"},
+    "test/core.jsonl": {"slice": "clean", "questions": 1200, "accuracy": 0.865, "label": "decision-v7 locked test"},
+    "test/skills.jsonl": {"slice": "all", "questions": 1088, "accuracy": 0.803, "brier": 0.278, "label": "hard-v1 test"},
+    "test/devtools.jsonl": {"slice": "all", "questions": 1071, "accuracy": 0.756, "brier": 0.342, "label": "devtools-v1 test (Kev drops 2 questions of a reused CodeReviewer id)"},
+    "test/documents.jsonl": {"slice": "all", "questions": 936, "accuracy": 0.903, "label": "documents-v1 test"},
+    "test/breadth.jsonl": {"slice": "all", "questions": 3089, "accuracy": 0.690, "label": "breadth-v1 test, all 14 datasets"}
+  }
+}

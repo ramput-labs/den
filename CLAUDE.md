@@ -137,6 +137,15 @@ import `scripts` from `den`. ruff and mypy cover it like `den/`.
   files are missing or wrong, and checks the result against the uploader's hashes. No target fetches single sets:
   `uv run den data <set>` is for work on the data pipeline itself.
 - `check_env.py`, `estimate_time.py`: the runbook's phase 1 and phase 3 checks (docs/h100-runbook.md).
+- `run_benchmarks.py`, `plot_benchmarks.py` (`make bench-run`, `make bench-plot`): den vs Kev-4B, each through its own
+  server (`den serve`; Kev's `kev.serve`), on the dev panels; `den.metrics` scores both, paired by question. Dev only:
+  test numbers come from each model's release record (`releases/`, `benchmarks/kev-4b-card.json`). Writes
+  `benchmarks/` (results.json, predictions/, plots, a generated README.md; never edit it by hand).
+
+`examples/` (top level) holds runnable scripts that call `den serve` through TypeSafe's published `typesafe-sdk` (dev
+group). They never import `den`. pytest and mypy find them through `examples` on their paths, and
+`tests/test_examples.py` runs the SDK and every script against `den.serve.handler`. A change to the response or
+`/v1/models` shape must keep that SDK working.
 
 ## Hard rules (do not break)
 
