@@ -1,6 +1,7 @@
-# Fine-tuning den on a cloud H100: runbook for the cloud agent
+# Fine-tuning den on a cloud GPU: runbook for the cloud agent
 
-You are the cloud agent on a rented H100. The GPU is billed by the hour, so the goal is a clean run with no wasted
+You are the cloud agent on a rented NVIDIA GPU (validated on an H100 80 GB; other cards: [Hardware notes](#hardware-notes)).
+People doing this by hand follow [`fine-tuning.md`](fine-tuning.md), the same plan step by step. The GPU is billed by the hour, so the goal is a clean run with no wasted
 time. You will **validate the setup, train Qwen3.5-4B in two rounds, pick the better round on dev, test it once,
 upload the model with its adapters, data and logs to the Hugging Face Hub, and prove that the uploaded model answers
 over HTTP**. The person then downloads it, tests it against Kev, and decides whether it goes to production.
@@ -13,15 +14,15 @@ Follow the phases in order. Every phase ends in a **gate**. If a gate fails, sto
 not move on until it passes. Don't improvise new hyperparameters or "quick experiments". They cost money, and the
 recipe is fixed.
 
-The pipeline has already passed the local rehearsal (`docs/local-gpu.md`, `make local` on qwen3.5-0.8b): this run
-changes only the model size and the amount of data. Read `CLAUDE.md` in the repo before starting. Its hard rules apply here too: never train or tune on `test/`, fit the
+The pipeline has already passed a rehearsal (`make rehearse` on any small NVIDIA card, or `make train-smoke` on a
+machine without one): this run changes only the model size and the amount of data. Read `CLAUDE.md` in the repo before starting. Its hard rules apply here too: never train or tune on `test/`, fit the
 temperature only on `calibration/`, choose between runs on `dev/` only, and never edit pinned data or `locks/`.
 
 ## Inputs the person gives you
 
 | Variable | Meaning | Example |
 |---|---|---|
-| `REPO_URL` + `BRANCH` | the code, already pushed | `https://github.com/ramput-labs/den.git`, `h100-finetune` |
+| `REPO_URL` + `BRANCH` | the code, already pushed | `https://github.com/ramput-labs/den.git`, `train-v2` |
 | `GITHUB_TOKEN` | read access to the repo, if it is private | |
 | `HF_TOKEN` | Hugging Face token with **write** access | |
 | `HF_REPO` | where the model goes (created **private**) | `ramput-labs/den-qwen3.5-4b` |
@@ -62,7 +63,7 @@ nproc; free -g | head -2
 ```
 
 **Gate 0:**
-- GPU name contains `H100`, with about 80 GB of memory.
+- An NVIDIA GPU with at least 80 GB of memory (H100 80 GB validated; other cards: [Hardware notes](#hardware-notes)).
 - **Driver ≥ 580.** The locked PyTorch is the CUDA 13 build, which does not run on older drivers. If the driver is
   older, stop and tell the person to pick another image or host. Do not try to install drivers.
 - At least **80 GB free disk**: base 9.3 GB, merged weights 9 GB, venv about 15 GB, plus uv cache and headroom.
@@ -113,13 +114,13 @@ rerun the gate. If Unsloth then refuses to import, stop and report both versions
 
 ```bash
 uvx hf auth login --token "$HF_TOKEN"     # faster, rate-limit-free downloads; also used by `den publish`
-make h100-setup DATA_REPO="${DATA_REPO:-a1i6ek/duck-datasets}" 2>&1 | tee ~/setup.log
+make gpu-setup DATA_REPO="${DATA_REPO:-a1i6ek/duck-datasets}" 2>&1 | tee ~/setup.log
 ```
 
-`make h100-setup` reruns `setup-gpu` (a no-op when nothing changed), downloads `qwen3.5-4b` (9.3 GB, every shard
+`make gpu-setup` reruns `setup-gpu` (a no-op when nothing changed), downloads `qwen3.5-4b` (9.3 GB, every shard
 sha256-checked against `locks/`), runs `make data-download` and prints both rounds' data shapes (`make data-check`,
-no GPU) for the gate below. Last it runs `make h100-doctor` (versions, GPU, BF16, driver ≥ 580, Unsloth import,
-kernels, VRAM for qwen3.5-4b, model files, disk ≥ 80 GB), which saves `doctor.log`.
+no GPU) for the gate below. Last it runs `make gpu-doctor` (versions, GPU, BF16, driver ≥ 580, Unsloth import,
+kernels, VRAM for qwen3.5-4b, model files, disk ≥ 80 GB), which saves `logs/doctor.log`.
 
 `make data-download` downloads the copy (~3.6 GB) and checks every file against its manifest and every pinned file
 against `locks/`. The files the licences keep out of the copy (Kev's `core` suite, Yelp, Amazon, breadth, ...) are
@@ -127,7 +128,7 @@ rebuilt from their pinned originals in the same command, running only the steps 
 breadth, normalize, clean; ~20 min on a fresh box) and checking them against the uploader's sha256 where the manifest
 has it. It must end with `ok, every file matches`. If it stops, rerun it: finished files are kept and re-verified.
 
-**Gate 2:** `h100-doctor` printed `ok` on every line (add `doctor.log` to `~/progress.log`), and the first
+**Gate 2:** `gpu-doctor` printed `ok` on every line (add `logs/doctor.log` to `~/progress.log`), and the first
 `data-check` (round 1's data) prints exactly:
 
 ```
@@ -183,7 +184,7 @@ Run both rounds for 20 optimizer steps per stage. This tests every failure point
 validation, calibration, the stage handoffs, the source sampling and both merges.
 
 ```bash
-make h100-gates                 # CUDA smoke test, both overfit gates; test-cuda.log, overfit-lora.json, overfit-train.log
+make gpu-gates                  # CUDA smoke test, both overfit gates; logs/test-cuda.log, overfit-lora.json, overfit-train.log
 ```
 
 First the **CUDA smoke test** (`make test-cuda`), the real training path for one step, in about 2 minutes. It must
@@ -208,12 +209,12 @@ Trainer loop, ~3 min).
   and `replacement_lowers_probability`. Near 1.0 means the head reads option content. Near chance means it scores
   positions, so report it and stop.
 - `den train --overfit 100`: the last `epoch dev` line (dev here *is* the 100 training rows) must show acc ≥ 0.95,
-  and `loss` must fall steadily. If not, stop and report the log. (`h100-gates` deletes `runs/overfit` at the end.)
+  and `loss` must fall steadily. If not, stop and report the log. (`gpu-gates` deletes `runs/overfit` at the end.)
 
 Then the timing run, with the minutes spent so far (phases 0–3):
 
 ```bash
-make h100-timing BUDGET_HOURS="$BUDGET_HOURS" SPENT=<minutes spent so far>     # log: runs-timing.log
+make gpu-timing BUDGET_HOURS="$BUDGET_HOURS" SPENT=<minutes spent so far>      # log: logs/timing.log
 nvidia-smi --query-gpu=memory.used,memory.total --format=csv    # from a second tmux pane, during stages 3 and 4
 ```
 
@@ -221,7 +222,7 @@ It trains both rounds for 20 steps per stage into `runs/timing`, checks both mer
 `den predict` on round 2, prints `scripts.estimate_time`'s estimate and decision, and deletes `runs/timing`.
 
 **Gate 3:**
-- Every stage prints a `setup` line: `engine unsloth  dtype bf16  device NVIDIA H100 ...  lora_modules 248 ...
+- Every stage prints a `setup` line: `engine unsloth  dtype bf16  device NVIDIA <your GPU> ...  lora_modules 248 ...
   trainable_dtype float32`. A `bfloat16` there means the adapter updates are being rounded away: stop and report.
   Every stage after `1-base` also prints `init   from runs/timing/...`.
 - Validation lines appear: with only 20 steps there is no `step 400` line, but each stage ends with `epoch dev ...`
@@ -241,7 +242,7 @@ It trains both rounds for 20 steps per stage into `runs/timing`, checks both mer
 ## Phase 4: round 1
 
 ```bash
-make h100-round1                # train-round1 with --max-minutes 100 --save-steps 500; log: runs-train.log
+make gpu-round1                 # train-round1 with --max-minutes 100 --save-steps 500; log: logs/round1.log
 ```
 
 `--save-steps 500` writes `checkpoint-*` folders in each stage's directory. Each holds the adapter and head
@@ -254,7 +255,7 @@ need nothing.
 `--max-minutes 100` is a per-stage safety net; no stage should get close. If a cap is reached, that stage stops,
 calibrates and saves, and the next continues from it; `run.json` records `stopped_by_max_minutes`. Report it.
 
-Check on it every 15 minutes, not more often: `grep -E "^setup|^init|dev|calibration|saved|stopping" runs-train.log`.
+Check on it every 15 minutes, not more often: `grep -E "^setup|^init|dev|calibration|saved|stopping" logs/round1.log`.
 The `step N dev(600)` accuracy should rise within each stage, or at least not fall by more than about 2 points.
 
 **Gate 4:** each stage ends with `epoch dev ...`, `calibration  T ...`, `dev at T ...` and `saved runs/kev-recipe/<stage>`;
@@ -273,7 +274,7 @@ A safety copy, so a lost instance cannot lose the trained model. `publish` creat
 model card, bundles the stages, data and logs into the run, uploads resumably, and checks the listing:
 
 ```bash
-uv run den publish --run runs/kev-recipe/4-skills --repo "$HF_REPO" --logs runs-timing.log runs-train.log
+uv run den publish --run runs/kev-recipe/4-skills --repo "$HF_REPO" --logs logs/timing.log logs/round1.log
 ```
 
 **Gate 5:** `publish` prints the repo URL with a file count, and no error. If interrupted, rerun the same command: it
@@ -283,7 +284,7 @@ history and under round 2's `stages/`.
 ## Phase 6: round 2 (skip if phase 3 said so)
 
 ```bash
-make h100-round2                # train-round2 with --max-minutes 90 --save-steps 500; log: runs-round2.log
+make gpu-round2                 # train-round2 with --max-minutes 90 --save-steps 500; log: logs/round2.log
 ```
 
 **Gate 6:** it ends with `epoch dev ...`, `calibration  T ...` (0.5 < T < 3), `dev at T ...`,
@@ -293,7 +294,7 @@ make h100-round2                # train-round2 with --max-minutes 90 --save-step
 ## Phase 7: evaluate both rounds on dev, choose one (20 min)
 
 ```bash
-make h100-eval                  # all of the below, both rounds (round 1 alone if 2 was skipped); log: eval-rounds.log
+make gpu-eval                   # all of the below, both rounds (round 1 alone if 2 was skipped); log: logs/eval.log
 ```
 
 It loads each run's `merged/` through the same backbone code that serving uses, question by question. By hand:
@@ -367,7 +368,7 @@ uv run den evaluate --final --run "$SHIP" $TEST                       # or: make
 uv run den evaluate --final --run "$SHIP" --limit 1000 $SRC_TEST     # 1,000 sampled records per source file
 DATA_PIN=$(grep -oP '^data commit: \K\S+' ~/setup.log)       # the <repo>@<commit> phase 2 downloaded
 make release VERSION=v1 RUN="$SHIP" REPO="$HF_REPO" DATA_REPO="$DATA_PIN" \
-  ARGS="--logs runs-timing.log runs-train.log runs-round2.log"
+  ARGS="--logs logs/timing.log logs/round1.log logs/round2.log"
 ```
 
 `make release` runs `den publish`, tags that Hub commit `v1`, and writes `releases/v1.json` (lineage, data hashes,
@@ -380,12 +381,11 @@ What the Hub repo then holds (`den publish` bundles it):
 
 | Path | What |
 |---|---|
-| `merged/` | v1 only. From v2 on it stays on the training box: `integrity.json` holds its sha256, and servers rebuild it from the adapter (`runtime.rebuild`) |
-| `adapter_model.safetensors`, `adapter_config.json` | the LoRA alone, for use on top of `Qwen/Qwen3.5-4B-Base` |
+| `adapter_model.safetensors`, `adapter_config.json` | the LoRA; servers fold it into `Qwen/Qwen3.5-4B-Base` on first load (`runtime.rebuild`), checked against `integrity.json`. `merged/` itself is never uploaded |
 | `head.safetensors`, `head.json` | the pointer head's weights, and its config (kind, size, backbone hidden size) and T |
 | `run.json`, `training_config.json`, `eval.json` | how it was trained (loss log `train_history`, validation curve `dev_history`, `calibration_report`, `best`, GPU and peak memory) and measured (every eval entry has `read_at`) |
 | `best/` | the lowest-dev-NLL checkpoint (adapter + head, its own T) when it isn't the final step; not merged, not served |
-| `integrity.json` | the merged run's checks (head/adapter finite, merged = base layout with exactly 248 weights changed) and every model file's sha256; `publish` reruns it and refuses a failure |
+| `integrity.json` | the run's checks (head/adapter finite, merged = base layout with exactly the 248 canonical `lora.fold` weights changed) and every model file's sha256, `merged/` included; `publish` reruns it and refuses a failure |
 | `baselines.json` | phase 10's A/B/C/D table (`den baselines`), shown on the card |
 | `stages/<name>/` | every earlier stage: adapter, head, run.json, eval.json |
 | `data/` | the exact training data of every stage (sampled files hold only the lines used), every dev, calibration and test file it was scored on, `data/MANIFEST.json` with sha256s |
@@ -404,7 +404,7 @@ interrupted, rerun the same command.
 Start from nothing but the Hub. `hf:` downloads the run into the Hub cache, not into `runs/`. First the CLI:
 
 ```bash
-REQ='{"state": "Shoes arrived two weeks late and in the wrong size. Also I see two charges on my card.", "questions": {"department": {"type": "choice", "instructions": "Which team should handle this?", "criteria": {"returns": "Exchanges, refunds, wrong or damaged items", "shipping": "Delivery status, delays, lost packages", "billing": "Charges, invoices, payment problems"}}, "escalate": {"type": "noul", "instructions": "Does this need urgent human attention?"}, "frustration": {"type": "score", "instructions": "How frustrated is the customer?", "criteria": ["Calm", "Frustrated", "Very angry"]}}}'
+REQ=$(cat examples/request.jsonl)           # the sample request: a choice, a noul and a score question
 echo "$REQ" | uv run den predict --run "hf:$HF_REPO"
 ```
 
@@ -452,7 +452,7 @@ Then put them side by side, into `$SHIP/baselines.json`, and republish so the ca
 ```bash
 uv run den baselines D=$SHIP A=runs/base-a $( [ -d runs/base-c ] && echo C=runs/base-c ) \
   $( [ -d runs/base-b ] && echo B=runs/base-b ) --files $TEST
-uv run den publish --run "$SHIP" --repo "$HF_REPO" --logs runs-timing.log runs-train.log runs-round2.log
+uv run den publish --run "$SHIP" --repo "$HF_REPO" --logs logs/timing.log logs/round1.log logs/round2.log
 ```
 
 Upload them under `baselines/`:
@@ -468,8 +468,8 @@ temperature). Like-for-like rows have the same question counts as Kev's:
 | `test/documents` (936) | 0.903 | yes: documents-v1 test, same 936 |
 | `test/skills` (1,088) | 0.803 | yes: hard-v1 test, same 1,088 |
 | `test/devtools` (1,073) | 0.756 | yes: devtools-v1 test (Kev drops 2 duplicate-id questions) |
-| `test/core` (1,440) | 0.865 | roughly: Kev reports 1,200 decision-v7 locked-test questions |
-| `test/transfer` (764) | 0.838 | roughly: Kev's transfer-v4 locked test has 656 |
+| `test/core`, clean rows (1,200) | 0.865 | yes: `robustness.clean`, the same 1,200 decision-v7 locked-test questions |
+| `test/transfer`, clean rows (656) | 0.838 | yes: `robustness.clean`, the same 656 transfer-v4 locked-test questions |
 
 Add `test/breadth` (1,990 records; Kev-4B's breadth-v1 report has its per-dataset numbers) and the dev-only
 `binding` and `semif` rows. Report each difference in percentage points, with the `ece` next to it. Don't claim parity from one number: say which
@@ -507,5 +507,30 @@ Then remind the person to **shut the instance down**. Don't leave it idle.
 | `... falling back to its reference PyTorch implementation` | flash-linear-attention is missing; `uv sync` installs it on Linux. Without it, training is many times slower: fix this before phase 3 |
 | CUDA OOM at a stage's first step | halve that stage's `--batch` and double its `--accum` in the `Makefile` (the effective batch stays 8) |
 | `train/sources is missing` from round 2 | phase 2's `make data-download` didn't run or failed: rerun it |
-| `merge: replaced N of 248` | the adapter is fine; `uvx hf upload "$HF_REPO" <run>` without `merged/`, and report it. Don't retrain |
+| `merge: replaced N of 248` | the adapter is fine; report it with the log. Don't retrain |
 | upload interrupted | rerun the same `den publish` command; it resumes |
+
+## Hardware notes
+
+The phases and gates are the same on every card. Only these differ.
+
+**H100 80 GB (validated):** everything above as written.
+
+**RTX PRO 6000 Blackwell, 96 GB (e.g. RunPod):**
+- Gate 0: `nvidia-smi --query-gpu=compute_cap --format=csv` prints `12.0`, driver ≥ 580, and the repo lives on the
+  volume that survives a restart (RunPod: `/workspace`, with at least 150 GB free). Before phase 1:
+  `export HF_HOME=/workspace/.cache/huggingface UV_CACHE_DIR=/workspace/.cache/uv UV_NO_SYNC=1` (and append it to
+  `~/.bashrc`), clone to `/workspace/den`, and write `progress.log` and `setup.log` under `/workspace`.
+- Gate 1 adds: `uv run python -c "import torch; print(torch.cuda.get_device_capability(), torch.cuda.is_bf16_supported())"`
+  prints `(12, 0) True` with no compatibility warning. A failure means stop and report, not a workaround.
+- Phase 3 is the first time Triton, Unsloth and flash-linear-attention compile for sm_120: `3 passed` is required,
+  and a `falling back to its reference PyTorch implementation` line means stop. Expect every stage to take longer than
+  on an H100 (more memory, less bandwidth): plan only from `make gpu-timing`'s measured estimate, and if a stage needs
+  longer than its cap, add `STAGE_MINUTES=<estimate + 30%>` (or `ROUND2_MINUTES=...`) to that phase's `make` command.
+  Don't raise batch sizes to use the extra memory: the recipe's effective batch is fixed at 8.
+- After a pod restart the container disk is gone: re-export the variables above, reinstall uv, `cd /workspace/den`,
+  read `/workspace/progress.log` and continue from the last passed gate (an interrupted stage resumes with
+  `--resume latest`).
+
+**Smaller cards (24–48 GB):** run `make gpu-timing` first; if a stage runs out of memory, halve its `--batch` and
+double its `--accum` in the `Makefile` (phase 3's fallback), and report it. Below 16 GB, only `make rehearse` fits.

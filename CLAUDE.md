@@ -2,27 +2,30 @@
 
 den trains **System One decision models**: a Qwen backbone with a LoRA adapter and a **pointer head**. The model
 reads a state plus typed questions and returns a calibrated probability over each question's options. It runs in one
-forward pass and generates no text. The goal is to match, then beat, Kev 1.0 at each model size. README.md has the
-full rules and data layout. This file covers what you need before changing anything.
+forward pass and generates no text. The goal is to match, then beat, Kev 1.0 at each model size. README.md is the
+newcomer's entry point; docs/architecture.md and docs/data.md hold the rules and data layout in full. This file covers
+what you need before changing anything.
 
 ## Commands
 
-GPU work happens in two places, both driven from the `Makefile` (`make help` groups the targets):
-- **Local RTX 3070 (8 GB):** `docs/local-gpu.md`. `make local-setup`, then `make local`: the whole pipeline on
-  qwen3.5-0.8b (4B doesn't fit 8 GB in bf16), at most `LOCAL_N`=1000 records a file (`den train --limit`), runs in
-  `runs/local/`. It must pass before any H100 time is rented.
-- **No NVIDIA GPU (the Mac):** `make mac-smoke` (~35 min on an M5 Pro) runs every code path at toy scale except
-  Unsloth and CUDA kernels; the cloud pod's phase 3 gates cover those. It replaces `make local` when there is no card.
-- **RunPod RTX PRO 6000 (96 GB):** `docs/runpod-rtx-pro-6000.md`, the H100 runbook's overrides for that pod.
-- **Cloud H100:** `docs/h100-runbook.md` (phases with gates; read it before touching a GPU box), `docs/h100-guide.md`
-  for a person. One target per phase: `h100-setup` (ends with `h100-doctor`), `h100-gates`, `h100-timing`,
-  `h100-round1`, `h100-round2`, `h100-eval`; then `eval-test`, `release`. Both boxes' targets wrap the generic
-  `train-round1`/`train-round2`/`eval-dev`, so a recipe change is made once.
+GPU work is one generic flow, driven from the `Makefile` (`make help` groups the targets):
+- **No NVIDIA GPU (a Mac):** `make train-smoke` (~35 min on an M5 Pro) runs every code path at toy scale except
+  Unsloth and CUDA kernels; the GPU gates cover those.
+- **Any NVIDIA card ≥ 8 GB:** `make gpu-setup`, then `make rehearse`: the same gates and both rounds on qwen3.5-0.8b
+  (4B doesn't fit 8 GB in bf16), at most `N`=1000 records a file (`den train --limit`), runs in `runs/rehearse/`. It must
+  pass before big-GPU time is rented.
+- **The real run (H100 80 GB validated; RTX PRO 6000 and others in the runbook's hardware notes):**
+  `docs/gpu-runbook.md` (phases with gates; read it before touching a GPU box), `docs/fine-tuning.md` for a person.
+  One target per phase: `gpu-setup` (ends with `gpu-doctor`), `gpu-gates`, `gpu-timing`, `gpu-round1`, `gpu-round2`,
+  `gpu-eval`; then `eval-test`, `release`. Logs go to `logs/`. Every `gpu-*` target and `rehearse` wrap the generic
+  `train-round1`/`train-round2`/`eval-dev` with different variables (MODEL, N, STAGE_MINUTES, ...), so a recipe change
+  is made once.
 - Once `.unsloth-pins.txt` exists (`make setup-gpu`), the Makefile exports `UV_NO_SYNC=1` for every target.
 
 ```bash
 make check          # ruff check + ruff format --check + mypy --strict + pytest. Run before saying work is done.
-make help           # every target, grouped; named <area>-<action> (data-*, train-*, eval-*, local-*, h100-*)
+make help           # every target, grouped; named <area>-<action> (data-*, train-*, eval-*, gpu-*, bench-*)
+make serve / make predict   # the released model (RUN=hf:ramput-labs/den-qwen3.5-4b@v1 by default), examples/request.jsonl
 make data-download  # the only way to get data/ (DATA_REPO, default a1i6ek/duck-datasets); rebuilds what licences left out
 make data-upload DATA_REPO=<org>/<name>     # data/ (gitignored) -> Hub dataset + sha256 manifest; the repo must be named
 make data-check     # tokenize data/clean, print shape (no GPU; works on the Mac)
@@ -140,7 +143,7 @@ import `scripts` from `den`. ruff and mypy cover it like `den/`.
   rebuilds the files the licences leave out, running only the steps (fetch by item, breadth, normalize, clean) whose
   files are missing or wrong, and checks the result against the uploader's hashes. No target fetches single sets:
   `uv run den data <set>` is for work on the data pipeline itself.
-- `check_env.py`, `estimate_time.py`: the runbook's phase 1 and phase 3 checks (docs/h100-runbook.md).
+- `check_env.py`, `estimate_time.py`: the runbook's phase 1 and phase 3 checks (docs/gpu-runbook.md).
 - `run_benchmarks.py`, `plot_benchmarks.py` (`make bench-run`, `make bench-plot`): den vs Kev-4B, each through its own
   server (`den serve`; Kev's `kev.serve`), on the dev panels; `den.metrics` scores both, paired by question. Dev only:
   test numbers come from each model's release record (`releases/`, `benchmarks/kev-4b-card.json`). Writes

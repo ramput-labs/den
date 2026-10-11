@@ -1,9 +1,10 @@
-# den: run `make help` for targets. Model targets take MODEL=<key> (see `make models`); default qwen3.5-4b.
+# den: `make help` lists every target. New here? Start with README.md's Quick start.
 #
-# One pipeline, three machines. Targets are named <area>-<action>; the two GPU boxes share their verbs:
-#   Mac (MLX)         make setup check model data-download        develop, evaluate, serve
-#   local RTX 3070    make local-setup, then make local           the whole pipeline on 1,000 records (docs/local-gpu.md)
-#   cloud H100        make h100-setup, then h100-* phase by phase  the real run (docs/h100-runbook.md)
+#   any machine (Mac or Linux)   make setup, make serve, make predict      use the released model
+#   any machine                  make check, make train-smoke              develop; the whole pipeline at toy scale
+#   Linux + NVIDIA GPU           make gpu-setup, make rehearse, gpu-*      fine-tune (docs/fine-tuning.md)
+#
+# Model targets take MODEL=<key> (`make models`); the default is qwen3.5-4b. ARGS reach the underlying `den` command.
 .DEFAULT_GOAL := help
 SHELL := /bin/bash
 .SHELLFLAGS := -eo pipefail -c
@@ -15,6 +16,12 @@ UV := uv run
 ifneq ($(wildcard .unsloth-pins.txt),)
 export UV_NO_SYNC := 1
 endif
+
+# What to serve: the released model, pinned (its merged weights live in the v1 tag).
+RUN ?= hf:ramput-labs/den-qwen3.5-4b@v1
+PORT ?= 8009
+REQUEST ?= examples/request.jsonl
+
 MODEL ?= $(or $(DEN_MODEL),qwen3.5-4b)
 RUNS ?= runs/kev-recipe
 ROUND2 ?= runs/round2
@@ -35,57 +42,59 @@ DATA_REPO ?= $(or $(DEN_DATA_REPO),a1i6ek/duck-datasets)
 GIVEN_DATA_REPO := $(filter command line environment,$(origin DATA_REPO))$(DEN_DATA_REPO)
 log = 2>&1 | tee $(1)
 
-# The local rehearsal: Qwen3.5-0.8B (4B does not fit 8 GB in bf16), at most LOCAL_N records from any one file,
-# batch 1 x 8 (the H100's effective batch of 8), validation every 50 steps.
-LOCAL_MODEL ?= qwen3.5-0.8b
-LOCAL_N ?= 1000
-LOCAL_CAP ?= 100
-LOCAL_RUNS ?= runs/local
-LOCAL_DISK ?= 30
-LOCAL_LOGS := $(LOCAL_RUNS)/logs
-LOCAL := MODEL=$(LOCAL_MODEL) RUNS=$(LOCAL_RUNS) ROUND2=$(LOCAL_RUNS)/round2 CAP=$(LOCAL_CAP) \
-	EVAL="--eval-steps 50 --eval-max 200" ARGS="--limit $(LOCAL_N) --batch 1 --accum 8 --max-minutes 30 $(ARGS)"
-
-# The H100 run (docs/h100-runbook.md): logs stay at the repo root, where `den publish --logs` picks them up.
-H100_MODEL := qwen3.5-4b
+# The gated GPU path (docs/fine-tuning.md), full scale by default. Logs go to LOGS, where `den publish --logs` and
+# `make release ARGS="--logs ..."` pick them up.
+LOGS ?= logs
+MIN_DISK ?= 80
+STAGE_MINUTES ?= 100
+ROUND2_MINUTES ?= 90
+SAVE_STEPS ?= 500
+OVERFIT_LORA ?=
+OVERFIT_TRAIN ?= --batch 4 --accum 1
 BUDGET_HOURS ?= 5
 SPENT ?= 75
 
-.PHONY: help setup setup-gpu check doctor test-model test-cuda models model list env smoke serve \
-	data-download data-upload data-verify data-check data-licences data-breadth data-normalize data-clean data-audit \
-	train train-round1 train-round2 train-next train-rebuild eval-dev eval-test release release-list \
-	local local-setup local-doctor local-gates local-train local-eval local-clean \
-	h100-setup h100-doctor h100-gates h100-timing h100-round1 h100-round2 h100-eval linux-gpu mac-smoke
+# `make rehearse`: the same gates and both rounds, small enough for an 8 GB card (Qwen3.5-4B's bf16 weights alone are
+# 9.3 GB): qwen3.5-0.8b, at most N records from any one file, batch 1 x 8 (the recipe's effective batch of 8).
+N ?= 1000
+REHEARSE_RUNS ?= runs/rehearse
+REHEARSE := MODEL=qwen3.5-0.8b RUNS=$(REHEARSE_RUNS) ROUND2=$(REHEARSE_RUNS)/round2 CAP=100 LOGS=$(REHEARSE_RUNS)/logs \
+	MIN_DISK=30 STAGE_MINUTES=30 ROUND2_MINUTES=30 SAVE_STEPS=0 EVAL="--eval-steps 50 --eval-max 200" \
+	OVERFIT_LORA="--batch 8" OVERFIT_TRAIN="--batch 2 --accum 2" ARGS="--limit $(N) --batch 1 --accum 8 $(ARGS)"
+
+.PHONY: help setup setup-gpu check doctor env models model smoke serve predict example train-smoke test-model test-cuda \
+	list data-download data-upload data-verify data-check data-licences data-breadth data-normalize data-clean data-audit \
+	train train-round1 train-round2 train-next train-rebuild eval-dev eval-test release release-list bench-run bench-plot \
+	gpu-setup gpu-doctor gpu-gates gpu-timing gpu-round1 gpu-round2 gpu-eval rehearse rehearse-clean linux-gpu
 
 # Targets that train or test on CUDA stop at once on any other machine, instead of failing gate by gate.
-setup-gpu test-cuda local local-setup local-doctor local-gates local-train h100-setup h100-doctor h100-gates \
-	h100-timing h100-round1 h100-round2: linux-gpu
+setup-gpu test-cuda gpu-setup gpu-doctor gpu-gates gpu-timing gpu-round1 gpu-round2 rehearse: linux-gpu
 
 linux-gpu:
 	@if [ "$$(uname -s)" != Linux ] || ! command -v nvidia-smi >/dev/null; then \
-		echo "make $(MAKECMDGOALS) runs on the Linux (or WSL2) machine with the NVIDIA GPU:"; \
-		echo "  local RTX 3070: docs/local-gpu.md    cloud GPU: docs/h100-runbook.md, docs/runpod-rtx-pro-6000.md"; \
-		echo "On this machine: make check, make data-check."; \
+		echo "make $(MAKECMDGOALS) runs on a Linux (or WSL2) machine with an NVIDIA GPU: docs/fine-tuning.md"; \
+		echo "On this machine: make check, make train-smoke, make serve."; \
 		exit 1; \
 	fi
 
 help: ## show targets
 	@awk 'BEGIN {FS = ":.*## "} /^##@ / {printf "\n%s\n", substr($$0, 5)} /^[a-z0-9-]+:.*## / {printf "  %-15s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-##@ Setup and checks (any machine)
+##@ Get started (any machine: Mac with MLX, or Linux)
 
-setup: ## install Python 3.12 + locked dependencies
+setup: ## install Python 3.12 and the locked dependencies (uv sync)
 	uv sync
 
-setup-gpu: ## Linux + NVIDIA (driver >= 580): setup, then Unsloth on top without touching torch/transformers, both checked
-	uv sync
-	uv run --no-sync python -m scripts.check_env
-	uv pip freeze | grep -iE '^(torch|transformers|tokenizers|huggingface-hub|numpy|triton|flash-linear-attention|accelerate|peft)==' > .unsloth-pins.txt
-	uv pip install "unsloth>=2026.9" -c .unsloth-pins.txt
-	uv run --no-sync python -m scripts.check_env --unsloth
-	@echo "make targets now skip uv's sync; for your own uv runs: export UV_NO_SYNC=1 && echo 'export UV_NO_SYNC=1' >> ~/.bashrc"
+serve: ## serve RUN (default: the released v1) at http://127.0.0.1:PORT/v1/systemone; DEN_API_KEY=... requires a key
+	$(UV) den serve --run $(RUN) --port $(PORT)
 
-check: ## lint, strict type-check, unit tests, claims vs evidence
+predict: ## answer REQUEST (default examples/request.jsonl, one /v1/systemone request a line) with RUN, no server
+	$(UV) den predict --run $(RUN) $(REQUEST)
+
+example: ## the TypeSafe SDK quickstart against a running `make serve` (examples/README.md has the rest)
+	TYPESAFE_BASE_URL=http://127.0.0.1:$(PORT) PYTHONPATH=examples $(UV) python examples/quickstart.py
+
+check: ## lint, strict type-check, unit tests, claims vs evidence: run before every commit
 	$(UV) ruff check den scripts tests examples
 	$(UV) ruff format --check den scripts tests examples
 	$(UV) mypy
@@ -95,58 +104,52 @@ check: ## lint, strict type-check, unit tests, claims vs evidence
 doctor: ## versions, GPU, BF16, driver, Unsloth, model revision; ARGS="--require cuda" to gate on them
 	$(UV) den doctor --model $(MODEL) $(ARGS)
 
-# Every code path a GPU run takes except Unsloth and the CUDA kernels, on any machine (the Mac included): 4 LoRA steps
-# on qwen3.5-0.8b through PEFT on the CPU, best/, calibration, merge, integrity, then MLX evaluation and serving.
-# About 35 min on an M5 Pro (DeltaNet's PyTorch fallback is the slow part). The pod's phase 3 covers the rest.
-mac-smoke: ## the whole pipeline at toy scale on this machine (~35 min): train, merge, check, evaluate, predict
-	$(MAKE) model MODEL=qwen3.5-0.8b
-	rm -rf runs/mac-smoke
-	$(UV) den train --model qwen3.5-0.8b --engine peft --limit 50 --overfit 8 --max-steps 4 --batch 2 --accum 1 \
-		--eval-steps 2 --eval-max 8 --calibration calibration/sources/topic/trec.jsonl --calibrate-by-type --merge \
-		--out runs/mac-smoke
-	$(UV) den check-run --run runs/mac-smoke --load
-	$(UV) den evaluate --run runs/mac-smoke --limit 30 --no-evidence dev/core.jsonl dev/sources/decisions/typed-decisions.jsonl
-	$(UV) den evaluate --run runs/mac-smoke --limit 20 --no-evidence --augment pairs dev/core.jsonl
-	$(UV) den predict --run runs/mac-smoke scripts/request.jsonl
+env: ## the backend this machine uses (mlx | cuda | cpu)
+	$(UV) den env
 
-test-model: ## MLX vs PyTorch parity on the downloaded qwen3.5-4b (slow)
-	$(UV) pytest -q -m model
-
-test-cuda: ## CUDA checks: devices, dtypes, padding, and one real Unsloth LoRA + head step on MODEL
-	DEN_MODEL=$(MODEL) $(UV) pytest -q -m cuda
-
-models: ## list backbones of every size and the Kev reference checkpoints
+models: ## every backbone (any size) and the Kev reference checkpoints
 	$(UV) den models
 
 model: ## download MODEL (a key from `make models`, or hf:<org>/<name>@<commit>)
 	$(UV) den model $(MODEL)
 
-list: ## print every pinned dataset
-	$(UV) den list
-
-env: ## show the backend this machine uses (mlx | cuda | cpu)
-	$(UV) den env
-
-smoke: ## run MODEL once on this machine's backend
+smoke: ## run MODEL's backbone once on this machine's backend
 	$(UV) den smoke --model $(MODEL)
 
-serve: ## serve RUN (a run directory or hf:<org>/<name>) at POST /v1/systemone; PORT=8009
-	$(UV) den serve --run $(RUN) --port $(or $(PORT),8009)
+# Every code path a GPU run takes except Unsloth and the CUDA kernels, on any machine: 4 LoRA steps on qwen3.5-0.8b
+# through PEFT on the CPU, best/, calibration, merge, integrity, then evaluation and serving. About 35 min on an M5 Pro
+# (DeltaNet's PyTorch fallback is the slow part); `make rehearse` and the GPU gates cover the rest.
+train-smoke: ## the whole pipeline at toy scale on this machine (~35 min on a Mac): train, merge, check, evaluate, predict
+	$(MAKE) model MODEL=qwen3.5-0.8b
+	rm -rf runs/train-smoke
+	$(UV) den train --model qwen3.5-0.8b --engine peft --limit 50 --overfit 8 --max-steps 4 --batch 2 --accum 1 \
+		--eval-steps 2 --eval-max 8 --calibration calibration/sources/topic/trec.jsonl --calibrate-by-type --merge \
+		--out runs/train-smoke
+	$(UV) den check-run --run runs/train-smoke --load
+	$(UV) den evaluate --run runs/train-smoke --limit 30 --no-evidence dev/core.jsonl dev/sources/decisions/typed-decisions.jsonl
+	$(UV) den evaluate --run runs/train-smoke --limit 20 --no-evidence --augment pairs dev/core.jsonl
+	$(UV) den predict --run runs/train-smoke $(REQUEST)
+
+test-model: ## tests on the real qwen3.5-4b weights: MLX vs PyTorch parity, LoRA wiring, merge (slow)
+	$(UV) pytest -q -m model
 
 ##@ Data (data/ is gitignored; data-download is the one way to get it)
 
-data-download: ## the Hub copy into data/, rebuilding only what the licences left out, every file checked: [DATA_REPO=<org>/<name>[@rev]] [NO_REBUILD=1]
+data-download: ## the Hub copy into data/, rebuilding what the licences left out, every file checked: [DATA_REPO=<org>/<name>[@rev]] [NO_REBUILD=1]
 	$(UV) python -m scripts.mirror download --repo $(DATA_REPO) $(if $(NO_REBUILD),--no-rebuild)
 
-data-upload: ## data/ to the Hub, licence notices included, restricted sources left out: DATA_REPO=<org>/<name> [TAG=data-v1] [PUBLIC=1]
-	@test -n "$(GIVEN_DATA_REPO)" || (echo "name the repo to upload to: DATA_REPO=<org>/<name> (or DEN_DATA_REPO)" && exit 1)
-	$(UV) python -m scripts.mirror upload --repo $(DATA_REPO) $(if $(PUBLIC),--public) $(if $(TAG),--tag $(TAG))
+data-check: ## tokenize the clean training data and print its shape (no GPU; the data gate)
+	$(UV) den train --dry-run --model $(MODEL) $(ARGS)
 
 data-verify: ## re-hash every downloaded file against locks/
 	$(UV) den verify
 
-data-check: ## tokenize the clean training data and print its shape (no GPU; the runbook's data gate)
-	$(UV) den train --dry-run --model $(MODEL) $(ARGS)
+list: ## every pinned dataset
+	$(UV) den list
+
+data-upload: ## data/ to the Hub, licence notices included, restricted sources left out: DATA_REPO=<org>/<name> [TAG=data-v1] [PUBLIC=1]
+	@test -n "$(GIVEN_DATA_REPO)" || (echo "name the repo to upload to: DATA_REPO=<org>/<name> (or DEN_DATA_REPO)" && exit 1)
+	$(UV) python -m scripts.mirror upload --repo $(DATA_REPO) $(if $(PUBLIC),--public) $(if $(TAG),--tag $(TAG))
 
 data-licences: ## write each source's licence, evidence and texts into data/ (LICENSES.md, LICENSES/, README.md card)
 	$(UV) den licences $(ARGS)
@@ -163,9 +166,20 @@ data-clean: ## rewrite the cleaned, deduplicated copies under data/clean/ (after
 data-audit: ## check every record and source is fit to train on; writes reports/data-audit.json
 	$(UV) den audit --model $(MODEL)
 
-##@ Training and evaluation (training: Linux + NVIDIA, after setup-gpu)
+##@ Fine-tune and evaluate (training: Linux + NVIDIA, after setup-gpu; see docs/fine-tuning.md)
 
-train: ## LoRA + pointer-head fine-tune of MODEL with Unsloth; ARGS="--epochs 2 ..."
+setup-gpu: ## Linux + NVIDIA (driver >= 580): setup, then Unsloth on top without touching torch/transformers, both checked
+	uv sync
+	uv run --no-sync python -m scripts.check_env
+	uv pip freeze | grep -iE '^(torch|transformers|tokenizers|huggingface-hub|numpy|triton|flash-linear-attention|accelerate|peft)==' > .unsloth-pins.txt
+	uv pip install "unsloth>=2026.9" -c .unsloth-pins.txt
+	uv run --no-sync python -m scripts.check_env --unsloth
+	@echo "make targets now skip uv's sync; for your own uv runs: export UV_NO_SYNC=1 && echo 'export UV_NO_SYNC=1' >> ~/.bashrc"
+
+test-cuda: ## CUDA checks: devices, dtypes, padding, and one real Unsloth LoRA + head step on MODEL
+	DEN_MODEL=$(MODEL) $(UV) pytest -q -m cuda
+
+train: ## one LoRA + pointer-head fine-tune of MODEL; ARGS="--data train/<file>.jsonl --epochs 2 ..."
 	$(TRAIN) $(ARGS)
 
 # Stage 1's head is fresh, so it trains at --head-lr 2e-4, not at the adapters' 5e-5: our change to Kev's recipe, which
@@ -224,77 +238,46 @@ bench-run: ## den vs Kev-4B on every dev panel through both servers (benchmarks/
 bench-plot: ## benchmarks/results.json -> plots (light + dark) and benchmarks/README.md
 	$(UV) python -m scripts.plot_benchmarks
 
-##@ Local RTX 3070 (8 GB): the whole pipeline at small scale, before renting an H100 (docs/local-gpu.md)
+##@ GPU box: the gated path, one target per step (any NVIDIA GPU; docs/fine-tuning.md, docs/gpu-runbook.md)
 
-local: local-doctor local-gates local-train local-eval ## the full rehearsal, gate by gate; logs in LOCAL_RUNS/logs
-	@echo "local rehearsal passed: $(LOCAL_MODEL), $(LOCAL_N) records a file; logs in $(LOCAL_LOGS)"
+gpu-setup: setup-gpu ## setup-gpu, MODEL, data/, both rounds' data shapes, then gpu-doctor
+	$(MAKE) model data-download
+	$(MAKE) data-check
+	$(MAKE) data-check ARGS="--data --sources-cap $(CAP) --replay $(CAP) --replay-from $(KEV_SUITES) $(ARGS)"
+	$(MAKE) gpu-doctor
 
-local-setup: setup-gpu ## setup-gpu + LOCAL_MODEL + data/, the data shape at LOCAL_N, then local-doctor
-	$(MAKE) model data-download MODEL=$(LOCAL_MODEL)
-	$(MAKE) data-check MODEL=$(LOCAL_MODEL) ARGS="--limit $(LOCAL_N)"
-	$(MAKE) local-doctor
+gpu-doctor: ## the readiness gate: CUDA, BF16, driver, Unsloth, kernels, VRAM for MODEL, MIN_DISK GB free
+	@mkdir -p $(LOGS)
+	$(MAKE) doctor ARGS="--require cuda --min-disk $(MIN_DISK)" $(call log,$(LOGS)/doctor.log)
 
-local-doctor: ## the readiness gate for this card: CUDA, BF16, driver, Unsloth, kernels, VRAM for LOCAL_MODEL, disk
-	$(MAKE) doctor MODEL=$(LOCAL_MODEL) ARGS="--require cuda --min-disk $(LOCAL_DISK)"
-
-local-gates: ## CUDA tests on LOCAL_MODEL, then both overfit gates (head + LoRA must fit 100 rows)
-	@mkdir -p $(LOCAL_LOGS)
-	$(MAKE) test-cuda MODEL=$(LOCAL_MODEL) $(call log,$(LOCAL_LOGS)/test-cuda.log)
-	$(UV) den overfit --model $(LOCAL_MODEL) --n 100 --steps 300 --batch 8 --out $(LOCAL_LOGS)/overfit-lora.json \
-		$(call log,$(LOCAL_LOGS)/overfit-lora.log)
-	$(UV) den train --model $(LOCAL_MODEL) --data train/core.jsonl --overfit 100 --epochs 25 --lr 2e-4 --head-lr 1e-3 \
-		--batch 2 --accum 2 --out $(LOCAL_RUNS)/overfit $(call log,$(LOCAL_LOGS)/overfit-train.log)
-
-local-train: ## both rounds exactly as on the H100 (every stage, replay, merge) at LOCAL_N records a file; ARGS add flags
-	@mkdir -p $(LOCAL_LOGS)
-	$(MAKE) train-round1 $(LOCAL) $(call log,$(LOCAL_LOGS)/round1.log)
-	$(MAKE) train-round2 $(LOCAL) $(call log,$(LOCAL_LOGS)/round2.log)
-
-local-eval: ## integrity of both merged rounds, dev sample scores, the ship decision, and a real request answered
-	@mkdir -p $(LOCAL_LOGS)
-	for RUN in $(LOCAL_RUNS)/4-skills $(LOCAL_RUNS)/round2; do \
-		$(UV) den check-run --run $$RUN && $(UV) den evaluate --run $$RUN --limit 200 --no-evidence $(SHIP_DEV) || exit 1; \
-	done $(call log,$(LOCAL_LOGS)/eval.log)
-	$(UV) den compare $(LOCAL_RUNS)/4-skills $(LOCAL_RUNS)/round2 --files $(SHIP_DEV) | tee -a $(LOCAL_LOGS)/eval.log
-	$(UV) den predict --run $(LOCAL_RUNS)/round2 scripts/request.jsonl | tee $(LOCAL_LOGS)/predict.json
-
-local-clean: ## delete the rehearsal's runs and logs (LOCAL_RUNS)
-	rm -rf $(LOCAL_RUNS)
-
-##@ Cloud H100 (80 GB): the real run, one target per runbook phase (docs/h100-runbook.md)
-
-h100-setup: setup-gpu ## phases 1-2: setup-gpu, qwen3.5-4b, data/, both rounds' data shapes, then h100-doctor
-	$(MAKE) model data-download MODEL=$(H100_MODEL)
-	$(MAKE) data-check MODEL=$(H100_MODEL)
-	$(MAKE) data-check MODEL=$(H100_MODEL) ARGS="--data --sources-cap $(CAP) --replay $(CAP) --replay-from $(KEV_SUITES)"
-	$(MAKE) h100-doctor
-
-h100-doctor: ## phase 2's last gate: CUDA, BF16, driver, Unsloth, kernels, VRAM for qwen3.5-4b, 80 GB disk
-	$(MAKE) doctor MODEL=$(H100_MODEL) ARGS="--require cuda" $(call log,doctor.log)
-
-h100-gates: ## phase 3's gates: the CUDA tests on qwen3.5-4b and both overfit gates
-	$(MAKE) test-cuda MODEL=$(H100_MODEL) $(call log,test-cuda.log)
-	$(UV) den overfit --model $(H100_MODEL) --n 100 --steps 300 --out overfit-lora.json
-	$(UV) den train --model $(H100_MODEL) --data train/core.jsonl --overfit 100 --epochs 25 --lr 2e-4 --head-lr 1e-3 \
-		--batch 4 --accum 1 --out runs/overfit $(call log,overfit-train.log)
+gpu-gates: ## can it train at all: the CUDA tests on MODEL, then both overfit gates (LoRA + head must fit 100 rows)
+	@mkdir -p $(LOGS)
+	$(MAKE) test-cuda $(call log,$(LOGS)/test-cuda.log)
+	$(UV) den overfit --model $(MODEL) --n 100 --steps 300 $(OVERFIT_LORA) --out $(LOGS)/overfit-lora.json \
+		$(call log,$(LOGS)/overfit-lora.log)
+	$(UV) den train --model $(MODEL) --data train/core.jsonl --overfit 100 --epochs 25 --lr 2e-4 --head-lr 1e-3 \
+		$(OVERFIT_TRAIN) --out runs/overfit $(call log,$(LOGS)/overfit-train.log)
 	rm -rf runs/overfit
 
-h100-timing: ## phase 3's timing run: 20 steps of every stage, merge checks, the time estimate: BUDGET_HOURS=5 SPENT=<min>
-	$(MAKE) train-round1 MODEL=$(H100_MODEL) RUNS=runs/timing ARGS="--max-steps 20" $(call log,runs-timing.log)
-	$(MAKE) train-round2 MODEL=$(H100_MODEL) RUNS=runs/timing ROUND2=runs/timing/round2 ARGS="--max-steps 20" \
-		2>&1 | tee -a runs-timing.log
+gpu-timing: ## 20 steps of every stage, both merges checked, the time estimate and decision: BUDGET_HOURS=5 SPENT=<min>
+	@mkdir -p $(LOGS)
+	$(MAKE) train-round1 RUNS=runs/timing ARGS="--max-steps 20" $(call log,$(LOGS)/timing.log)
+	$(MAKE) train-round2 RUNS=runs/timing ROUND2=runs/timing/round2 ARGS="--max-steps 20" 2>&1 | tee -a $(LOGS)/timing.log
 	$(UV) den check-run --run runs/timing/4-skills && $(UV) den check-run --run runs/timing/round2
-	$(UV) den predict --run runs/timing/round2 < /dev/null
+	$(UV) den predict --run runs/timing/round2 $(REQUEST)
 	$(UV) python -m scripts.estimate_time --budget-hours $(BUDGET_HOURS) --spent-minutes $(SPENT)
 	rm -rf runs/timing
 
-h100-round1: ## phase 4: round 1 -> runs/kev-recipe (checkpoints every 500 steps, 100 min cap a stage)
-	$(MAKE) train-round1 MODEL=$(H100_MODEL) ARGS="--max-minutes 100 --save-steps 500 $(ARGS)" $(call log,runs-train.log)
+gpu-round1: ## round 1 -> RUNS, each stage capped at STAGE_MINUTES, checkpoints every SAVE_STEPS
+	@mkdir -p $(LOGS)
+	$(MAKE) train-round1 ARGS="--max-minutes $(STAGE_MINUTES) --save-steps $(SAVE_STEPS) $(ARGS)" $(call log,$(LOGS)/round1.log)
 
-h100-round2: ## phase 6: round 2 -> runs/round2 (skip it if h100-timing said so)
-	$(MAKE) train-round2 MODEL=$(H100_MODEL) ARGS="--max-minutes 90 --save-steps 500 $(ARGS)" $(call log,runs-round2.log)
+gpu-round2: ## round 2 -> ROUND2, capped at ROUND2_MINUTES (skip it if gpu-timing said so)
+	@mkdir -p $(LOGS)
+	$(MAKE) train-round2 ARGS="--max-minutes $(ROUND2_MINUTES) --save-steps $(SAVE_STEPS) $(ARGS)" $(call log,$(LOGS)/round2.log)
 
-h100-eval: ## phase 7: eval-dev on each round, 500 records of every source, the ship decision on dev (paired too)
+gpu-eval: ## eval-dev on each round, 500 records of every source, then the ship decision on dev (paired too)
+	@mkdir -p $(LOGS)
 	( SRC=$$(cd data/clean && ls dev/sources/*/*.jsonl | tr '\n' ' '); \
 	for RUN in $(RUNS)/4-skills $(patsubst %/run.json,%,$(wildcard $(ROUND2)/run.json)); do \
 		$(MAKE) eval-dev RUN=$$RUN && $(UV) den evaluate --run $$RUN --limit 500 $$SRC || exit 1; \
@@ -302,4 +285,19 @@ h100-eval: ## phase 7: eval-dev on each round, 500 records of every source, the 
 	if [ -f $(ROUND2)/run.json ]; then \
 		$(UV) den compare $(RUNS)/4-skills $(ROUND2) --files $(SHIP_DEV) dev/transfer.jsonl $$SRC && \
 		$(UV) den compare --paired $(RUNS)/4-skills $(ROUND2); \
-	fi ) $(call log,eval-rounds.log)
+	fi ) $(call log,$(LOGS)/eval.log)
+
+# The same gates and both rounds at small scale: the cheap way to find a setup, memory, handoff or merge bug before
+# paying for a big GPU. Dev samples only, nothing written to reports/, the test set never read.
+rehearse: ## doctor, gates, both rounds and a quick evaluation at N records a file on qwen3.5-0.8b (any 8 GB card, ~2.5 h)
+	$(MAKE) model MODEL=qwen3.5-0.8b
+	$(MAKE) gpu-doctor gpu-gates gpu-round1 gpu-round2 $(REHEARSE)
+	for RUN in $(REHEARSE_RUNS)/4-skills $(REHEARSE_RUNS)/round2; do \
+		$(UV) den check-run --run $$RUN && $(UV) den evaluate --run $$RUN --limit 200 --no-evidence $(SHIP_DEV) || exit 1; \
+	done $(call log,$(REHEARSE_RUNS)/logs/eval.log)
+	$(UV) den compare $(REHEARSE_RUNS)/4-skills $(REHEARSE_RUNS)/round2 --files $(SHIP_DEV) | tee -a $(REHEARSE_RUNS)/logs/eval.log
+	$(UV) den predict --run $(REHEARSE_RUNS)/round2 $(REQUEST) | tee $(REHEARSE_RUNS)/logs/predict.json
+	@echo "rehearsal passed: qwen3.5-0.8b, $(N) records a file; logs in $(REHEARSE_RUNS)/logs"
+
+rehearse-clean: ## delete the rehearsal's runs and logs
+	rm -rf $(REHEARSE_RUNS)

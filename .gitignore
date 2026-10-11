@@ -1,9 +1,13 @@
+# Python and tool caches
 .venv/
 __pycache__/
 .mypy_cache/
 .ruff_cache/
 .pytest_cache/
+.DS_Store
 .claude/settings.local.json
+
+# Downloaded weights (`make model`) and interrupted downloads
 models/
 *.part
 
@@ -11,13 +15,9 @@ models/
 # licences left out from locks/. Every file is sha256-checked.
 data/
 
-# training outputs: adapters, head.pt, configs
-# training outputs (weights) at the repo root only; evaluation evidence in reports/runs/ is committed
+# Training outputs (weights) and GPU-box logs; evaluation evidence in reports/runs/ and releases/ is committed
 /runs/
+/logs/
+/*.log
 .unsloth-pins.txt
 unsloth_compiled_cache/
-
-# GPU logs written at the repo root by the runbook (`den publish --logs` bundles them); the H100 check is in reports/gpu/
-/*.log
-/overfit-lora.json
-.DS_Store
