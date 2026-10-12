@@ -143,6 +143,8 @@ import `scripts` from `den`. ruff and mypy cover it like `den/`.
   rebuilds the files the licences leave out, running only the steps (fetch by item, breadth, normalize, clean) whose
   files are missing or wrong, and checks the result against the uploader's hashes. No target fetches single sets:
   `uv run den data <set>` is for work on the data pipeline itself.
+- `download_model.py` (`make model-download`): a release's head and `merged/` into `models/den-4b` (`RUN`'s default),
+  each file checked against its `integrity.json`, the shards joined into one `model.safetensors`; nothing else kept.
 - `check_env.py`, `estimate_time.py`: the runbook's phase 1 and phase 3 checks (docs/gpu-runbook.md).
 - `run_benchmarks.py`, `plot_benchmarks.py` (`make bench-run`, `make bench-plot`): den vs Kev-4B, each through its own
   server (`den serve`; Kev's `kev.serve`), on the dev panels; `den.metrics` scores both, paired by question. Dev only:

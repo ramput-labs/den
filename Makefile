@@ -17,7 +17,8 @@ ifneq ($(wildcard .unsloth-pins.txt),)
 export UV_NO_SYNC := 1
 endif
 
-# What to serve: the released model, pinned (its merged weights live in the v1 tag).
+# What to serve: the released model, downloaded once by `make model-download` (from RELEASE, pinned to its tag).
+RELEASE ?= ramput-labs/den-4b@v1
 RUN ?= models/den-4b
 PORT ?= 8009
 REQUEST ?= examples/request.jsonl
@@ -85,7 +86,10 @@ help: ## show targets
 setup: ## install Python 3.12 and the locked dependencies (uv sync)
 	uv sync
 
-serve: ## serve RUN (default: the released v1) at http://127.0.0.1:PORT/v1/systemone; DEN_API_KEY=... requires a key
+model-download: ## download RELEASE (default ramput-labs/den-4b@v1) into RUN, checked against its sha256, weights in one file
+	$(UV) python -m scripts.download_model --repo $(RELEASE) --out $(RUN)
+
+serve: ## serve RUN (default: the released v1, after model-download) at http://127.0.0.1:PORT/v1/systemone; DEN_API_KEY=... requires a key
 	$(UV) den serve --run $(RUN) --port $(PORT)
 
 predict: ## answer REQUEST (default examples/request.jsonl, one /v1/systemone request a line) with RUN, no server
