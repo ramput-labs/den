@@ -32,7 +32,8 @@ You need [uv](https://docs.astral.sh/uv/) and about 10 GB of disk for the 4B mod
 ```bash
 git clone https://github.com/ramput-labs/den.git && cd den
 make setup                    # Python 3.12 + this machine's runtime (MLX on Apple Silicon, CUDA on Linux)
-make serve                    # downloads den v1 once, then http://127.0.0.1:8009/v1/systemone
+make model-download           # den v1 into models/den-4b, once, checked against its sha256
+make serve                    # http://127.0.0.1:8009/v1/systemone, from models/den-4b (no network)
 ```
 
 In another terminal:
