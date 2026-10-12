@@ -25,7 +25,7 @@ temperature only on `calibration/`, choose between runs on `dev/` only, and neve
 | `REPO_URL` + `BRANCH` | the code, already pushed | `https://github.com/ramput-labs/den.git`, `train-v2` |
 | `GITHUB_TOKEN` | read access to the repo, if it is private | |
 | `HF_TOKEN` | Hugging Face token with **write** access | |
-| `HF_REPO` | where the model goes (created **private**) | `ramput-labs/den-qwen3.5-4b` |
+| `HF_REPO` | where the model goes (created **private**) | `ramput-labs/den-4b` |
 | `BUDGET_HOURS` | hard ceiling for the whole session | `5` |
 | `DATA_REPO` | the `make data-upload` copy of `data/` (optional; default `a1i6ek/duck-datasets`) | `a1i6ek/duck-datasets@data-v1` |
 

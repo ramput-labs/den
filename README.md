@@ -19,7 +19,7 @@ size, then beat it.
 
 | Release | Base | Hub | Held-out dev accuracy vs Kev-4B |
 |---|---|---|---|
-| **den v1** | Qwen3.5-4B-Base, LoRA r16 + set head | [`ramput-labs/den-qwen3.5-4b@v1`](https://huggingface.co/ramput-labs/den-qwen3.5-4b/tree/v1) | tied: +0.2 points [−0.4, +0.8] over 10,459 questions |
+| **den v1** | Qwen3.5-4B-Base, LoRA r16 + set head | [`ramput-labs/den-4b@v1`](https://huggingface.co/ramput-labs/den-4b/tree/v1) | tied: +0.2 points [−0.4, +0.8] over 10,459 questions |
 
 v1 trained on exactly Kev-4B's data. It is better calibrated than Kev-4B (ECE 1.9% vs 2.9%) and ahead on reasoning
 skills (+2.5) and entity binding (+2.1), behind out of domain (−2.0) and on dates/unknowable items (−1.6). The full,
@@ -61,7 +61,7 @@ response = client.system_one(
 print(response.nouls["billing"].noul, response.choices["tone"].choice, response.scores["urgency"].score)
 ```
 
-Or in-process, no server: `den.load("hf:ramput-labs/den-qwen3.5-4b@v1").predict({...})` returns the same response.
+Or in-process, no server: `den.load("hf:ramput-labs/den-4b@v1").predict({...})` returns the same response.
 [`examples/`](examples/README.md) has typed responses, routing, a tool-calling gate, async and raw HTTP.
 
 ## API

@@ -59,7 +59,7 @@ first, or the box trains on the old copy: `make data-upload DATA_REPO=<org>/<nam
 Write down:
 - a **Hugging Face token** with *write* access (<https://huggingface.co/settings/tokens>)
 - a **GitHub token** if the repo is private (read to clone; write to push the release record back)
-- the **model repo**, e.g. `ramput-labs/den-qwen3.5-4b` (created private by the first upload)
+- the **model repo**, e.g. `ramput-labs/den-4b` (created private by the first upload)
 - the **data copy**: `a1i6ek/duck-datasets` (the default) or a pinned `<repo>@<tag>`
 - your **budget** in GPU hours
 
@@ -81,7 +81,7 @@ tmux new -s den           # an SSH drop can't kill a run; reconnect with: tmux a
 ## Step 2: code, environment, model and data (40–50 min)
 
 ```bash
-export HF_TOKEN=hf_... HF_REPO=ramput-labs/den-qwen3.5-4b DATA_REPO=a1i6ek/duck-datasets BUDGET_HOURS=6
+export HF_TOKEN=hf_... HF_REPO=ramput-labs/den-4b DATA_REPO=a1i6ek/duck-datasets BUDGET_HOURS=6
 curl -LsSf https://astral.sh/uv/install.sh | sh && source ~/.local/bin/env
 git clone --branch train-v2 https://github.com/ramput-labs/den.git && cd den    # private: https://$GITHUB_TOKEN@github.com/...
 uvx hf auth login --token "$HF_TOKEN"

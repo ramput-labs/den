@@ -1,6 +1,6 @@
 """The three question types through TypeSafe's SDK, against your own model.
 
-uv run den serve --run hf:ramput-labs/den-qwen3.5-4b@v1      # in another terminal
+uv run den serve --run hf:ramput-labs/den-4b@v1      # in another terminal
 uv run python examples/quickstart.py
 """
 

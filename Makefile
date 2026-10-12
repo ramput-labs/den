@@ -18,7 +18,7 @@ export UV_NO_SYNC := 1
 endif
 
 # What to serve: the released model, pinned (its merged weights live in the v1 tag).
-RUN ?= hf:ramput-labs/den-qwen3.5-4b@v1
+RUN ?= models/den-4b
 PORT ?= 8009
 REQUEST ?= examples/request.jsonl
 

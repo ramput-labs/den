@@ -7,7 +7,7 @@ your server.
 ## 1. Serve the model
 
 ```bash
-uv run den serve --run hf:ramput-labs/den-qwen3.5-4b@v1 --release-date 2026-10-10   # merged/ + head, ~9.4 GB once
+uv run den serve --run hf:ramput-labs/den-4b@v1 --release-date 2026-10-10   # merged/ + head, ~9.4 GB once
 DEN_API_KEY=secret uv run den serve --run ... --host 0.0.0.0                         # require a bearer key
 ```
 

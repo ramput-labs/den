@@ -25,7 +25,7 @@ GPU work is one generic flow, driven from the `Makefile` (`make help` groups the
 ```bash
 make check          # ruff check + ruff format --check + mypy --strict + pytest. Run before saying work is done.
 make help           # every target, grouped; named <area>-<action> (data-*, train-*, eval-*, gpu-*, bench-*)
-make serve / make predict   # the released model (RUN=hf:ramput-labs/den-qwen3.5-4b@v1 by default), examples/request.jsonl
+make serve / make predict   # RUN=models/den-4b by default (v1, local, one weights file); RUN=hf:ramput-labs/den-4b@v1 from the Hub
 make data-download  # the only way to get data/ (DATA_REPO, default a1i6ek/duck-datasets); rebuilds what licences left out
 make data-upload DATA_REPO=<org>/<name>     # data/ (gitignored) -> Hub dataset + sha256 manifest; the repo must be named
 make data-check     # tokenize data/clean, print shape (no GPU; works on the Mac)

@@ -78,7 +78,7 @@ Median latency per request as the client saw it, over the same records. Kev's se
 ## Reproduce
 
 ```bash
-uv run den serve --run hf:ramput-labs/den-qwen3.5-4b@v1                                    # :8009
+uv run den serve --run hf:ramput-labs/den-4b@v1                                    # :8009
 git clone https://github.com/jaredpalmer/kev && cd kev
 git checkout fe64b1274ea7f80d4095866df90666abb03e9cf6
 uv sync --extra serve && uv run --extra serve python -m kev.serve --run jaredpalmer/kev-4b@139fdd94f1b6a6ad80cc15e08fcb99cac885a101   # :8008

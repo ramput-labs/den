@@ -6,7 +6,7 @@ under data/clean. Test partitions are refused: they are read once per release ca
 numbers come from each model's own release record instead. Predictions are written as they arrive to
 `benchmarks/predictions/<model>/<panel>.jsonl`, so an interrupted run resumes where it stopped.
 
-    uv run den serve --run hf:ramput-labs/den-qwen3.5-4b@v1               # :8009
+    uv run den serve --run hf:ramput-labs/den-4b@v1               # :8009
     (cd kev && uv run --extra serve python -m kev.serve --run jaredpalmer/kev-4b@139fdd94...)   # :8008
     uv run python -m scripts.run_benchmarks --model den-v1=http://127.0.0.1:8009 --model kev-4b=http://127.0.0.1:8008
 """
